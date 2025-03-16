@@ -1,0 +1,814 @@
+---
+title: "Dead wood stores and fluxes for BCI 50ha dynamic plots 2017-2024"
+author: "Lily Pitcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = root.dir = here::here())
+                       #"/Users/lilyp/OneDrive - Smithsonian Institution/Documents/D-woody debris/FILES FOR CODE")
+```
+
+
+
+
+```{r, include = FALSE}
+library(ggplot2)
+library(cowplot)
+library(knitr)
+library(kableExtra)
+library(report)
+library(tidyr)
+library(RColorBrewer)
+library(dplyr)
+library(lubridate)
+library(zoo)
+library(here)
+rm(list=ls())
+```
+
+
+
+### Study site and sample design
+ 
+ This document reports the estimated above ground deadwood stocks of dead trees in the 50ha plot of Barrow Colorado Island, STRI, Panama. Woody debris is estimated for 100 (40X40m) within the 50ha through annual field studies which comprised of the following studies:
+ 
+Coarse Woody Debris (CWD) dynamics:
+CWD is defined as deadwood with a diameter equal or greater than 200cm. Four 40-m transects, 2 in each of 2 perpendicular directions, span each 40x40 m subplot. For fallen deadwood pieces the diameter is measured at the point where the piece crosses the transect.In addition, each piece is marked to allow it to be tracked over time and distinguished from newly fallen debris in the next census. We also record the tag number of the tree from which the piece came, if discernible. We also categorize into branch or turnk.
+We inventory standing dead trees within the 40x40 sub-plots.For each standing dead tree greater than 200 mm in diameter, we measure
+dbh and height. In addition, we categorize the abundance of branches
+remaining (<10 %, 10 – 90 % or > 90 %). In the case of stumps, we measure diameter at half way between the top and ground. We try to record the tag.
+
+Fine Woody Debris (FWD) dynamics:
+ FWD is deadwood with a diameter from 20-199mm.FWD is only censused within the central area of the subplot with a radius of 5m. Diameter and height are measured on every piece encountered. We try to record the tag.
+ Plots are inventoried repeatedly every 12 months, to provide data on input and output as well as on stocks and temporal variation
+ Further details of sampling design and protocols can be found here:
+ 
+#https://forestgeo.si.edu/protocols/woody-debris
+
+
+
+```{r, include=FALSE}
+#load in subplot coordinates and habitat classes to plot the 50ha
+habitat<-"Data0_Raw/bci_q20habitat_classes"
+subplot<-"Data0_Raw/subplot_codes.txt"
+subplot<-read.table(subplot, header=TRUE, sep="\t")
+habitat<-read.table(habitat,header=TRUE, sep="\t")
+subplot_sep<-separate(subplot, col = subplot_code, into = c("x", "y"), sep = ",")
+subplot_sep$x<-as.numeric(subplot_sep$x)
+subplot_sep$y<-as.numeric(subplot_sep$y)
+habitat$x<-habitat$x/20
+habitat$y<-habitat$y/20
+```
+
+```{r, echo=FALSE, warning=FALSE, fig.width=9.5}
+#plotting the 100 subplots across the 50ha plot
+colours<-c("#228B22", "#D2B48C","#66CDAA","#2E8B57", "#64A8D1", "#556B2F", "#ADFF2F")
+ggplot() +
+    geom_tile(data = habitat,aes(x=x, y=y, fill=habitat, group=habitat)) +
+  geom_tile(data=subplot_sep, aes(x=x, y=y), colour = "red", fill=NA, size=0.5)+
+  scale_fill_manual(
+    values = colours) +
+  labs(title="Map of dynamic subplot locations across the 50ha plot")+
+  theme_bw() +
+  theme(
+    legend.title = element_text(size = 7),
+    legend.key.size = unit(1, 'cm'),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),# Remove x-axis labels
+    axis.ticks.x = element_blank(), # Remove x-axis ticks
+    axis.text.y = element_blank(),  # Remove y-axis labels
+    axis.ticks.y = element_blank(),
+    axis.title.y = element_blank(),
+    strip.text = element_text(size = 10) # Adjust facet label size if needed
+  )
+rm(subplot_sep)
+```
+Map showing the dynamic subplots across the 50ha plot
+
+
+ 
+```{r, include = FALSE}
+#load in the relevant data, can either be the gapfilled or the nongapfilled versions
+Fallen_DATA <-"Data3_Processed/processed_CWD40_fallen_17to24.csv"
+Standing_DATA <-"Data3_Processed/processed_CWD40_standing_17to24.csv"
+
+
+```
+
+```{r, include = FALSE}
+fallen_data<-read.csv(Fallen_DATA,header=TRUE,)
+standing_data<-read.csv(Standing_DATA,header=TRUE)
+
+```
+
+
+#Fallen
+
+```{r, include=FALSE}
+#DOWNED CWD CALCULATIONS
+#aggregate crossmass for every transect section in every subplot for every year
+#this calcualtes the total mass in kgm2 for each transect, 
+TRANSECTCALCULATIONS<-function(indata){
+indata<-indata %>%
+  dplyr::group_by(year, subplot_code, transect_section_letter) %>%
+  dplyr::summarise(mass.kg.m2=((pi/(2*10))*sum(pen_crossmass.kgm)), vol.m3.m2=((pi^2/(10*8))*sum(diam_sqr_m)))
+return(indata)
+}
+transect_fallen<-TRANSECTCALCULATIONS(fallen_data)
+
+
+#now add enough 0 values to the summed density data to equal total transect sections
+#for 10m transects in CWD dynamics plots, need 1600 rows in total for a year, there are 8 years so 12,800 total
+#Added zeros to make up all the transect sections in the data- 256,000 total 
+add_zeros<- function(indata, subplot, outdata) {
+all_subplots<- unique(subplot$subplot_code)
+all_transects<-LETTERS[1:16]
+all_years<-unique(indata$year)
+all_combinations<- expand.grid(subplot_code = all_subplots, transect_section_letter = all_transects,year = all_years
+)
+    #b.merge
+outdata <- merge(all_combinations, outdata, by = c("subplot_code", "transect_section_letter", "year"), all.x = TRUE)
+outdata<- outdata %>%
+    dplyr::mutate(across(where(is.numeric), ~replace(., is.na(.), 0)))
+return(outdata)}
+transect_fallen<-add_zeros(transect_fallen, subplot,transect_fallen)
+
+
+#subplot level estimates: find the mean of each subplot from the transect level measurements, convert them to ha 
+SUBPLOTCALCULATIONS<-function(indata){
+indata<-indata %>%
+  dplyr::group_by(subplot_code, year) %>%
+  dplyr::summarise(mass.mg.ha=mean(mass.kg.m2*10), vol.m3.ha=mean(vol.m3.m2*10000))
+return(indata)}
+subplot_fallen<-SUBPLOTCALCULATIONS(transect_fallen)
+
+year_fallen<-subplot_fallen %>%
+dplyr::group_by(year) %>%
+dplyr::summarise(mean_mass.mg.ha=mean(mass.mg.ha),sd_mass.mg.ha=sd(mass.mg.ha), mean_vol.m3.ha = mean(vol.m3.ha), sd_vol.m3.ha= sd(vol.m3.ha) )
+```
+
+
+```{r, include=FALSE}
+#CALCULATING INPUTS BASED ON YEAR OF FIRST APPEARANCE
+flux_calculation<-function(indata){
+  yearly_count <-indata %>%
+dplyr::group_by(year) %>%
+    #calculate number of measurements a year
+dplyr::summarise(count_per_year = n())
+  # Create a new dataframe that counts the number of new codes for each year
+new_codes_by_year <- indata %>%
+  arrange(year) %>%
+dplyr::group_by(code_of_piece) %>%
+dplyr::mutate(first_appearance = min(year)) %>%  
+  ungroup() 
+#summarize new codes by year
+summary_new_codes<-new_codes_by_year%>%
+ dplyr::group_by(year)%>%
+ dplyr::summarise(new_codes = sum(first_appearance == year))
+
+# Merge the two summaries together into a new dataframe
+stem_count <- yearly_count %>%
+  left_join(summary_new_codes, by = "year")
+#split the dataframes
+old_data<- new_codes_by_year %>%
+  filter(first_appearance < year)
+new_data<- new_codes_by_year %>%
+  filter(first_appearance == year)
+return(list(stem_count=stem_count, old_data=old_data, new_data=new_data))
+}
+
+```
+
+```{r, include=FALSE}
+#applying functions
+combined_fallen<-flux_calculation(fallen_data)
+old_raw_fallen<-combined_fallen$old_data
+new_raw_fallen<-combined_fallen$new_data
+stem_count_fallen<-combined_fallen$stem_count
+
+#1.Calculate transect volume
+transect_fallen_old<-TRANSECTCALCULATIONS(old_raw_fallen) 
+transect_fallen_new<-TRANSECTCALCULATIONS(new_raw_fallen)
+transect_fallen_old<-add_zeros(transect_fallen, subplot,transect_fallen_old)
+subplot_fallen_old<-SUBPLOTCALCULATIONS(transect_fallen_old)
+transect_fallen_new<-add_zeros(transect_fallen, subplot,transect_fallen_new)
+subplot_fallen_new<-SUBPLOTCALCULATIONS(transect_fallen_new)
+
+#CALCULATING ANNUAL MEANS FROM SUBPLOT LEVEL ESTIMATES FOR INPUTS etc.
+year_fallen_old<-subplot_fallen_old %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarise(remaining_mean_mass.mg.ha=mean(mass.mg.ha),remaining_sd_mass.mg.ha=sd(mass.mg.ha), remaining_mean_vol.m3.ha = mean(vol.m3.ha), remaining_sd_vol.m3.ha= sd(vol.m3.ha))
+
+year_fallen_new<-subplot_fallen_new %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarise(input_mean_mass.mg.ha=mean(mass.mg.ha),input_sd_mass.mg.ha=sd(mass.mg.ha), input_mean_vol.m3.ha = mean(vol.m3.ha), input_sd_vol.m3.ha= sd(vol.m3.ha) )
+
+rm(old_raw_fallen,new_raw_fallen, transect_fallen_old,transect_fallen_new, subplot_fallen_old )
+```
+
+
+
+#standing
+
+```{r, include=FALSE}
+  #STANDING
+#for transect level average of standing volume and mass sum the piece level mass and volume for each transect and divide by transect area (100m2)
+TRANSECTSUM<-function(indata) {
+indata<-indata %>%
+  dplyr::group_by(year, subplot_code, transect_section_letter) %>%
+  dplyr::summarise(mass.kg.m2=sum(AGB.kg.dry.mass)/100, vol.m3.m2=sum(volume_m3)/100)
+return(indata)}
+#applying functions
+transect_standing<-TRANSECTSUM(standing_data)
+transect_standing<-add_zeros(transect_standing, subplot,transect_standing)
+subplot_standing<-SUBPLOTCALCULATIONS(transect_standing)
+
+  #calculating annual average
+year_standing<-subplot_standing %>%
+  dplyr::group_by(year) %>%
+dplyr::summarise(mean_mass.mg.ha=mean(mass.mg.ha),sd_mass.mg.ha=sd(mass.mg.ha), mean_vol.m3.ha = mean(vol.m3.ha), sd_vol.m3.ha= sd(vol.m3.ha) )
+
+  #applying functions to calculate inputs and outputs
+combined_standing<-flux_calculation(standing_data)
+old_raw_standing<-combined_standing$old_data
+new_raw_standing<-combined_standing$new_data
+stem_count_standing<-combined_standing$stem_count
+
+transect_standing_old<-TRANSECTSUM(old_raw_standing)
+transect_standing_new<-TRANSECTSUM(new_raw_standing)
+transect_standing_old<-add_zeros(transect_standing, subplot,transect_standing_old)
+transect_standing_new<-add_zeros(transect_standing, subplot,transect_standing_new)
+subplot_standing_old<-SUBPLOTCALCULATIONS(transect_standing_old)
+subplot_standing_new<-SUBPLOTCALCULATIONS(transect_standing_new)
+
+#CALCULATING ANNUAL MEANS FROM SUBPLOT LEVEL ESTIMATES FOR INPUTS etc.
+year_standing_old<-subplot_standing_old %>%
+ dplyr::group_by(year) %>%
+dplyr::summarise(remaining_mean_mass.mg.ha=mean(mass.mg.ha),remaining_sd_mass.mg.ha=sd(mass.mg.ha), remaining_mean_vol.m3.ha = mean(vol.m3.ha), remaining_sd_vol.m3.ha= sd(vol.m3.ha) )
+year_standing_new<-subplot_standing_new %>%
+ dplyr::group_by(year) %>%
+dplyr::summarise(input_mean_mass.mg.ha=mean(mass.mg.ha),input_sd_mass.mg.ha=sd(mass.mg.ha), input_mean_vol.m3.ha = mean(vol.m3.ha), input_sd_vol.m3.ha= sd(vol.m3.ha) )
+
+rm(old_raw_standing,new_raw_standing, transect_standing_old,transect_standing_new, subplot_standing_old )
+```
+	
+
+
+
+
+```{r, include=FALSE}
+#code to extract data about sampling dates and people involved
+#1. Extracting start and end dates
+date_extraction<-function(indata){
+  
+indata<-indata %>%
+select(month, day, year)
+indata$date<-paste(indata$day,"_",indata$month,"_",indata$year)
+indata$date<-dmy(indata$date)
+return(indata) }
+#extract dates from the data
+collection_summary_fallen<-date_extraction(fallen_data)
+collection_summary_fallen$census<-paste("fallen")
+collection_summary_standing<-date_extraction(standing_data)
+collection_summary_standing$census<-paste("standing")
+date_summary<-merge(collection_summary_fallen, collection_summary_standing, by=c("month", "day", "year", "date", "census"), all = TRUE)
+
+#2.finding sample dates- convert to new date format
+sample_date<-function(indata){
+indata<-indata %>%
+  dplyr::group_by(year)%>%
+  dplyr::summarise(start_date=min(date, na.rm=TRUE), end_date=max(date, na.rm=TRUE), .groups="drop")
+indata$start_date<-  format(ymd(indata$start_date), "%d %B")
+indata$end_date<-  format(ymd(indata$end_date), "%d %B")
+return(indata)}
+date_summary<-sample_date(date_summary)
+
+
+#2. Extracting details of people involved in sample collections
+observer_filter<-function(indata){
+  indata<-indata %>%
+dplyr::select(year, observer)
+return(indata)
+}
+
+observer_fallen<-observer_filter(fallen_data)
+observer_standing<-observer_filter(standing_data)
+observer_data<-merge(observer_fallen, observer_standing, by=c("year", "observer"),all=TRUE)
+
+observer_extraction<-function(indata){
+   indata<-indata %>%
+dplyr::group_by(year) %>%
+dplyr::summarise(observer = if_else(
+      all(is.na(observer)),  "not recorded",
+      paste(unique(na.omit(observer)), collapse = ", ")),
+      .groups="keep")
+return(indata)}
+observer_summary<-observer_extraction(observer_data)
+#merge data
+collection_summary<-merge(date_summary, stem_count_fallen, by="year")
+collection_summary<-merge(collection_summary, stem_count_standing, by="year")
+collection_summary<-merge(collection_summary, observer_summary, by="year")
+
+rm(collection_summary_fallen, collection_summary_standing, date_summary, stem_count_fallen, stem_count_standing, observer_data, observer_summary, observer_fallen, observer_standing)
+
+```
+
+
+
+```{r, echo=FALSE}
+#create table that summarizes the field sampling for that year
+kable(collection_summary, format = "html", row.names = FALSE,
+      col.names = c("Year",
+                    "Start Date",
+                    "End Date",
+                    "Downed Total pieces",
+                    "Downed New pieces",
+                    "Standing Total pieces",
+                    "Standing New pieces",
+                    "People involved"),
+  escape = FALSE) %>%  
+kable_styling(bootstrap_options = c("striped", "hover", "bordered"),
+                full_width = F,
+                font_size = 15)%>%
+                add_header_above(c("Summary of Annual CWD census" = 8))
+rm(collection_summary)
+```
+
+
+**Table1**
+
+
+Summary of census effort for each year including census period (start and end date), total number of pieces of wood measured each year for Downed and Standing (Total Pieces) and the number of new pieces of dead wood (New pieces). Initials represent the following people involved in the sample collection: R:Pablo Ramos, V:Paulino Villarreal and E is both working as a team.
+
+### Calculations of CWD stores and fluxes
+
+This report calculates yearly stores and fluxes of standing and downed Coarse woody debris. The data has been formatted, cleaned and processed prior to loading loading into this report. Pre calculations have been made on individual sample pieces, code can be found in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** and explanations of all calculations done in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** as well as this report can be found in **calcexplanation_bci50deadwood_stocks&fluxes.Rmd**.
+
+
+```{r, include=FALSE}
+#merging data for fallen
+year_fallen<-merge(year_fallen, year_fallen_old, by="year")
+year_fallen<-merge(year_fallen, year_fallen_new, by="year")
+#merging data for standing
+year_standing<-merge(year_standing, year_standing_old, by="year")
+year_standing<-merge(year_standing, year_standing_new, by="year")
+
+#swapping values for 2009 as input data not really input but remaining
+swap_values<-function(indata) {
+  row_to_swap<-indata$year==2017
+  
+temp <- indata$input_mean_vol.m3.ha[row_to_swap]
+indata$input_mean_vol.m3.ha[row_to_swap] <- indata$remaining_mean_vol.m3.ha[row_to_swap]
+indata$remaining_mean_vol.m3.ha[row_to_swap] <- temp
+
+temp <- indata$input_sd_vol.m3.ha[row_to_swap]
+indata$input_sd_vol.m3.ha[row_to_swap] <- indata$remaining_sd_vol.m3.ha[row_to_swap]
+indata$remaining_sd_vol.m3.ha[row_to_swap] <- temp
+
+temp <- indata$input_mean_mass.mg.ha[row_to_swap]
+indata$input_mean_mass.mg.ha[row_to_swap] <- indata$remaining_mean_mass.mg.ha[row_to_swap]
+indata$remaining_mean_mass.mg.ha[row_to_swap] <- temp
+
+temp <- indata$input_sd_mass.mg.ha[row_to_swap]
+indata$input_sd_mass.mg.ha[row_to_swap] <- indata$remaining_sd_mass.mg.ha[row_to_swap]
+indata$remaining_sd_mass.mg.ha[row_to_swap] <- temp
+
+outdata<-indata
+return(outdata)
+}
+
+
+```
+
+```{r, include=FALSE}
+#Creating summary txt file output which summarizes woody carbon stocks and fluxes in volume and mass
+
+#subplot level estimates
+RENAME<-function(indata){
+indata<-indata %>%
+  dplyr::rename(input.mass.mgha=mass.mg.ha,
+                input.vol.m3ha=vol.m3.ha)
+return(indata)}
+
+subplot_fallen_new<-RENAME(subplot_fallen_new)
+subplot_standing_new<-RENAME(subplot_standing_new)
+subplot_fallen <-left_join(subplot_fallen, subplot_fallen_new, by = c("subplot_code", "year"))
+subplot_standing <-left_join(subplot_standing, subplot_standing_new, by = c("subplot_code", "year"))
+
+subplot_fallen<-subplot_fallen %>%
+  dplyr::mutate(type="downed")
+subplot_standing<-subplot_standing %>%
+  dplyr::mutate(type="standing")
+subplot_all<-rbind(subplot_fallen,subplot_standing)
+#output as .txt in output file
+write.table(subplot_all, file = "Output/bci_CWD40_subplot_estimation_17to24.txt", sep = "\t",  col.names = TRUE, row.names = FALSE)
+
+#year level estimates
+year_fallen<-swap_values(year_fallen)
+year_standing<-swap_values(year_standing)
+
+#create new column that distinguishes fallen from standing woody debris
+year_fallen2<-year_fallen %>%
+  dplyr::mutate(type="downed") %>%
+  dplyr::select(year,type, mean_mass.mg.ha,sd_mass.mg.ha,mean_vol.m3.ha,sd_vol.m3.ha,input_mean_mass.mg.ha,input_sd_mass.mg.ha,input_mean_vol.m3.ha,input_sd_vol.m3.ha)
+
+year_standing2<-year_standing %>%
+  dplyr::mutate(type="standing") %>%
+  dplyr::select(year,type, mean_mass.mg.ha,sd_mass.mg.ha,mean_vol.m3.ha,sd_vol.m3.ha,input_mean_mass.mg.ha,input_sd_mass.mg.ha,input_mean_vol.m3.ha,input_sd_vol.m3.ha)
+
+year_all<-rbind(year_fallen2,year_standing2 )
+year_all<-year_all %>%
+  arrange(year)
+#output as .txt in output file
+write.table(year_all, file = "Output/bci_CWD40_annual_estimation_17to24.txt", sep = "\t",  col.names = TRUE, row.names = FALSE)
+
+rm(year_fallen2, year_standing2, subplot_all, year_all)
+```
+
+
+### Total estimates for CWD stocks, fluxes and residence time for BCI 50ha plots
+
+```{r, include=FALSE}
+#calculate total stocks across all years
+ALL_SUMMARY<-function(indata){
+indata<-indata %>%
+dplyr::select(mean_mass.mg.ha, input_mean_mass.mg.ha, mean_vol.m3.ha, input_mean_vol.m3.ha )%>%
+dplyr::summarise(mean_mass = mean(mean_mass.mg.ha), mass_input = mean(input_mean_mass.mg.ha, na.rm=TRUE), mean_vol = mean(mean_vol.m3.ha), vol_input = mean(input_mean_vol.m3.ha, na.rm=TRUE)) %>%
+dplyr::mutate(mean_residence_time= mean_mass/mass_input)
+return(indata)
+}
+
+year_fallen_all<-ALL_SUMMARY(year_fallen)
+year_standing_all<-ALL_SUMMARY(year_standing)
+total_means<-rbind(year_fallen_all, year_standing_all)
+
+rm(year_vol_fallen, year_mass_fallen, year_vol_standing, year_mass_standing,year_fallen_old, year_standing_old, year_fallen_new, year_fallen_old, total_means_fallen, total_means_standing)
+```
+
+
+
+
+
+
+
+```{r, echo=FALSE}
+#table showing total stocks across all years
+kable(total_means, format = "html", row.names=FALSE, digits=2,
+      col.names = c("Mean Total Mass (Mgha<sup>-1</sup>) ",
+                    "Mean Input Mass (Mgha<sup>-1</sup>y<sup>-1</sup>)",
+                    "Mean Total Volume (m<sup>3</sup>ha<sup>-1</sup>)" ,
+                    "Mean Input Volume (m<sup>3</sup>ha<sup>-1</sup>y<sup>-1</sup>)",
+                    "Residence time 
+                    (y<sup>-1</sup>)"),
+  escape = FALSE) %>%  
+  kable_styling(bootstrap_options = c("striped", "hover", "bordered"),
+                full_width = F,
+                font_size = 15)%>%
+                pack_rows("Downed", 1, 1) %>%  # Group rows 1-8 as 'Downed'
+                pack_rows("Standing", 2, 2) %>%
+                add_header_above(c("Summary of Mean Volume of Coarse Woody Debris" = 5))
+```
+
+**Table 2**
+
+Estimated mean stocks and fluxes of downed and standing CWD averaged across the 40x40 dynamics plots then averaged across years (2009-2024). Estimated total stocks of deadwood (Mean total), estimated annual deadwood gain (input) for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated from mean stocks divided by the mean inputs.
+
+
+### Annual variation in woody debris stocks and fluxes
+
+```{r, include=FALSE}
+#combine standing and fallen
+subplot_fallen<-subplot_fallen %>%
+  mutate(Type=paste("Downed"))
+subplot_standing<-subplot_standing %>%
+  mutate(Type=paste("Standing"))
+
+combined_total_data<-rbind(subplot_fallen, subplot_standing)
+```
+
+
+
+```{r, echo=FALSE, results='hide', message=FALSE}
+library(Rmisc)
+#calculate the standard error
+summary_mean_sublot_mass<-summarySE(combined_total_data, measurevar = "mass.mg.ha", groupvars = c("year","Type"))
+#plot meaan and confidence intervals for each year
+ggplot(summary_mean_sublot_mass, aes (x=factor(year), y=mass.mg.ha, fill=Type, colour = Type))+
+geom_errorbar(aes(ymin=mass.mg.ha-1.96*se, ymax=mass.mg.ha+1.96*se), width=.1, position = position_dodge(width = 0.6))+
+geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0.6))+
+  labs(title = "Mean (with 95% CI) Total Mass of Coarse Woody Debris by Year", 
+       x = "Year", 
+       y = expression(paste("Mean Mass (Mgha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_fill_manual(values=c("#009E73", "#882255"))+
+scale_colour_manual(values=c("#009E73", "#882255"))+
+  scale_y_continuous(breaks = seq(0, 20, by = 2))+
+  theme(
+    axis.text.x = element_text()  
+  )
+```
+
+**Figure 1** 
+
+
+Annual variability in estimated downed and standing CWD stocks as Mass with 95% confidence intervals. Colored points represent the mean(CI95%) total Mass of CWD for each year.
+
+
+
+
+
+```{r, echo=FALSE, results='hide', message=FALSE}
+library(Rmisc)
+#calculate standard error for volume
+summary_mean_sublot_vol<-summarySE(combined_total_data, measurevar = "vol.m3.ha", groupvars = c("year","Type"))
+
+ggplot(summary_mean_sublot_vol, aes (x=factor(year), y=vol.m3.ha, fill=Type, colour = Type))+
+geom_errorbar(aes(ymin=vol.m3.ha-1.96*se, ymax=vol.m3.ha+1.96*se), width=.1, position = position_dodge(width = 0.6))+
+geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0.6))+
+  labs(title = "Mean (with 95% CI) Total Volume of Coarse Woody Debris by Year", 
+       x = "Year", 
+       y = expression(paste("Mean Volume (m"^{3},"ha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_fill_manual(values=c("#009E73", "#882255"))+
+scale_colour_manual(values=c("#009E73", "#882255"))+
+  scale_y_continuous(breaks = seq(0, 80, by = 5))+
+  theme(
+    axis.text.x = element_text()  
+  )
+```
+
+**Figure 2** 
+
+
+Annual variability in estimated downed and standing CWD stocks as Volume with 95% confidence intervals. Colored points represent the mean(CI95%) total volume of CWD for each year.
+
+### Distribution of CWD stocks and fluxes across the dynamic subplots
+```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
+ggplot(subplot_fallen, aes(x = log(mass.mg.ha , base = 2), group=year, fill = as.factor(year)))+
+  geom_histogram(colour = "black", 
+                 bins = 40, position="stack")+
+ # facet_wrap("year")+
+  labs(title = "Distribution of estimated Downed CWD", 
+       fill="year",
+       y = "Count", 
+       x = expression(paste("Log2 Mass (Mgha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_y_continuous(breaks = seq(0, 50, by = 5))+
+  scale_x_continuous(breaks = seq(-3, 10, by = 1))
+  
+  
+```
+
+
+**Figure 3**
+
+
+Distribution of log base 2 estimated total downed CWD Mass for each subplot, coloured by year. Count represents the number of subplots which have an estimated Mass of downed CWD within that range of the x-axis.
+
+```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
+ggplot(subplot_fallen_new %>% filter(!year=="2009"),aes(x = log(input.mass.mgha , base = 2), group=year, fill = as.factor(year)))+
+  geom_histogram(colour = "black", 
+                 bins = 40, position="stack")+
+ # facet_wrap("year")+
+  labs(title = "Distribution of estimated Input Mass of Downed CWD", 
+       fill="year",
+       y = "Count", 
+       x = expression(paste("Log2 Mass (Mgha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_y_continuous(breaks = seq(0, 20, by = 2))+
+  scale_x_continuous(breaks = seq(-3, 10, by = 1))
+  
+  
+```
+
+
+
+**Figure 4**
+
+
+Distribution of log base 2 estimated inputs of downed CWD Mass for each subplot, coloured by year. Count represents the number of subplots which have an estimated Mass of downed CWD within that range of the x-axis.
+
+```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
+ggplot(subplot_standing, aes(x = log(mass.mg.ha , base = 2), group=year, fill = as.factor(year)))+
+  geom_histogram(colour = "black", 
+                 bins = 40, position="stack")+
+ # facet_wrap("year")+
+  labs(title = "Distribution of estimated Standing CWD", 
+       fill="year",
+       y = "Count", 
+       x = expression(paste("Log2 Mass (Mgha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_y_continuous(breaks = seq(0, 50, by = 5))+
+  scale_x_continuous(breaks = seq(-6, 10, by = 1))
+  
+  
+```
+
+
+
+**Figure 5**
+
+
+Distribution of log base 2 estimated total standing CWD Mass for each subplot, coloured by year. Count represents the number of subplots which have an estimated Mass of standing CWD within that range of the x-axis.
+
+
+
+
+```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
+ggplot(subplot_standing_new %>% filter(!year=="2009"), aes(x = log(input.mass.mgha , base = 2), group=year, fill = as.factor(year)))+
+  geom_histogram(colour = "black", 
+                 bins = 40, position="stack")+
+ # facet_wrap("year")+
+  labs(title = "Distribution of estimated Input of Standing CWD", 
+       fill="year",
+       y = "Count", 
+       x = expression(paste("Log2 Mass (Mgha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_y_continuous(breaks = seq(0, 20, by = 2))+
+  scale_x_continuous(breaks = seq(-6, 10, by = 1))
+  
+  
+  
+```
+
+
+
+
+**Figure 6**
+
+
+Distribution of log base 2 estimated inputs of standing CWD Mass for each subplot, coloured by year. Count represents the number of subplots which have an estimated Mass of downed CWD within that range of the x-axis.
+
+
+
+
+
+
+
+### Variation in CWD stocks and fluxes over time within subplots
+```{r, include=FALSE}
+#assign quantile values (split into 10 groups) for plotting purposes
+QUANTILE<-function(indata) {
+indata <- indata %>%
+  dplyr::group_by(subplot_code) %>%
+  dplyr::mutate(max_mass = max(mass.mg.ha, na.rm = TRUE)) %>%
+  ungroup()
+indata <- indata %>%
+  dplyr::mutate(mass_group = ntile(max_mass, 10)) %>%
+  ungroup()
+return(indata)
+}
+subplot_fallen<-QUANTILE(subplot_fallen)
+subplot_standing<-QUANTILE(subplot_standing)
+
+
+
+```
+
+
+
+
+```{r, echo=FALSE, fig.width=10, fig.height=8}
+#plotting the trends in downed cwd for each subplot through time, split by total max quantile
+
+color <- grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
+sampled_colors <- sample(color,100)
+
+unique_subplots<-subplot_fallen$subplot_code
+ggplot(subplot_fallen, aes (x=year, y=mass.mg.ha, colour = subplot_code))+
+geom_point()+
+geom_line()+
+facet_wrap("mass_group",scales = "free", ncol=3)+
+labs(title = "Mean Mass of Downed CWD per Subplot Grouped by Maximum Total Mass Quantile", 
+      x = "Year", 
+      y = expression(paste("Mass (Mgha"^{-1},")"))) +  
+theme_bw() +
+scale_x_continuous(breaks = seq(2017, 2024, by = 1))+
+ # scale_y_continuous(breaks = seq( by = 2))+
+theme(axis.text.x = element_text(),
+      legend.position = "none",)+
+scale_colour_manual(values = sampled_colors)
+
+```
+
+
+
+**Figure 7**
+
+Annual variation in estimated downed coarse woody debris (CWD) mass for each 40×40 m dynamic subplot, grouped by total mass quantile
+
+
+
+
+
+
+```{r, echo=FALSE, fig.width=10, fig.height=8 }
+#plotting the trends in standing cwd for each subplot through time, split by total max quantile
+
+color <- grDevices::colors()[grep('gr(a|e)y', grDevices::colors(), invert = T)]
+sampled_colors <- sample(color,100)
+
+unique_subplots<-subplot_standing$subplot_code
+ggplot(subplot_standing, aes (x=year, y=mass.mg.ha, colour = subplot_code))+
+geom_point()+
+geom_line()+
+facet_wrap("mass_group",scales = "free", ncol=3)+
+labs(title = "Mean Mass of Standing CWD per Subplot Grouped by Maximum Total Mass Quantile", 
+      x = "Year", 
+      y = expression(paste("Mass (Mgha"^{-1},")"))) +  
+theme_bw() +
+scale_x_continuous(breaks = seq(2017, 2024, by = 1))+
+ # scale_y_continuous(breaks = seq( by = 2))+
+theme(axis.text.x = element_text(),
+      legend.position = "none")+
+scale_colour_manual(values = sampled_colors)
+```
+
+
+
+
+**Figure 8**
+
+
+Annual variation in estimated downed coarse woody debris (CWD) mass for each 40×40 m dynamic subplot, grouped by total mass quantile
+
+
+
+
+
+
+```{r, include = FALSE}
+#Calculating the stocks and fluxes grouped by sample type, branch, trunk etc.
+# Step 1: Count the number of entries for each year
+branch_data<- fallen_data %>%
+  filter(branchfall==0)
+trunk_data<- fallen_data %>%
+  filter(branchfall == 1)
+unknown_data<- fallen_data %>%
+  filter(branchfall == 2)
+
+branch_data<-TRANSECTCALCULATIONS(branch_data) 
+trunk_data<-TRANSECTCALCULATIONS(trunk_data)
+unknown_data<-TRANSECTCALCULATIONS(unknown_data)
+branch_data<-add_zeros(transect_fallen, subplot, branch_data)
+branch_data<-SUBPLOTCALCULATIONS(branch_data)
+trunk_data<-add_zeros(transect_fallen, subplot,trunk_data)
+trunk_data<-SUBPLOTCALCULATIONS(trunk_data)
+unknown_data<-add_zeros(transect_fallen, subplot,unknown_data)
+unknown_data<-SUBPLOTCALCULATIONS(unknown_data)
+
+
+```
+
+```{r, include = FALSE}
+
+mean_year_branch<-branch_data %>%
+dplyr::group_by(year) %>%
+dplyr::summarise(Branch = mean(mass.mg.ha))
+
+mean_year_trunk<-trunk_data %>%
+dplyr::group_by(year) %>%
+dplyr::summarise(Trunk = mean(mass.mg.ha))
+
+mean_year_unknown<-unknown_data %>%
+dplyr::group_by(year) %>%
+dplyr::summarise(Unknown = mean(mass.mg.ha))
+
+summary_type<-merge(mean_year_branch, mean_year_trunk, by="year")
+summary_type<-merge(summary_type, mean_year_unknown, by ="year")
+
+summary_type<-summary_type %>%
+  pivot_longer(cols=!year, names_to = "type",values_to = "total_mean_mass_mg3ha")
+
+rm(fallen_data, standing_data, branch_data, trunk_data, unknown_data, mean_year_branch, mean_year_trunk, mean_year_unknown, transect_fallen, transect_standing)
+```
+
+
+
+
+```{r, echo=FALSE}
+ggplot(summary_type, aes(fill=type, y=total_mean_mass_mg3ha, x=year))+
+geom_bar(position = "stack", stat = "identity", colour="black")+
+labs(title = "Mean Total Mass of Coarse Woody Debris", 
+      x = "Year", 
+      y = expression(paste("Mass (Mgha"^{-1},")"))) +
+scale_fill_manual(values=c("#882255", "skyblue", "#009E73" ))+
+scale_x_continuous(breaks = unique(summary_type$year))+# Add titles  
+theme_bw()+
+scale_y_continuous(limits=c(0,14), breaks = seq(0, 50, by = 1))
+
+#rm(summary_type)
+```
+
+
+
+**Figure 9**
+
+
+Proportion of downed woody debris from trunk fall vs branch fall. Calculated as the proportion of total mass that is made up of the different sample types.
+
+rmarkdown::render(".../report_bci50CWD_2009-24.Rmd",
+output_file = ".../Output/report_bci50CWD_2017-24.html")
