@@ -1,0 +1,568 @@
+﻿file,year,uniqid,Field,OldValue,NewValue,Blank,Observer,Comment
+CWD40_2017_fallen.txt,2017,fallen020,subplot_code,323,"03,23",,LP,"misstype, incorrect/missing character"
+CWD40_2017_fallen.txt,2017,fallen077,subplot_code,9.12,"09,12",,LP,"misstype, incorrect/missing character"
+CWD40_2017_fallen.txt,2017,fallen122,subplot_code,17.1,"17,01",,LP,"misstype, incorrect/missing character"
+CWD40_2017_fallen.txt,2017,fallen006,code_of_piece,7.1,7.1,,LP,"misstype, incorrect/missing character"
+CWD40_2017_standing.txt,2017,standing056,subplot_code,12.23,"12,23",,LP,"misstype, incorrect/missing character"
+CWD40_2017_standing.txt,2017,standing162,subplot_code,39.07,"39,07",,LP,"misstype, incorrect/missing character"
+CWD40_2017_standing.txt,2017,standing036,subplot_code,7.1,"07,01",,LP,"misstype, incorrect/missing character"
+CWD40_2017_standing.txt,2017,standing099,code_of_piece,,7.1,,LP,"misstype, incorrect/missing character"
+CWD40_2017_standing.txt,2017,standing096,diameter_height.mm,7/06/2017p,,,LP,misstype
+CWD40_2017_standing.txt,2017,standing095,tag,caido,,,LP,incorrect column
+CWD40_2018_fallen.txt,2018,fallen075,subplot_code,9.12,"09,12",,LP,"misstype, incorrect/missing character"
+CWD40_2018_fallen.txt,2018,fallen119,subplot_code,17.1,"17,01",,LP,"misstype, incorrect/missing character"
+CWD40_2018_fallen.txt,2018,fallen192,code_of_piece,"9,1",9.1,,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing002,subplot_code,121,"01,21",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing003,subplot_code,121,"01,21",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing004,subplot_code,124,"01,24",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing007,subplot_code,02.16,"02,16",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing009,subplot_code,216,"02,16",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing014,subplot_code,309,"03,09",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing041,subplot_code,7.1,"07,01",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing165,subplot_code,39.07,"39,07",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing041,POM,"1,3",1.3,,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing149,POM,"1,3",1.3,,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing093,POM,"0,55",0.55,,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing169,penetration=200mm,.,,,LP,misstype
+CWD40_2018_lessstanding.txt,2018,lessstanding079,diameter_height.mm,"2,72",2.72,,LP,"misstype, incorrect/missing character"
+CWD40_2018_lessstanding.txt,2018,lessstanding066,POM,"1,3",1.3,,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen066,subplot_code,9.12,"09,12",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen114,subplot_code,17.1,"17,01",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen163,subplot_code,2306,"23,06",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen194,subplot_code,2617,"26,17",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen218,subplot_code,2913,"29,13",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen225,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen227,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen228,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen229,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2019_fallen.txt,2019,fallen054,orientation_degrees,Solo clavo,,,LP,incorrect column
+CWD40_2019_fallen.txt,2019,fallen057,orientation_degrees,Hongos. Es TT y no RT.  140 grados,140,,LP,incorrect column
+CWD40_2019_fallen.txt,2019,fallen074,orientation_degrees,se esta descomponiendo,,,LP,incorrect column
+CWD40_2019_fallen.txt,2019,fallen252,RT,tronco tronco sin corteza,-,,LP,incorrect column
+CWD40_2019_standing.txt,2019,standing094,subplot_code,2117,"21,17",,LP,"misstype, incorrect/missing character"
+CWD40_2019_standing.txt,2019,standing179,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2019_standing.txt,2019,standing180,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2019_standing.txt,2019,standing018,tag,Vivo,,,LP,incorrect column
+CWD40_2019_standing.txt,2019,standing116,bark_present,Con corteza,*,,LP,Improve entry format consistancy
+CWD40_2020_fallen.txt,2020,fallen104,subplot_code,17.1,"17,01",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen216,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen218,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen219,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen220,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen156,subplot_code,2306,"23,06",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen126,subplot_code,2306,"23,06",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen196,subplot_code,2617,"26,17",,,
+CWD40_2020_fallen.txt,2020,fallen211,subplot_code,2913,"29,13",,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen330,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen331,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen332,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2020_fallen.txt,2020,fallen296,penetration=200mm,:,,,LP,misstype
+CWD40_2020_standing.txt,2020,standing185,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2020_standing.txt,2020,standing186,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2020_standing.txt,2020,standing006,diameter_two.mm,sin ramas,,,LP,incorrect column
+CWD40_2021_fallen.txt,2021,fallen114,subplot_code,17.1,"17,01",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen169,subplot_code,2306,"23,06",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen210,subplot_code,2617,"26,17",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen222,subplot_code,2913,"29,13",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen228,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen229,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen253,subplot_code,3415,"34,15",,,
+CWD40_2021_fallen.txt,2021,fallen230,subplot_code,31;16,"31,16",,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen003,code_of_piece,7.1,7-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen004,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen212,code_of_piece,"9,1",9-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen360,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen361,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen362,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen321,diameter_two.mm,44379,2.7,,LP,"misstype, incorrect/missing character"
+CWD40_2021_standing.txt,2021,standing197,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_standing.txt,2021,standing199,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_standing.txt,2021,standing198,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
+CWD40_2021_standing.txt,2021,standing123,tag,no tag. Sin corteza. Es el mismo que I6-1 fallen,,,LP,
+CWD40_2021_standing.txt,2021,standing006,irregular_diameter_prior,sin ramas,,,LP,incorrect column
+CWD40_2021_lessstanding.txt,2021,lessstanding030,POM,1..5,1.5,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen178,subplot_code,2306,"23,06",,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen227,subplot_code,2617,"26,17",,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen202,subplot_code,23;23,"23,23",,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen390,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen391,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen392,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen393,code_of_piece,22.1,22-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen394,code_of_piece,22.2,22-2,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen347,inclination_prior,44379,2.7,,LP,"misstype, incorrect/missing character"
+CWD40_2022_fallen.txt,2022,fallen361,MC,L?,,,LP,misstype
+CWD40_2022_fallen.txt,2022,fallen281,observer,"E, C","E,C",,LP,Improve entry format consistancy
+CWD40_2022_fallen.txt,2022,fallen282,observer,"E, C","E,C",,LP,Improve entry format consistancy
+CWD40_2022_fallen.txt,2022,fallen283,observer,"E, C","E,C",,LP,Improve entry format consistancy
+CWD40_2022_standing.txt,2022,standing144,subplot_code,23;23,"23,23",,LP,"misstype, incorrect/missing character"
+CWD40_2022_standing.txt,2022,standing224,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_standing.txt,2022,standing228,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_standing.txt,2022,standing225,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_standing.txt,2022,standing226,code_of_piece,22.1,22-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_standing.txt,2022,standing227,code_of_piece,22.1,22-1,,LP,"misstype, incorrect/missing character"
+CWD40_2022_standing.txt,2022,standing203,year,1388,2022,,LP,incorrect value
+CWD40_2022_lessstanding.txt,2024,lessstanding032,POM,1..5,1.5,,LP,"misstype, incorrect/missing character"
+CWD40_2023_fallen.txt,2024,fallen150,month,21,2,,LP,misstype
+CWD40_2023_fallen.txt,2024,fallen176,subplot_code,23;23,"23,23",,,
+CWD40_2023_fallen.txt,2024,fallen216,subplot_code,32.07,"32,07",,LP,"misstype, incorrect/missing character"
+CWD40_2023_fallen.txt,2024,fallen003,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_fallen.txt,2024,fallen343,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_fallen.txt,2024,fallen345,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_fallen.txt,2024,fallen346,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_fallen.txt,2024,fallen347,code_of_piece,22.2,22-2,,LP,"misstype, incorrect/missing character"
+CWD40_2023_standing.txt,2024,standing115,subplot_code,23;23,"23,23",,LP,"misstype, incorrect/missing character"
+CWD40_2023_standing.txt,2024,standing187,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_standing.txt,2024,standing190,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_standing.txt,2024,standing188,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_standing.txt,2024,standing189,code_of_piece,22.1,22-1,,LP,"misstype, incorrect/missing character"
+CWD40_2023_lessstanding.txt,2024,lessstanding035,POM,1..5,1.5,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen236,subplot_code,4021,"40,21",,,
+CWD40_2024_fallen.txt,2024,fallen152,subplot_code,23;23,"23,23",,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen209,subplot_code,34;04,"34,04",,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen301,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen302,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen303,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen170,code_of_piece,"9,1",9-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2023,fallen304,code_of_piece,22.1,22-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen305,code_of_piece,22.2,22-2,,LP,"misstype, incorrect/missing character"
+CWD40_2024_fallen.txt,2024,fallen270,year,2924,2024,,LP,incorrect value
+CWD40_2024_fallen.txt,2024,fallen298,year,2924,2024,,LP,incorrect value
+CWD40_2024_fallen.txt,2024,fallen302,year,2025,2024,,LP,incorrect value
+CWD40_2024_fallen.txt,2024,fallen264,year,(,2024,,LP,incorrect value
+CWD40_2024_fallen.txt,2024,fallen029,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen051,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen056,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen090,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen112,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen119,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen186,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen190,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen227,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen263,year,,2024,,LP,missing value
+CWD40_2024_fallen.txt,2024,fallen274,observer,"E-¡,",E,,LP,incorrect value
+CWD40_2024_fallen.txt,2024,fallen276,observer,E.ÑUJOKTH,E,,LP,incorrect value
+CWD40_2024_standing.txt,2024,standing022,code_of_piece,7.1,7-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing030,code_of_piece,24.1,24-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing045,code_of_piece,24.1,24-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing149,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing148,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing151,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing150,code_of_piece,22.1,22-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_standing.txt,2024,standing043,year,2924,2024,,LP,incorrect value
+CWD40_2024_standing.txt,2024,standing118,year,2924,2024,,LP,incorrect value
+CWD40_2024_standing.txt,2024,standing013,year,,2024,,LP,missing value
+CWD40_2024_standing.txt,2024,standing136,year,,2024,,LP,missing value
+CWD40_2024_standing.txt,2024,standing111,year,2025,2024,,LP,incorrect value
+CWD40_2024_lessstanding.txt,2024,lessstanding094,subplot_code,32;07,"32,07",,LP,"misstype, incorrect/missing character"
+CWD40_2024_lessstanding.txt,2024,lessstanding022,code_of_piece,24.1,24-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_lessstanding.txt,2024,lessstanding023,code_of_piece,24.1,24-1,,LP,"misstype, incorrect/missing character"
+CWD40_2024_lessstanding.txt,2024,lessstanding146,year,2025,2024,,LP,incorrect value
+CWD40_2024_lessstanding.txt,2024,lessstanding067,year,,2024,,LP,missing value
+CWD40_2024_lessstanding.txt,2024,lessstanding023,observer,v,V,,LP,capitalization
+CWD40_2018_fallen.txt,2018,fallen273,MS,*,-,,LP,from notes
+CWD40_2018_fallen.txt,2018,fallen273,MC,-,*,,LP,from notes
+CWD40_2018_standing.txt,2018,standing027,diameter_two.mm,,860,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing056,transect_section_letter,K,J,,LP,from notes
+CWD40_2018_standing.txt,2018,standing106,diameter_two.mm,,868,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing136,diameter_two.mm,,945,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing148,diameter_two.mm,,1015,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing166,diameter_two.mm,,783,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing177,diameter_two.mm,,648,,LP,missing from correct column 
+CWD40_2018_lessstanding.txt,2018,lessstanding074,transect_section_letter,K,N,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen057,inclination,Hongos. Es TT y no RT.  140 grados,140,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen279,transect_section_letter,O,N,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen107,inclination,17.7,16.2,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen107,orientation_degrees,185,174,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen265,transect_section_letter,N,O,,LP,from notes
+CWD40_2021_standing.txt,2021,standing086,transect_section_letter,K,J,,LP,from notes
+CWD40_2023_fallen.txt,2023,fallen126,diameter_width.mm,207,297,,LP,from notes
+CWD40_2023_fallen.txt,2023,fallen126,diameter_height.mm,297,207,,LP,from notes
+CWD40_2023_fallen.txt,2023,fallen146,transect_section_letter,B,A,,LP,from notes
+CWD40_2023_standing.txt,2023,standing112,tag,147585,147565,,LP,from notes
+CWD40_2023_lessstanding.txt,2023,lessstanding040,transect_section_letter,O,N,,LP,from notes
+CWD40_2024_fallen.txt,2024,fallen081,orientation_degrees,234,54,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen081,orientation_degrees_prior,234,54,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen173,orientation_degrees_prior,90,290,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen262,orientation_degrees,304,128,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen262,orientation_degrees_prior,304,128,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen263,orientation_degrees,300,124,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen287,orientation_degrees,,90,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen287,orientation_degrees_prior,280,90,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen288,orientation_degrees,280,80,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen288,orientation_degrees_prior,280,80,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen289,orientation_degrees,290,90,,LP,"from notes, opposite angle"
+CWD40_2024_fallen.txt,2024,fallen289,orientation_degrees_prior,290,90,,LP,"from notes, opposite angle"
+CWD40_2017_fallen.txt,2017,fallen034,,,,y,LP,duplicate
+CWD40_2017_lessstanding.txt,2017,lessstanding042,,,,y,LP,duplicate
+CWD40_2022_fallen.txt,2022,fallen371,,,,y,LP,duplicate
+CWD40_2022_fallen.txt,2022,fallen387,,,,y,LP,duplicate
+CWD40_2022_fallen.txt,2022,fallen388,,,,y,LP,duplicate
+CWD40_2022_lessstanding.txt,2022,lessstanding124,,,,y,LP,duplicate
+CWD40_2022_standing.txt,2022,standing227,,,,y,LP,duplicate
+CWD40_2023_fallen.txt,2023,fallen326,,,,y,LP,duplicate
+CWD40_2023_fallen.txt,2023,fallen341,,,,y,LP,duplicate
+CWD40_2023_fallen.txt,2023,fallen342,,,,y,LP,duplicate
+CWD40_2023_lessstanding.txt,2023,lessstanding124,,,,y,LP,duplicate
+CWD40_2024_fallen.txt,2024,fallen282,,,,y,LP,duplicate
+CWD40_2024_fallen.txt,2024,fallen298,,,,y,LP,duplicate
+CWD40_2024_fallen.txt,2024,fallen297,,,,y,LP,duplicate
+CWD40_2019_fallen.txt,2019,fallen342,orientation_degrees,286,106,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen321,orientation_degrees,286,106,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen351,orientation_degrees,284,104,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen377,orientation_degrees,288,108,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen332,orientation_degrees,290,110,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen351,orientation_degrees_prior,286,106,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen377,orientation_degrees_prior,284,104,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen332,orientation_degrees_prior,288,108,,LP,"from notes, opposite angle"
+CWD40_2019_fallen.txt,2019,fallen340,orientation_degrees,294,114,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen319,orientation_degrees,294,114,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen349,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen375,orientation_degrees,286,106,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen349,orientation_degrees_prior,294,114,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen375,orientation_degrees_prior,300,120,,LP,"from notes, opposite angle"
+CWD40_2019_fallen.txt,2019,fallen341,orientation_degrees,290,110,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen320,orientation_degrees,290,110,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen350,orientation_degrees,290,110,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen376,orientation_degrees,278,98,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen350,orientation_degrees_prior,290,110,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen376,orientation_degrees_prior,290,110,,LP,"from notes, opposite angle"
+CWD40_2019_fallen.txt,2019,fallen306,orientation_degrees,298,118,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen289,orientation_degrees,298,118,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen317,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen343,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen298,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen317,orientation_degrees_prior,298,118,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen343,orientation_degrees_prior,300,120,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen298,orientation_degrees_prior,300,120,,LP,"from notes, opposite angle"
+CWD40_2019_fallen.txt,2019,fallen304,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen288,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen316,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen342,orientation_degrees,300,120,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen297,orientation_degrees,304,124,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen316,orientation_degrees_prior,300,120,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen342,orientation_degrees_prior,300,120,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen297,orientation_degrees_prior,300,120,,LP,"from notes, opposite angle"
+CWD40_2019_fallen.txt,2019,fallen217,orientation_degrees,112,292,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen210,orientation_degrees,112,292,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen221,orientation_degrees,112,292,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen237,orientation_degrees,112,292,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen206,orientation_degrees,90,270,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen221,orientation_degrees_prior,112,292,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen237,orientation_degrees_prior,112,292,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen206,orientation_degrees_prior,112,292,,LP,"from notes, opposite angle"
+CWD40_2019_fallen.txt,2019,fallen095,orientation_degrees,280,100,,LP,"from notes, opposite angle"
+CWD40_2020_fallen.txt,2020,fallen089,orientation_degrees,280,100,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen100,orientation_degrees,220,40,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen104,orientation_degrees,230,50,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen095,orientation_degrees,234,54,,LP,"from notes, opposite angle"
+CWD40_2021_fallen.txt,2021,fallen100,orientation_degrees_prior,220,40,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen104,orientation_degrees_prior,230,50,,LP,"from notes, opposite angle"
+CWD40_2023_fallen.txt,2023,fallen095,orientation_degrees_prior,234,54,,LP,"from notes, opposite angle"
+CWD40_2022_fallen.txt,2022,fallen375,diameter_width.mm,838,253,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen376,diameter_width.mm,253,838,,LP,from notes
+CWD40_2023_fallen.txt,2023,fallen330,diameter_width_prior,838,253,,LP,from notes
+CWD40_2023_fallen.txt,2023,fallen331,diameter_width_prior,253,838,,LP,from notes
+CWD40_2021_fallen.txt,2021,fallen158,transect_section_letter,B,A,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen167,transect_section_letter,B,A,,LP,from notes
+CWD40_2024_fallen.txt,2024,fallen129,transect_section_letter,B,A,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen077,branchfall,2,1,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen017,branchfall,1,2,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen170,diameter_height.mm,477,440,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen170,diameter_width.mm,440,477,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen183,diameter_height.mm,456,435,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen183,diameter_width.mm,435,456,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen183,diameter_width_prior,440,477,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen060,orientation_degrees,340,30,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen061,orientation_degrees,340,31,,LP,from notes
+CWD40_2021_fallen.txt,2021,fallen071,orientation_degrees,340,32,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen060,inclination,43586.0,1.5,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen051,orientation_degrees,270,90,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen055,orientation_degrees,270,80,,LP,from notes
+CWD40_2021_fallen.txt,2021,fallen064,orientation_degrees,260,80,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen059,orientation_degrees,330,230,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen060,orientation_degrees,330,230,,LP,from notes
+CWD40_2017_fallen.txt,2017,fallen274,transect_section_letter,O,N,,LP,from notes
+CWD40_2018_fallen.txt,2018,fallen264,transect_section_letter,O,N,,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen265,transect_section_letter,O,N,,LP,from notes
+CWD40_2021_fallen.txt,2021,fallen290,transect_section_letter,O,N,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen313,transect_section_letter,O,N,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen194,transect_section_letter,J,F,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen170,orientation_degrees,300,210,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen170,inclination,43586.0,1.5,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen069,orientation_degrees,300,210,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen029,orientation_degrees,270,345,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen028,orientation_degrees,270,343,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen057,inclination,140.0,,,LP,from notes
+CWD40_2017_fallen.txt,2017,fallen281,MC,,*,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen288,MC,,*,,LP,from notes
+CWD40_2017_fallen.txt,2017,fallen281,MS,*,,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen288,MS,*,,,LP,from notes
+CWD40_2017_fallen.txt,2017,fallen153,tag,5054,5154,,LP,from notes
+CWD40_2017_fallen.txt,2017,fallen141,subplot_code,"19,16","19,19",,LP,from notes
+CWD40_2018_fallen.txt,2018,fallen135,subplot_code,"19,16","19,19",,LP,from notes
+CWD40_2020_fallen.txt,2020,fallen119,subplot_code,"19,16","19,19",,LP,from notes
+CWD40_2021_fallen.txt,2021,fallen133,subplot_code,"19,16","19,19",,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen143,subplot_code,"19,16","19,19",,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen131,subplot_code,"19,16","19,19",,LP,from notes
+CWD40_2022_standing.txt,2022,standing139,tag,147585,147565,,LP,from notes
+CWD40_2024_standing.txt,2024,standing082,tag,147585,147565,,LP,from notes
+CWD40_2021_standing.txt,2021,standing059,code_of_piece,21-1,21-2,,LP,from notes
+CWD40_2020_standing.txt,2020,standing072,transect_section_letter,J,K,,LP,from notes
+CWD40_2021_standing.txt,2021,standing086,transect_section_letter,J,K,,LP,from notes
+CWD40_2022_standing.txt,2022,standing095,transect_section_letter,J,K,,LP,from notes
+CWD40_2023_standing.txt,2023,standing077,transect_section_letter,J,K,,LP,from notes
+CWD40_2018_standing.txt,2018,standing102,tag,152436,152736,,LP,from notes
+CWD40_2019_standing.txt,2019,standing096,tag,152436,152736,,LP,from notes
+CWD40_2020_standing.txt,2020,standing100,tag,152436,152736,,LP,from notes
+CWD40_2017_standing.txt,2017,standing051,transect_section_letter,K,J,,LP,from notes
+CWD40_2017_lessstanding.txt,2017,lessstanding017,tag,222225,222226,,LP,from notes
+CWD40_2018_lessstanding.txt,2018,lessstanding017,tag,222225,222226,,LP,from notes
+CWD40_2019_lessstanding.txt,2019,lessstanding017,tag,222225,222226,,LP,from notes
+CWD40_2017_lessstanding.txt,2017,lessstanding021,tag,311974,511974,,LP,from notes
+CWD40_2018_lessstanding.txt,2018,lessstanding020,tag,311974,511974,,LP,from notes
+CWD40_2019_lessstanding.txt,2019,lessstanding020,diameter_one.mm,43605,22.5,,LP,from notes
+CWD40_2017_lessstanding.txt,2017,lessstanding087,transect_section_letter,K,N,,LP,from notes
+CWD40_2022_fallen.txt,2022,fallen317,transect_section_letter,0,O,,LP,from notes
+CWD40_2023_fallen.txt,2023,fallen274,transect_section_letter,0,O,,LP,from notes
+CWD40_2023_fallen.txt,2024,fallen241,transect_section_letter,0,O,,LP,from notes
+CWD40_2018_fallen.txt,2018,fallen006,code_of_piece,7.1,7-1,,LP,misstype
+CWD40_2019_fallen.txt,2019,fallen003,code_of_piece,7.1,7-1,,LP,misstype
+CWD40_2020_fallen.txt,2020,fallen003,code_of_piece,7.1,7-1,,LP,misstype
+CWD40_2022_fallen.txt,2022,fallen003,code_of_piece,7.1,7-1,,LP,misstype
+CWD40_2022_fallen.txt,2022,fallen004,code_of_piece,21.1,21-1,,LP,misstype
+CWD40_2023_fallen.txt,2023,fallen348,code_of_piece,22.2,22-2,,LP,misstype
+CWD40_2024_fallen.txt,2024,fallen302,year,2025,2024,,LP,misstype
+CWD40_2024_fallen.txt,2025,fallen302,code_of_piece,20.1,20-1,,LP,misstype
+CWD40_2017_fallen.txt,2017,fallen234,RT,tronco tronco sin corteza,,,LP,Improve entry format consistancy
+CWD40_2017_fallen.txt,2017,fallen235,RT,tronco tronco sin corteza,,,LP,Improve entry format consistancy
+CWD40_2017_fallen.txt,2017,fallen236,RT,tronco tronco sin corteza,,,LP,Improve entry format consistancy
+CWD40_2017_fallen.txt,2017,fallen238,RT,tronco de árbol de pie con corteza,,,LP,Improve entry format consistancy
+CWD40_2017_fallen.txt,2017,fallen239,RT,nada,,,LP,Improve entry format consistancy
+CWD40_2019_fallen.txt,2019,fallen252,RT,-,,,LP,Improve entry format consistancy
+CWD40_2018_fallen.txt,2018,fallen273,MS,-,,,LP,Improve entry format consistancy
+CWD40_2019_fallen.txt,2019,fallen070,inclination,43586,1.5,,LP,date conversion
+CWD40_2019_fallen.txt,2019,fallen197,soil_contact,suelo,*,,LP,Improve entry format consistancy
+CWD40_2020_fallen.txt,2020,fallen197,soil_contact,suelo,*,,LP,Improve entry format consistancy
+CWD40_2019_fallen.txt,2019,fallen200,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2019_fallen.txt,2019,fallen201,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2019_fallen.txt,2019,fallen202,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2019_fallen.txt,2019,fallen203,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2020_fallen.txt,2020,fallen198,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2020_fallen.txt,2020,fallen199,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2020_fallen.txt,2020,fallen200,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2020_fallen.txt,2020,fallen201,soil_contact,Suelo,*,,LP,Improve entry format consistancy
+CWD40_2017_standing.txt,2017,standing056,subplot_code,12.23,"12,23",,LP,misstype
+CWD40_2018_standing.txt,2018,standing059,subplot_code,12.23,"12,23",,LP,misstype
+CWD40_2024_standing.txt,2024,standing141,transect_section_letter,EG,E,,LP,misstype
+CWD40_2017_standing.txt,2017,standing146,code_of_piece,"7,1",7-1,,LP,misstype
+CWD40_2021_standing.txt,2021,standing017,code_of_piece,"21,1",21-1,,LP,misstype
+CWD40_2022_standing.txt,2022,standing019,code_of_piece,"21,1",21-1,,LP,misstype
+CWD40_2023_standing.txt,2023,standing024,code_of_piece,7.1,7-1,,LP,misstype
+CWD40_2023_fallen.txt,2023,fallen260,year,,2023,,LP,missing value
+CWD40_2017_fallen.txt,2017,fallen047,code_of_piece,,7-1,,LP,missing code
+CWD40_2018_fallen.txt,2018,fallen047,code_of_piece,,7-1,,LP,missing code
+CWD40_2019_fallen.txt,2019,fallen041,code_of_piece,,7-1,,LP,missing code
+CWD40_2020_fallen.txt,2020,fallen044,code_of_piece,,7-1,,LP,missing code
+CWD40_2021_fallen.txt,2021,fallen053,code_of_piece,,7-1,,LP,missing code
+CWD40_2022_fallen.txt,2022,fallen056,code_of_piece,,7-1,,LP,missing code
+CWD40_2023_fallen.txt,2023,fallen044,code_of_piece,,7-1,,LP,missing code
+CWD40_2018_fallen.txt,2018,fallen212,diameter_width_prior,440,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen212,diameter_width.mm,,440,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen094,code_of_piece,,7-1,,LP,missing code
+CWD40_2018_fallen.txt,2018,fallen091,code_of_piece,,7-1,,LP,missing code
+CWD40_2019_fallen.txt,2019,fallen083,code_of_piece,,7-1,,LP,missing code
+CWD40_2020_fallen.txt,2020,fallen078,code_of_piece,,7-1,,LP,missing code
+CWD40_2021_fallen.txt,2021,fallen089,code_of_piece,,7-1,,LP,missing code
+CWD40_2022_fallen.txt,2022,fallen092,code_of_piece,,7-1,,LP,missing code
+CWD40_2023_fallen.txt,2023,fallen084,code_of_piece,,7-1,,LP,missing code
+CWD40_2024_fallen.txt,2024,fallen068,code_of_piece,,7-1,,LP,missing code
+CWD40_2017_fallen.txt,2017,fallen032,diameter_width.mm,,557,,LP,missing values but in following year this diameter was in diameter_width_prior so was diameter_width_new for previous year
+CWD40_2019_fallen.txt,2019,fallen080,diameter_width.mm,,230,,LP,missing values but in following year this diameter was in diameter_width_prior so was diameter_width_new for previous year
+CWD40_2023_fallen.txt,2023,fallen085,diameter_width.mm,852,582,,LP,"diameter jumps from 583,852,570. Interpreted as misstype"
+CWD40_2024_fallen.txt,2024,fallen071,diameter_width_prior,852,582,,LP,"diameter jumps from 583,852,570. Interpreted as misstype"
+CWD40_2017_fallen.txt,2017,fallen183,diameter_width.mm,,288,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen183,diameter_width_prior,288,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen172,diameter_width_prior,,288,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen184,diameter_width.mm,,396,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen184,diameter_width_prior,396,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen173,diameter_width_prior,,396,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen213,diameter_width.mm,,228,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen213,diameter_width_prior,228,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen206,diameter_width_prior,,228,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen205,diameter_width.mm,,497,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen208,diameter_width_prior,497,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2019_fallen.txt,2019,fallen217,diameter_width_prior,,497,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen212,diameter_width.mm,,440,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen212,diameter_width_prior,440,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2019_fallen.txt,2019,fallen224,diameter_width_prior,,440,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen209,diameter_width.mm,,202,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen209,diameter_width_prior,202,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen210,diameter_width.mm,,223,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen210,diameter_width_prior,233,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen208,diameter_width.mm,,335,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen208,diameter_width_prior,335,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen211,diameter_width.mm,,439,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen211,diameter_width_prior,439,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2020_fallen.txt,2020,fallen331,diameter_width.mm,,349,,LP,diameter in the notes
+CWD40_2017_fallen.txt,2017,fallen213,diameter_width.mm,,365,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_fallen.txt,2017,fallen213,diameter_width_prior,365,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen206,diameter_width_prior,,365,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen093,diameter_width.mm,,820,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen093,diameter_width_prior,820,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen106,diameter_width.mm,,420,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen106,diameter_width_prior,420,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen107,diameter_width.mm,,406,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen108,diameter_width_prior,406,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen110,diameter_width.mm,,441,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_fallen.txt,2018,fallen110,diameter_width_prior,441,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing023,POM,0 50,0.50,,LP,missing decimal
+CWD40_2017_standing.txt,2017,standing030,diameter_one.mm,,563,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing030,diameter_prior,563,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing146,diameter_one.mm,,275,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing147,diameter_prior,275,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2021_standing.txt,2021,standing022,diameter_one.mm,,353,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2021_standing.txt,2021,standing022,diameter_prior,353,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing030,diameter_one.mm,,563,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing030,diameter_prior,563,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing041,height,69.00,0.69,,LP,decimal in wrong place
+CWD40_2018_standing.txt,2018,standing046,diameter_one.mm,,322,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2018_standing.txt,2018,standing046,diameter_prior,322,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2020_standing.txt,2020,standing123,POM,1.5,3.5,,LP,fom notes
+CWD40_2020_standing.txt,2020,standing123,diameter_one.mm,,2300,,LP,fom notes
+CWD40_2021_standing.txt,2021,standing133,POM,1.5,3.5,,LP,fom notes
+CWD40_2021_standing.txt,2021,standing133,diameter_one.mm,,2100,,LP,fom notes
+CWD40_2021_standing.txt,2021,standing154,diameter_one.mm,,377,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2021_standing.txt,2021,standing154,diameter_prior,377,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing146,diameter_one.mm,,275,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2017_standing.txt,2017,standing146,diameter_prior,275,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
+CWD40_2022_fallen.txt,2022,fallen377,diameter_height.mm,28,,,LP,wrong value in column
+CWD40_2020_fallen.txt,2020,fallen047,,,,y,LP,really high dbh because it has broken up and is very decomposed- not am acurate dbh
+CWD40_2024_fallen.txt,2024,fallen056,code_of_piece,23-27,23-2,,LP,"misstype, tag and measurements align with 23-2"
+CWD40_2019_fallen.txt,2019,fallen130,diameter_height.mm,320,241,,LP,inverted weight and width
+CWD40_2019_fallen.txt,2019,fallen130,diameter_width.mm,241,320,,LP,inverted weight and width
+CWD40_2024_fallen.txt,2024,fallen109,diameter_height.mm,320,190,,LP,inverted weight and width
+CWD40_2024_fallen.txt,2024,fallen109,diameter_width.mm,190,320,,LP,inverted weight and width
+CWD40_2017_standing.txt,2017,standing005,subplot_code,2.16,"02,16",,LP,
+CWD40_2020_standing.txt,2020,standing177,subplot_code,"19,6","19,06",,LP,
+CWD40_2020_fallen.txt,2020,fallen104,diameter_width.mm,,183,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen107,diameter_width.mm,,311,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen109,diameter_width.mm,,268,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen110,diameter_width.mm,,193,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen111,diameter_width.mm,,177,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen138,diameter_width.mm,,241,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen141,diameter_width.mm,,273,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen142,diameter_width.mm,,315,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen143,diameter_width.mm,,165,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen308,diameter_width.mm,,313,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen329,diameter_width.mm,,197,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen330,diameter_width.mm,,206,,LP,Measurement from diamter height
+CWD40_2020_fallen.txt,2020,fallen332,diameter_width.mm,,483,,LP,Measurement from diamter height
+CWD40_2021_fallen.txt,2021,fallen014,diameter_width.mm,,369,,LP,Measurement from diamter height
+CWD40_2021_fallen.txt,2021,fallen089,diameter_width.mm,,665,,LP,Measurement from diamter height
+CWD40_2024_fallen.txt,2024,fallen108,diameter_width.mm,190,320,,LP,Switched measurements
+CWD40_2024_fallen.txt,2024,fallen108,diameter_height.mm,320,190,,LP,Switched measurements
+CWD40_2022_fallen.txt,2022,fallen297,code_of_piece,22-1,22-2,,LP,Incorrect code of piece
+CWD40_2023_fallen.txt,2023,fallen260,code_of_piece,22-1,22-2,,LP,Incorrect code of piece
+CWD40_2024_fallen.txt,2024,fallen227,code_of_piece,22-1,22-2,,LP,Incorrect code of piece
+CWD40_2023_fallen.txt,2023,fallen347,code_of_piece,22-2,22-1,,LP,Incorrect code of piece
+CWD40_2024_standing.txt,2024,standing131,diameter_width.mm,210,231,,LP,Switched measurements
+CWD40_2024_standing.txt,2024,standing131,diameter_height.mm,231,210,,LP,Switched measurements
+CWD40_2017_fallen.txt,2017,fallen137,code_of_piece,,9.1,,LP ,missing code
+CWD40_2017_fallen.txt,2017,fallen138,code_of_piece,,7.1,,LP ,missing code
+CWD40_2018_fallen.txt,2018,fallen134,code_of_piece,,7.1,,LP ,missing code
+CWD40_2017_fallen.txt,2017,fallen223,code_of_piece,,7.1,,LP ,missing code
+CWD40_2017_fallen.txt,2017,fallen246,code_of_piece,,6.1,,LP ,missing code
+CWD40_2018_fallen.txt,2018,fallen239,code_of_piece,,6.1,,LP ,missing code
+CWD40_2017_fallen.txt,2017,fallen275,code_of_piece,,9.3,,LP ,missing code
+CWD40_2018_fallen.txt,2018,fallen265,code_of_piece,,9.3,,LP ,missing code
+CWD40_2019_fallen.txt,2019,fallen280,code_of_piece,9-1,9.3,,LP ,missing code
+CWD40_2020_fallen.txt,2020,fallen266,code_of_piece,9-1,9.3,,LP ,missing code
+CWD40_2021_fallen.txt,2021,fallen291,code_of_piece,9-1,9.3,,LP ,missing code
+CWD40_2022_fallen.txt,2022,fallen314,code_of_piece,9-1,9.3,,LP ,missing code
+CWD40_2023_fallen.txt,2023,fallen272,code_of_piece,9-1,9.3,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing043,code_of_piece,,5.1,,LP ,missing code
+CWD40_2018_standing.txt,2018,standing048,code_of_piece,,5.1,,LP ,missing code
+CWD40_2019_standing.txt,2019,standing046,code_of_piece,,5.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing046,code_of_piece,,5.1,,LP ,missing code
+CWD40_2018_standing.txt,2018,standing052,code_of_piece,,5.1,,LP ,missing code
+CWD40_2019_standing.txt,2019,standing050,code_of_piece,,5.1,,LP ,missing code
+CWD40_2020_standing.txt,2020,standing050,code_of_piece,,5.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing050,code_of_piece,,4.1,,LP ,missing code
+CWD40_2018_standing.txt,2018,standing054,code_of_piece,,4.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing057,code_of_piece,,4.1,,LP ,missing code
+CWD40_2018_standing.txt,2018,standing060,code_of_piece,,4.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing065,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
+CWD40_2018_standing.txt,2018,standing069,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
+CWD40_2019_standing.txt,2019,standing067,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
+CWD40_2020_standing.txt,2020,standing066,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
+CWD40_2021_standing.txt,2021,standing079,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
+CWD40_2022_standing.txt,2022,standing085,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
+CWD40_2017_standing.txt,2017,standing070,code_of_piece,,5.1,,LP ,missing code
+CWD40_2018_standing.txt,2018,standing073,code_of_piece,,5.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing082,code_of_piece,,4.1,,LP ,missing code
+CWD40_2018_standing.txt,2018,standing083,code_of_piece,,4.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing099,code_of_piece,7-1,6.1,,LP ,Incorrect code of piece
+CWD40_2017_standing.txt,2017,standing169,code_of_piece,,3.1,,LP ,missing code
+CWD40_2017_standing.txt,2017,standing054,branches,1,2,,LP,From notes
+CWD40_2017_standing.txt,2017,standing055,branches,1,2,,LP,From notes
+CWD40_2017_standing.txt,2017,standing119,branches,,2,,LP,From notes
+CWD40_2017_standing.txt,2017,standing134,branches,,2,,LP,From notes
+CWD40_2017_standing.txt,2017,standing153,branches,,2,,LP,From notes
+CWD40_2017_standing.txt,2017,standing182,branches,2,1,,LP,From notes
+CWD40_2018_standing.txt,2018,standing009,branches,,2,,LP,From notes
+CWD40_2018_standing.txt,2018,standing012,branches,,2,,LP,From notes
+CWD40_2018_standing.txt,2018,standing014,branches,,1,,LP,From notes
+CWD40_2018_standing.txt,2018,standing149,branches,1,2,,LP,From notes
+CWD40_2024_standing.txt,2024,standing059,height,220,10,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing101,height,110.0,1.1,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing128,height,100.00,1.0,,LP,decimal in wrong place
+CWD40_2024_standing.txt,2024,standing120,height,104,1.4,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing180,height,116.0,1.16,,LP,decimal in wrong place
+CWD40_2024_standing.txt,2024,standing143,height,100.0,1.0,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing181,height,100.0,1.0,,LP,decimal in wrong place
+CWD40_2024_standing.txt,2024,standing022,height,,9.40,,LP,"missing height, assigned previous one"
+CWD40_2024_standing.txt,2024,standing038,height,,3.90,,LP,"missing height, assigned previous one"
+CWD40_2020_standing.txt,2020,standing099,height,,7.00,,LP,"missing height, assigned previous one"
+CWD40_2024_standing.txt,2024,standing088,height,,1.3,,LP,"missing height, assigned previous one"
+CWD40_2017_standing.txt,2017,standing123,height,,4.90,,LP,"missing height, assigned previous one"
+CWD40_2024_standing.txt,2024,standing103,height,,25.20,,LP,"missing height, assigned previous one"
+CWD40_2017_standing.txt,2017,standing152,height,,8.30,,LP,"missing height, assigned previous one"
+CWD40_2024_standing.txt,2024,standing127,height,,0.54,,LP,"missing height, assigned previous one"
+CWD40_2022_standing.txt,2022,standing056,height,,19.10,,LP,"missing height, assigned previous one"
+CWD40_2020_standing.txt,2020,standing076,,,,y,LP,decomposed
+CWD40_2021_standing.txt,2021,standing093,,,,y,LP,decomposed
+CWD40_2022_standing.txt,2022,standing106,,,,y,LP,decomposed
+CWD40_2020_fallen.txt,2020,fallen053,,,,y,LP,decomposed
+CWD40_2021_fallen.txt,2021,fallen050,,,,y,LP,decomposed
+CWD40_2022_fallen.txt,2022,fallen055,,,,y,LP,decomposed
+CWD40_2019_fallen.txt,2019,fallen071,,,,y,LP,decomposed
+CWD40_2020_fallen.txt,2020,fallen134,,,,y,LP,decomposed
+CWD40_2024_fallen.txt,2024,fallen192,,,,y,LP,decomposed
+CWD40_2023_fallen.txt,2023,fallen230,,,,y,LP,decomposed
+CWD40_2017_fallen.txt,2017,fallen221,code_of_piece,9-3,9.2,,LP,incorrect code of piece
+CWD40_2018_fallen.txt,2018,fallen218,code_of_piece,9-3,9.2,,LP,incorrect code of piece
+CWD40_2019_fallen.txt,2019,fallen238,code_of_piece,9-3,9.2,,LP,incorrect code of piece
+CWD40_2020_fallen.txt,2020,fallen230,code_of_piece,9-3,9.2,,LP,incorrect code of piece
+CWD40_2021_fallen.txt,2021,fallen242,code_of_piece,9-3,9.2,,LP,incorrect code of piece
+CWD40_2022_fallen.txt,2022,fallen261,code_of_piece,9-3,9.2,,LP,incorrect code of piece
+CWD40_2023_fallen.txt,2023,fallen236,,,,y,LP,decomposed
+CWD40_2020_standing.txt,2020,standing006,height,,15.8,,LP,decomposed
+CWD40_2017_standing.txt,2017,standing175,diameter_one.mm,230,,,LP,decomposed
+CWD40_2023_lessstanding.txt,2023,lessstanding060,diameter_one.mm,,61.5,,LP,missing values 
+CWD40_2024_lessstanding.txt,2024,lessstanding060,height,,1.1,,LP,missing values 
+CWD40_2017_lessstanding.txt,2017,lessstanding075,diameter_one.mm,,24.07,,LP,missing values 
+CWD40_2023_lessstanding.txt,2023,lessstanding107,diameter_one.mm,,69,,LP,missing values 
+CWD40_2023_lessstanding.txt,2023,lessstanding107,height,,6.5,,LP,missing values 
+CWD40_2017_fallen.txt,2017,fallen086,MS,*,,,LP,Mutaully exclusive but both assigned TRUE
+CWD40_2019_fallen.txt,2019,fallen100,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
+CWD40_2019_fallen.txt,2019,fallen090,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
+CWD40_2022_fallen.txt,2022,fallen068,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
+CWD40_2024_fallen.txt,2024,fallen065,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
+CWD40_2023_standing.txt,2023,standing134,diameter_one.mm,4210,1620,,LP,"Measured in buttress, using last census dbh"
+CWD40_2023_standing.txt,2023,standing134,POM,1.30,10.7,,LP,"Measured in buttress, using last census dbh"
+CWD40_2023_standing.txt,2023,standing179,POM,1.30,7.05,,LP,"Measured in buttress, using last census dbh"
+CWD40_2024_standing.txt,2024,standing101,diameter_one.mm,4270,1620,,LP,"Measured in buttress, using last census dbh"
+CWD40_2024_standing.txt,2024,standing140,diameter_one.mm,4000,1914.53,,LP,"Measured in buttress, using last census dbh"
+CWD40_2024_standing.txt,2024,standing101,POM,1.30,10.7,,LP,"Measured in buttress, using last census dbh"
+CWD40_2024_standing.txt,2024,standing140,POM,1.30,7.05,,LP,"Measured in buttress, using last census dbh"
+CWD40_2023_standing.txt,2023,standing179,diameter_one.mm,,1948,,LP,4070 fromnotes but measured in the buttress
