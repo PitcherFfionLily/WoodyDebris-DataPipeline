@@ -1,4 +1,4 @@
-month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height_prior	height	POM	branches	tag	notes_prior	notes	bark_present	bark_absent	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height_prior	height	POM	branches	tag	notes_prior	notes	MC	MS	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
 2	8	01,21	I	20-1	446	367	6.5	1.08	0.54	2	8518	NA	NA	*	NA	2023	E	337	197	standing001
 2	8	01,21	K	8-1	379	315	1.1	1.1	0.55	2	8207	se cayo parte del tronco	NA	*	NA	2023	E	334	283	standing002
 2	8	01,21	L	20-1	799	804	10.5	10.3	1.3	2	8208	NA	NA	*	NA	2023	E	587	610	standing003

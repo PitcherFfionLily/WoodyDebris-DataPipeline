@@ -1,4 +1,4 @@
-month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height	POM	branches	tag	notes_prior	notes	bark_present	bark_absent	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height	POM	branches	tag	notes_prior	notes	MC	MS	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
 2	7	01,21	G	9-1	NA	NA	NA	1.3	1	no tag	Caido	Caido	NA	*	2022	E	NA	NA	standing001
 2	7	01,21	I	20-1	459	446	6.5	1.3	2	8518	NA	NA	*	NA	2022	E	336	337	standing002
 2	7	01,21	L	20-1	798	799	10.5	1.3	2	8208	NA	NA	*	NA	2022	E	619	587	standing003
