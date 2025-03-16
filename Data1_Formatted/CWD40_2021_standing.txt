@@ -1,0 +1,200 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height	POM	branches	tag	notes_prior	notes	bark_present	bark_absent	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
+2	25	01,21	G	9-1	412	NA	NA	1.3	1	no tag	NA	Caido	NA	*	2021	V	159	NA	standing001
+2	25	01,21	I	20-1	454	459	13.6	1.3	2	8518	NA	NA	*	NA	2021	V	342	336	standing002
+2	25	01,21	L	20-1	832	798	10.5	1.3	2	8208	NA	NA	*	NA	2021	V	584	619	standing003
+3	10	01,21	P	8-1	468	462	17.6	2.8	2	8214	escalera	Escalera	NA	*	2021	V	580	533	standing004
+2	25	01,21	K	8-1	448	435	8.1	1.3	2	8207	NA	NA	*	NA	2021	V	347	345	standing005
+2	25	01,24	G	8-1	NA	333	1.6	1.3	2	8536	NA	NA	NA	*	2021	V	sin ramas	282	standing006
+2	25	01,24	G	20-1	323	359	3.5	1.3	1	8537	NA	NA	NA	*	2021	V	NA	NA	standing007
+2	25	01,24	G	19-1	618	607	11.6	1.3	2	8535	NA	NA	*	NA	2021	V	451	481	standing008
+2	25	01,24	J	20-1	235	241	4.84	1.3	2	264309	NA	NA	NA	*	2021	V	198	298	standing009
+2	25	01,24	L	20-1	427	433	23.6	1.3	1	259333	NA	NA	*	NA	2021	V	NA	419	standing010
+2	25	01,24	L	21-1	NA	249	0.8	0.4	2	259312	NA	NA	NA	*	2021	V	NA	212	standing011
+2	24	01,24	M	9-1	486	492	3.4	1.3	2	8188	NA	NA	NA	*	2021	V	413	372	standing012
+2	25	02,16	C	20-1	344	NA	NA	1.3	2	257848	Inclinacion 56.2	Caido	NA	*	2021	V	308	NA	standing013
+2	25	02,16	H	7-1	NA	NA	NA	1.3	1	257916	Caido	Caido	NA	NA	2021	V	NA	NA	standing014
+2	25	02,16	I	8-1	NA	NA	NA	1.3	2	258010	Caido	Caido	NA	NA	2021	V	NA	NA	standing015
+2	25	02,16	G	19-1	NA	NA	NA	1.3	2	258002	Caido	Caido	NA	NA	2021	V	NA	NA	standing016
+2	25	02,16	O	21,1	NA	285	6.3	1.3	1	802138	NA	NA	*	NA	2021	V	NA	195	standing017
+2	24	03,09	A	7-2	362	345	7.6	1.3	2	7918	NA	NA	NA	*	2021	E	272	268	standing018
+2	24	03,09	C	7-1	357	338	12.2	1.3	2	8043	NA	NA	*	NA	2021	E	293	296	standing019
+2	24	03,09	D	21-1	NA	468	21.32	1.3	1	8040	NA	NA	*	NA	2021	E	NA	372	standing020
+2	24	03,09	I	20-1	335	358	8.5	1.3	2	8053	NA	NA	*	NA	2021	E	303	316	standing021
+2	24	03,09	I	21-1	353	NA	13.5	1.3	2	8050	NA	NA	*	NA	2021	E	NA	313	standing022
+2	24	03,09	J	20-1	641	669	17	1.3	1	8048	NA	NA	NA	*	2021	E	586	575	standing023
+2	24	03,09	N	8-1	399	378	26.8	1.3	1	268164	NA	NA	NA	*	2021	E	NA	NA	standing024
+2	24	03,09	N	21-1	NA	212	15.7	1.3	2	268197	NA	NA	*	NA	2021	E	NA	NA	standing025
+3	10	03,12	A	3-1	589	586	35.7	3.5	1	7902	Escalera	Escalera	NA	*	2021	E	670	639	standing026
+2	24	03,12	B	20-1	218	NA	NA	1.3	2	247036	NA	Caido	NA	*	2021	E	163	NA	standing027
+2	24	03,12	E	21-1	NA	258	0.53	0.27	2	252102	NA	NA	*	NA	2021	E	NA	243	standing028
+2	25	03,23	A	20-1	275	272	2.2	1.3	2	249574	NA	NA	*	NA	2021	V	193	202	standing029
+2	25	03,23	C	21-1	NA	330	17.1	1.3	1	802380	NA	NA	*	NA	2021	V	NA	NA	standing030
+2	25	03,23	M	4-1	NA	NA	NA	0.34	2	7820	Nada	Nada	NA	NA	2021	V	NA	NA	standing031
+2	24	05,03	E	19-1	355	368	3.2	1.3	2	7656	correccion de inclinacion son 21 grados	NA	*	NA	2021	E	NA	304	standing032
+2	24	05,03	H	3-1	NA	NA	NA	1.3	NA	no tag	No encontrado	No encontrado	NA	NA	2021	E	NA	NA	standing033
+2	24	05,03	G	7-1	525	508	1.16	0.55	2	7660	NA	NA	*	NA	2021	E	NA	399	standing034
+2	24	05,03	O	8-1	880	NA	NA	3.6	2	7621	Escalera	Caido	NA	*	2021	E	878	NA	standing035
+2	25	05,20	A	7-1	453	457	27.1	1.3	1	238573	NA	medir altura	NA	*	2021	V	399	385	standing036
+2	25	05,20	D	7-1	NA	NA	NA	1.5	2	7763	caido	caido	NA	NA	2021	V	NA	NA	standing037
+2	25	05,20	L	19-1	NA	NA	NA	1.3	1	7496	caido	caido	NA	NA	2021	V	NA	NA	standing038
+2	25	05,20	L	19-2	NA	NA	NA	1.3	2	238752	Caido	caido	NA	NA	2021	V	NA	NA	standing039
+3	10	05,20	M	19-1	787	NA	NA	3	0	7499	Escalera	Caido	*	NA	2021	V	565	NA	standing040
+2	25	05,20	P	3-1	419	367	18.6	1.3	2	238630	NA	NA	NA	*	2021	V	NA	358	standing041
+2	25	05,20	J	21-1	NA	243	15.6	1.3	1	269635	NA	NA	*	NA	2021	V	NA	NA	standing042
+2	25	05,20	K	21-1	NA	278	13.1	1.3	1	7497	NA	NA	*	NA	2021	V	248	NA	standing043
+2	25	05,20	L	21-1	NA	360	1.27	0.75	1	7496	NA	NA	NA	NA	2021	V	236	NA	standing044
+2	25	05,24	I	20-1	551	556	7.8	1.3	1	7802	NA	NA	*	NA	2021	V	479	538	standing045
+2	25	05,24	J	19-1	223	223	9	1.3	2	239685	NA	NA	*	NA	2021	V	NA	NA	standing046
+2	25	05,24	N	7-1	523	513	17.1	1.3	2	239534	NA	NA	NA	*	2021	V	453	453	standing047
+2	24	06,06	C	7-1	40	NA	NA	1.3	2	no tag	se descompuso	Nada	NA	NA	2021	E	NA	NA	standing048
+2	24	06,06	I	5-1	NA	NA	NA	1.3	2	7592	no encontrado	No se encontro	NA	NA	2021	E	NA	NA	standing049
+2	24	06,06	I	5-2	631	573	9.5	1.3	2	13123	NA	NA	*	NA	2021	E	588	545	standing050
+2	24	06,06	O	21-1	NA	528	22.2	1.3	1	7343	NA	NA	*	NA	2021	E	NA	443	standing051
+2	24	07,01	B	3-1	240	236	1.5	1.3	2	7311	NA	NA	NA	*	2021	E	NA	225	standing052
+2	24	07,01	I	7-1	276	80	NA	1.3	2	7321	NA	Solo son restos de la corteza lo que se encontro en el suelo 2021	*	NA	2021	E	NA	NA	standing053
+2	24	07,13	B	0-1	205	139	1.1	0.57	2	no tag	NA	Solo queda una parte delgada del tronco	NA	*	2021	E	127	32	standing054
+3	10	07,13	I	20-1	612	612	8	3	2	No tag esta en 0613 entre 24 y 34 mide más de 600 mm	Escalera	escalera	NA	*	2021	E	609	619	standing055
+2	24	07,13	J	21-1	NA	266	12.5	1.3	2	7401	NA	NA	*	NA	2021	E	NA	NA	standing056
+2	26	07,20	O	21-1	NA	492	19.1	1.3	0	7177	NA	Fue impactado por rayo	*	NA	2021	V	NA	425	standing057
+2	26	07,20	P	21-1	NA	486	26.6	1.3	0	228511	NA	Fue impactado por rayo	*	NA	2021	V	NA	412	standing058
+2	26	07,20	P	21-1	NA	397	12.1	1.3	1	7185	NA	Fue impactado por rayo	*	NA	2021	V	NA	NA	standing059
+2	24	08,06	M	3-1	526	NA	NA	0.5	2	7036	NA	Se descompuso solo algunos restos en el suelo	NA	*	2021	E	306	NA	standing060
+2	24	08,06	M	21-1	NA	338	29.7	1.3	1	7029	NA	NA	*	NA	2021	E	NA	329	standing061
+2	24	08,06	M	21-2	NA	785	2.8	1.3	2	7030	NA	NA	NA	*	2021	E	NA	763	standing062
+2	24	09,12	C	3-1	NA	NA	NA	0.35	2	222154	caido	Solo restos en el suelo	NA	NA	2021	E	NA	NA	standing063
+2	24	09,12	F	21-1	NA	202	14.5	1.3	2	808233	NA	NA	*	NA	2021	E	NA	NA	standing064
+2	26	10,20	G	19-1	438	NA	NA	1.3	2	6850	NA	Se cayó	*	NA	2021	V	379	NA	standing065
+2	26	10,20	H	4-1	361	340	12.1	1.3	2	6849	NA	NA	NA	*	2021	V	314	NA	standing066
+3	2	11,15	D	7-1	150	NA	NA	0.55	2	212912	NA	Nada	NA	NA	2021	E	NA	NA	standing067
+3	2	11,15	J	7-1	288	NA	NA	1.3	2	213119	NA	Caido	NA	*	2021	E	NA	NA	standing068
+3	2	11,15	J	19-1	257	NA	NA	1.3	2	213096	NA	Caido	NA	*	2021	E	NA	NA	standing069
+2	26	12,23	E	21-1	NA	297	11.6	1.3	2	6472	NA	NA	*	NA	2021	V	NA	NA	standing070
+3	2	13,16	A	20-1	760	772	31.7	1.3	1	6163	NA	NA	*	NA	2021	E	NA	NA	standing071
+3	2	13,16	G	19-1	378	NA	NA	1.3	2	6393	34.7 grados inclinacion	caido	*	NA	2021	E	277	NA	standing072
+3	2	13,16	L	20-1	239	244	6.9	1.3	2	6154	NA	NA	*	NA	2021	E	NA	NA	standing073
+3	2	14,11	E	9-1	319	352	0.63	0.37	2	No tag	NA	NA	NA	*	2021	E	246	199	standing074
+3	2	14,14	K	21-1	NA	225	2	1.3	2	814223	NA	NA	*	NA	2021	E	NA	165	standing075
+2	26	14,24	E	6-1	190	153	2	1.3	2	6105	NA	NA	NA	*	2021	V	108	NA	standing076
+2	26	14,24	P	19-1	455	NA	NA	1.3	2	6081	NA	se cayo	NA	NA	2021	V	280	NA	standing077
+3	2	15,07	B	8-1	346	NA	NA	0.2	2	no tag	NA	Solo el clavo. Se descompuso	*	NA	2021	E	319	NA	standing078
+3	2	15,07	G	6-1	550	519	6.5	1.3	2	5960	NA	NA	NA	*	2021	E	451	444	standing079
+3	2	15,07	K	2-1	145	136	0.73	0.49	2	415259	NA	NA	NA	NA	2021	E	NA	128	standing080
+3	2	16,05	G	21-1	NA	207	7.4	1.3	2	515094	NA	NA	*	NA	2021	E	NA	172	standing081
+3	2	16,05	L	6-1	NA	NA	NA	0.52	2	516063	NA	Nada	NA	NA	2021	E	NA	NA	standing082
+3	2	16,05	O	5-1	NA	NA	NA	0.28	2	5637	NA	Nada	NA	NA	2021	E	NA	NA	standing083
+3	2	16,12	C	2-1	473	407	0.95	0.7	2	no tag	NA	NA	NA	*	2021	E	210	217	standing084
+3	2	17,01	I	0-1	737	483	0.4	0.3	2	NA	6 golpes con corteza	NA	NA	*	2021	E	NA	252	standing085
+3	2	17,01	J	20-1	262	278	4.7	1.3	1	175172	Con  corteza	Correguir la posicion, esta es en K	NA	*	2021	E	260	242	standing086
+3	2	17,01	K	21-1	NA	319	8.7	1.3	2	5587	NA	NA	*	NA	2021	E	NA	242	standing087
+3	2	17,01	O	21-1	NA	385	11.7	1.3	2	5594	NA	NA	*	NA	2021	E	NA	NA	standing088
+3	2	17,01	O	21-2	NA	359	13.5	1.3	2	5597	NA	NA	*	NA	2021	E	NA	NA	standing089
+3	2	17,08	N	7-1	243	NA	NA	1.3	2	176354	NA	Caido. El area la destruyó parte del otro árbol 5542 que cayó	*	NA	2021	E	229	NA	standing090
+3	10	17,08	N	21-1	NA	566	6.3	2.9	2	5542	NA	Escalera	NA	NA	2021	E	NA	527	standing091
+3	3	18,23	O	2-1	553	536	7.5	1.3	2	5421	15 grados inclinacion	NA	NA	*	2021	E	527	524	standing092
+3	2	19,02	M	19-1	NA	NA	NA	0.54	2	no tag	No se encontró  árbol le cayó  encima	Nada	NA	*	2021	E	NA	NA	standing093
+3	2	19,06	N	20-1	231	NA	NA	1.3	NA	5231	NA	Caido	*	NA	2021	E	NA	NA	standing094
+3	3	19,12	E	19-1	508	529	1.3	0.7	2	5332	NA	Quebrado a 1.3m	NA	*	2021	E	374	327	standing095
+3	3	19,12	F	20-1	243	NA	NA	1.3	2	418272	NA	Caído	*	NA	2021	E	NA	NA	standing096
+3	3	19,12	N	20-1	218	224	2	1.3	0	619102	14 grados inclinación	NA	*	NA	2021	E	NA	NA	standing097
+3	3	19,16	D	20-1	228	227	11	1.3	2	172117	NA	NA	*	NA	2021	E	NA	191	standing098
+3	10	19,16	N	20-1	390	372	3.3	3	1	167104	Escalera	Escalera	*	NA	2021	E	372	367	standing099
+3	10	19,16	P	20-1	610	635	8.8	3	1	5177	Escalera	Escalera	*	NA	2021	E	604	609	standing100
+3	3	19,19	C	8-1	231	NA	NA	1.3	2	818500	NA	caido	NA	*	2021	E	128	NA	standing101
+3	3	19,19	C	21-1	NA	608	7.6	1.3	2	5380	NA	NA	*	NA	2021	E	NA	627	standing102
+3	3	19,19	D	19-1	322	316	6.5	1.3	2	5381	NA	NA	*	NA	2021	E	268	265	standing103
+3	3	19,19	E	19-1	249	NA	NA	1.3	2	5383	14 grados inclinacion	Caido	*	NA	2021	E	223	NA	standing104
+3	3	19,19	F	3-1	549	539	1.1	0.5	2	172649	NA	NA	NA	*	2021	E	483	469	standing105
+3	3	19,19	F	20-1	264	NA	NA	1.8	2	718325	NA	Caido	NA	*	2021	E	221	NA	standing106
+3	2	21,04	F	19-1	293	NA	NA	1.3	2	160651	NA	Caido	*	NA	2021	E	268	NA	standing107
+3	3	21,08	C	8-1	433	267	0.8	0.4	2	5003	NA	Parte principal del tronco se cayó. Quedo solo la base del árbol. perdio madera y corteza	NA	*	2021	E	340	154	standing108
+3	3	21,08	P	2-1	351	365	0.43	0.3	2	4909	NA	NA	NA	*	2021	E	249	238	standing109
+3	3	21,10	O	4-1	228	222	3.5	1.3	2	156491	NA	NA	NA	*	2021	E	201	186	standing110
+3	3	21,10	H	8-1	214	170	1.3	1.3	2	161881	NA	Quebrado a 1.3m	NA	*	2021	E	178	NA	standing111
+3	3	21,15	J	21-1	NA	766	32.2	1.3	0	5041	NA	NA	*	NA	2021	E	NA	639	standing112
+3	3	21,17	B	19-1	398	399	14.7	1.3	2	4867	NA	NA	*	NA	2021	E	370	366	standing113
+3	3	22,19	D	8-1	318	297	7.1	1.3	2	4855	NA	NA	NA	*	2021	E	282	267	standing114
+3	3	22,19	J	20-1	451	NA	NA	3	1	4846	Escalera cecrin	Caido	*	NA	2021	E	451	NA	standing115
+3	3	22,21	M	20-1	257	NA	NA	1.3	2	No tag	NA	Nada	*	NA	2021	E	183	NA	standing116
+3	4	23,03	K	9-1	309	304	4.8	1.3	2	no tag	NA	NA	*	NA	2021	E	261	258	standing117
+3	4	23,06	I	20-1	550	561	18.2	1.6	1	4671	NA	NA	*	NA	2021	E	496	497	standing118
+3	4	23,06	J	19-1	223	229	2.8	1.3	2	151130	Tag 151130	NA	*	NA	2021	E	NA	207	standing119
+3	4	23,06	K	5-1	529	502	24	1.3	1	4585	NA	NA	NA	*	2021	E	488	487	standing120
+3	4	23,06	K	8-1	382	339	1.7	1.3	2	4584	se esta inflando la cascara	NA	NA	*	2021	E	315	234	standing121
+3	4	23,06	L	20-1	341	NA	NA	1.3	2	No tag	NA	Caido	NA	*	2021	E	295	NA	standing122
+3	3	23,17	H	6-1	188	179	1.9	1.3	2	no tag. Sin corteza. Es el mismo que I6-1 fallen	No mide	NA	NA	*	2021	E	NA	169	standing123
+3	3	23,17	O	3-1	421	303	1.05	0.55	1	4519	el arbol se partio a 1.10	NA	NA	*	2021	E	226	167	standing124
+2	22	23,23	A	20-1	237	232	5.4	1.3	2	148686	NA	NA	NA	*	2021	R	158	140	standing125
+2	22	23,23	P	2-1	727	746	1.8	1.3	2	no tag	Se esta rajando	NA	NA	*	2021	R	659	630	standing126
+3	4	24,09	E	6-1	231	223	2.5	1.3	2	146393	NA	NA	NA	*	2021	E	203	183	standing127
+3	4	24,09	I	6-1	288	259	1.4	1.3	2	146601	NA	NA	NA	*	2021	E	153	143	standing128
+3	10	24,15	K	20-1	732	733	31.2	3	1	4394	Escalera	El POMesta equivocado a 1.3m, es arbol con escalera	*	NA	2021	E	732	682	standing129
+3	3	24,15	O	8-1	491	368	0.95	0.45	0	4386	NA	NA	NA	*	2021	E	455	276	standing130
+3	4	26,08	G	21-1	NA	397	15	1.3	1	4219	NA	NA	*	NA	2021	E	NA	292	standing131
+3	4	26,08	I	20-1	286	209	2.3	1.3	2	136229	NA	NA	*	NA	2021	E	198	135	standing132
+3	10	26,17	C	20-1	NA	NA	4.8	1.3	2	No tag	Escalera. Ceiba gambas muy altas. Se estimó diametro a 1.3. Se estimó el diametro con cinta y esta en aproximadamente 2300mm a 3.5m	Mide 2110 mm de diámetro medida con cinta diámetro a  3.5m de altura. Árbol perdió paté del tronco.	NA	NA	2021	E	NA	NA	standing133
+3	4	26,17	J	6-1	NA	NA	NA	1.3	2	4167	NA	Caido	*	NA	2021	E	NA	NA	standing134
+2	22	26,21	B	5-1	287	286	4.7	1.3	2	133241	NA	rajado	*	NA	2021	R	NA	261	standing135
+2	22	26,21	B	8-1	229	NA	NA	1.3	2	138307	NA	nada	NA	NA	2021	R	NA	NA	standing136
+2	22	26,21	P	3-1	545	492	0.58	0.36	2	NA	NA	NA	NA	NA	2021	R	153	167	standing137
+2	22	26,21	D	19-1	522	512	12	1.3	2	4140	NA	NA	NA	*	2021	R	NA	506	standing138
+2	22	26,21	K	21-1	NA	465	32.2	1.3	1	4089	NA	NA	*	NA	2021	R	NA	443	standing139
+3	4	28,16	G	8-1	218	NA	NA	1.3	2	122548	NA	Caido	NA	*	2021	E	NA	NA	standing140
+3	5	31,16	B	3-1	NA	NA	NA	1.3	1	3189	No aparece	Nada	NA	NA	2021	E	NA	NA	standing141
+3	10	31,16	N	20-1	542	513	20	3	1	3188	Escalera	Escalera	*	NA	2021	E	509	538	standing142
+2	23	31,21	F	21-1	NA	624	2.9	1.3	0	3441	NA	NA	*	NA	2021	R,V	NA	623	standing143
+3	5	31,21	L	2-1	136	90	3.2	1.3	2	104126	NA	NA	NA	*	2021	R	NA	NA	standing144
+2	23	31,21	J	19-1	510	520	20.2	1.3	2	3451	NA	NA	NA	*	2021	R,V	502	422	standing145
+3	4	32,07	B	8-1	314	307	3	1.3	2	26207	NA	NA	*	NA	2021	E	NA	NA	standing146
+3	4	32,07	H	19-2	783	758	0.75	0.37	2	3248	NA	NA	NA	*	2021	E	139	136	standing147
+3	4	32,07	H	19-3	799	705	1.6	1.3	2	3248	NA	Solo queda parte del tronco	NA	*	2021	E	203	241	standing148
+3	4	32,07	N	20-1	297	300	11.5	1.3	2	96459	NA	NA	*	NA	2021	E	NA	287	standing149
+3	5	33,12	D	21-1	NA	514	24.2	1.9	1	3037	NA	NA	NA	*	2021	E	NA	475	standing150
+3	5	33,12	J	19-1	228	219	8.8	1.3	2	832387	NA	Inclinado 20 grados	*	NA	2021	E	218	206	standing151
+3	5	33,12	J	21-1	NA	508	24.7	1.3	1	832406	NA	NA	*	NA	2021	E	NA	498	standing152
+3	4	34,04	D	21-1	NA	343	13.5	1.3	2	90806	NA	NA	*	NA	2021	E	NA	335	standing153
+3	4	34,04	E	21-1	377	NA	9.2	1.5	2	2921	NA	NA	*	NA	2021	E	NA	367	standing154
+2	23	34,15	A	20-1	531	519	2.7	1.3	2	No tag	NA	Inclinado 16 grados	*	NA	2021	E	468	448	standing155
+2	23	34,15	J	21-1	NA	296	20	1.3	1	633201	NA	NA	*	NA	2021	E	NA	279	standing156
+3	5	34,15	K	20-1	212	203	8.4	1.3	1	87643	NA	inclinado 20 grados	*	NA	2021	E	NA	NA	standing157
+3	5	35,17	A	21-1	NA	273	4.1	1.3	2	24.72	NA	NA	NA	*	2021	E	NA	266	standing158
+3	5	35,17	D	21-1	NA	675	1.2	0.6	2	2692	NA	NA	*	NA	2021	E	NA	314	standing159
+3	5	35,17	F	20-1	299	295	11	1.3	2	2689	NA	NA	*	NA	2021	E	246	235	standing160
+3	10	36,04	H	21-1	NA	523	23.7	3.9	1	80756	NA	Escalera	*	NA	2021	E	NA	413	standing161
+3	4	36,04	L	19-1	971	975	2.6	1.3	2	2274	Esta hueco. Se esta rajando	NA	*	NA	2021	E	502	526	standing162
+3	4	36,10	P	20-1	351	NA	NA	1.3	2	76649	NA	Caido	*	NA	2021	E	267	NA	standing163
+3	5	36,13	F	9-1	251	216	5.2	2.2	2	2506	12 grados inclinacion	20 grados inclinacion	NA	*	2021	E	201	187	standing164
+3	5	36,13	G	8-1	409	389	4.9	1.3	2	82303	NA	NA	*	NA	2021	E	356	355	standing165
+3	5	37,17	D	21-1	NA	248	6.5	1.3	2	77665	NA	Inclinacion 10 grados	*	NA	2021	E	NA	200	standing166
+3	5	37,17	G	20-1	402	413	1.3	1	2	2363	NA	Se quebró a 1.30m	NA	*	2021	E	398	397	standing167
+3	5	37,17	P	0-1	190	256	0.8	0.4	2	2143	NA	NA	NA	*	2021	E	NA	126	standing168
+3	5	38,11	M	8-1	334	340	7.4	1.3	2	1990	NA	NA	NA	*	2021	E	305	297	standing169
+3	5	39,07	A	19-1	335	379	1	0.5	2	1872	NA	Se quebro	NA	*	2021	E	307	370	standing170
+3	5	39,07	I	7-1	941	NA	NA	3.3	0	66360	NA	Caido	*	NA	2021	E	820	NA	standing171
+3	5	39,07	N	21-1	NA	316	21.2	1.3	1	61292	NA	NA	*	NA	2021	E	NA	299	standing172
+3	5	39,15	C	21-1	NA	451	27.7	1.3	0	2006	NA	NA	*	NA	2021	E	NA	422	standing173
+3	5	39,15	M	20-1	385	360	2.6	1.3	2	63163	NA	NA	*	NA	2021	E	318	349	standing174
+3	9	40,21	C	6-1	198	196	2.8	1.3	2	56943	NA	NA	NA	*	2021	E	198	154	standing175
+3	9	41,24	D	19-1	265	261	9.8	1.3	2	1744	NA	NA	*	NA	2021	E	230	232	standing176
+3	8	42,12	C	3-1	254	258	9.2	1.3	2	no tag	NA	NA	NA	*	2021	E	182	179	standing177
+3	8	42,12	N	9-2	222	213	0.9	0.45	2	no tag	NA	NA	NA	*	2021	E	124	117	standing178
+3	8	43,10	G	21-1	NA	278	2.6	1.3	2	1251	NA	Esta en 42,10 en 41 tiene banda con escalera.	NA	*	2021	E	NA	149	standing179
+3	9	43,15	F	20-1	648	177	0.79	0.4	2	no tag	Quararibea está en 42,15 41 o 42,14 en 44. Antes tenia dendrometro	se rajo y perdio una parte	NA	*	2021	E	197	79	standing180
+3	9	43,15	H	0-2	NA	210	1.5	1.3	2	1284	Sigue vivo en la base	Esta muerto	NA	*	2021	R	NA	82	standing181
+3	9	43,15	J	9-1	312	309	1.8	1.3	2	no tag	esta hueco	NA	NA	*	2021	R	279	252	standing182
+3	8	44,07	B	5-1	734	682	2.6	1.6	2	870	rajado	NA	NA	*	2021	E	615	660	standing183
+3	8	45,05	E	8-1	489	NA	NA	0.45	2	no tag	se quebro, solo quedo una parte	Solo clavo	NA	*	2021	E	345	NA	standing184
+3	8	45,05	K	6-1	297	303	4.2	1.3	2	30985	NA	NA	*	NA	2021	E	274	273	standing185
+3	9	46,21	F	8-1	750	NA	NA	2.9	2	687	NA	Caido	*	NA	2021	E	649	NA	standing186
+3	9	46,21	G	8-1	NA	NA	NA	1.3	2	No tag	Caido	NA	NA	NA	2021	E	NA	NA	standing187
+3	9	46,21	N	20-1	355	NA	NA	2	1	628	Caido	NA	*	NA	2021	E	NA	NA	standing188
+3	9	46,21	N	20-2	313	274	1.6	1.3	2	626	NA	NA	*	NA	2021	E	NA	195	standing189
+3	8	47,05	B	6-1	NA	NA	NA	0.61	2	510	No encontrado	Nada	NA	NA	2021	E	NA	NA	standing190
+3	8	47,10	F	20-1	446	446	1.2	0.6	2	446310	esta en 46,09 en 34 tiene dendrometro	NA	NA	*	2021	E	392	393	standing191
+3	8	47,10	G	6-1	438	540	1.4	1.3	2	550	esta rajado y hueco	Se está rajando	NA	*	2021	E	491	143	standing192
+3	9	47,17	G	8-1	342	NA	NA	1.3	2	646456	NA	Caido	*	NA	2021	E	295	NA	standing193
+3	8	49,01	O	3-1	278	NA	NA	0.3	2	849015	NA	Caido	NA	*	2021	E	250	NA	standing194
+3	8	49,04	I	20-1	306	323	9	1.3	2	199	NA	NA	*	NA	2021	E	272	266	standing195
+3	9	49,12	H	8-1	237	239	2.3	1.3	2	234	NA	NA	*	NA	2021	E	237	239	standing196
+3	9	49,12	J	19.1	272	248	7.7	1.3	2	10738	NA	NA	*	NA	2021	E	245	246	standing197
+3	9	49,21	F	21.1	NA	207	7.4	1.3	2	12294	NA	NA	*	NA	2021	E	NA	NA	standing198
+3	9	49,24	B	19.1	393	439	1	0.5	2	129102	Ya el resto del tronco  está en el suelo	NA	NA	*	2021	E	470	479	standing199

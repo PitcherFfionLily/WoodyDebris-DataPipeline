@@ -1,0 +1,191 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height_prior	height	POM	branches	tag	notes_prior	notes	bark_present	bark_absent	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
+2	8	01,21	I	20-1	446	367	6.5	1.08	0.54	2	8518	NA	NA	*	NA	2023	E	337	197	standing001
+2	8	01,21	K	8-1	379	315	1.1	1.1	0.55	2	8207	se cayo parte del tronco	NA	*	NA	2023	E	334	283	standing002
+2	8	01,21	L	20-1	799	804	10.5	10.3	1.3	2	8208	NA	NA	*	NA	2023	E	587	610	standing003
+3	10	01,21	P	8-1	479	462	15.1	15.1	2.8	2	8214	Escalera	NA	NA	*	2023	E	523	483	standing004
+2	8	01,24	L	21-1	273	NA	0.85	NA	0.4	2	259312	NA	se descompuso	NA	*	2023	E	210	NA	standing005
+2	8	01,24	M	9-1	429	412	2.9	2.9	1.3	2	8188	NA	NA	NA	*	2023	E	374	374	standing006
+2	10	02,16	N	22-1	328	328	5.7	5	1.3	2	253219	tenia banda de metal	NA	*	NA	2023	E	NA	338	standing007
+2	10	02,16	F	23-1	NA	294	NA	13.4	1.5	2	257727	NA	NA	*	NA	2023	E	NA	302	standing008
+2	10	03,09	A	7-2	356	NA	7.2	NA	1.3	2	7918	NA	Caido	NA	*	2023	E	261	NA	standing009
+3	10	03,09	D	21-1	467	434	6.8	6.7	1.3	2	8040	siempre ha tenido corteza, correguir censo anterior	se partio	*	NA	2023	E	355	366	standing010
+2	10	03,09	I	20-1	347	NA	7.6	NA	1.3	2	8053	NA	Caido	*	NA	2023	E	293	NA	standing011
+2	10	03,09	I	21-1	335	345	9.8	9.6	1.3	2	8050	NA	NA	*	NA	2023	E	276	266	standing012
+2	10	03,09	J	20-1	642	580	17.8	17.1	1.3	1	8048	NA	NA	NA	*	2023	E	587	561	standing013
+3	10	03,09	L	23-1	NA	304	NA	5.5	3	2	268184	NA	Escalera	NA	NA	2023	E	NA	NA	standing014
+2	10	03,09	N	8-1	363	356	24.2	22.2	1.3	1	268164	NA	NA	NA	*	2023	E	NA	329	standing015
+2	10	03,09	N	21-1	206	213	14.8	4.1	1.3	2	268197	NA	NA	*	NA	2023	E	NA	199	standing016
+3	10	03,12	A	3-1	592	595	34.5	35.4	3.5	1	7902	Escalera	NA	NA	*	2023	E	645	579	standing017
+2	10	03,12	E	21-1	243	250	0.51	0.51	0.27	2	252102	NA	NA	NA	*	2023	E	213	208	standing018
+2	10	03,12	F	23-1	NA	205	NA	2.6	1.3	2	8067	NA	NA	NA	NA	2023	E	NA	183	standing019
+2	13	05,03	E	19-1	335	358	2.9	3	1.3	2	7656	NA	NA	*	NA	2023	E	271	270	standing020
+2	13	05,03	G	7-1	418	399	1.1	1.24	0.55	2	7660	NA	NA	*	NA	2023	E	311	315	standing021
+2	13	05,03	O	8-1	NA	NA	NA	NA	3.6	2	7621	sacar de lista	Sacar de lista	NA	*	2023	E	NA	NA	standing022
+2	9	05,12	A	22-1	263	259	8.4	5.3	1.3	2	236900	NA	NA	*	NA	2023	E	NA	233	standing023
+3	10	05,20	A	7.1	NA	420	NA	9.4	1.3	2	238573	NA	No fue medido en el 2022. No estaba en el formulario parece que fue borrado por error o accidente.	NA	*	2023	E	NA	385	standing024
+2	8	05,20	J	21-1	242	244	9.5	5.3	1.3	1	269635	NA	NA E	*	NA	2023	E	233	239	standing025
+2	8	05,20	K	21-1	274	277	10.7	10.4	1.3	1	7497	NA	NA E	*	NA	2023	E	247	244	standing026
+2	8	05,20	L	21-1	318	NA	0.95	NA	0.75	1	7496	NA	Se descompuso	NA	*	2023	E	163	NA	standing027
+2	8	05,20	M	19-1	NA	NA	NA	NA	3	0	7499	Nada	Nada	*	NA	2023	E	NA	NA	standing028
+2	8	05,20	P	3-1	365	343	13.7	13.4	1.3	2	238630	NA	NA	NA	*	2023	E	354	342	standing029
+2	8	05,24	J	19-1	218	221	1.5	1.5	1.3	2	239685	NA	NA	NA	*	2023	E	NA	197	standing030
+2	8	05,24	N	7-1	492	479	16	16	1.3	2	239534	NA	NA	NA	*	2023	E	467	449	standing031
+2	8	05,24	O	22-1	273	265	11.2	11	1.3	2	7474	NA	NA	*	NA	2023	E	266	264	standing032
+2	13	06,06	I	5-2	NA	NA	NA	NA	1.3	2	13123	Se cayó	Sacar de lista	*	NA	2023	V	NA	NA	standing033
+2	13	06,06	O	21-1	516	517	13.6	12.6	1.3	2	7343	NA	NA	*	NA	2023	V	409	410	standing034
+2	10	06,09	C	23-1	NA	485	NA	0.9	1.3	2	No tag	NA	NA	NA	*	2023	E	NA	340	standing035
+2	10	06,09	M	22-1	203	NA	7.4	NA	1.3	2	231582	NA	Caido	*	NA	2023	E	155	NA	standing036
+2	10	06,09	N	22-1	203	221	10.3	10.1	1.3	2	231571	NA	NA	*	NA	2023	E	172	180	standing037
+2	13	07,01	B	3-1	NA	NA	NA	NA	1.3	2	7311	Se cayo	Sacar de lista	NA	*	2023	E	NA	NA	standing038
+2	13	07,01	I	7-1	NA	NA	NA	NA	1.3	2	7321	Eliminar fila	Sacar de lista 2021	*	NA	2023	E	NA	NA	standing039
+2	10	07,13	I	20-1	601	NA	7.5	NA	3	2	No tag esta en 0613 entre 24 y 34 mide más de 600 mm	Escalera	Caido	NA	*	2023	E	564	NA	standing040
+2	9	07,13	J	21-1	251	256	9.4	8.8	1.3	2	7401	NA	NA	*	NA	2023	E	NA	NA	standing041
+3	10	07,13	K	22-1	424	400	7	7.4	3	2	7227	Escalera	NA	*	NA	2023	E	379	364	standing042
+2	8	07,20	O	21-1	486	494	NA	2.8	1.3	0	7177	NA	NA	NA	*	2023	E	398	394	standing043
+2	8	07,20	P	21-2	389	387	9.2	9.2	1.3	2	7185	En censo original aparece con codigo 21-1, se corrigió el codigo ahora es 21-2	NA	*	NA	2023	E	373	368	standing044
+2	8	07,20	P	21-1	473	408	26.3	3.9	1.3	0	228511	NA	NA	*	NA	2023	E	410	407	standing045
+2	10	08,06	H	22-1	315	317	22.8	24	1.3	0	707088	NA	NA	NA	*	2023	E	NA	301	standing046
+2	10	08,06	M	21-1	342	NA	17.3	NA	1.3	2	7029	NA	Caido	*	NA	2023	E	329	NA	standing047
+2	10	08,06	M	21-2	713	NA	2	NA	1.3	2	7030	NA	Caido	NA	*	2023	E	360	NA	standing048
+2	9	09,12	F	21-1	198	NA	9.2	NA	1.3	2	808233	NA	Caido	*	NA	2023	E	NA	NA	standing049
+2	9	10,20	H	22-1	314	NA	14.5	NA	1.6	2	NA	No tiene tag es cecropia	Caido	*	NA	2023	E	264	NA	standing050
+2	9	10,20	H	4-1	330	319	12.1	5.3	1.3	2	6849	NA	NA	NA	*	2023	E	304	313	standing051
+3	13	01,24	K	22-1	344	318	6.5	5.8	1.3	1	259211	NA	revisar es 01,24	NA	*	2023	E	209	202	standing052
+2	15	11,15	J	22-1	232	NA	5.3	NA	1.3	2	213097	NA	Se cayó	*	NA	2023	V	NA	NA	standing053
+2	15	12,23	E	21-1	292	297	8.7	2.6	1.3	2	6472	NA	NA	*	NA	2023	V	209	223	standing054
+2	15	12,23	O	22-1	234	238	5.9	5.4	1.3	2	204041	NA	NA	*	NA	2023	V	NA	229	standing055
+2	15	13,16	A	20-1	757	698	30	27.4	1.3	1	6163	NA	NA	*	NA	2023	V	781	743	standing056
+2	15	13,16	G	19-1	NA	NA	NA	NA	1.3	2	6393	Nada  sacar de lista	Sacar de lista	*	NA	2023	V	NA	NA	standing057
+2	15	13,16	L	20-1	243	242	5.8	6.55	1.3	2	6154	NA	NA	*	NA	2023	V	254	253	standing058
+2	13	14,05	E	22-1	381	NA	17.1	NA	3	2	513042	Escalera Cecryn	se cayo	*	NA	2023	V	378	NA	standing059
+2	13	14,05	J	22-1	250	299	22.3	0.45	1.7	2	713072	Cecryn	Se quebró a 0.90	*	NA	2023	V	234	264	standing060
+2	15	14,11	E	9-1	158	120	0.35	0.35	0.37	2	No tag	Se está desaciendo	Sacar de lista	NA	*	2023	V	89	75	standing061
+2	15	14,14	K	21-1	264	NA	0.93	NA	0.45	2	814223	Se partió a 0.93	No se encontró nada	NA	*	2023	V	197	NA	standing062
+2	15	14,24	C	22-1	252	263	11	7.8	1.3	2	6100	NA	NA	*	NA	2023	V	NA	279	standing063
+2	15	14,24	E	6-1	99	NA	NA	NA	1.3	2	6105	NA	no mide sacar de lista	NA	*	2023	V	NA	NA	standing064
+2	15	14,24	I	22-1	454	463	15.5	11.4	1.3	NA	813513	NA	NA	*	NA	2023	V	408	416	standing065
+2	15	14,24	B	23-1	NA	283	NA	0.4	0.2	NA	194104	NA	NA	NA	*	2023	V	NA	223	standing066
+2	14	15,07	B	8-1	NA	NA	NA	NA	0.2	2	no tag	Nada	Sacar de lista	*	NA	2023	V	NA	NA	standing067
+2	14	15,07	I	22-1	250	NA	6.2	NA	1.3	2	No tag	NA	se cayó	*	NA	2023	V	198	NA	standing068
+2	14	15,07	K	2-1	127	NA	NA	NA	0.49	2	415259	NA	sacar de lista	NA	NA	2023	V	67	NA	standing069
+2	13	16,05	G	21-1	200	NA	6.6	NA	1.3	2	515094	NA	se cayó	*	NA	2023	V	157	NA	standing070
+2	13	16,05	L	6-1	NA	NA	NA	NA	0.52	2	516063	Nada sacar de lista	sacar de lista	NA	NA	2023	V	NA	NA	standing071
+2	13	16,05	O	5-1	NA	NA	NA	NA	0.28	2	5637	Nada sacar de lista	sacar de lista	NA	NA	2023	V	NA	NA	standing072
+2	13	16,05	P	22-1	437	445	30.6	27.2	1.7	0	5633	NA	NA	NA	*	2023	V	397	472	standing073
+2	15	16,12	C	2-1	NA	NA	NA	NA	0.7	2	no tag	Solo se encontró el clavo	Sacar de lista	NA	*	2023	V	NA	NA	standing074
+2	13	17,01	A	22-1	364	242	3.1	1.6	1.3	2	5600	NA	NA	*	NA	2023	E	353	217	standing075
+2	13	17,01	I	0-1	463	NA	0.4	NA	0.3	2	no tag	se esta rajando	Se cayó	NA	*	2023	E	346	NA	standing076
+2	13	17,01	J	20-1	253	NA	3.9	NA	1.3	1	175172	NA	Se cayó	NA	*	2023	E	246	NA	standing077
+2	13	17,01	J	23-1	NA	385	NA	12.6	1.3	1	116051	NA	NA	*	NA	2023	E	NA	322	standing078
+2	13	17,01	K	21-1	304	238	1.3	1.3	1.3	2	5587	Quebrado a 1.30m	NA	*	NA	2023	E	296	206	standing079
+2	13	17,01	L	22-1	262	250	10.3	8.2	1.3	2	5585	NA	NA	*	NA	2023	E	210	228	standing080
+2	13	17,01	L	22-2	242	236	10.1	10	1.3	2	175180	NA	NA	NA	*	2023	E	214	223	standing081
+2	13	17,01	O	21-1	387	255	10	3.2	1.3	2	5594	NA	NA	*	NA	2023	E	343	254	standing082
+2	13	17,01	O	21-2	352	294	4	4.3	1.3	2	5597	NA	NA	*	NA	2023	E	307	316	standing083
+3	13	17,08	N	21-1	577	529	6.6	6.6	2.9	2	5542	NA	NA	*	NA	2023	E	548	589	standing084
+2	15	18,23	A	22-1	315	NA	3	NA	1.7	2	5417	NA	Se cayó	NA	*	2023	V	295	NA	standing085
+2	15	18,23	G	22-1	234	232	11.5	10.8	1.3	1	5446	NA	NA	*	NA	2023	V	210	218	standing086
+2	15	18,23	O	2-1	515	516	6.1	7.1	1.3	2	5421	NA	NA	NA	*	2023	V	511	511	standing087
+2	13	19,02	M	19-1	NA	270	NA	0.4	0.54	2	no tag	NA	NA	NA	*	2023	E	NA	127	standing088
+2	13	19,02	O	23-1	NA	203	NA	1.6	NA	NA	no tag	NA	No tiene tag pero está al lado del árbol 719037 es un Cecropia	NA	NA	2023	E	NA	182	standing089
+2	13	19,06	N	20-1	NA	NA	NA	NA	1.3	NA	5231	Nada	Sacar de lista	*	NA	2023	V	NA	NA	standing090
+2	13	19,06	G	23-1	NA	883	NA	5.3	1.3	NA	5308	NA	NA	*	NA	2023	V	NA	1017	standing091
+2	14	19,08	H	22-1	407	388	1.8	1.8	1.3	2	5323	NA	NA	*	NA	2023	V	311	353	standing092
+2	14	19,12	E	19-1	NA	NA	NA	NA	0.7	2	5332	Solo queda el clavo	Sacar de lista	NA	*	2023	V	NA	NA	standing093
+2	14	19,12	N	20-1	213	213	1.9	1.85	1.3	0	619102	NA	NA	*	NA	2023	V	NA	NA	standing094
+2	14	19,12	I	23-1	NA	331	NA	1.3	NA	NA	5196	NA	NA	*	NA	2023	V	NA	297	standing095
+3	13	19,16	N	20-1	365	160	3.4	3.2	3	1	167104	NA	NA	NA	*	2023	E	374	301	standing096
+2	16	19,16	P	20-1	646	NA	9	NA	3	1	5177	lianas creciendo pegadas al tronco afectan la medida de diametro	Se cayó	*	NA	2023	V	627	NA	standing097
+2	16	19,19	B	22-1	367	375	16.3	8	1.8	1	5162	NA	NA	*	NA	2023	V	348	357	standing098
+2	16	19,19	C	21-1	606	613	7.1	7.2	1.3	2	5380	NA	NA	*	NA	2023	V	637	623	standing099
+2	16	19,19	D	19-1	303	NA	5.1	NA	1.3	2	5381	Se esta rajando	Se cayó	*	NA	2023	V	319	NA	standing100
+2	16	19,19	F	3-1	474	403	1.3	110	0.5	2	172649	NA	NA	NA	*	2023	V	393	404	standing101
+3	1	21,08	C	8-1	NA	NA	NA	NA	0.4	2	5003	Solo clavo	Nada	NA	*	2023	E	NA	NA	standing102
+3	1	21,08	P	2-1	318	341	0.45	0.45	0.3	2	4909	NA	rajado	NA	*	2023	NA	253	237	standing103
+3	1	21,10	H	8-1	NA	NA	NA	NA	1.3	2	161881	Solo clavo	Nada	NA	*	2023	E	NA	NA	standing104
+3	1	21,10	G	23-1	NA	268	NA	1.3	0.65	2	5015	NA	NA	*	NA	2023	E	NA	268	standing105
+3	1	21,15	J	21-1	754	509	3.4	1.4	1.3	2	5041	NA	NA	*	*	2023	E	637	223	standing106
+3	1	21,17	M	22-1	296	NA	30	NA	4	0	707602	Escalera	Caido	*	NA	2023	E	299	NA	standing107
+2	16	22,19	D	8-1	277	265	6.1	2	1.3	2	4855	NA	NA	NA	*	2023	V	269	178	standing108
+2	16	22,21	M	20-1	NA	NA	NA	NA	1.3	2	No tag	Nada	Nada sacar de lista	*	NA	2023	V	NA	NA	standing109
+3	1	23,03	K	9-1	273	295	5.4	4.6	1.3	2	no tag	NA	NA	*	NA	2023	E	250	239	standing110
+3	1	23,06	K	5-1	527	513	23.8	22.6	1.3	1	4585	NA	NA	NA	*	2023	E	490	498	standing111
+3	1	23,17	B	22-1	223	228	2.5	2.5	1.3	2	147585	NA	El tag es 147565 y no 147585	*	NA	2023	E	178	176	standing112
+3	1	23,17	O	3-1	295	NA	1.08	NA	0.55	1	4519	NA	Nada	NA	*	2023	E	153	NA	standing113
+2	16	23,23	P	2-1	693	668	1.9	1.9	1.3	2	no tag	NA	NA	NA	*	2023	V	638	622	standing114
+2	16	23;23	J	22-1	307	373	3.2	2.8	1.3	2	153697	NA	NA	*	NA	2023	V	265	255	standing115
+3	1	24,09	E	6-1	242	232	0.7	0.7	0.35	2	146393	NA	NA	NA	*	2023	E	261	261	standing116
+3	1	24,09	I	6-1	225	222	1.4	1.4	1.3	2	146601	NA	NA	NA	*	2023	E	123	79	standing117
+3	13	24,15	K	20-1	711	685	29.1	30.6	3	1	4394	Escalera	NA	*	NA	2023	E	691	734	standing118
+3	1	24,15	O	8-1	381	NA	0.87	NA	0.45	0	4386	NA	se cayo	NA	*	2023	E	284	NA	standing119
+3	1	26,08	G	21-1	443	433	1.3	1.3	0.65	2	4219	se quebro a 1.3	NA	*	NA	2023	E	371	353	standing120
+3	1	26,08	I	20-1	208	NA	2.3	NA	1.3	2	136229	NA	Caido	*	NA	2023	E	132	NA	standing121
+2	28	26,17	C	20-1	586	NA	1	NA	0.5	2	No tag	NA	Se cayó	NA	*	2023	V	256	NA	standing122
+2	16	26,21	B	8-1	NA	NA	NA	NA	1.3	2	138307	nada  Sacar de lista	Se cayó sacar de lista	NA	NA	2023	V	NA	NA	standing123
+2	16	26,21	K	21-1	442	450	12.6	11	1.3	1	4089	NA	NA	*	NA	2023	V	441	423	standing124
+2	16	26,21	P	3-1	306	NA	0.65	NA	0.36	2	NA	NA	solo clavo	NA	*	2023	V	75	NA	standing125
+2	28	29,13	K	22-1	202	198	12.1	12	1.3	1	112501	NA	NA	*	NA	2023	V	NA	NA	standing126
+2	28	29,13	G	23-1	NA	222	NA	14.8	1.3	0	117371	NA	NA	NA	NA	2023	V	NA	216	standing127
+2	28	31,21	F	21-1	628	652	2.6	100	0.5	2	3441	NA	NA	*	NA	2023	V	571	559	standing128
+2	28	31,21	J	19-1	446	NA	20.8	NA	1.3	2	3451	NA	Se cayó	NA	*	2023	V	526	NA	standing129
+2	28	31,21	L	2-1	NA	NA	NA	NA	1.3	2	104126	Nada	Sacar de lista no hay nada	NA	*	2023	V	NA	NA	standing130
+3	2	32,07	A	23-1	NA	238	NA	15	1.3	0	932093	NA	NA	*	NA	2023	E	NA	112	standing131
+3	2	32,07	B	22-1	207	212	123	1.25	0.61	2	no tag	rajado	NA	*	NA	2023	E	109	105	standing132
+3	2	32,07	N	20-1	308	295	12.6	9.2	1.3	2	96459	NA	NA	*	NA	2023	E	NA	NA	standing133
+3	2	32,07	L	23-1	NA	4210	NA	10.1	1.3	2	2999	NA	La medida fue hecha en las gambas, no hay donde más medirlo	NA	*	2023	E	NA	NA	standing134
+2	28	32,24	H	23-1	NA	461	NA	24.9	3.6	1	104784	NA	Escalera está ala altura de la pintura del dendrometro	NA	NA	2023	V	NA	NA	standing135
+2	28	32,24	I	23-1	NA	499	NA	25.2	1.3	0	104880	NA	NA	*	NA	2023	V	NA	416	standing136
+3	2	33,12	G	23-1	NA	253	NA	19.7	1.3	1	832380	NA	NA	*	NA	2023	E	NA	NA	standing137
+2	28	33,21	G	22-1	285	287	11.3	10.5	1.3	2	3106	NA	NA	*	NA	2023	V	280	228	standing138
+3	1	34,04	D	21-1	332	311	12.2	12.6	1.3	2	90806	NA	NA	*	NA	2023	E	328	323	standing139
+3	1	34,04	E	21-1	361	361	9.8	8.6	1.5	2	2921	NA	NA	*	NA	2023	E	365	378	standing140
+3	2	34,15	A	20-1	494	461	2.8	3.3	1.3	2	No tag	NA	Correguir altura correcta 3.30m	*	NA	2023	E	473	293	standing141
+3	2	34,15	J	21-1	282	262	19.1	14.6	1.3	1	633201	NA	NA	*	NA	2023	E	278	NA	standing142
+3	2	34,15	K	20-1	201	206	11.6	0.6	0.3	1	87643	NA	NA	*	NA	2023	E	187	166	standing143
+3	2	34,15	K	23-1	NA	373	NA	18	1.3	1	No tag	NA	NA	*	NA	2023	E	NA	168	standing144
+3	2	35,17	A	21-1	351	NA	1	NA	0.5	2	2472	se partio a 1.00	Se descompuso	NA	*	2023	V	335	NA	standing145
+3	2	35,17	D	21-1	641	280	1.16	1.2	0.6	2	2692	NA	NA	NA	*	2023	V	312	117	standing146
+3	2	35,17	F	20-1	NA	NA	NA	NA	1.3	2	2689	Nada se cayo y	Sacar de lista	*	NA	2023	V	NA	NA	standing147
+3	1	36,04	L	19-1	952	949	1.8	1.8	1.3	2	2274	NA	NA	*	NA	2023	E	425	433	standing148
+3	13	36,10	N	23-1	NA	551	NA	18.8	3.5	1	2318	NA	Escalera	*	NA	2023	E	NA	520	standing149
+3	2	36,10	O	23-1	NA	279	NA	12.1	1.3	2	76631	NA	NA	NA	NA	2023	E	NA	258	standing150
+3	2	36,13	F	23-1	NA	347	NA	13	1.3	1	2502	NA	NA	NA	*	2023	E	NA	309	standing151
+3	2	37,17	D	21-1	245	NA	2.35	NA	1.3	2	77665	NA	Se descompuso	NA	*	2023	V	174	NA	standing152
+3	2	37,17	P	0-1	NA	NA	NA	NA	0.4	2	2143	nada	Sacar de lista	NA	*	2023	V	NA	NA	standing153
+3	3	38,11	D	22-1	243	240	19.2	7.5	1.8	1	72061	Cecryn	NA	*	NA	2023	R	242	229	standing154
+3	1	39,07	A	19-1	178	NA	1.1	NA	0.5	2	1872	NA	ya no mide sacar de lista	NA	*	2023	E	92	NA	standing155
+3	1	39,07	N	21-1	328	399	11.7	0.85	0.43	1	61292	NA	Se quebró a 0.85	*	NA	2023	E	313	361	standing156
+3	3	39,15	B	23-1	NA	255	NA	6	1.3	2	1824	NA	NA	*	NA	2023	R	NA	NA	standing157
+3	3	39,15	C	21-1	435	445	25.8	11.7	1.3	0	2006	NA	NA	*	NA	2023	R	422	412	standing158
+3	3	40,21	C	6-1	NA	NA	NA	NA	1.3	2	56943	No encontrado	Nada	NA	*	2023	R	NA	NA	standing159
+3	3	42,12	C	3-1	253	245	8.7	9	1.3	2	no tag	NA	NA	NA	*	2023	E	173	162	standing160
+3	6	42,12	N	9-2	246	238	0.69	0.9	0.45	2	no tag	Se esta rajando	NA	NA	*	2023	E	118	1.08	standing161
+3	6	42,12	P	22-1	496	NA	20	NA	1.3	1	1256	NA	Caido	NA	*	2023	E	234	NA	standing162
+3	13	42,12	P	22-2	555	545	15.2	14.4	2.8	2	1258	NA	NA	NA	*	2023	E	504	496	standing163
+3	6	42,12	P	22-3	319	322	7	7.4	1.8	2	1259	NA	NA	NA	*	2023	E	293	265	standing164
+3	3	42,21	J	22-1	540	537	0.54	0.54	0.27	2	1388	NA	NA	NA	*	2023	R	202	180	standing165
+3	6	43,10	G	21-1	192	61	2.6	1.4	1.3	2	1251	Aparece como G 20-1 pero es G 21-1	NA	NA	*	2023	E	142	NA	standing166
+3	6	43,10	K	22-1	253	240	2.4	2.4	1.3	2	41676	Esta quebrado a 2.4mt	NA	*	NA	2023	E	223	233	standing167
+3	6	43,15	B	22-1	223	214	12.5	13	1.3	2	42250	NA	NA	NA	*	2023	E	200	193	standing168
+3	6	43,15	F	20-1	NA	NA	NA	NA	0.4	2	no tag	Nada	Nada	NA	*	2023	E	NA	NA	standing169
+3	6	43,15	F	22-1	246	233	13.3	9.7	1.3	2	17999	NA	NA	*	NA	2023	E	228	224	standing170
+3	6	43,15	H	0-2	228	221	1.2	1.2	0.6	2	1284	NA	NA	NA	*	2023	E	179	177	standing171
+3	6	43,15	J	9-1	296	279	1.7	1.7	1.3	2	no tag	Completamente hueco	Completamente hueco	NA	*	2023	E	248	244	standing172
+3	6	44,07	B	5-1	398	NA	1.3	NA	0.65	2	870	se quebro y esta rajado se esta descomponiendo	Se descompuso	NA	*	2023	V	246	NA	standing173
+3	6	44,13	F	23-1	NA	430	NA	9.1	1.3	2	1086	NA	NA	*	NA	2023	E	NA	380	standing174
+3	6	44,13	H	23-1	NA	752	NA	18.5	1.3	2	No tag	NA	estaba con banda esta en 43,13 en 12	NA	*	2023	E	NA	865	standing175
+3	7	45,05	E	8-1	NA	NA	NA	NA	0.45	2	no tag	NA	no se encontró nada	NA	*	2023	V	NA	NA	standing176
+3	8	46,21	C	23-1	NA	252	NA	5	1.3	2	683	NA	NA	*	NA	2023	R	NA	247	standing177
+3	8	46,21	L	23-1	NA	253	NA	7.1	1.3	2	29287	NA	NA	NA	*	2023	R	NA	113	standing178
+3	7	47,05	D	23-1	NA	NA	NA	33.8	1.3	2	503	NA	4070mm de diametro. Medido con cinta diametrica. Medido en las gambas	*	NA	2023	E	NA	NA	standing179
+3	7	47,10	F	20-1	414	415	1.2	116	0.6	2	446310	NA	NA	NA	*	2023	V	383	387	standing180
+3	7	47,10	G	6-1	250	228	1	100	0.5	2	550	la muestra se quebro a 1.00m de altura	NA	NA	*	2023	V	189	196	standing181
+3	13	47,17	A	22-1	826	752	13.7	12.8	3.8	2	366	Escalera	NA	NA	*	2023	E	716	690	standing182
+3	7	47,17	G	8-1	NA	NA	NA	NA	1.3	2	646456	solo clavo	Sacar de lista	*	NA	2023	V	NA	NA	standing183
+3	13	47,17	N	22-1	763	727	31.1	29	31.1	1	361	Escalera	NA	*	NA	2023	E	738	727	standing184
+3	7	49,04	I	20-1	343	302	5.4	6.8	1.3	2	199	NA	altura correcta 6.8m	*	NA	2023	R	288	261	standing185
+3	7	49,12	H	8-1	242	218	1.87	1.4	1.3	2	234	NA	NA	*	NA	2023	V	196	181	standing186
+3	7	49,12	J	19.1	247	248	7.6	3.6	1.3	2	10738	NA	NA	*	NA	2023	V	246	248	standing187
+3	7	49,21	F	21.1	213	208	6.8	7.1	1.3	2	12294	NA	medido con la bara	*	NA	2023	V	NA	199	standing188
+3	7	49,24	A	22.1	541	543	18.2	16.4	1.3	2	7	inclinado 31.4 grados. tag numero siete	NA	*	NA	2023	V	387	388	standing189
+3	7	49,24	B	19.1	444	124	0.6	0.5	0.5	2	129102	NA	se esta descomponiendo	NA	*	2023	V	384	115	standing190

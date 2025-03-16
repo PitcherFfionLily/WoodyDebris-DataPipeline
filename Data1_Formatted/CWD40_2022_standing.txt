@@ -1,0 +1,229 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height	POM	branches	tag	notes_prior	notes	bark_present	bark_absent	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
+2	7	01,21	G	9-1	NA	NA	NA	1.3	1	no tag	Caido	Caido	NA	*	2022	E	NA	NA	standing001
+2	7	01,21	I	20-1	459	446	6.5	1.3	2	8518	NA	NA	*	NA	2022	E	336	337	standing002
+2	7	01,21	L	20-1	798	799	10.5	1.3	2	8208	NA	NA	*	NA	2022	E	619	587	standing003
+2	22	01,21	P	8-1	462	479	15.1	2.8	2	8214	Escalera	Escalera	NA	*	2022	E	533	523	standing004
+2	7	01,21	K	8-1	435	379	1.1	0.55	2	8207	NA	se cayo parte del tronco	*	NA	2022	E	345	334	standing005
+2	7	01,24	G	8-1	333	NA	NA	1.3	2	8536	sin ramas	Caido	NA	*	2022	E	282	NA	standing006
+2	7	01,24	G	20-1	359	NA	NA	1.3	1	8537	NA	Caido	NA	*	2022	E	NA	NA	standing007
+2	7	01,24	G	19-1	607	NA	NA	1.3	2	8535	NA	Caido	*	NA	2022	E	481	NA	standing008
+2	7	01,24	J	20-1	241	NA	NA	1.3	2	264309	NA	Caido	NA	*	2022	E	298	NA	standing009
+2	7	01,24	K	22-1	NA	344	6.5	1.3	1	259211	NA	NA	NA	*	2022	E	NA	209	standing010
+2	7	01,24	L	20-1	433	NA	NA	1.3	1	259333	NA	Caido	*	NA	2022	E	419	NA	standing011
+2	7	01,24	L	21-1	249	273	0.85	0.4	2	259312	NA	NA	NA	*	2022	E	212	210	standing012
+2	7	01,24	M	9-1	492	429	2.9	1.3	2	8188	NA	NA	NA	*	2022	E	372	374	standing013
+2	8	02,16	C	20-1	NA	NA	NA	1.3	2	257848	Caido	Caido	NA	*	2022	E	NA	NA	standing014
+2	8	02,16	H	7-1	NA	NA	NA	1.3	1	257916	Caido	Caido	NA	NA	2022	E	NA	NA	standing015
+2	8	02,16	I	8-1	NA	NA	NA	1.3	2	258010	Caido	Caido	NA	NA	2022	E	NA	NA	standing016
+2	8	02,16	G	19-1	NA	NA	NA	1.3	2	258002	Caido	Caido	NA	NA	2022	E	NA	NA	standing017
+2	8	02,16	N	22-1	NA	328	5.7	1.3	2	253219	NA	tenia banda de metal	*	NA	2022	E	NA	NA	standing018
+2	8	02,16	O	21,1	285	NA	NA	1.3	1	802138	NA	Caido	*	NA	2022	E	195	NA	standing019
+2	8	03,09	A	7-2	345	356	7.2	1.3	2	7918	NA	NA	NA	*	2022	E	268	261	standing020
+2	8	03,09	C	7-1	338	NA	NA	1.3	2	8043	NA	Caido	*	NA	2022	E	296	NA	standing021
+2	8	03,09	D	21-1	468	467	6.8	1.3	1	8040	NA	siempre ha tenido corteza, correguir censo anterior	*	NA	2022	E	372	355	standing022
+2	8	03,09	I	20-1	358	347	7.6	1.3	2	8053	NA	NA	*	NA	2022	E	316	293	standing023
+2	8	03,09	I	21-1	NA	335	9.8	1.3	2	8050	NA	NA	*	NA	2022	E	313	276	standing024
+2	8	03,09	J	20-1	669	642	17.8	1.3	1	8048	NA	NA	NA	*	2022	E	575	587	standing025
+2	8	03,09	N	8-1	378	363	24.2	1.3	1	268164	NA	NA	NA	*	2022	E	NA	NA	standing026
+2	8	03,09	N	21-1	212	206	14.8	1.3	2	268197	NA	NA	*	NA	2022	E	NA	NA	standing027
+2	22	03,12	A	3-1	586	592	34.5	3.5	1	7902	Escalera	Escalera	NA	*	2022	E	639	645	standing028
+2	8	03,12	B	20-1	NA	NA	NA	1.3	2	247036	Caido	Caido	NA	*	2022	E	NA	NA	standing029
+2	8	03,12	E	21-1	258	243	0.51	0.27	2	252102	NA	NA	NA	*	2022	E	243	213	standing030
+2	7	03,23	A	20-1	272	NA	NA	1.3	2	249574	NA	Caido	*	NA	2022	E	202	NA	standing031
+2	7	03,23	C	21-1	330	NA	NA	1.3	1	802380	NA	Caido	*	NA	2022	E	NA	NA	standing032
+2	9	05,03	E	19-1	368	335	2.9	1.3	2	7656	NA	NA	*	NA	2022	V	304	271	standing033
+2	9	05,03	G	7-1	508	418	1.1	0.55	2	7660	NA	NA	*	NA	2022	V	399	311	standing034
+2	9	05,03	O	8-1	NA	NA	NA	3.6	2	7621	Caido	sacar de lista	NA	*	2022	V	NA	NA	standing035
+2	8	05,12	A	22-1	NA	263	8.4	1.3	2	236900	NA	NA	*	NA	2022	V	NA	NA	standing036
+2	8	05,20	M	19-1	NA	NA	NA	3	0	7499	Caido	Nada	*	NA	2022	E	NA	NA	standing037
+2	8	05,20	P	3-1	367	365	13.7	1.3	2	238630	NA	NA	NA	*	2022	E	358	354	standing038
+2	8	05,20	J	21-1	243	242	9.5	1.3	1	269635	NA	NA	*	NA	2022	E	NA	233	standing039
+2	8	05,20	K	21-1	278	274	10.7	1.3	1	7497	NA	NA	*	NA	2022	E	NA	247	standing040
+2	8	05,20	L	21-1	360	318	0.95	0.75	1	7496	NA	NA	NA	*	2022	E	NA	163	standing041
+2	7	05,24	I	20-1	556	NA	NA	1.3	1	7802	NA	Caido	*	NA	2022	V	538	NA	standing042
+2	7	05,24	J	19-1	223	218	1.5	1.3	2	239685	NA	NA	*	NA	2022	V	NA	NA	standing043
+2	7	05,24	N	7-1	513	492	16	1.3	2	239534	NA	NA	NA	*	2022	V	453	467	standing044
+2	8	05,24	O	22-1	NA	273	11.2	1.3	2	7474	NA	NA	*	NA	2022	E	NA	266	standing045
+2	9	06,06	I	5-2	573	NA	NA	1.3	2	13123	NA	Se cayó	*	NA	2022	V	545	NA	standing046
+2	9	06,06	O	21-1	528	516	13.6	1.3	2	7343	NA	NA	*	NA	2022	V	443	409	standing047
+2	9	06,09	M	22-1	NA	203	7.4	1.3	2	231582	NA	NA	*	NA	2022	V	NA	155	standing048
+2	9	06,09	N	22-1	NA	203	10.3	1.3	2	231571	NA	NA	*	NA	2022	V	NA	172	standing049
+2	9	07,01	B	3-1	236	NA	NA	1.3	2	7311	NA	Se cayo	NA	*	2022	V	225	NA	standing050
+2	9	07,01	I	7-1	80	NA	NA	1.3	2	7321	Solo son restos de la corteza lo que se encontro en el suelo	Eliminar fila 2021	*	NA	2022	V	NA	NA	standing051
+2	8	07,13	B	0-1	139	NA	NA	0.57	2	no tag	Solo queda una parte delgada del tronco	Se cayó	NA	*	2022	V	32	NA	standing052
+2	22	07,13	I	20-1	612	601	7.5	3	2	No tag esta en 0613 entre 24 y 34 mide más de 600 mm	escalera	Escalera	NA	*	2022	E	619	564	standing053
+2	8	07,13	J	21-1	266	251	9.4	1.3	2	7401	NA	NA	*	NA	2022	V	NA	NA	standing054
+2	22	07,13	K	22-1	NA	424	7	3	2	7227	Escalera	Escalera	*	NA	2022	E	NA	379	standing055
+2	8	07,20	O	21-1	492	486	NA	1.3	0	7177	Fue impactado por rayo	NA	NA	*	2022	E	425	398	standing056
+2	8	07,20	P	21-1	486	473	26.3	1.3	0	228511	Fue impactado por rayo	NA	*	NA	2022	E	412	410	standing057
+2	8	07,20	P	21-2	397	389	9.2	1.3	2	7185	Fue impactado por rayo	En censo original aparece con codigo 21-1, se corrigió el codigo ahora es 21-2	*	NA	2022	E	NA	373	standing058
+2	9	08,06	M	3-1	NA	NA	NA	0.5	2	7036	Se descompuso solo algunos restos en el suelo	Nada sacar de lista	NA	*	2022	V	NA	NA	standing059
+2	9	08,06	M	21-1	338	342	17.3	1.3	2	7029	NA	NA	*	NA	2022	V	329	329	standing060
+2	9	08,06	M	21-2	785	713	2	1.3	2	7030	NA	NA	NA	*	2022	V	763	360	standing061
+2	9	08,06	H	22-1	NA	315	22.8	1.3	0	707088	NA	NA	*	NA	2022	V	NA	NA	standing062
+2	9	09,12	F	21-1	202	198	9.2	1.3	2	808233	NA	NA	*	NA	2022	V	NA	NA	standing063
+2	8	10,20	H	22-1	NA	314	14.5	1.6	2	NA	NA	No tiene tag es cecropia	*	NA	2022	V	NA	264	standing064
+2	8	10,20	G	19-1	NA	NA	NA	1.3	2	6850	Se cayó	Nada	*	NA	2022	V	NA	NA	standing065
+2	8	10,20	H	4-1	340	330	12.1	1.3	2	6849	NA	NA	NA	*	2022	E	NA	304	standing066
+2	11	11,15	D	7-1	NA	NA	NA	0.55	2	212912	Nada	sacar de lista	NA	NA	2022	V	NA	NA	standing067
+2	11	11,15	J	7-1	NA	NA	NA	1.3	2	213119	Caido	Caido	NA	*	2022	V	NA	NA	standing068
+2	11	11,15	J	19-1	NA	NA	NA	1.3	2	213096	Caido	Caido	NA	*	2022	V	NA	NA	standing069
+2	11	11,15	J	22-1	NA	232	5.3	1.3	2	213097	NA	NA	*	NA	2022	V	NA	NA	standing070
+2	11	12,23	E	21-1	297	292	8.7	1.3	2	6472	NA	NA	*	NA	2022	E	NA	209	standing071
+2	11	12,23	O	22-1	NA	234	5.9	1.3	2	204041	NA	NA	*	NA	2022	E	NA	NA	standing072
+2	11	13,16	A	20-1	772	757	30	1.3	1	6163	NA	NA	*	NA	2022	V	NA	781	standing073
+2	12	13,16	G	19-1	NA	NA	NA	1.3	2	6393	caido	Nada  sacar de lista	*	NA	2022	V	NA	NA	standing074
+2	11	13,16	L	20-1	244	243	5.8	1.3	2	6154	NA	NA	*	NA	2022	V	NA	254	standing075
+2	10	14,05	J	22-1	NA	250	22.3	1.7	2	713072	NA	Cecryn	*	NA	2022	V	NA	234	standing076
+2	22	14,05	E	22-1	NA	381	17.1	3	2	513042	NA	Escalera Cecryn	*	NA	2022	E	NA	378	standing077
+2	10	14,11	E	9-1	352	158	0.35	0.37	2	No tag	NA	Se está desaciendo	NA	*	2022	V	199	89	standing078
+2	10	14,14	K	21-1	225	264	0.93	0.45	2	814223	NA	Se partió a 0.93	NA	*	2022	V	165	197	standing079
+2	11	14,24	C	22-1	NA	252	11	NA	2	6100	NA	NA	*	NA	2022	E	NA	NA	standing080
+2	11	14,24	E	6-1	153	99	2	1.3	2	6105	NA	NA	NA	*	2022	E	NA	NA	standing081
+2	11	14,24	I	22-1	NA	454	15.5	1.3	NA	813513	NA	NA	*	NA	2022	E	NA	408	standing082
+2	11	14,24	P	19-1	NA	NA	NA	1.3	2	6081	se cayo	Caido	NA	NA	2022	E	NA	NA	standing083
+2	10	15,07	B	8-1	NA	NA	NA	0.2	2	no tag	Solo el clavo. Se descompuso	Nada	*	NA	2022	E	NA	NA	standing084
+2	10	15,07	G	6-1	519	NA	NA	1.3	2	5960	NA	Caido	NA	*	2022	E	444	NA	standing085
+2	10	15,07	I	22-1	NA	250	6.2	1.3	2	No tag	NA	NA	*	NA	2022	E	NA	198	standing086
+2	10	15,07	K	2-1	136	127	NA	0.49	2	415259	NA	NA	NA	NA	2022	E	128	67	standing087
+2	10	16,05	G	21-1	207	200	6.6	1.3	2	515094	NA	NA	*	NA	2022	V	172	157	standing088
+2	10	16,05	L	6-1	NA	NA	NA	0.52	2	516063	Nada	Nada sacar de lista	NA	NA	2022	V	NA	NA	standing089
+2	10	16,05	O	5-1	NA	NA	NA	0.28	2	5637	Nada	Nada sacar de lista	NA	NA	2022	V	NA	NA	standing090
+2	10	16,05	P	22-1	NA	437	30.6	1.7	0	5633	NA	NA	NA	*	2022	V	NA	397	standing091
+2	10	16,12	C	2-1	407	NA	NA	0.7	2	no tag	NA	Solo se encontró el clavo	NA	*	2022	V	217	NA	standing092
+2	10	17,01	A	22-1	NA	364	3.1	1.3	2	5600	NA	NA	NA	*	2022	E	NA	353	standing093
+2	10	17,01	I	0-1	483	463	0.4	0.3	2	no tag	NA	se esta rajando	NA	*	2022	E	252	346	standing094
+2	10	17,01	J	20-1	278	253	3.9	1.3	1	175172	Correguir la posicion, esta es en K	NA	NA	*	2022	E	242	246	standing095
+2	10	17,01	K	21-1	319	304	1.3	1.3	2	5587	NA	Quebrado a 1.30m	*	NA	2022	E	242	296	standing096
+2	10	17,01	L	22-1	NA	262	10.3	1.3	2	5585	NA	NA	*	NA	2022	E	NA	210	standing097
+2	10	17,01	L	22-2	NA	242	10.1	1.3	2	175180	NA	NA	NA	*	2022	E	NA	214	standing098
+2	10	17,01	O	21-1	385	387	10	1.3	2	5594	NA	NA	*	NA	2022	E	NA	343	standing099
+2	10	17,01	O	21-2	359	352	4	1.3	2	5597	NA	NA	*	NA	2022	E	NA	307	standing100
+2	10	17,08	N	7-1	NA	NA	NA	1.3	2	176354	Caido. El area la destruyó parte del otro árbol 5542 que cayó	Caido	*	NA	2022	E	NA	NA	standing101
+2	22	17,08	N	21-1	566	577	6.6	2.9	2	5542	Escalera	NA	*	NA	2022	E	527	548	standing102
+2	11	18,23	A	22-1	NA	315	3	1.7	2	5417	NA	NA	NA	*	2022	E	NA	295	standing103
+2	11	18,23	O	2-1	536	515	6.1	1.3	2	5421	NA	NA	NA	*	2022	E	524	511	standing104
+2	11	18,23	G	22-1	NA	234	11.5	1.3	1	5446	NA	NA	*	NA	2022	E	NA	210	standing105
+2	10	19,02	M	19-1	NA	NA	NA	0.54	2	no tag	Nada	NA	NA	*	2022	E	NA	NA	standing106
+2	10	19,06	N	20-1	NA	NA	NA	1.3	NA	5231	Caido	Nada	*	NA	2022	E	NA	NA	standing107
+2	10	19,08	H	22-1	NA	407	1.8	1.3	2	5323	NA	NA	*	NA	2022	E	NA	311	standing108
+2	10	19,12	E	19-1	529	NA	NA	0.7	2	5332	Quebrado a 1.3m	Solo queda el clavo	NA	*	2022	V	327	NA	standing109
+2	10	19,12	F	20-1	NA	NA	NA	1.3	2	418272	Caído	Caido	*	NA	2022	V	NA	NA	standing110
+2	10	19,12	N	20-1	224	213	1.9	1.3	0	619102	NA	NA	*	NA	2022	V	NA	NA	standing111
+2	14	19,16	D	20-1	227	NA	NA	1.3	2	172117	NA	Caido	*	NA	2022	E	191	NA	standing112
+2	22	19,16	N	20-1	372	365	3.4	3	1	167104	Escalera	NA	*	NA	2022	E	367	374	standing113
+2	22	19,16	P	20-1	635	646	9	3	1	5177	Escalera	lianas creciendo pegadas al tronco afectan la medida de diametro	*	NA	2022	E	609	627	standing114
+2	14	19,19	C	8-1	NA	NA	NA	1.3	2	818500	caido	Caido	NA	*	2022	E	NA	NA	standing115
+2	14	19,19	C	21-1	608	606	7.1	1.3	2	5380	NA	NA	*	NA	2022	E	627	637	standing116
+2	14	19,19	D	19-1	316	303	5.1	1.3	2	5381	NA	Se esta rajando	*	NA	2022	E	265	319	standing117
+2	14	19,19	E	19-1	NA	NA	NA	1.3	2	5383	Caido	Caido	*	NA	2022	E	NA	NA	standing118
+2	14	19,19	F	3-1	539	474	1.3	0.5	2	172649	NA	NA	NA	*	2022	E	469	393	standing119
+2	15	19,19	F	20-1	NA	NA	NA	1.8	2	718325	Caido	Caido	NA	*	2022	E	NA	NA	standing120
+2	14	19,19	B	22-1	NA	367	16.3	1.8	1	5162	NA	NA	*	NA	2022	E	NA	348	standing121
+2	16	21,04	F	19-1	NA	NA	NA	1.3	2	160651	Caido	Caido  Sacar de lista	*	NA	2022	V	NA	NA	standing122
+2	16	21,08	C	8-1	267	NA	NA	0.4	2	5003	Parte principal del tronco se cayó. Quedo solo la base del árbol.	Solo clavo perdio madera y corteza	NA	*	2022	V	154	NA	standing123
+2	16	21,08	P	2-1	365	318	0.45	0.3	2	4909	NA	NA Rajado	NA	*	2022	V	238	253	standing124
+2	15	21,10	O	4-1	222	NA	NA	1.3	2	156491	NA	Caido	NA	*	2022	V	186	NA	standing125
+2	15	21,10	H	8-1	170	NA	NA	1.3	2	161881	Quebrado a 1.3m	Solo clavo	NA	*	2022	V	NA	NA	standing126
+2	14	21,15	J	21-1	766	754	3.4	1.3	2	5041	NA	NA	*	NA	2022	E	639	637	standing127
+2	14	21,17	B	19-1	399	NA	NA	1.3	2	4867	NA	Caido	*	NA	2022	E	366	NA	standing128
+2	22	21,17	M	22-1	NA	296	30	4	0	707602	NA	Escalera	*	NA	2022	E	NA	299	standing129
+2	14	22,19	D	8-1	297	277	6.1	1.3	2	4855	NA	NA	NA	*	2022	E	267	269	standing130
+2	14	22,19	J	20-1	NA	NA	NA	3	1	4846	Caido	Caido	*	NA	2022	E	NA	NA	standing131
+2	14	22,21	M	20-1	NA	NA	NA	1.3	2	No tag	Nada	Nada	*	NA	2022	E	NA	NA	standing132
+2	16	23,03	K	9-1	304	273	5.4	1.3	2	no tag	NA	NA	*	NA	2022	V	258	250	standing133
+2	16	23,06	I	20-1	561	NA	NA	1.6	1	4671	NA	Caido	*	NA	2022	V	497	NA	standing134
+2	16	23,06	J	19-1	229	NA	NA	1.3	2	151130	NA	Caido	*	NA	2022	V	207	NA	standing135
+2	16	23,06	K	5-1	502	527	23.8	1.3	1	4585	NA	NA	NA	*	2022	V	487	490	standing136
+2	16	23,06	K	8-1	339	NA	NA	1.3	2	4584	NA	Caido	NA	*	2022	V	234	NA	standing137
+2	16	23,06	L	20-1	NA	NA	NA	1.3	2	No tag	Caido	sacar de lista	NA	*	2022	V	NA	NA	standing138
+2	14	23,17	B	22-1	NA	223	2.5	1.3	2	147585	NA	NA	*	NA	2022	E	NA	178	standing139
+2	14	23,17	H	6-1	179	NA	NA	1.3	2	no tag. Sin corteza. Es el mismo que I6-1 fallen	NA	Caido	NA	*	2022	E	169	NA	standing140
+2	14	23,17	O	3-1	303	295	1.08	0.55	1	4519	NA	NA	NA	*	2022	E	167	153	standing141
+2	14	23,23	A	20-1	232	NA	NA	1.3	2	148686	NA	Caido	NA	*	2022	V	140	NA	standing142
+2	14	23,23	P	2-1	746	693	1.9	1.3	2	no tag	NA	NA	NA	*	2022	V	630	638	standing143
+2	14	23;23	J	22-1	NA	307	3.2	1.3	2	153697	NA	NA	*	NA	2022	V	NA	265	standing144
+2	15	24,09	E	6-1	223	242	0.7	0.35	2	146393	NA	NA	NA	*	2022	V	183	261	standing145
+2	15	24,09	I	6-1	259	225	1.4	1.3	2	146601	NA	NA	NA	*	2022	V	143	123	standing146
+2	22	24,15	K	20-1	733	711	29.1	3	1	4394	El POMesta equivocado a 1.3m, es arbol con escalera	Escalera	*	NA	2022	E	682	691	standing147
+2	15	24,15	O	8-1	368	381	0.87	0.45	0	4386	NA	NA	NA	*	2022	E	276	284	standing148
+2	15	26,08	G	21-1	397	443	1.3	0.65	2	4219	NA	se quebro a 1.3	*	NA	2022	V	292	371	standing149
+2	15	26,08	I	20-1	209	208	2.3	1.3	2	136229	NA	NA	*	NA	2022	V	135	132	standing150
+2	15	26,17	C	20-1	NA	586	1	0.5	2	No tag	Mide 2110 mm de diámetro medida con cinta diámetro a  3.5m de altura. Árbol perdió paté del tronco.	NA	NA	*	2022	E	NA	256	standing151
+2	15	26,17	J	6-1	NA	NA	NA	1.3	2	4167	Caido	Caido	*	NA	2022	E	NA	NA	standing152
+2	15	26,21	B	5-1	286	NA	NA	1.3	2	133241	rajado	Caido	*	NA	2022	V	261	NA	standing153
+2	15	26,21	B	8-1	NA	NA	NA	1.3	2	138307	nada	nada  Sacar de lista	NA	NA	2022	V	NA	NA	standing154
+2	15	26,21	P	3-1	492	306	0.65	0.36	2	NA	NA	NA	NA	*	2022	V	167	75	standing155
+2	15	26,21	D	19-1	512	NA	NA	1.3	2	4140	NA	Caido	NA	*	2022	V	506	NA	standing156
+2	15	26,21	K	21-1	465	442	12.6	1.3	1	4089	NA	NA	*	NA	2022	V	443	441	standing157
+2	15	28,16	G	8-1	NA	NA	NA	1.3	2	122548	Caido	Caido	NA	*	2022	E	NA	NA	standing158
+2	15	29,13	K	22-1	NA	202	12.1	1.3	1	112501	NA	NA	*	NA	2022	E	NA	NA	standing159
+2	15	31,16	N	20-1	513	NA	NA	3	1	3188	Escalera	Caido	*	NA	2022	NA	538	NA	standing160
+2	15	31,21	F	21-1	624	628	2.6	1.3	0	3441	NA	NA	*	NA	2022	V	623	571	standing161
+2	15	31,21	L	2-1	90	NA	NA	1.3	2	104126	NA	Nada	NA	*	2022	V	NA	NA	standing162
+2	15	31,21	J	19-1	520	446	20.8	1.3	2	3451	NA	NA	NA	*	2022	V	422	526	standing163
+2	16	32,07	B	8-1	307	305	1	0.5	2	26207	NA	rajado	NA	*	2022	V	NA	393	standing164
+2	16	32,07	B	22-1	NA	207	1.23	0.61	2	no tag	NA	rajado	*	NA	2022	V	NA	109	standing165
+2	16	32,07	H	19-2	758	NA	NA	0.37	2	3248	NA	Caido	NA	*	2022	V	136	NA	standing166
+2	16	32,07	H	19-3	705	NA	NA	1.3	2	3248	Solo queda parte del tronco	Caido	NA	*	2022	V	241	NA	standing167
+2	16	32,07	N	20-1	300	308	12.6	1.3	2	96459	NA	NA	*	NA	2022	V	287	NA	standing168
+2	15	33,12	D	21-1	514	NA	NA	1.9	1	3037	NA	Caido	NA	*	2022	E	475	NA	standing169
+2	15	33,12	J	19-1	219	NA	NA	1.3	2	832387	Inclinado 20 grados	Caido	*	NA	2022	E	206	NA	standing170
+2	15	33,12	J	21-1	508	NA	NA	1.3	1	832406	NA	Caido	*	NA	2022	E	498	NA	standing171
+2	15	33,21	G	22-1	NA	285	11.3	1.3	2	3106	NA	NA	*	NA	2022	E	NA	280	standing172
+2	16	34,04	D	21-1	343	332	12.2	1.3	2	90806	NA	NA	*	NA	2022	V	335	328	standing173
+2	16	34,04	E	21-1	NA	361	9.8	1.5	2	2921	NA	NA	*	NA	2022	V	367	365	standing174
+2	17	34,15	A	20-1	519	494	2.8	1.3	2	No tag	Inclinado 16 grados	NA	*	NA	2022	V	448	473	standing175
+2	17	34,15	J	21-1	296	282	19.1	1.3	1	633201	NA	NA	*	NA	2022	V	279	278	standing176
+2	17	34,15	K	20-1	203	201	11.6	1.3	1	87643	inclinado 20 grados	NA	*	NA	2022	V	NA	187	standing177
+2	17	35,17	A	21-1	273	351	1	0.5	2	2472	NA	se partio a 1.00	NA	*	2022	E	266	335	standing178
+2	17	35,17	D	21-1	675	641	1.16	0.6	2	2692	NA	NA	NA	*	2022	E	314	312	standing179
+2	17	35,17	F	20-1	295	NA	NA	1.3	2	2689	NA	Nada se cayo y	*	NA	2022	V	235	NA	standing180
+2	16	36,04	H	21-1	523	NA	NA	3.9	1	80756	Escalera	Caido	*	NA	2022	V	413	NA	standing181
+2	16	36,04	L	19-1	975	952	1.8	1.3	2	2274	NA	NA	*	NA	2022	V	526	425	standing182
+2	16	36,10	P	20-1	NA	NA	NA	1.3	2	76649	Caido	Caido sacar de lista	*	NA	2022	V	NA	NA	standing183
+2	16	36,13	F	9-1	216	NA	NA	2.2	2	2506	20 grados inclinacion	Caido	NA	*	2022	V	187	NA	standing184
+2	16	36,13	G	8-1	389	NA	NA	1.3	2	82303	NA	Caido	*	NA	2022	V	355	NA	standing185
+2	17	37,17	D	21-1	248	245	2.35	1.3	2	77665	Inclinacion 10 grados	NA	NA	*	2022	V	200	174	standing186
+2	17	37,17	G	20-1	413	NA	NA	1	2	2363	Se quebró a 1.30m	Caido	NA	*	2022	V	397	NA	standing187
+2	17	37,17	P	0-1	256	NA	NA	0.4	2	2143	NA	nada	NA	*	2022	V	126	NA	standing188
+2	16	38,11	M	8-1	340	NA	NA	1.3	2	1990	NA	Caido	NA	*	2022	V	297	NA	standing189
+2	16	38,11	D	22-1	NA	243	19.2	1.8	1	72061	NA	Cecryn	*	NA	2022	V	NA	242	standing190
+2	17	39,07	A	19-1	379	178	1.1	0.5	2	1872	Se quebro	NA	NA	*	2022	E,C	370	92	standing191
+2	17	39,07	I	7-1	NA	NA	NA	3.3	0	66360	Caido	Caido	*	NA	2022	E,C	NA	NA	standing192
+2	17	39,07	N	21-1	316	328	11.7	1.3	1	61292	NA	NA	*	NA	2022	E,C	299	313	standing193
+2	17	39,15	C	21-1	451	435	25.8	1.3	0	2006	NA	NA	*	NA	2022	E,C	422	422	standing194
+2	17	39,15	M	20-1	360	NA	NA	1.3	2	63163	NA	Caido	*	NA	2022	E,C	349	NA	standing195
+2	22	40,21	C	6-1	196	NA	NA	1.3	2	56943	NA	No encontrado	NA	*	2022	E	154	NA	standing196
+2	22	41,24	D	19-1	261	NA	NA	1.3	2	1744	NA	Caido	*	NA	2022	E	232	NA	standing197
+2	18	42,12	C	3-1	258	253	8.7	1.3	2	no tag	NA	NA	NA	*	2022	E	179	173	standing198
+2	18	42,12	N	9-2	213	246	0.69	0.45	2	no tag	NA	Se esta rajando	NA	*	2022	E	117	118	standing199
+2	18	42,12	P	22-1	NA	496	20	1.3	1	1256	NA	NA	NA	*	2022	E	NA	234	standing200
+2	18	42,12	P	22-2	NA	555	15.2	2.8	1	1258	NA	NA	NA	*	2022	E	NA	504	standing201
+2	18	42,12	P	22-3	NA	319	7	1.8	2	1259	NA	NA	NA	*	2022	E	NA	293	standing202
+2	22	42,21	J	22-1	NA	540	0.54	0.27	2	NA	NA	NA	NA	*	1388	E	NA	202	standing203
+2	18	43,10	G	21-1	278	192	2.6	1.3	2	1251	Esta en 42,10 en 41 tiene banda con escalera.	Aparece como G 20-1 pero es G 21-1	NA	*	2022	V	149	142	standing204
+2	18	43,10	K	22-1	NA	253	2.4	1.3	2	41676	NA	Esta quebrado a 2.4mt	*	NA	2022	V	NA	223	standing205
+2	18	43,15	B	22-1	NA	223	12.5	1.3	2	42250	NA	NA	NA	*	2022	E	NA	200	standing206
+2	18	43,15	F	20-1	177	NA	NA	0.4	2	no tag	se rajo y perdio una parte	Nada	NA	*	2022	E	79	NA	standing207
+2	18	43,15	F	22-1	NA	246	13.3	1.3	2	17999	NA	NA	*	NA	2022	E	NA	228	standing208
+2	18	43,15	H	0-2	210	228	1.2	0.6	2	1284	Esta muerto	NA	NA	*	2022	E	82	179	standing209
+2	18	43,15	J	9-1	309	296	1.7	1.3	2	no tag	NA	Completamente hueco	NA	*	2022	E	252	248	standing210
+2	18	44,07	B	5-1	682	398	1.3	0.65	2	870	NA	se quebro y esta rajado se esta descomponiendo	NA	*	2022	V	660	246	standing211
+2	17	45,05	E	8-1	NA	NA	NA	0.45	2	no tag	Solo clavo	NA	NA	*	2022	E,C	NA	NA	standing212
+2	17	45,05	K	6-1	303	NA	NA	1.3	2	30985	NA	Caido	*	NA	2022	E,C	273	NA	standing213
+2	21	46,21	F	8-1	NA	NA	NA	2.9	2	687	Caido	Caido	*	NA	2022	E	NA	NA	standing214
+2	21	46,21	N	20-2	274	NA	NA	1.3	2	626	NA	Caido	*	NA	2022	E	195	NA	standing215
+2	21	47,10	F	20-1	446	414	1.2	0.6	2	446310	NA	NA	NA	*	2022	E	393	383	standing216
+2	21	47,10	G	6-1	540	250	1	0.5	2	550	Se está rajando	la muestra se quebro a 1.00m de altura	NA	*	2022	E	143	189	standing217
+2	21	47,17	G	8-1	NA	NA	NA	1.3	2	646456	Caido	solo clavo	*	NA	2022	E	NA	NA	standing218
+2	22	47,17	A	22-1	NA	826	13.7	3.8	2	366	NA	Escalera	NA	*	2022	E	NA	716	standing219
+2	22	47,17	N	22-1	NA	763	31.1	31.1	0	361	NA	Escalera	NA	NA	2022	E	NA	738	standing220
+2	17	49,01	O	3-1	NA	NA	NA	0.3	2	849015	Caido	Caido	NA	*	2022	V	NA	NA	standing221
+2	18	49,04	I	20-1	323	343	5.4	1.3	2	199	NA	NA	*	NA	2022	V	266	288	standing222
+2	21	49,12	H	8-1	239	242	1.87	1.3	2	234	NA	NA	*	NA	2022	E	239	196	standing223
+2	21	49,12	J	19.1	248	247	7.6	1.3	2	10738	NA	NA	*	NA	2022	E	246	246	standing224
+2	21	49,21	F	21.1	207	213	6.8	1.3	2	12294	NA	NA	*	NA	2022	E	NA	NA	standing225
+2	21	49,24	A	22.1	NA	541	18.2	1.3	2	7	NA	inclinado 31.4 grados. tag numero siete	*	NA	2022	E	NA	387	standing226
+2	21	49,24	A	22.1	NA	541	18.2	1.3	2	7	NA	inclinado 31.4 grados. tag numero siete	*	NA	2022	E	NA	387	standing227
+2	21	49,24	B	19.1	439	444	0.6	0.5	2	129102	NA	NA	NA	*	2022	E	479	384	standing228

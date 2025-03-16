@@ -1,0 +1,350 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_width_prior	diameter_width.mm	penetration.200mm	penetration.200mm.1	branchfall	tag	notes	RT	RR	TT	TC	TS	TV	MC	MS	year	uniqid
+1	31	01,21	M	0-1	468	453	83	NA	1	no tag	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen001
+1	31	01,24	J	3-1	227	213	NA	14	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen002
+1	31	01,24	M	6-1	222	185	NA	NA	1	259310	es psecropia	NA	NA	*	*	NA	NA	NA	*	2017	fallen003
+1	31	01,24	N	4-1	1090	1264	NA	6	0	NA	Ceiba. Se esta aplastando	*	NA	NA	*	NA	NA	NA	*	2017	fallen004
+1	31	01,24	O	4-3	358	NA	NA	NA	0	NA	Se descompuso, solo se encontró el clavo	*	NA	NA	*	NA	NA	NA	*	2017	fallen005
+1	31	01,24	O	7.1	NA	242	29	NA	1	NA	Corteza.	NA	NA	*	*	NA	NA	*	NA	2017	fallen006
+1	26	02,16	A	6-1	222	220	22	NA	1	8092	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen007
+1	26	02,16	B	9-1	330	282	29	NA	0	NA	es la misma muestra de B9-2	NA	*	NA	*	NA	NA	NA	*	2017	fallen008
+1	26	02,16	B	9-2	252	242	NA	1	0	NA	es la misma muestra de B9-1	NA	*	NA	*	NA	NA	NA	*	2017	fallen009
+1	26	02,16	D	9-1	570	516	28	NA	1	no tag	es la misma muestra que E 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen010
+1	26	02,16	E	9-1	433	398	82	NA	0	no tag	es la misma muestra que D 9-1	NA	*	NA	*	NA	NA	NA	*	2017	fallen011
+1	26	02,16	O	9-1	NA	NA	NA	NA	0	NA	Se descompuso	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen012
+1	24	03,12	B	9-1	458	315	NA	6	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen013
+1	24	03,12	G	3-1	NA	NA	NA	NA	NA	8070	solo corteza	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen014
+1	24	03,12	O	4-1	235	NA	NA	NA	1	no tag	No se encontro	NA	NA	*	*	NA	NA	NA	*	2017	fallen015
+1	24	03,12	O	9-1	746	687	NA	1	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen016
+1	24	03,12	P	2-1	838	801	NA	1	1	no tag	es el mismo que O 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen017
+1	31	03,23	I	5-1	298	291	NA	15	1	no tag	Psecropia	NA	NA	*	*	NA	NA	NA	*	2017	fallen018
+1	31	03,23	J	2-1	273	270	NA	3	0	no tag	NA	NA	*	NA	*	NA	NA	NA	*	2017	fallen019
+1	31	323	K	6-1	227	NA	NA	NA	0	NA	no se encontró, se descompuso	NA	*	NA	*	NA	NA	NA	*	2017	fallen020
+1	31	03,23	L	4-1	313	265	86	NA	1	NA	se esta rompiendo	NA	NA	*	*	NA	NA	NA	*	2017	fallen021
+1	31	03,23	M	4-1	238	95	NA	NA	1	NA	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen022
+1	31	03,23	M	5-1	232	156	NA	NA	0	7820	NA	*	NA	NA	NA	*	NA	NA	*	2017	fallen023
+1	23	05,03	G	3-1	290	285	76	NA	1	7663	NA	NA	NA	*	NA	NA	*	NA	*	2017	fallen024
+1	23	05,03	I	3-1	190	NA	NA	NA	0	NA	NA	NA	*	NA	*	NA	NA	NA	*	2017	fallen025
+1	23	05,03	I	3-2	183	NA	NA	NA	NA	NA	dificil medir muestra el 3-1 esta sobre el	NA	*	NA	*	NA	NA	NA	*	2017	fallen026
+1	23	05,03	I	5-1	270	230	91	NA	0	NA	NA	*	NA	NA	NA	NA	*	*	NA	2017	fallen027
+1	23	05,03	J	3-1	299	270	159	NA	1	7663	NA	NA	NA	*	NA	NA	*	NA	*	2017	fallen028
+1	23	05,03	J	4-1	367	375	93	NA	1	7618	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen029
+1	23	05,03	K	4-1	NA	NA	NA	NA	NA	NA	se descompuso	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen030
+1	23	05,03	K	6-1	543	560	112	NA	1	7330	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen031
+1	23	05,03	M	6-1	561	NA	NA	NA	NA	7330	Esta bajo una rama viva grande que cayo sobre la muestra y no permite medirla	*	NA	*	*	NA	NA	*	NA	2017	fallen032
+1	23	05,03	L	6-2	220	NA	NA	NA	NA	7330	Se des compuso, solo encontramos el clavo. En toda esta area cayeron algunas ramas y tronco grande, que hace dificil encontrar las muestras	NA	*	NA	*	NA	NA	NA	*	2017	fallen033
+1	23	05,03	M	6-1	557	NA	NA	NA	NA	7330	Esta bajo una rama viva grande que cayo sobre la muestra y no permite medirla	NA	NA	*	*	NA	NA	*	NA	2017	fallen034
+1	23	05,03	M	5-1	180	NA	NA	NA	1	7329	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen035
+1	23	05,03	O	5-1	NA	NA	NA	NA	1	7662	nada	NA	NA	*	NA	*	NA	NA	*	2017	fallen036
+1	26	05,12	E	2-1	277	60	NA	NA	1	no tag	se rajo en dos partes	*	NA	NA	*	NA	NA	NA	*	2017	fallen037
+1	26	05,12	E	4-1	330	165	NA	NA	0	NA	NA	*	NA	NA	*	NA	NA	*	NA	2017	fallen038
+1	26	05,12	F	2-2	373	377	47	NA	0	no tag	es la misma rama que F 2-1	*	NA	NA	*	NA	NA	NA	*	2017	fallen039
+2	15	05,20	A	8-1	NA	292	210	NA	1	238678	El año pasado no se pudo medir por  muchas lianas sobre el tronco	NA	NA	*	*	NA	NA	NA	*	2017	fallen040
+1	31	05,20	E	5-1	204	NA	NA	NA	0	7766	Solo se encontró el clavo	NA	*	NA	NA	*	*	NA	*	2017	fallen041
+1	31	05,20	E	7-1	NA	212	101	NA	0	7766	NA	NA	*	NA	NA	*	*	NA	*	2017	fallen042
+1	31	05,20	P	7-1	365	318	66	NA	1	238678	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen043
+2	15	05,24	B	7-1	330	314	95	NA	0	7475	irregular 368	*	NA	NA	NA	NA	*	*	NA	2017	fallen044
+2	15	05,24	G	4-1	409	143	NA	NA	1	NA	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen045
+2	15	05,24	G	5-1	133	133	NA	NA	1	NA	Solo el clavo, se descompuso	NA	NA	*	*	NA	NA	NA	*	2017	fallen046
+1	24	06,06	A	NA	520	489	158	NA	1	no tag	es una muestra vieja. Revisar censo anterior	NA	NA	*	*	NA	NA	NA	*	2017	fallen047
+1	24	06,06	D	4-1	395	379	29	NA	0	NA	S esta rajando	NA	*	NA	*	NA	NA	NA	*	2017	fallen048
+1	24	06,06	H	7-1	NA	240	42	NA	1	7592	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen049
+1	24	06,06	I	5-1	998	1056	21	NA	1	13123	esta hueco y se esta abriendo	NA	NA	*	NA	*	NA	NA	*	2017	fallen050
+1	24	06,06	J	3-1	422	188	NA	NA	0	13123	el centro esta hueco	NA	*	NA	NA	*	NA	NA	*	2017	fallen051
+1	24	06,06	P	6-1	260	195	NA	NA	0	no tag	tiene banda de metal. Es un PRI2CO	NA	*	NA	NA	NA	*	*	NA	2017	fallen052
+1	24	06,09	N	9-1	76	NA	NA	NA	0	no tag	no se sabe de que arbol es la rama	NA	*	NA	NA	NA	NA	NA	*	2017	fallen053
+1	24	06,09	C	6-1	779	810	192	NA	1	NA	Era el C 4-1 que estaba de pie	NA	NA	*	*	NA	NA	NA	*	2017	fallen054
+1	24	06,09	D	6-1	502	507	61	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen055
+1	23	07,01	F	5-1	300	192	NA	NA	0	230141	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen056
+1	23	07,01	G	6-1	287	288	92	NA	1	no tag	el mismo que J 6-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen057
+1	23	07,01	J	3-1	NA	NA	NA	NA	1	NA	se descompuso	NA	NA	*	*	NA	NA	*	NA	2017	fallen058
+1	23	07,01	J	6-1	388	427	74	NA	1	no tag	El mismo que 6-1	NA	NA	*	*	NA	NA	*	NA	2017	fallen059
+1	23	07,01	L	3-1	531	495	NA	10	1	No tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen060
+1	23	07,01	O	9-2	445	351	102	NA	1	7307	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen061
+1	23	07,01	K	7-1	NA	222	45	NA	NA	220032	NA	*	NA	NA	*	NA	NA	*	NA	2017	fallen062
+1	23	07,01	K	7-2	NA	249	37	NA	NA	NA	no tag. Esta caido. Esta en 06,02 en el 3,2 > 300mm	*	NA	NA	*	NA	NA	*	NA	2017	fallen063
+1	23	07,01	N	7-1	NA	359	42	NA	NA	220032	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen064
+1	26	07,13	A	0-1	1031	1056	1023	16	1	no tag	el mismo arbol que P 9-1. Esta hueco en el centro	NA	NA	*	*	NA	NA	NA	*	2017	fallen065
+1	26	07,13	J	9-1	391	390	11	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen066
+1	26	07,13	P	9-1	256	62	NA	NA	1	no tag	el mismo arbol que A 0-1. Esta aplastado. Solo quedan restos	NA	NA	*	*	NA	NA	NA	*	2017	fallen067
+1	31	07,20	B	7-1	NA	235	74	NA	1	7183	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen068
+1	24	08,06	G	9-2	141	NA	NA	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen069
+1	24	08,06	H	9-1	NA	NA	NA	NA	1	no tag	se descompuso solo se encontró clavo	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen070
+1	24	08,06	J	6-1	213	NA	NA	NA	1	no tag	Nada	NA	NA	*	*	NA	NA	NA	*	2017	fallen071
+1	24	08,06	K	4-1	204	192	NA	NA	0	NA	NA	*	NA	NA	*	NA	NA	NA	*	2017	fallen072
+1	24	08,06	K	9-1	246	266	110	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen073
+1	24	08,06	L	4-1	358	359	NA	7	1	NA	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen074
+1	24	08,06	P	9-1	250	211	34	NA	1	6948	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen075
+1	26	09,12	C	9-1	266	265	20	NA	1	222154	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen076
+1	26	9.12	C	7-1	NA	250	23	NA	1	222154	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen077
+1	26	09,12	E	5-1	NA	405	NA	15	1	7059	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen078
+1	26	09,12	E	7-1	NA	211	92	1	0	NA	No se pudo determinar de qué árbol es la muestra	NA	*	NA	NA	NA	NA	NA	*	2017	fallen079
+1	26	09,12	G	9-1	893	841	73	NA	1	no tag	aplastado	NA	NA	*	*	NA	NA	NA	*	2017	fallen080
+1	26	09,12	J	9-1	278	312	133	NA	1	NA	es el mismo que G 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen081
+1	26	09,12	O	2-1	218	201	86	NA	1	217093	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen082
+1	26	09,12	P	2-1	250	272	90	NA	1	217093	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen083
+1	31	10,20	F	7-1	NA	216	56	NA	1	no tag	corteza	NA	NA	*	*	NA	NA	*	NA	2017	fallen084
+1	31	10,20	H	4-1	335	141	NA	NA	1	NA	es la misma que H 4-2	NA	NA	*	*	NA	NA	*	NA	2017	fallen085
+1	31	10,20	I	5-1	215	128	NA	NA	1	NA	es el mismo que 10,20 H 3-1	NA	NA	*	*	NA	NA	*	*	2017	fallen086
+1	31	10,20	K	7-1	NA	283	127	NA	0	6784	no corteza	NA	*	NA	NA	*	NA	NA	*	2017	fallen087
+2	2	11,15	A	7-1	NA	205	24	NA	0	207432	NA	*	NA	NA	NA	*	NA	*	NA	2017	fallen088
+2	2	11,15	G	5-1	249	240	29	NA	1	6753	Se corrigió es TT	NA	NA	*	NA	*	NA	NA	*	2017	fallen089
+2	2	11,15	G	5-2	238	238	37	NA	0	6753	NA	NA	*	NA	NA	*	NA	*	NA	2017	fallen090
+2	2	11,15	I	3-1	298	175	NA	NA	1	no tag	revisar censo anterior	NA	NA	*	NA	*	NA	NA	NA	2017	fallen091
+2	2	11,15	O	6-1	327	348	22	NA	1	6532	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen092
+2	2	11,15	K	3-1	432	440	110	NA	1	6528	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen093
+2	1	12,23	C	NA	690	670	29	NA	1	209063	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen094
+2	1	12,23	I	5-1	216	215	156	NA	0	209240	TACHVE. Corregir en censo anterior es RR de TS con MC	NA	*	NA	NA	*	NA	*	NA	2017	fallen095
+2	6	14,05	A	2-1	291	127	NA	NA	0	NA	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen096
+2	6	14,05	A	3-1	320	NA	NA	NA	0	NA	se descompuso	NA	*	NA	NA	NA	*	NA	*	2017	fallen097
+2	6	14,05	K	2-1	670	578	67	NA	1	no tag	es el mismo que I 2-1. Tiene lianas encima	NA	NA	*	NA	*	NA	NA	*	2017	fallen098
+2	6	14,05	N	3-1	NA	NA	NA	NA	0	NA	es el mismo que K 2-1, I 2-1. No se encontró nada	*	NA	*	NA	NA	NA	NA	*	2017	fallen099
+2	6	14,05	N	6-1	286	NA	NA	NA	0	no tag	No encontrado	NA	*	NA	*	NA	NA	NA	*	2017	fallen100
+2	6	14,05	P	3-1	441	433	NA	6	0	NA	es el mismo que 14,05 A 3-1	NA	*	NA	NA	NA	*	*	NA	2017	fallen101
+2	2	14,14	B	7-1	NA	342	194	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen102
+2	2	14,14	K	7-1	NA	260	49	NA	0	6173	Terminalia amazonia. Es un árbol grande con banda de metal, que está en el suelo pero vivo	*	NA	NA	*	NA	*	*	NA	2017	fallen103
+2	2	14,14	K	7-2	NA	250	65	NA	0	6173	Terminalia amazonia	*	NA	NA	*	NA	*	*	NA	2017	fallen104
+2	2	14,14	L	7-1	NA	208	43	NA	0	6173	Terminalia amazonia	*	NA	NA	*	NA	*	*	NA	2017	fallen105
+2	2	14,14	L	7-2	NA	250	42	NA	0	6173	Terminalia amazonia	*	NA	NA	*	NA	*	*	NA	2017	fallen106
+2	2	14,14	N	9-1	330	300	68	NA	1	No tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen107
+2	2	14,14	N	7-1	NA	257	31	NA	0	6173	terminalia amazonia	*	NA	NA	*	NA	*	*	NA	2017	fallen108
+2	2	14,14	N	7-2	NA	406	39	NA	0	6173	terminalia amazonia	*	NA	NA	*	NA	*	*	NA	2017	fallen109
+2	2	14,14	N	7-3	NA	248	37	NA	0	6173	terminalia amazonia	*	NA	NA	*	NA	NA	*	NA	2017	fallen110
+2	1	14,24	K	6-1	342	345	88	NA	1	6087	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen111
+2	1	14,24	K	5-1	432	392	50	NA	1	194349	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen112
+2	1	14,24	N	4-1	235	236	81	NA	1	NA	sin corteza	NA	NA	*	*	NA	NA	NA	*	2017	fallen113
+2	6	15,07	D	9-1	654	628	57	NA	1	NA	es el mismo que E 9-1. Perdio un pedazo	NA	NA	*	*	NA	NA	*	NA	2017	fallen114
+2	6	15,07	E	9-1	703	617	62	NA	1	no tag	es el mismo que D 9-1	NA	NA	*	*	NA	NA	*	NA	2017	fallen115
+2	6	15,07	F	3-1	318	172	NA	NA	1	NA	se esta descomponiendo, la cascara se abrio. Sin ramas	NA	NA	*	NA	*	NA	NA	*	2017	fallen116
+2	6	15,07	N	9-1	370	357	NA	3	1	NA	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen117
+2	2	16,12	B	6-1	650	658	NA	17	1	NA	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen118
+2	2	16,12	G	4-1	383	NA	NA	NA	0	NA	se descompuso	NA	*	NA	*	NA	NA	NA	*	2017	fallen119
+2	2	16,12	J	5-1	261	212	70	NA	1	5670	con corteza	NA	NA	*	*	NA	NA	*	NA	2017	fallen120
+2	2	16,12	J	7-1	NA	207	56	NA	0	5675	con corteza	NA	*	NA	NA	NA	*	*	NA	2017	fallen121
+2	6	17.1	A	7-1	NA	205	30	NA	1	175131	NA	NA	NA	NA	*	*	NA	NA	*	2017	fallen122
+2	6	17,01	I	7-1	NA	232	18	NA	1	180276	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen123
+2	6	17,01	I	7-2	NA	256	30	NA	1	5907	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen124
+2	3	18,10	L	3-1	290	255	NA	5	1	no tag	Sin corteza	NA	NA	*	NA	*	NA	NA	*	2017	fallen125
+2	1	18,23	C	4-1	331	303	NA	10	1	NA	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen126
+2	1	18,23	F	4-1	346	122	NA	NA	1	no tag	Corrección la muestra tiene corteza	NA	NA	*	*	NA	NA	*	NA	2017	fallen127
+2	1	18,23	O	7-1	NA	288	25	6	1	no tag	Psecropia	NA	NA	*	*	NA	NA	*	NA	2017	fallen128
+2	3	19,06	O	4-1	520	NA	NA	NA	1	No tag	Nada	NA	NA	*	NA	*	NA	NA	*	2017	fallen129
+2	3	19,06	O	4-2	NA	NA	NA	NA	1	no tag	Nada	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen130
+2	3	19,06	O	4-3	180	NA	NA	NA	1	No tag	Nada	NA	NA	*	NA	*	NA	NA	*	2017	fallen131
+2	3	19,06	O	7-1	NA	672	NA	6	1	NA	Mismo tronco de O de pie	NA	NA	*	NA	*	NA	NA	*	2017	fallen132
+2	3	19,08	C	7-1	NA	212	37	NA	1	5217	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen133
+2	2	19,12	B	3-1	307	57	NA	NA	0	NA	la muestra solo queda un pedazo	NA	*	NA	*	NA	NA	NA	*	2017	fallen134
+2	2	19,12	C	3-1	319	330	45	NA	1	no tag	no corteza	NA	NA	*	*	NA	NA	NA	*	2017	fallen135
+2	2	19,12	C	3-2	238	211	53	NA	0	5331	Hyeral	NA	*	NA	NA	NA	*	*	NA	2017	fallen136
+2	1	19,16	J	NA	293	183	NA	NA	1	NA	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen137
+2	1	19,16	K	NA	NA	276	NA	10	1	NA	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen138
+2	1	19,16	L	0-1	NA	NA	NA	NA	1	NA	Se descompuso	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen139
+2	1	19,16	M	0-1	NA	NA	NA	NA	1	NA	Se descompuso	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen140
+2	1	19,16	N	6-1	440	432	90	NA	0	5047	BROSAL. Revisar en el censo anterior y correguir que la muestra 19,19 N 6-1 es 19,16 N 6-1	NA	*	NA	NA	*	NA	*	NA	2017	fallen141
+2	1	19,16	O	5-1	250	257	103	NA	1	5176	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen142
+2	1	19,16	O	7-1	NA	362	34	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen143
+2	1	19,16	O	7-2	NA	366	46	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen144
+2	1	19,16	O	7-3	NA	349	42	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen145
+2	1	19,16	P	7-1	NA	303	36	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen146
+2	1	19,16	P	7-2	NA	547	71	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen147
+2	1	19,16	P	7-3	NA	570	45	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen148
+2	1	19,16	P	7-4	NA	438	90	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen149
+2	1	19,19	C	9-1	567	592	82	NA	1	NA	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen150
+2	1	19,19	G	2-1	370	342	26	NA	0	NA	es el mismo que C 9-1	*	NA	NA	*	NA	NA	NA	*	2017	fallen151
+2	1	19,19	G	3-1	665	665	14	NA	1	5389	anteriormente no se midio porque estaba vivo, ahora esta muerto	NA	NA	*	*	NA	NA	NA	*	2017	fallen152
+2	1	19,19	O	7-1	NA	368	35	NA	1	5054	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen153
+2	7	21,04	E	9-1	224	213	37	NA	1	no tag	es el mismo que esta en F9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen154
+2	7	21,04	F	9-1	260	270	101	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen155
+2	7	21,04	H	4-1	356	NA	NA	NA	0	4984	No se puede medir porque está bajo muchas ramas pequeñas que cayeron sobre la muestra y no se pueden mover	NA	*	NA	NA	NA	*	*	NA	2017	fallen156
+2	7	21,04	M	4-1	425	400	55	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen157
+2	7	21,10	A	5-1	310	165	NA	NA	1	4691	se está descomponiendo, ahora se tuvo que usar el penetrometro en área con corteza	NA	NA	*	NA	*	NA	*	NA	2017	fallen158
+2	13	21,15	B	3-1	257	245	40	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen159
+2	13	21,15	D	0-2	201	195	NA	NA	0	NA	NA	*	NA	NA	*	NA	NA	NA	*	2017	fallen160
+2	13	21,15	E	0-2	NA	63	NA	NA	1	no tag	NA	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen161
+2	13	21,15	E	0-3	257	NA	NA	NA	1	no tag	Se descompuso	NA	NA	*	*	NA	NA	NA	*	2017	fallen162
+2	13	21,15	H	6-1	321	310	115	NA	0	5047	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen163
+2	13	21,15	N	7-1	NA	230	27	NA	1	157413	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen164
+2	13	21,15	P	2-1	210	202	53	NA	1	no tag	perdio la corteza, no entra el clavo	NA	NA	*	*	NA	NA	NA	*	2017	fallen165
+2	13	22,21	K	0-1	292	NA	NA	NA	0	no tag	se descompuso	NA	*	NA	*	NA	NA	NA	*	2017	fallen166
+2	13	22,21	L	2-1	308	313	41	NA	0	NA	el mismo que L2-2, diferente rama	*	NA	NA	*	NA	NA	NA	*	2017	fallen167
+2	13	22,21	L	2-2	227	208	28	NA	0	NA	el mismo que L2-1, diferente rama	*	NA	NA	*	NA	NA	NA	*	2017	fallen168
+2	13	22,21	M	2-2	484	548	44	NA	1	4484	es el mismo que L2-2	NA	NA	*	*	NA	NA	NA	*	2017	fallen169
+2	13	22,21	N	9-1	203	NA	NA	NA	1	NA	Se descompuso	NA	NA	*	*	NA	NA	NA	*	2017	fallen170
+2	13	22,21	N	0-1	621	600	32	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen171
+2	7	23,03	E	4-1	243	195	NA	NA	0	4649	correcion no es RR es RT	*	NA	NA	NA	*	NA	NA	*	2017	fallen172
+2	7	23,06	G	7-1	NA	312	20	NA	0	4673	NA	NA	*	NA	NA	*	NA	NA	*	2017	fallen173
+2	7	23,06	G	7-2	NA	293	27	NA	0	4673	NA	NA	*	NA	NA	*	NA	*	NA	2017	fallen174
+2	13	23,17	I	6-1	225	227	189	NA	1	no tag	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen175
+2	13	23,23	A	2-1	298	281	32	NA	0	no tag	es el mismo que A2-2	NA	*	NA	*	NA	NA	NA	*	2017	fallen176
+2	13	23,23	A	2-2	272	283	11	NA	0	no tago	es el mismo que A2-1	NA	*	NA	*	NA	NA	NA	*	2017	fallen177
+2	7	24,09	F	3-1	312	138	NA	NA	1	NA	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen178
+2	7	24,09	J	5-1	206	NA	NA	NA	0	146601	se descompuso. Solo se encontró el clavo	NA	*	NA	NA	*	NA	*	NA	2017	fallen179
+2	7	24,09	J	5-2	238	241	104	NA	0	146601	corteza	NA	*	NA	NA	*	NA	*	NA	2017	fallen180
+2	10	24,15	D	2-1	293	268	50	NA	1	NA	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen181
+2	10	24,15	I	2-1	361	125	NA	NA	1	no tag	Solo queda corteza	NA	NA	*	*	NA	NA	NA	*	2017	fallen182
+2	9	26,08	J	7-1	288	NA	52	NA	2	131516	rama de tronco caido con corteza	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen183
+2	9	26,08	J	7-2	396	NA	51	NA	2	131516	Rama de tronco caido con corteza	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen184
+2	10	26,17	B	2-1	227	78	NA	NA	1	no tag	se descompuso y la rompieron ramas que cayeron	NA	NA	*	*	NA	NA	NA	*	2017	fallen185
+2	10	26,17	D	7-1	NA	212	52	NA	0	4169	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen186
+2	10	26,17	G	6-1	206	NA	NA	NA	0	4165	NA	NA	*	NA	NA	*	NA	*	NA	2017	fallen187
+2	10	26,17	K	2-1	535	523	39	NA	1	no tag	es el mismo N 2-1. Tiene bandas de metal y plástica. Se corrigió, tiene cascara	NA	NA	*	*	NA	NA	*	NA	2017	fallen188
+2	10	26,17	N	2-1	541	531	27	NA	1	no tag	es el mismo K 2-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen189
+2	10	26,17	P	4-1	220	NA	NA	NA	0	4057	La muestra no se puede medir, le cayeron ramas vivas encima	NA	*	NA	NA	NA	*	*	NA	2017	fallen190
+2	14	26,21	A	3-1	583	293	NA	9	0	NA	se rompio	*	NA	NA	*	NA	NA	NA	*	2017	fallen191
+2	14	26,21	A	3-2	408	436	127	NA	1	NA	es TT	NA	NA	*	*	NA	NA	NA	*	2017	fallen192
+2	14	26,21	A	4-1	406	142	NA	NA	0	NA	TAB2AR.Se partio	NA	*	NA	*	NA	NA	NA	NA	2017	fallen193
+2	14	26,21	A	5-1	235	NA	NA	NA	1	4078	Se descompuso donde pasa el transecto	NA	*	NA	NA	NA	*	*	NA	2017	fallen194
+2	14	26,21	B	4-1	230	136	NA	NA	0	NA	es el mismo que 26,21 A 3-2	*	NA	NA	*	NA	NA	NA	*	2017	fallen195
+2	14	26,21	B	4-2	271	252	NA	5	0	NA	es el mismo que 26,21 A 3-2	*	NA	NA	*	NA	NA	NA	*	2017	fallen196
+2	14	26,21	H	3-1	263	NA	NA	NA	0	no tag	Solo se encontró el clavo, la muestra se descompuso	NA	*	NA	*	NA	NA	NA	*	2017	fallen197
+2	14	26,21	M	9,1	476	477	19	NA	1	NA	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen198
+2	14	26,21	P	3-1	721	677	24	NA	1	No tag	Sin corteza. Se corrigió es TT no RR  y TC no TS. Es el mismo que A3-2	NA	NA	*	*	NA	NA	NA	*	2017	fallen199
+2	10	28,16	D	7-1	NA	203	46	NA	0	9863	Hura	NA	*	NA	NA	NA	*	*	NA	2017	fallen200
+2	10	28,16	E	7-1	NA	227	80	NA	0	3858	NA	NA	*	NA	*	NA	NA	NA	*	2017	fallen201
+2	10	28,16	G	7-1	NA	293	141	NA	1	3859	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen202
+2	10	28,16	G	7-2	NA	540	41	NA	1	3858	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen203
+2	10	28,16	N	6-1	254	246	30	NA	0	3761	el árbol perdió la mitad de la copa	NA	*	NA	NA	NA	*	NA	*	2017	fallen204
+2	10	28,16	N	6-2	303	307	39	NA	0	3761	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen205
+2	10	28,16	N	7-1	NA	427	27	NA	0	3761	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen206
+2	10	28,16	N	7-2	NA	201	30	NA	0	3761	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen207
+2	10	28,16	O	6-1	285	298	96	NA	0	3761	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen208
+2	9	29,06	E	3-3	196	NA	NA	NA	0	3601	se descompuso	*	NA	NA	NA	*	NA	*	NA	2017	fallen209
+2	9	29,06	F	3-1	661	525	NA	14	1	3601	es el mismo arbol	NA	NA	*	NA	*	NA	NA	*	2017	fallen210
+2	9	29,06	F	3-2	186	138	NA	NA	0	3601	es el mismo arbol	NA	*	NA	NA	*	NA	*	NA	2017	fallen211
+2	9	29,06	O	5-1	196	NA	NA	NA	0	3608	se descompuso	NA	*	NA	*	NA	NA	NA	*	2017	fallen212
+2	9	29,06	E	7-1	228	NA	17	NA	1	3681	con corteza rama de tronco de pie	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen213
+2	14	30,23	H	2-1	205	NA	NA	NA	0	no tag	Se descompuso solo quedan pequeños restos sueltos	NA	*	NA	NA	NA	*	NA	*	2017	fallen214
+2	14	30,23	L	7-1	NA	403	47	NA	2	3468	NA	NA	NA	*	NA	NA	*	NA	*	2017	fallen215
+2	15	31,16	D	9-1	779	722	120	NA	1	no tag	tronco,tronco de tronco caido	NA	NA	*	*	NA	NA	NA	*	2017	fallen216
+2	20	32,07	O	7-1	NA	229	21	NA	0	2995	NA	*	NA	NA	NA	NA	*	*	NA	2017	fallen217
+2	16	33,12	G	2-1	954	963	57	NA	1	no tag	es el que estaba parado en F 9-1.Se esta rajando	NA	NA	*	*	NA	NA	NA	*	2017	fallen218
+2	16	33,12	H	6-1	332	162	NA	NA	0	no tag	tiene banda de metal. Está en el 31,13 en el 4,4	*	NA	NA	*	NA	NA	*	NA	2017	fallen219
+2	16	33,12	J	9-1	800	733	NA	27	0	NA	es el mismo que J9-2	*	NA	NA	*	NA	NA	NA	*	2017	fallen220
+2	16	33,12	J	9-3	365	342	53	NA	0	NA	el mismo que J9-1	*	NA	NA	*	NA	NA	NA	*	2017	fallen221
+2	14	33,21	O	3-1	405	459	NA	1	1	2805	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen222
+2	20	34,04	D	NA	NA	537	22	NA	1	2919	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen223
+2	20	34,04	E	7-1	NA	971	21	NA	1	2919	la muestra está rajada	NA	NA	*	*	NA	NA	*	NA	2017	fallen224
+2	20	34,04	L	0-1	346	355	195	NA	0	NA	no se sabe de que arbol es esta muestra	*	NA	NA	NA	NA	NA	NA	*	2017	fallen225
+2	20	34,04	L	6-1	317	327	105	NA	1	2614	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen226
+2	20	34,04	L	7-1	NA	260	NA	6	0	2609	NA	NA	*	NA	NA	NA	*	NA	*	2017	fallen227
+2	15	34,15	M	0-2	334	341	43	NA	0	no tag	rama de tronco caido sin corteza	*	NA	NA	*	NA	NA	NA	*	2017	fallen228
+2	15	34,15	P	6-1	280	278	35	NA	0	2677	rama de tronco de pie con corteza	*	NA	NA	NA	*	NA	*	NA	2017	fallen229
+2	15	34,15	P	6-2	310	312	32	NA	0	2677	rama de tronco de pie con corteza	*	NA	NA	NA	*	NA	*	NA	2017	fallen230
+2	20	36,04	O	6-1	238	139	NA	NA	1	2272	Perdió una parte	NA	NA	NA	NA	NA	NA	NA	*	2017	fallen231
+2	20	36,04	P	3-1	257	264	156	NA	1	2272	corteza	NA	NA	*	NA	*	NA	NA	*	2017	fallen232
+2	20	36,10	B	5-1	870	858	57	2	1	2309	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen233
+2	15	36,13	A	5-1	570	563	NA	10	1	no tag	TAB2AR. El mismo que C 5-1	tronco tronco sin corteza	NA	*	*	NA	NA	NA	*	2017	fallen234
+2	15	36,13	B	5-1	412	365	NA	11	1	no tag	TAB2AR. El mismo que A 5-1. Corrección está en B y no en C	tronco tronco sin corteza	NA	*	*	NA	NA	NA	*	2017	fallen235
+2	15	36,13	B	5-2	250	110	NA	NA	0	no tag	TAB2AR. El mismo que A 5-1. Corrección es 5-2 no 5-1. Corrección está en B y no en C	tronco tronco sin corteza	*	NA	*	NA	NA	NA	*	2017	fallen236
+2	15	36,13	D	5-1	190	NA	NA	NA	1	no tag	se descompuso	NA	NA	*	NA	NA	*	NA	*	2017	fallen237
+2	15	36,13	L	6-1	2408	3107	160	NA	1	no tag	el árbol está en 36,13 en 4,4	tronco de árbol de pie con corteza	NA	*	*	NA	NA	*	NA	2017	fallen238
+2	15	36,13	M	2-5	158	NA	NA	NA	0	NA	.se está aplastando. Las muestras nuevas de 2016 lo rompieron	nada	NA	NA	NA	NA	NA	NA	NA	2017	fallen239
+2	15	36,13	M	6-1	540	577	75	NA	0	2347	rama sin corteza	*	NA	NA	NA	*	NA	NA	*	2017	fallen240
+2	15	36,13	M	6-2	251	247	56	NA	0	2347	rama de tronco con corteza	NA	*	NA	NA	*	NA	*	NA	2017	fallen241
+2	15	36,13	M	6-3	388	389	39	NA	0	2347	rama de tronco sin corteza	*	NA	NA	NA	*	NA	*	NA	2017	fallen242
+2	15	36,13	M	6-4	305	283	25	NA	0	2347	rama de tronco sin corteza	*	NA	NA	NA	*	NA	*	NA	2017	fallen243
+2	15	36,13	M	6-5	329	307	23	NA	0	2347	rama de tronco sin corteza	*	NA	NA	NA	*	NA	NA	*	2017	fallen244
+2	14	37,17	B	2-1	235	171	NA	NA	0	NA	es el mismo B 2- 2	NA	*	NA	*	NA	NA	NA	*	2017	fallen245
+2	14	37,17	G	NA	566	500	NA	6	1	no tag	es el mismo que H6-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen246
+2	14	37,17	H	6-1	224	255	53	NA	0	no tag	es el mismo que G6-1	*	NA	NA	*	NA	NA	*	NA	2017	fallen247
+2	14	37,17	K	7-1	NA	202	45	NA	1	77881	NA	NA	NA	*	NA	NA	*	*	NA	2017	fallen248
+2	14	37,17	K	7-2	NA	298	154	NA	1	2371	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen249
+2	14	37,17	O	2-1	298	140	NA	NA	1	no tag	le cayo O 5-1 encima. Es el mismo que O2-2	NA	NA	*	*	NA	NA	NA	*	2017	fallen250
+2	14	37,17	O	5-1	389	252	183	NA	1	2144	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen251
+2	20	38,11	M	6-1	202	172	NA	NA	1	1996	con corteza	NA	NA	*	NA	NA	*	NA	*	2017	fallen252
+2	20	39,07	A	4-1	271	261	71	NA	1	1964	es el mismo arbol que B 4-2	NA	NA	*	*	NA	NA	*	NA	2017	fallen253
+2	20	39,07	B	4-1	216	211	53	NA	1	no tag	tiene banda de metal	NA	NA	*	*	NA	NA	*	NA	2017	fallen254
+2	20	39,07	B	4-2	277	274	NA	7	1	1964	es el mismo arbol que A 4-1	NA	NA	*	*	NA	NA	*	NA	2017	fallen255
+2	20	39,07	B	6-1	222	193	NA	NA	1	NA	es el mismo que O6-1. Zantoxylum	NA	NA	*	*	NA	NA	NA	*	2017	fallen256
+2	20	39,07	K	4-1	383	308	NA	10	0	1869	el año pasado teina muchas lianas encima por lo que el dbh no fue bueno	*	NA	NA	NA	*	NA	NA	*	2017	fallen257
+2	20	39,07	L	4-1	306	290	116	NA	0	1869	NA	*	NA	NA	*	*	NA	NA	*	2017	fallen258
+2	20	39,07	L	4-2	268	252	191	NA	0	1869	NA	*	NA	NA	*	NA	NA	NA	*	2017	fallen259
+2	20	39,07	L	4-3	230	232	NA	2	0	1869	esta muestra estaba suspendida en el aire, se rompió y cayo, ahora está en P	NA	*	NA	*	NA	NA	NA	*	2017	fallen260
+2	20	39,07	L	4-4	242	153	NA	NA	0	1869	esta arriba suspendido en el aire	*	NA	NA	*	NA	NA	NA	*	2017	fallen261
+2	20	39,07	L	7-1	NA	600	85	NA	1	1869	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen262
+2	20	39,07	O	6-1	295	290	101	NA	1	no tag	es un Zantoxylum	NA	NA	*	*	NA	NA	*	NA	2017	fallen263
+2	20	39,07	N	7-1	NA	211	NA	10	0	1869	NA	NA	*	NA	*	NA	NA	NA	*	2017	fallen264
+2	24	40,21	B	9-2	663	283	31	NA	1	no tag	esta aplastado. Parte de la muestra se rompió y esta movida de posicion	NA	NA	*	*	NA	NA	NA	*	2017	fallen265
+2	24	40,21	G	5-1	213	209	53	NA	1	64279	con corteza	NA	NA	*	*	NA	NA	*	NA	2017	fallen266
+2	24	41,24	D	4-1	267	203	88	NA	1	58825	NA	NA	NA	*	NA	NA	*	NA	*	2017	fallen267
+2	24	41,24	G	5-1	838	NA	NA	NA	1	1749	se descompuso	NA	NA	*	*	NA	NA	NA	*	2017	fallen268
+2	24	41,24	I	4-1	943	903	29	NA	1	1749	esta en la interseccion con H y J tambien	NA	NA	*	*	NA	NA	NA	*	2017	fallen269
+2	24	41,24	N	4-1	313	224	NA	6	1	54559	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen270
+2	22	42,12	A	9-1	257	218	27	NA	0	no tag	es el mismo. Esta en el 41,10 en el 2,2 al lado del árbol 1478	NA	*	NA	*	NA	NA	NA	*	2017	fallen271
+2	22	42,12	A	9-2	626	550	81	NA	1	no tag	es el mismo	NA	NA	*	*	NA	NA	NA	*	2017	fallen272
+2	22	42,12	M	9-1	242	273	116	NA	1	NA	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen273
+2	22	42,12	O	6-1	522	528	83	NA	1	NA	es el mismo que está en 44,13 con la pregunta del ficus con la fotografia	NA	NA	*	*	NA	NA	*	NA	2017	fallen274
+2	22	42,12	P	NA	248	242	26	NA	0	no tag	es el mismo	NA	*	NA	*	NA	NA	NA	*	2017	fallen275
+2	24	42,21	I	3-1	287	265	NA	11	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen276
+2	24	42,21	J	6-1	220	232	52	NA	1	1339	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen277
+2	22	43,10	B	9-1	581	571	19	NA	1	no tag	esta aplastado	NA	NA	*	*	NA	NA	NA	*	2017	fallen278
+2	22	43,10	I	0-1	219	212	21	NA	0	1246	Dypterix	NA	*	NA	NA	NA	*	NA	*	2017	fallen279
+2	22	43,10	L	4-1	248	210	NA	13	0	901	rama de arbol caido	*	NA	NA	*	NA	NA	NA	*	2017	fallen280
+2	23	43,15	B	5-1	212	203	35	NA	0	1081	sin hojas. Revizar el año pasado porque es TT TV MC	NA	NA	*	NA	NA	*	NA	*	2017	fallen281
+2	22	44,07	G	9-2	1389	1285	131	NA	1	NA	sin corteza	NA	NA	*	*	NA	NA	NA	*	2017	fallen282
+2	22	44,07	J	9-1	1035	1086	27	NA	0	NA	sin corteza	*	NA	NA	*	NA	NA	NA	*	2017	fallen283
+2	22	44,07	N	9-1	371	380	13	NA	1	no tag	tronco, tronco sin corteza	NA	NA	*	*	NA	NA	*	NA	2017	fallen284
+2	22	44,13	B	9-1	295	287	25	NA	0	no tag	NA	*	NA	NA	*	NA	NA	NA	*	2017	fallen285
+2	22	44,13	D	6-1	296	286	97	NA	1	no tag	es el mismo que D6-3. Es Ficus	NA	NA	*	*	NA	NA	NA	*	2017	fallen286
+2	22	44,13	D	6-2	928	960	194	NA	1	1094	se está aplastando	NA	NA	*	*	NA	NA	*	NA	2017	fallen287
+2	22	44,13	D	6-3	288	273	116	NA	1	NA	es el mismo que D6-1. Es Ficus	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen288
+2	22	44,13	J	9-1	576	560	57	NA	1	no tag	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen289
+2	22	44,13	L	5-1	235	NA	NA	NA	1	920	No se encontró la muestra	NA	NA	NA	NA	NA	NA	NA	*	2017	fallen290
+2	22	44,13	N	2-1	NA	NA	NA	NA	NA	NA	No se encontro la muestra	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen291
+3	2	44,23	A	9-1	437	447	12	NA	0	no tag	se rajo. Es el mismo que A 9-2	NA	*	NA	*	NA	NA	NA	*	2017	fallen292
+3	2	44,23	A	9-2	247	245	11	NA	0	no tag	es el mismo que A 9-1	NA	*	NA	*	NA	NA	NA	*	2017	fallen293
+3	2	44,23	A	6-1	215	215	34	NA	1	no tag	correguir en censo anterior es TC y no Ts	NA	NA	*	*	NA	NA	*	NA	2017	fallen294
+3	2	44,23	A	6-2	480	473	69	NA	1	no tag	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen295
+3	2	44,23	C	9-1	495	482	33	NA	1	no tag	es el mismo que F 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen296
+3	2	44,23	C	6-1	293	265	142	NA	1	43469	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen297
+3	2	44,23	F	9-1	510	513	20	NA	1	no tag	es el mismo que C 9-1. Revizar medida de diam en censo anterior	NA	NA	*	*	NA	NA	NA	*	2017	fallen298
+3	2	44,23	F	6-1	327	302	151	NA	1	43469	correguir es TC y no T S	NA	NA	*	*	NA	NA	*	NA	2017	fallen299
+3	2	44,23	G	5-1	222	222	51	NA	0	1005	rama no toca el suelo	NA	*	NA	*	NA	NA	*	NA	2017	fallen300
+3	2	44,23	H	5-1	530	549	91	NA	1	1005	correcion, está en H y no en I	NA	NA	*	*	NA	NA	*	NA	2017	fallen301
+3	2	44,23	H	5-2	332	306	100	NA	1	1004	Correccion, está en H y no en I. Es Tc y no Ts	NA	NA	*	*	NA	NA	NA	*	2017	fallen302
+3	2	44,23	I	6-1	532	524	45	NA	1	1005	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen303
+3	2	44,23	I	6-2	298	275	95	NA	1	1004	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen304
+3	2	44,23	K	3-1	500	495	33	NA	1	983	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen305
+3	2	44,23	N	3-1	391	394	38	NA	1	983	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen306
+3	2	44,23	N	4-1	227	136	NA	NA	0	NA	NA	NA	*	NA	*	NA	NA	NA	*	2017	fallen307
+3	2	44,23	N	6-1	288	87	NA	NA	1	39119	se descompuso donde pasa el transecto. Solo restos	NA	NA	*	*	NA	NA	NA	*	2017	fallen308
+3	2	44,23	N	7-1	NA	243	NA	7	1	No tag	tenia banda de metal	NA	NA	*	*	NA	NA	NA	*	2017	fallen309
+2	21	45,05	B	3-1	257	NA	NA	NA	0	14995	Se descompuso	NA	*	NA	NA	*	NA	NA	*	2017	fallen310
+2	21	45,05	D	5-1	362	355	31	NA	1	no tag	tiene banda plastica	NA	NA	*	*	NA	NA	NA	*	2017	fallen311
+2	21	45,05	G	5-1	369	342	100	NA	1	no tag	es el mismo que H 5-1.	NA	NA	*	*	NA	NA	*	NA	2017	fallen312
+2	21	45,05	H	5-1	333	301	91	NA	1	no tag	es el mismo que G 5-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen313
+2	21	45,05	H	6-1	286	281	42	NA	0	870	NA	*	NA	NA	*	NA	NA	NA	*	2017	fallen314
+2	21	45,05	I	6-1	328	340	62	NA	0	870	NA	*	NA	NA	*	NA	NA	*	NA	2017	fallen315
+2	21	45,05	I	6-2	264	263	60	NA	0	870	NA	*	NA	NA	NA	*	NA	*	NA	2017	fallen316
+2	21	45,05	I	6-3	249	248	48	NA	0	870	NA	*	NA	NA	NA	*	NA	*	NA	2017	fallen317
+2	21	45,05	J	5-1	251	223	40	NA	1	30985	NA	NA	NA	*	NA	*	NA	*	NA	2017	fallen318
+2	21	45,05	J	6-1	278	298	95	NA	0	870	NA	*	NA	NA	NA	*	NA	NA	*	2017	fallen319
+2	21	45,05	J	6-2	411	301	NA	12	0	870	estaba rajado anteriormente	*	NA	NA	NA	*	NA	*	NA	2017	fallen320
+2	21	45,05	L	4-1	245	NA	NA	NA	0	800	La muestra no se encontró porque quedo debajo de la muestra L7-1	NA	*	NA	*	NA	NA	*	NA	2017	fallen321
+2	21	45,05	L	7-1	NA	643	34	NA	1	796	NA	NA	NA	*	NA	*	NA	NA	*	2017	fallen322
+2	21	46,01	D	6-1	1235	968	194	NA	1	832	NA	NA	NA	*	*	NA	NA	NA	*	2017	fallen323
+2	21	46,01	L	9-1	365	363	21	NA	1	no tag	tronco sin ramas. TT	NA	NA	*	*	NA	NA	NA	*	2017	fallen324
+2	22	46,07	B	5-1	209	NA	NA	NA	1	26165	Nada	NA	NA	*	*	NA	NA	*	NA	2017	fallen325
+2	22	46,07	L	3-1	62	NA	NA	NA	NA	529	Nada	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen326
+2	22	46,07	P	3-1	185	NA	NA	NA	1	no tag	Nada	NA	NA	*	*	NA	NA	NA	*	2017	fallen327
+3	2	46,21	N	4-1	328	330	39	NA	1	no tag	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen328
+2	22	47,10	H	6-1	316	323	90	NA	1	550	esto es H y no J tronco tronco de tronco de pie con corteza	NA	NA	*	*	NA	NA	*	NA	2017	fallen329
+2	22	47,10	J	4-1	475	290	NA	18	1	NA	parte se descompuso sin corteza	NA	NA	*	*	NA	NA	NA	*	2017	fallen330
+2	22	47,10	E	7-1	NA	203	23	NA	0	763	rama rama de tronco caido con corteza	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen331
+2	22	47,10	E	7-2	NA	275	45	NA	0	763	rama rama de tronco caido con corteza mismo que E7-1	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen332
+2	22	47,10	L	7-1	NA	267	33	NA	0	396	rama de tronco de pie vivo Quaras on corteza	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen333
+2	24	47,17	C	7-1	NA	248	133	NA	1	28141	POULAR	NA	NA	*	*	NA	NA	NA	*	2017	fallen334
+2	24	47,17	D	3-1	383	NA	NA	NA	1	647173	Se descompuso	NA	NA	*	*	NA	NA	NA	*	2017	fallen335
+2	24	47,17	D	9-1	982	953	132	NA	1	no tag	TTNC. Se esta descomponiendo	NA	NA	*	*	NA	NA	NA	*	2017	fallen336
+2	21	49,01	A	9-1	305	295	9	NA	0	NA	RTSN. Es el mismo arbol que A 9-1. Esta aplastado	NA	*	NA	*	NA	NA	NA	*	2017	fallen337
+2	21	49,01	A	9-3	830	833	NA	6	1	rama rama de tronco caido con corteza	TTSN esta podrido el corazon. Es el mismo arbol que A 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen338
+2	21	49,01	A	9-4	262	253	9	NA	0	NA	Es el mismo arbol que A 9-1	NA	*	NA	*	NA	NA	NA	*	2017	fallen339
+2	21	49,01	B	9-1	642	277	8	NA	1	NA	aplastado. TT1N. Es el mismo arbol que A 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen340
+2	21	49,01	E	9-1	NA	NA	NA	NA	1	NA	Nada	NA	NA	NA	NA	NA	NA	NA	NA	2017	fallen341
+2	21	49,01	P	9-1	242	232	38	NA	1	NA	TT1N (T1=caido por completo) (T2= mp esta caido el tronco por completo	NA	NA	*	*	NA	NA	NA	*	2017	fallen342
+2	21	49,04	K	3-1	224	193	NA	NA	1	125668	TT sin ramas, cascaras.	NA	NA	*	*	NA	NA	*	NA	2017	fallen343
+2	23	49,12	I	9-1	269	235	46	NA	1	no tag	el mismo que J 9-1	NA	NA	*	*	NA	NA	NA	*	2017	fallen344
+2	23	49,12	J	9-1	461	455	38	NA	1	no tag	el mismo que I 9-1. Se esta aplastando	NA	NA	*	*	NA	NA	NA	*	2017	fallen345
+2	23	49,17	N	9-1	227	206	NA	10	1	No tag	se esta descomponiendo	NA	NA	*	*	NA	NA	NA	*	2017	fallen346
+3	2	49,21	A	3-1	NA	NA	NA	NA	1	27	Nada	NA	NA	*	*	NA	NA	NA	*	2017	fallen347
+3	2	49,21	J	4-1	193	185	NA	NA	1	12476	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen348
+3	2	49,21	J	4-2	249	247	87	NA	1	12480	NA	NA	NA	*	*	NA	NA	*	NA	2017	fallen349

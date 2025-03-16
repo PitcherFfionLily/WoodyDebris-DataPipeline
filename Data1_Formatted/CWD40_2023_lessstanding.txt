@@ -1,0 +1,134 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height_prior	height	POM	branches	tag	notes_prior	notes	year	observer	other_people	paint_color	tape_color	forest_fires	uniqid
+2	8	01,21	C	21-1	153	154	12	1.9	1.3	2	263554	NA	NA	2023	E	NA	NA	NA	NA	lessstanding001
+2	8	01,24	G	23-1	NA	50.41	NA	5.65	1.3	2	900441	Nada	NA	2023	E	NA	Pink	NA	NA	lessstanding002
+2	10	02,16	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding003
+2	10	03,09	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding004
+2	10	03,12	K	21-1	135	NA	2.6	NA	1.3	2	252410	Sin corteza	Nada	2023	E	NA	NA	NA	NA	lessstanding005
+2	10	03,12	B	23-1	NA	85.56	NA	8.4	1.3	NA	903338	NA	Tallo1	2023	E	NA	NA	NA	NA	lessstanding006
+2	10	03,12	B	23-1	NA	24.53	NA	4.9	1.3	NA	903338	NA	Tallo2	2023	E	NA	NA	NA	NA	lessstanding007
+2	8	03,23	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding008
+2	13	05,03	N	21-1	NA	NA	NA	NA	0.55000000000000004	2	235551	Nada  Solo se encontro la cinta	Nada	2023	E	NA	Pink	NA	NA	lessstanding009
+2	13	05,03	O	20-1	NA	NA	NA	NA	1.3	2	235350	Se cayó	Nada	2023	E	NA	NA	NA	NA	lessstanding010
+2	9	05,12	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding011
+2	8	05,20	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding012
+2	8	05,24	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding013
+2	13	06,06	J	21-1	NA	NA	NA	NA	1.3	2	236194	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding014
+2	10	06,09	B	23-1	NA	56.33	NA	8	1.3	1	231349	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding015
+2	13	07,01	K	19-1	NA	NA	NA	NA	NA	2	225186	Nada	Nada	2023	E	NA	Orange	NA	NA	lessstanding016
+2	9	07,13	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding017
+2	8	07,20	J	21-1	58	NA	2.6	NA	1.3	2	271340	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding018
+2	10	08,06	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding019
+2	9	09,12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	2023	E	NA	NA	NA	NA	lessstanding020
+2	9	10,20	G	20-1	NA	NA	NA	NA	1.3	0	No tag	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding021
+2	9	10,20	G	22-1	79.52	79.19	5.9	1.4	1.3	2	218912	NA	NA	2023	E	NA	NA	NA	NA	lessstanding022
+2	9	10,20	J	23-1	NA	58.31	NA	7.1	1.3	2	1020312	NA	NA	2023	E	NA	NA	NA	NA	lessstanding023
+2	9	10,20	C	23-1	NA	41.77	NA	6.8	1.3	1	1020257	NA	NA	2023	E	NA	NA	NA	NA	lessstanding024
+2	14	11,08	B	20-1	NA	NA	NA	NA	1.3	2	206165	sacar de lista	sacar de lista	2023	V	NA	NA	NA	NA	lessstanding025
+2	14	11,08	G	23-1	NA	103	NA	1.6	1.3	1	511615	NA	tenia banda	2023	V	NA	NA	NA	NA	lessstanding026
+2	15	11,15	K	21-1	71.31	NA	2	NA	1.2	2	207808	NA	Se cayó	2023	V	NA	NA	NA	NA	lessstanding027
+2	15	12,23	C	20-1	NA	NA	NA	NA	1.3	2	812602	Nada	Sacar de lista	2023	V	NA	NA	NA	NA	lessstanding028
+2	15	12,23	C	21-1	NA	NA	NA	NA	1.3	2	209090	Nada	Sacar de lista	2023	V	NA	NA	NA	NA	lessstanding029
+2	15	12,23	J	22-1	20.11	NA	2.2	NA	1.3	1	805495	NA	Nada	2023	V	NA	NA	NA	NA	lessstanding030
+2	15	12,23	K	22-1	31.4	NA	2.4	NA	1.3	2	812298	NA	Nada	2023	V	NA	NA	NA	NA	lessstanding031
+2	15	13,16	N	20-1	80.59	75.97	1.57	2.2	1.3	1	195987-3	NA	NA	2023	V	NA	NA	NA	NA	lessstanding032
+2	13	14,05	N	21-1	NA	NA	NA	NA	1.3	2	714090	Nada	nada	2023	V	NA	NA	NA	NA	lessstanding033
+2	15	14,11	NA	NA	NA	NA	NA	NA	1.3	1	191881	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding034
+2	15	14,14	J	21-1	80.28	NA	1.4	NA	1..5	2	No tag	NA	Se cayó	2023	V	NA	NA	NA	NA	lessstanding035
+2	15	14,14	C	23-1	NA	39.13	NA	2.6	1.3	2	913295	NA	NA	2023	V	NA	NA	NA	NA	lessstanding036
+2	15	14,24	K	19-1	NA	NA	NA	NA	1.3	2	195892-2	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding037
+2	14	15,07	O	21-1	NA	NA	NA	NA	1.3	2	No tag	NA	nada	2023	V	NA	NA	NA	NA	lessstanding038
+2	13	16,05	G	NA	NA	30.94	NA	2	1.3	NA	no tag	NA	NA	2023	V	NA	NA	NA	NA	lessstanding039
+2	15	16,12	O	8-1	137	130	2.1	NA	1.3	2	182485	NA	Esta muestra está en N	2023	V	NA	NA	NA	NA	lessstanding040
+2	15	16,12	J	20-1	NA	NA	NA	NA	1.3	2	915314	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding041
+2	13	17,01	NA	NA	NA	NA	NA	NA	1.3	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding042
+2	14	17,08	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding043
+2	14	18,10	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding044
+2	15	18,23	K	20-1	98	NA	2.6	NA	1.3	2	173606	NA	se cayo	2023	V	NA	NA	NA	NA	lessstanding045
+2	15	18,23	G	21-1	NA	NA	NA	NA	1.3	2	No tag	Caido	Sacar de lista	2023	V	NA	NA	NA	NA	lessstanding046
+2	13	19,02	J	21-1	98	86	3	2.6	1.3	2	170365-1	NA	NA	2023	E	NA	NA	NA	NA	lessstanding047
+2	13	19,06	J	22-1	151	141.53	11.1	3.8	1.3	1	170980	NA	NA	2023	V	NA	NA	NA	NA	lessstanding048
+2	14	19,08	B	19-1	NA	NA	NA	NA	1.3	2	166069	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding049
+2	14	19,12	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding050
+2	16	19,19	F	20-1	NA	NA	NA	NA	1.3	1	172752-1	Nada	Nada sacar de lista	2023	V	NA	NA	NA	NA	lessstanding051
+2	16	19,19	F	20-2	NA	NA	NA	NA	1.3	2	172752-2	Nada	Nada sacar de lista	2023	V	NA	NA	NA	NA	lessstanding052
+2	16	19,19	K	21-1	NA	NA	NA	NA	1.3	2	167652	Caido	Nada sacar de lista	2023	V	NA	NA	NA	NA	lessstanding053
+2	15	19,16	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding054
+3	1	21,04	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	Nada	2023	E	NA	NA	NA	NA	lessstanding055
+3	1	21,08	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding056
+3	1	21,10	B	19-1	35.83	NA	3.9	NA	1.3	0	156483	NA	Caido	2023	E	NA	NA	NA	NA	lessstanding057
+3	1	21,15	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding058
+3	1	21,17	O	22-1	14.68	NA	1.5	NA	1.3	2	921206	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding059
+2	16	22,19	B	21-1	63	NA	1.1	NA	0.55000000000000004	2	152727	NA	Se quebró por debajo de	2023	V	NA	NA	NA	NA	lessstanding060
+2	16	22,21	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding061
+3	1	23,03	N	20-1	NA	NA	NA	NA	1.3	2	145488	Caido	Nada	2023	E	NA	NA	NA	NA	lessstanding062
+3	1	23,06	B	22-1	20.61	NA	3.2	NA	1.3	2	no tag	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding063
+3	1	23,06	G	22-1	21.1	NA	1.35	NA	1.3	2	no tag	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding064
+3	1	23,17	K	22-1	14.95	NA	1.6	NA	1.3	2	423417	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding065
+2	16	23,23	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding066
+3	1	24,09	K	21-1	98	NA	2.6	NA	1.3	2	141776	Inclinado 35.6	Caido	2023	E	NA	NA	NA	NA	lessstanding067
+3	1	24,15	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding068
+2	16	25,24	NA	19-1	NA	NA	NA	NA	NA	NA	NA	nada	nada	2023	V	NA	NA	NA	NA	lessstanding069
+3	1	26,08	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding070
+2	28	26,17	B	22-1	31.4	NA	6	NA	1.3	2	No tag	Psecropia	Nada	2023	V	NA	NA	NA	NA	lessstanding071
+2	28	26,21	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	nada	2023	V	NA	NA	NA	NA	lessstanding072
+2	28	28,16	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding073
+3	1	29,06	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	Nada	2023	E	NA	NA	NA	NA	lessstanding074
+2	28	29,13	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding075
+2	28	30,23	C	22-1	25.5	NA	1.94	NA	1.3	2	114578	NA	Se cayó	2023	V	NA	NA	NA	NA	lessstanding076
+2	28	30,23	B	23-1	NA	17.97	NA	2	1.3	1	109323	NA	NA	2023	V	NA	NA	NA	NA	lessstanding077
+3	2	31,16	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding078
+2	28	31,21	N	21-1	18.94	NA	1.8	NA	1.3	2	631314	NA	Nada	2023	V	NA	NA	NA	NA	lessstanding079
+3	2	32,07	B	21-1	202	180	4.4	4.4	1.3	2	96226	NA	NA	2023	E	NA	NA	NA	NA	lessstanding080
+3	2	32,07	N	22-1	17.29	NA	1.5	NA	1.3	2	no tag	NA	Caido	2023	E	NA	NA	NA	NA	lessstanding081
+3	2	32,07	G	22-1	17.62	NA	2.9	NA	1.3	1	no tag	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding082
+2	16	32,24	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	Nada	2023	V	NA	NA	NA	NA	lessstanding083
+3	2	33,12	O	22-1	67.17	NA	10.5	NA	1.3	1	298335	NA	Caido	2023	E	NA	NA	NA	NA	lessstanding084
+2	28	33,21	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding085
+3	1	34,04	J	23-1	NA	25.01	NA	2.85	1.3	1	733094	nada	NA	2023	E	NA	NA	NA	NA	lessstanding086
+3	2	34,15	F	20-1	145	133	0.66	0.65	0.33	1	93017	se partio a 0.66	NA	2023	E	NA	NA	NA	NA	lessstanding087
+3	2	34,15	F	20-3	44.8	NA	1.19	NA	1	0	93007	se partio a 1.19	Nada	2023	E	NA	NA	NA	NA	lessstanding088
+3	2	34,15	G	23-1	NA	80.38	NA	7.7	1.3	1	93240	NA	NA	2023	E	NA	NA	NA	NA	lessstanding089
+3	2	34,15	G	23-2	NA	38.22	NA	5.8	1.3	1	93240	NA	NA	2023	E	NA	NA	NA	NA	lessstanding090
+3	2	35,17	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding091
+3	1	36,04	NA	20-1	NA	NA	NA	NA	NA	NA	NA	nada	nada	2023	E	NA	NA	NA	NA	lessstanding092
+3	2	36,10	F	23-1	NA	45.63	NA	3	1.3	2	81686	NA	NA	2023	E	NA	NA	NA	NA	lessstanding093
+3	2	36,13	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding094
+3	2	37,17	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding095
+3	3	38,11	F	21-1	33.64	NA	1.3	NA	1.3	2	637157	NA	Caido	2023	R	NA	NA	NA	NA	lessstanding096
+3	3	38,11	G	20-2	34.2	NA	1.7	NA	1.3	1	302273	NA	Caido	2023	R	NA	NA	NA	NA	lessstanding097
+3	1	39,07	NA	21-1	NA	NA	NA	NA	NA	NA	NA	Nada	nada	2023	E	NA	NA	NA	NA	lessstanding098
+3	3	39,15	O	19-3	105	100	4.2	1.6	1.3	1	62865	NA	NA	2023	R	NA	NA	NA	NA	lessstanding099
+3	3	39,15	O	19-4	128	120	2.6	2.6	1.3	2	62865	NA	NA	2023	R	NA	NA	NA	NA	lessstanding100
+3	3	39,15	O	20-1	36.31	NA	1.13	NA	1.3	1	62865	NA	Caido	2023	R	NA	NA	NA	NA	lessstanding101
+3	3	40,21	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	R	NA	NA	NA	NA	lessstanding102
+3	3	41,24	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	R	NA	NA	NA	NA	lessstanding103
+3	6	42,12	K	22-1	43.27	NA	3.1	NA	1.3	1	17495-1	inclinacion de 70	Caido	2023	E	NA	NA	NA	NA	lessstanding104
+3	6	42,12	K	22-2	17.7	NA	1.8	NA	1.3	1	17495-4	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding105
+3	6	42,12	O	20-1	31.38	30.18	1.6	1.5	1.3	1	17281	NA	NA	2023	E	NA	NA	NA	NA	lessstanding106
+3	3	42,21	J	22-1	69	NA	6.5	NA	1.3	NA	NA	NA	Nada	2023	R	NA	NA	NA	NA	lessstanding107
+3	6	43,10	G	6-1	77.18	94	1.35	1.08	0.54	2	16868	NA	se quebro debajo de 1.3m	2023	E	NA	NA	NA	NA	lessstanding108
+3	6	43,10	K	22-1	14.8	NA	1.5	NA	1.3	1	943321	NA	NA	2023	E	NA	NA	NA	NA	lessstanding109
+3	6	43,15	O	23-1	NA	39.68	NA	2.1	1.3	1	42265	Nada	NA	2023	E	NA	NA	NA	NA	lessstanding110
+3	6	44,07	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	Nada	2023	V	NA	NA	NA	NA	lessstanding111
+3	6	44,13	J	20-1	49.45	NA	3.5	NA	1.3	0	443485	NA	Nada	2023	E	NA	NA	NA	NA	lessstanding112
+3	6	44,18	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding113
+3	6	44,20	B	19-1	107	NA	3.5	NA	1.3	2	38245	NA	Se cayó	2023	E	NA	NA	NA	NA	lessstanding114
+3	6	44,20	O	22-1	40.28	NA	3.3	NA	1.3	2	No tag	NA	Se cayó	2023	E	NA	NA	NA	NA	lessstanding115
+3	6	44,23	N	21-1	NA	NA	0.95	NA	1.3	2	39031	NA	nada	2023	E	NA	NA	NA	NA	lessstanding116
+3	7	45,05	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding117
+3	6	46,01	N	23-1	NA	23.82	NA	2	1.3	2	946038	NA	NA	2023	V	NA	NA	NA	NA	lessstanding118
+3	7	46,07	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	Nada	2023	V	NA	NA	NA	NA	lessstanding119
+3	8	46,21	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	R	NA	NA	NA	NA	lessstanding120
+3	7	47,05	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	R	NA	NA	NA	NA	lessstanding121
+3	7	47,10	C	20-1	131	NA	2.7	NA	1.3	2	26728	NA	Se cayó	2023	V	NA	NA	NA	NA	lessstanding122
+3	7	47,10	B	22-1	36.55	NA	2.8	NA	1.3	2	21323-1	NA	Nada	2023	V	NA	NA	NA	NA	lessstanding123
+3	7	47,10	B	22-1	36.55	NA	2.8	NA	1.3	2	21323-1	NA	Nada	2023	V	NA	NA	NA	NA	lessstanding124
+3	7	47,17	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding125
+3	6	49,01	NA	NA	NA	NA	NA	NA	NA	NA	NA	Caido	Nada	2023	V	NA	NA	NA	NA	lessstanding126
+3	6	49,01	K	20-2	NA	NA	NA	NA	1.3	2	125206	Caido	Caido	2023	V	NA	NA	NA	NA	lessstanding127
+3	6	49,01	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	2023	V	NA	NA	NA	NA	lessstanding128
+3	7	49,04	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	E	NA	NA	NA	NA	lessstanding129
+3	7	49,12	NA	NA	NA	NA	NA	NA	NA	NA	NA	nada	Nada	2023	V	NA	NA	NA	NA	lessstanding130
+3	7	49,17	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding131
+3	7	49,21	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding132
+3	7	49,24	NA	NA	NA	NA	NA	NA	NA	NA	NA	Nada	Nada	2023	V	NA	NA	NA	NA	lessstanding133

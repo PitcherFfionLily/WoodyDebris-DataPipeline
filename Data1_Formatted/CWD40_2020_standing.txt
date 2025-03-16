@@ -1,0 +1,187 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height	POM	penetration.200mm	penetration.200mm.1	branches	tag	notes_prior	notes	bark_present	bark_absent	year	observer	irregular_diameter_prior	diameter_two.mm	uniqid
+2	7	01,21	G	9-1	470	412	1.4	1.3	17	-	1	no tag	sin corrteza	-	-	*	2020	R	162	159	standing001
+2	7	01,21	I	20-1	-	454	12.3	1.3	82	-	2	8518	-	-	*	-	2020	R	-	342	standing002
+2	7	01,21	L	20-1	-	832	9.1	1.3	60	-	2	8208	-	-	*	-	2020	R	-	584	standing003
+3	6	01,21	P	8-1	453	468	15.5	2.8	21	-	2	8214	Parte del resto de la corteza se está abriendo por lo que mide mas	escalera	-	*	2020	R	576	580	standing004
+2	7	01,21	K	8-1	441	448	9	1.3	88	-	2	8207	con corteza	-	*	-	2020	R	344	347	standing005
+2	7	01,24	G	8-1	-	-	-	1.3	-	-	1	8536	Árbol no encontrado. Debe estar caído bajo muchas lianas que cayeron al suelo. Sin ramas	No encontrado	-	-	2020	R	-	sin ramas	standing006
+2	7	01,24	G	20-1	-	323	23.5	1.3	81	-	1	8537	-	-	-	*	2020	R	-	-	standing007
+2	7	01,24	G	19-1	581	618	12	1.3	61	-	2	8535	Corteza	-	*	-	2020	R	474	451	standing008
+2	7	01,24	J	20-1	-	235	5.4	1.3	50	-	2	264309	-	-	-	*	2020	R	-	198	standing009
+2	7	01,24	L	20-1	-	427	23.9	1.3	64	-	1	259333	-	-	*	-	2020	R	-	-	standing010
+2	7	01,24	M	9-1	496	486	3.5	1.3	37	-	2	8188	Sin corteza. Sin ramas	-	-	*	2020	R	418	413	standing011
+2	6	02,16	C	20-1	-	344	6.6	1.3	48	-	2	257848	-	Inclinacion 56.2	-	*	2020	R	-	308	standing012
+2	6	02,16	H	7-1	428	-	-	1.3	-	-	1	257916	Corteza	Caido	-	-	2020	R	-	-	standing013
+2	6	02,16	I	8-1	266	-	-	1.3	-	-	2	258010	Sin corteza	Caido	-	-	2020	R	153	-	standing014
+2	6	02,16	G	19-1	227	-	-	1.3	-	-	2	258002	corteza	Caido	-	-	2020	R	145	-	standing015
+2	6	03,09	A	7-2	358	362	13.7	1.3	35	-	2	7918	-	-	-	*	2020	R	251	272	standing016
+2	6	03,09	C	7-1	353	357	11.1	1.3	-	18	2	8043	-	-	*	-	2020	R	294	293	standing017
+2	6	03,09	I	20-1	-	335	6.4	1.3	28	-	2	8053	-	-	*	-	2020	R	-	303	standing018
+2	6	03,09	J	20-1	-	641	22.3	1.3	52	-	1	8048	-	-	*	-	2020	R	-	586	standing019
+2	6	03,09	N	8-1	393	399	25.7	1.3	76	-	1	268164	Ramas. Sin corteza	-	-	*	2020	R	-	-	standing020
+3	6	03,12	A	3-1	615	589	32.299999999999997	3.5	87	-	1	7902	-	Escalera	-	*	2020	R	717	670	standing021
+2	6	03,12	B	20-1	-	218	1.4	1.3	117	-	2	247036	Inclinado  8 grados	-	-	*	2020	R	-	163	standing022
+2	10	03,23	A	20-1	-	275	2.2000000000000002	1.3	52	-	2	249574	-	-	*	-	2020	R	-	193	standing023
+2	10	03,23	M	4-1	-	-	-	0.34	-	-	2	7820	-	Nada	-	-	2020	R	-	-	standing024
+2	5	05,03	E	19-1	370	355	3.4	1.3	43	-	2	7656	31 grados. Corteza, tiene termitas	correccion de inclinacion son 21 grados	*	-	2020	R	-	-	standing025
+2	5	05,03	H	3-1	-	-	-	1.3	-	-	-	no tag	No encontrado	No encontrado	-	-	2020	R	-	-	standing026
+2	5	05,03	G	7-1	527	525	1.1000000000000001	0.55	-	3	2	7660	-	-	*	-	2020	R	428	-	standing027
+3	6	05,03	O	8-1	900	880	11.3	3.6	18	-	2	7621	-	Escalera	-	*	2020	R	860	878	standing028
+2	7	05,20	A	7-1	422	453	22.5	1.3	57	-	1	238573	Sin corteza	-	-	*	2020	R	402	399	standing029
+2	7	05,20	D	7-1	473	-	-	1.5	-	-	2	7763	sin corteza	caido	-	-	2020	R	461	-	standing030
+2	7	05,20	L	19-1	1122	-	-	1.3	-	-	1	7496	sin corteza. Impactado por rayo el año pasado	Caido	-	-	2020	R	1070	-	standing031
+2	7	05,20	L	19-2	285	-	-	1.3	-	-	2	238752	Con corteza. Impactado por rayo el año pasado	Caido	-	-	2020	R	-	-	standing032
+3	6	05,20	M	19-1	791	787	13.7	3	-	5	0	7499	Escalera	Escalera	*	-	2020	R	512	565	standing033
+2	7	05,20	P	3-1	416	419	17.100000000000001	1.3	67	-	2	238630	-	-	-	*	2020	R	-	-	standing034
+2	10	05,24	I	20-1	-	551	25.5	1.3	110	-	1	7802	-	-	*	-	2020	R	-	479	standing035
+2	10	05,24	J	19-1	222	223	10.5	1.3	103	-	2	239685	con corteza	-	*	-	2020	R	-	-	standing036
+2	10	05,24	N	7-1	533	523	16.3	1.3	42	-	2	239534	sin corteza	-	-	*	2020	R	452	453	standing037
+2	5	06,06	C	7-1	204	40	-	1.3	-	-	2	no tag	-	se descompuso	-	-	2020	R	158	-	standing038
+2	5	06,06	I	5-1	319	-	-	1.3	-	-	2	7592	-	no encontrado	-	-	2020	R	298	-	standing039
+2	5	06,06	I	5-2	625	631	8.5	1.3	69	-	2	13123	-	-	*	-	2020	R	589	588	standing040
+2	5	07,01	B	3-1	233	240	3	1.3	-	15	2	7311	-	-	-	*	2020	R	-	-	standing041
+2	5	07,01	I	7-1	330	276	1.8	1.3	-	5	2	7321	hongos en la corteza	-	*	-	2020	R	191	-	standing042
+NA	NA	07,01	K	7-1	-	-	-	1.3	-	-	2	7301	Sigue vivo	Vivo	-	-	2020	R	-	-	standing043
+2	6	07,13	B	0-1	223	205	1.1299999999999999	0.57	30	-	2	no tag	-	-	-	*	2020	R	156	127	standing044
+3	6	07,13	I	20-1	-	612	9.3000000000000007	3	34	-	2	No tag esta en 0613 entre 24 y 34 mide más de 600 mm	-	Escalera	-	*	2020	R	-	609	standing045
+2	5	08,06	M	3-1	442	526	0.83	0.5	-	3	2	7036	-	-	-	*	2020	R	249	306	standing046
+2	6	09,12	C	3-1	378	-	-	0.35	-	-	2	222154	-	caido	-	-	2020	R	248	-	standing047
+2	10	10,20	G	19-1	423	438	7.8	1.3	35	-	2	6850	con corteza	-	*	-	2020	R	-	379	standing048
+2	10	10,20	H	4-1	382	361	12.5	1.3	35	-	2	6849	sin corteza	-	-	*	2020	R	322	314	standing049
+2	12	11,08	O	NA	356	-	-	1.3	-	-	2	6563	Con corteza	Caido	-	-	2020	R	279	-	standing050
+2	12	11,15	D	7-1	335	150	-	0.55	-	-	2	212912	sin corteza	-	-	-	2020	R	225	-	standing051
+2	12	11,15	G	5-1	302	-	-	1.3	-	-	2	6753	corteza	Caido	-	-	2020	R	-	-	standing052
+2	12	11,15	J	8-1	386	-	-	0.5	-	-	2	No tag	sin corteza	Caido	-	-	2020	R	215	-	standing053
+2	12	11,15	J	7-1	283	288	11.5	1.3	35	-	2	213119	Está en J y no en K. Con corteza. Error en la medida de altura del año pasado	-	-	*	2020	R	-	-	standing054
+2	12	11,15	J	19-1	261	257	15.7	1.3	42	-	2	213096	Con corteza	-	-	*	2020	R	-	-	standing055
+2	12	11,15	O	6-1	268	-	-	1.3	-	-	2	6532	sin corteza	caido	-	-	2020	R	113	-	standing056
+2	12	11,15	O	19-1	227	-	-	0.75	-	-	2	No tag	sin corteza	solo clavo	-	-	2020	R	-	-	standing057
+2	12	13,16	A	20-1	-	760	33.700000000000003	1.3	96	-	1	6163	-	-	*	-	2020	R	-	-	standing058
+2	12	13,16	G	19-1	379	378	3	1.3	-	11	2	6393	con corteza	34.7 grados inclinacion	*	-	2020	R	288	277	standing059
+2	12	13,16	L	20-1	-	239	6.9	1.3	19	-	2	6154	-	-	*	-	2020	R	-	-	standing060
+2	12	14,05	B	19-1	263	-	-	1.3	-	-	1	5946	Con corteza	Caido	-	-	2020	R	252	-	standing061
+2	12	14,11	E	9-1	385	319	0.71	0.52	-	2	2	No tag	Sin corteza	-	-	*	2020	R	253	246	standing062
+2	11	14,24	E	6-1	224	190	-	1.3	-	-	2	6105	-	-	-	-	2020	R	-	-	standing063
+2	11	14,24	P	19-1	471	455	1.5	1.3	-	6	2	6081	sin corteza	-	-	-	2020	R	321	280	standing064
+2	14	15,07	B	8-1	318	346	0.4	0.2	-	1	2	no tag	Con corteza	-	*	-	2020	R	268	319	standing065
+2	14	15,07	G	6-1	559	550	6.7	1.3	-	8	2	5960	-	-	*	-	2020	R	450	451	standing066
+2	14	15,07	K	2-1	203	145	-	0.49	-	-	2	415259	esta completamete hueco	-	-	-	2020	R	163	-	standing067
+2	13	16,05	L	6-1	135	-	-	0.52	-	-	2	516063	Esta en el suelo	-	-	-	2020	V	-	-	standing068
+2	13	16,05	O	5-1	-	-	-	0.28	-	-	2	5637	Se termino de caer	-	-	-	2020	V	-	-	standing069
+2	14	16,12	C	2-1	470	473	1.03	0.7	-	1	2	no tag	sin corteza	-	-	*	2020	R	322	210	standing070
+2	13	17,01	I	0-1	738	737	0.27	1.3	-	6	2	-	-	6 golpes con corteza	*	-	2020	V	673	-	standing071
+2	13	17,01	J	20-1	-	262	7.5	1.3	87	-	1	175172	-	Con  corteza	*	-	2020	V	-	260	standing072
+2	14	17,08	N	7-1	257	243	4.5999999999999996	1.3	148	-	2	176354	-	-	*	-	2020	R	252	229	standing073
+2	14	18,10	N	2-1	268	-	-	1.8	-	-	2	5329	-	Caido	-	-	2020	R	216	-	standing074
+2	11	18,23	O	2-1	563	553	6	1.3	67	-	2	5421	sin corteza	15 grados inclinacion	-	*	2020	R	-	527	standing075
+2	13	19,02	M	19-1	253	-	-	0.54	-	-	2	no tag	-	No se encontró  árbol le cayó  encima	-	*	2020	V	107	-	standing076
+2	13	19,06	A	7-1	537	-	-	1.3	-	-	2	5235	-	esta en el suelo	-	*	2020	V	526	-	standing077
+2	13	19,6	N	20-1	-	231	6.8	1.3	70	-	-	5231	-	-	*	-	2020	V	-	-	standing078
+2	13	19,06	G	8-1	-	-	-	1.3	-	-	2	No tag	caido	Caido	-	-	2020	V	-	-	standing079
+2	13	19,08	K	6-1	303	-	-	1.3	-	-	2	5217	-	Caido	*	-	2020	V	284	-	standing080
+2	14	19,12	E	19-1	513	508	12.1	1.3	67	-	2	5332	-	-	*	-	2020	R	351	374	standing081
+2	14	19,12	F	20-1	-	243	9.6999999999999993	1.3	65	-	2	418272	-	-	*	-	2020	R	-	-	standing082
+2	14	19,12	L	7-1	624	-	-	3	-	-	2	5198	-	Caido	*	-	2020	R	595	-	standing083
+2	14	19,12	N	20-1	-	218	14.5	1.3	15	-	0	619102	-	14 grados inclinación	*	-	2020	R	-	-	standing084
+2	11	19,16	D	20-1	-	228	9.5	1.3	41	-	2	172117	-	-	*	-	2020	R	202	-	standing085
+3	6	19,16	N	20-1	-	390	24	3	42	-	1	167104	-	Escalera	*	-	2020	R	-	372	standing086
+3	6	19,16	P	20-1	-	610	26.3	3	28	-	1	5177	-	Escalera	*	-	2020	R	-	604	standing087
+2	11	19,19	C	8-1	241	231	1.8	1.3	151	-	2	818500	Sin corteza	-	-	*	2020	R	196	128	standing088
+2	11	19,19	D	19-1	318	322	6.2	1.3	53	-	2	5381	Con corteza	-	*	-	2020	R	259	268	standing089
+2	11	19,19	E	19-1	249	249	8.3000000000000007	1.3	134	-	2	5383	Con corteza	14 grados inclinacion	*	-	2020	R	225	223	standing090
+2	11	19,19	F	3-1	577	549	1	0.5	121	-	2	172649	sin corteza	-	-	*	2020	R	560	483	standing091
+2	11	19,19	F	20-1	-	264	1.8	1.8	96	-	2	718325	-	-	-	*	2020	R	-	221	standing092
+2	17	21,04	F	19-1	298	293	2.6	1.3	60	-	2	160651	-	-	*	-	2020	R	267	268	standing093
+2	17	21,08	C	8-1	416	433	14.9	1.5	33	-	2	5003	-	- perdio madera y corteza	*	-	2020	R	447	340	standing094
+2	17	21,08	P	2-1	357	351	0.6	0.3	47	-	2	4909	-	-	-	*	2020	R	323	249	standing095
+2	17	21,10	O	4-1	226	228	4.3	1.3	50	-	2	156491	-	-	-	*	2020	R	199	201	standing096
+2	17	21,10	H	8-1	206	214	1.3	1.3	43	-	2	161881	en el censo anterior parte de la copa no se veia por lianas por eso la altura ahora ea mayor	-	-	*	2020	R	173	178	standing097
+2	19	21,17	B	19-1	399	398	12	1.3	14	-	2	4867	-	-	*	-	2020	R	373	370	standing098
+2	19	22,19	D	8-1	318	318	-	1.3	35	-	2	4855	-	-	-	*	2020	V	271	282	standing099
+2	19	22,19	O	8-1	256	-	-	1.3	-	-	2	152436	El tag e 152736 y no 152436	se cayó	*	-	2020	V	221	-	standing100
+3	6	22,19	J	20-1	-	451	21.7	3	68	-	1	4846	-	Escalera cecrin	*	-	2020	V	-	451	standing101
+2	20	22,21	F	8-1	507	-	-	3	-	-	1	4833	-	Caido	*	-	2020	R	542	-	standing102
+2	20	22,21	M	20-1	-	257	1.5	1.3	-	2	2	No tag	-	-	*	-	2020	R	-	183	standing103
+2	17	23,03	K	9-1	313	309	4.8	1.3	18	-	2	no tag	-	-	*	-	2020	R	259	261	standing104
+2	17	23,06	I	20-1	-	550	21.3	1.6	18	-	1	4671	-	-	*	-	2020	R	-	496	standing105
+2	17	23,06	J	7-1	753	-	-	3	-	-	1	4673	Se le cayo la corteza	Caido	-	*	2020	R	743	-	standing106
+2	17	23,06	J	19-1	230	223	2.9	1.3	55	-	2	151130	-	Tag 151130	*	-	2020	R	219	-	standing107
+2	17	23,06	K	5-1	524	529	29.5	1.3	20	-	1	4585	-	-	-	*	2020	R	503	488	standing108
+2	17	23,06	K	8-1	368	382	7.7	1.3	143	-	2	4584	-	se esta inflando la cascara	-	*	2020	R	261	315	standing109
+2	17	23,06	L	20-1	-	341	6.5	1.3	26	-	2	No tag	-	-	-	*	2020	R	-	295	standing110
+2	17	23,06	N	6-1	426	-	-	1.3	-	-	2	4586	Nada	Caido	-	*	2020	R	380	-	standing111
+2	19	23,17	H	6-1	213	188	-	1.3	-	-	2	no tag. Sin corteza. Es el mismo que I6-1 fallen	-	No mide	-	*	2020	V	168	-	standing112
+2	19	23,17	O	3-1	357	421	1.1000000000000001	0.55	198	-	1	4519	-	el arbol se partio a 1.10	-	*	2020	V	-	226	standing113
+2	20	23,23	A	20-1	-	237	5.5	1.3	59	-	2	148686	-	-	-	*	2020	R	-	158	standing114
+2	20	23,23	P	2-1	673	727	1.9	1.3	136	-	2	no tag	-	Se esta rajando	-	*	2020	R	661	659	standing115
+2	20	23,23	P	0-1	-	-	-	0.52	-	-	2	no tag	no encontrado	Nada	-	-	2020	R	-	-	standing116
+2	18	24,09	E	6-1	237	231	2.5	1.3	129	-	2	146393	-	-	-	*	2020	R	-	203	standing117
+2	18	24,09	I	6-1	353	288	1.4	1.3	54	-	2	146601	-	-	-	*	2020	R	231	153	standing118
+2	18	24,15	K	20-1	-	732	33.5	1.3	67	-	1	4394	-	Escalera	*	-	2020	R	-	732	standing119
+2	18	24,15	O	8-1	511	491	0.95	0.45	72	-	0	4386	se quebro	-	-	*	2020	R	443	455	standing120
+2	18	26,08	I	20-1	-	286	2.5	1.3	37	-	2	136229	-	-	*	-	2020	R	-	198	standing121
+2	18	26,08	K	5-1	225	-	-	1.3	-	-	2	4009	sin ramas con corteza	Caido	*	-	2020	R	182	-	standing122
+3	6	26,17	C	20-1	-	-	22.3	1.3	90	-	2	No tag	-	Escalera. Ceiba gambas muy altas. Se estimó diametro a 1.3. Se estimó el diametro con cinta y esta en aproximadamente 2300mm a 3.5m	-	-	2020	R	-	-	standing123
+2	18	26,17	G	6-1	-	-	-	1.5	-	-	2	4165	-	Caido	-	-	2020	R	-	-	standing124
+2	18	26,17	J	6-1	418	-	-	1.3	-	-	2	4167	-	-	*	-	2020	R	453	-	standing125
+2	4	26,21	B	5-1	299	287	4.7	1.3	46	-	2	133241	-	-	-	-	2020	R	-	-	standing126
+2	4	26,21	B	7-1	-	-	-	1.3	-	-	2	4077	-	caido	-	-	2020	R	-	-	standing127
+2	4	26,21	B	8-1	218	229	9.8000000000000007	1.3	85	-	2	138307	-	-	*	-	2020	R	-	-	standing128
+2	4	26,21	P	3-1	470	545	0.6	0.36	34	-	2	-	Sin corteza	-	-	-	2020	R	177	153	standing129
+2	4	26,21	D	19-1	553	522	12	1.3	89	-	2	4140	-	-	-	*	2020	R	-	-	standing130
+2	3	28,16	G	8-1	230	218	4.82	1.3	78	-	2	122548	-	-	-	*	2020	R	-	-	standing131
+2	3	31,16	B	3-1	-	-	-	1.3	-	-	1	3189	-	No aparece	-	-	2020	R	-	-	standing132
+3	6	31,16	N	20-1	-	542	19.3	3	28	-	1	3188	-	Escalera	*	-	2020	R	-	509	standing133
+2	4	31,21	L	2-1	223	136	-	1.3	-	-	2	104126	-	-	-	-	2020	R	198	-	standing134
+2	4	31,21	J	19-1	508	510	20.100000000000001	1.3	10	-	1	3451	Platypodium. Sin corteza	-	-	*	2020	R	514	502	standing135
+2	21	32,07	B	8-1	303	314	3.7	1.3	60	-	2	26207	-	-	*	-	2020	R	-	-	standing136
+2	21	32,07	D	8-1	431	-	-	1.3	-	-	2	3260	-	Caido	-	*	2020	R	396	-	standing137
+2	21	32,07	H	19-1	953	-	-	0.65	-	-	2	3248	Resto que quedó de pie de H 6-1	Caido	-	*	2020	R	63	-	standing138
+2	21	32,07	H	19-2	828	783	0.77	0.37	153	-	2	3248	Resto que quedó de pie de H 6-1	-	-	*	2020	R	163	139	standing139
+2	21	32,07	H	19-3	816	799	1.7	1.3	-	16	2	3248	Resto que quedó de pie de H 6-1	-	-	*	2020	R	293	203	standing140
+2	21	32,07	N	20-1	-	297	11.3	1.3	23	-	2	96459	-	-	*	-	2020	R	-	-	standing141
+2	21	33,12	J	8-1	228	-	-	1.3	-	-	2	97481	-	Caido	-	*	2020	R	189	-	standing142
+2	21	33,12	J	19-1	231	228	13.7	1.3	58	-	2	832387	-	-	*	-	2020	R	224	218	standing143
+2	21	34,04	F	3-1	227	-	-	1.3	-	-	2	90840	-	Caido	-	*	2020	R	203	-	standing144
+2	21	34,04	B	7-1	1052	-	-	3	-	-	0	2600	-	Caido	*	-	2020	R	947	-	standing145
+2	20	34,15	A	20-1	-	531	3.5	1.3	42	-	2	No tag	-	-	*	-	2020	R	-	468	standing146
+2	20	34,15	K	20-1	-	212	8.1	1.3	33	-	1	87643	-	-	*	-	2020	R	-	-	standing147
+2	20	34,15	F	7-1	263	-	-	1.3	-	-	1	93153	-	Caido	-	*	2020	R	232	-	standing148
+2	20	35,17	F	20-1	-	299	11.7	1.3	33	-	2	2689	-	-	*	-	2020	R	-	246	standing149
+2	21	36,04	L	19-1	983	971	1.8	1.3	39	-	2	2274	-	Esta hueco. Se esta rajando	*	-	2020	R	482	502	standing150
+2	28	36,10	M	6-1	271	-	-	1.3	-	-	2	536230	Esta hueco	Caido	-	*	2020	R	251	-	standing151
+2	28	36,10	P	20-1	-	351	2.4	1.3	93	-	2	76649	-	-	*	-	2020	R	-	267	standing152
+2	28	36,13	F	9-1	205	251	5.4	2.2	83	-	2	2506	Se está rajando	12 grados inclinacion	-	*	2020	R	242	201	standing153
+2	28	36,13	G	8-1	418	409	7.6	1.3	25	-	2	82303	-	-	*	-	2020	R	353	356	standing154
+2	28	37,17	G	20-1	-	402	12.5	1.3	25	-	2	2363	-	-	*	-	2020	R	-	398	standing155
+2	28	37,17	P	0-1	273	190	-	0.51	-	-	2	2143	perdio parte del tronco	-	-	-	2020	R	-	-	standing156
+2	28	38,11	M	8-1	340	334	7.3	1.3	27	-	2	1990	-	-	-	*	2020	R	310	305	standing157
+2	28	39,07	A	19-1	377	335	12.7	1.3	54	-	2	1872	-	-	*	-	2020	R	303	307	standing158
+3	6	39,07	I	7-1	865	941	33.1	3.3	47	-	0	66360	-	-	*	-	2020	R	819	820	standing159
+2	28	39,15	M	20-1	-	385	18.7	1.3	46	-	2	63163	-	-	*	-	2020	R	-	318	standing160
+3	2	40,21	C	6-1	209	198	-	1.3	-	-	2	56943	-	-	*	-	2020	R	-	198	standing161
+3	2	41,24	D	19-1	254	265	10	1.3	36	-	2	1744	-	-	*	-	2020	R	217	230	standing162
+3	3	42,12	C	3-1	243	254	8.8000000000000007	1.3	18	-	2	no tag	-	-	-	*	2020	R	173	182	standing163
+3	3	42,12	G	8-1	370	-	-	3	-	-	2	52504	-	caido	-	*	2020	R	304	-	standing164
+3	3	42,12	N	9-2	206	222	0.84	0.45	36	-	2	no tag	-	-	-	*	2020	R	166	124	standing165
+3	2	43,15	F	20-1	-	648	0.8	0.4	127	-	2	no tag	-	Quararibea está en 42,15 41 o 42,14 en 44. Antes tenia dendrometro	-	*	2020	R	-	197	standing166
+3	2	43,15	H	0-2	-	-	1.7	1.3	-	-	2	1284	Sigue vivo	Sigue vivo en la base	-	-	2020	R	-	-	standing167
+3	2	43,15	J	9-1	308	312	2.2999999999999998	1.3	39	-	2	no tag	-	esta hueco	-	*	2020	R	282	279	standing168
+3	3	44,07	B	5-1	765	734	3.4	1.6	85	-	2	870	-	rajado	*	-	2020	R	593	615	standing169
+3	3	45,05	E	8-1	346	489	0.9	0.45	-	2	2	no tag	Se está llenando de hongos	se quebro, solo quedo una parte	-	*	2020	R	253	345	standing170
+3	3	45,05	K	6-1	290	297	4.2	1.3	42	-	2	30985	-	-	*	-	2020	R	270	274	standing171
+3	6	46,21	F	8-1	745	750	17.899999999999999	2.9	27	-	2	687	-	-	*	-	2020	R	675	649	standing172
+3	5	46,21	G	8-1	193	-	-	1.3	-	-	2	No tag	-	Caido	-	-	2020	V	-	-	standing173
+3	5	46,21	N	20-1	-	355	13.6	2	42	-	1	628	-	-	*	-	2020	V	390	-	standing174
+3	5	46,21	N	20-2	-	313	3.1	1.3	63	-	2	626	-	-	*	-	2020	V	281	-	standing175
+3	4	47,05	B	6-1	-	-	-	0.61	-	-	2	510	No encontrado	No encontrado	-	-	2020	R	-	-	standing176
+3	4	47,10	F	20-1	3	446	1.2	0.6	46	-	2	-	-	esta en 46,09 en 34 tiene dendrometro	-	*	2020	R	-	392	standing177
+3	4	47,10	G	6-1	484	438	1.9	1.3	-	2	2	550	-	esta rajado y hueco	-	*	2020	R	467	491	standing178
+3	4	47,17	F	8-1	216	-	-	1.3	-	-	2	no tag	-	Descompuesto solo se encontró el clavo	*	-	2020	R	-	-	standing179
+3	4	47,17	G	8-1	347	342	4.9000000000000004	1.3	-	7	2	646456	-	-	*	-	2020	R	290	295	standing180
+3	4	49,01	O	3-1	339	278	0.6	0.3	-	19	2	849015	-	-	-	*	2020	R	304	250	standing181
+3	4	49,04	O	8-1	668	-	-	1.3	-	-	1	142	-	caido	*	-	2020	R	420	-	standing182
+3	4	49,04	I	20-1	-	306	9.5	1.3	18	-	2	199	-	-	*	-	2020	R	-	272	standing183
+3	4	49,12	H	8-1	267	237	2.4	1.3	57	-	2	234	-	-	*	-	2020	R	238	237	standing184
+3	4	49,12	J	19.1	272	272	7.8	1.3	36	-	2	10738	-	-	*	-	2020	R	243	245	standing185
+3	5	49,24	B	19.1	460	393	2	1.3	67	-	2	129102	Hay un parte del tronco que no se cae del tronco principal porque está recostado a otro árbol y lianas. Tiene	Ya el resto del tronco  está en el suelo	*	-	2020	V	411	470	standing186

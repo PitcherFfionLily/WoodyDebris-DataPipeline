@@ -1,0 +1,195 @@
+month	day	subplot_code	transect_section_letter	code_of_piece	diameter_prior	diameter_one.mm	height	POM	penetration.200mm	penetration.200mm.1	branches	tag	notes	year	observer	uniqid
+1	31	01,21	G	9-1	490	506	5.7	1.3	121	NA	1	no tag	Sin corteza	2017	R	standing001
+1	31	01,24	L	4-1	815	NA	NA	1.3	NA	NA	NA	no tag	caido	2017	R	standing002
+1	31	01,24	L	5-1	562	NA	NA	1.03	NA	NA	NA	259248	caido	2017	R	standing003
+1	31	01,24	M	9-1	552	544	3.8	1.3	103	NA	2	8188	sin corteza	2017	R	standing004
+1	26	02.16	F	7-1	NA	234	15.8	1.9	32	NA	2	257704	Psecropia	2017	R	standing005
+1	26	02,16	H	7-1	NA	428	27.6	1.3	41	NA	1	57916	NA	2017	R	standing006
+1	24	03,09	A	7-1	NA	426	10.6	1.3	70	NA	2	7917	NA	2017	R	standing007
+1	24	03,09	A	7-2	NA	369	17.5	1.3	28	NA	1	7918	NA	2017	R	standing008
+1	24	03,09	C	7-1	NA	346	18.6	1.3	27	NA	1	8043	NA	2017	R	standing009
+1	24	03,09	E	6-1	210	212	6.0	1.3	45	NA	2	251565	La copa ya está sin lianas	2017	R	standing010
+3	2	03,12	A	3-1	664	666	30.5	3.5	30	NA	1	7902	sin corteza. Escalera	2017	R	standing011
+1	24	03,12	B	2-1	NA	NA	NA	1.3	NA	NA	NA	247017	no encontrado	2017	R	standing012
+1	24	03,12	G	5-1	220	183	NA	1.3	NA	NA	NA	402303	NA	2017	R	standing013
+1	24	03,12	H	0-1	353	NA	NA	1.3	NA	NA	NA	8070	caido	2017	R	standing014
+1	24	03,12	J	9-1	NA	NA	NA	1.3	NA	NA	NA	NA	Quararibea asterolepis, perdio la mitad del tronco. Sacar de la lista porque todavía tiene una parte viva	2017	R	standing015
+1	24	03,12	K	3-1	1570	NA	NA	0.8	NA	NA	NA	NA	caido	2017	R	standing016
+1	24	03,12	O	3-1	NA	NA	NA	1.3	NA	NA	NA	13141	Cayo	2017	R	standing017
+1	31	03,23	P	7-1	NA	298	7.5	1.3	32	NA	2	402962	corteza	2017	R	standing018
+1	31	03,23	M	4-1	608	611	11.5	1.3	98	NA	2	7820	con corteza	2017	R	standing019
+1	23	05,03	H	3-1	NA	NA	NA	1.3	NA	NA	NA	no tag	no encontrado	2017	R	standing020
+1	23	05,03	J	3-1	NA	NA	NA	1.3	NA	NA	NA	7662	caido	2017	R	standing021
+1	23	05,03	G	7-1	NA	516	1.1	0.55	19	NA	2	7660	NA	2017	R	standing022
+1	26	05,12	I	5-1	357	302	1.00	0 50	NA	1	2	269297	se quebró después del último censo está hueco por dentro	2017	R	standing023
+1	31	05,20	A	7-1	NA	487	27.9	1.3	68	NA	1	238573	NA	2017	R	standing024
+1	31	05,20	D	7-1	NA	460	15.7	1.50	28	NA	2	7763	NA	2017	R	standing025
+1	31	05,20	P	2-1	373	NA	NA	1.3	NA	NA	NA	238678	Caido	2017	R	standing026
+1	31	05,20	P	3-1	413	441	19.5	1.3	83	NA	2	238630	con corteza	2017	R	standing027
+1	31	05,24	B	4-1	NA	NA	NA	1.3	NA	NA	NA	7478	caido	2017	R	standing028
+1	31	05,24	L	4-1	NA	193	NA	1.3	NA	NA	NA	NA	tronco no tag	2017	R	standing029
+1	31	05,24	N	7-1	563	NA	16.3	1.3	47	NA	2	239534	corteza	2017	R	standing030
+1	24	06,06	B	2-1	NA	NA	NA	0.2	NA	NA	NA	7342	el resto del arbol se cayo	2017	R	standing031
+1	24	06,06	C	7-1	NA	288	2.7	1.3	42	NA	2	no tag	NA	2017	R	standing032
+1	24	06,06	I	5-1	331	339	2.6	1.3	77	NA	2	7592	sin ramas	2017	R	standing033
+1	24	06,06	I	5-2	620	618	9.5	1.3	30	NA	2	13123	sin ramas	2017	R	standing034
+1	23	07,01	B	3-1	244	243	3.2	1.3	48	NA	2	7311	corteza	2017	R	standing035
+1	23	7.1	I	7-1	NA	338	3	1.3	24	NA	2	7321	corteza	2017	R	standing036
+1	23	07,01	K	7-1	NA	556	22.6	1.3	40	NA	2	7301	NA	2017	R	standing037
+1	26	07,13	B	0-1	313	260	21.5	1.3	NA	2	2	no tag	NA	2017	R	standing038
+1	31	07,20	B	5-1	288	290	5.3	1.3	39	NA	2	7183	sin ramas. Con corteza	2017	R	standing039
+1	24	08,06	M	3-1	503	444	1.5	1.3	NA	2	2	7036	sin corteza	2017	R	standing040
+1	26	09,12	C	3-1	297	357	69	0.35	134	NA	2	222154	NA	2017	R	standing041
+1	26	09,12	D	7-1	NA	205	5.7	1.3	31	NA	2	222123	NA	2017	R	standing042
+1	26	09,12	N	NA	218	214	1.1	0.73	NA	5	2	no tag	sin corteza	2017	R	standing043
+1	31	10,20	H	4-1	503	441	12.5	1.3	113	NA	2	6849	sin ramas. Sin corteza	2017	R	standing044
+1	31	10,20	M	7-1	NA	454	17.0	1.3	43	NA	2	6784	NA	2017	R	standing045
+2	6	11,08	O	NA	429	438	3.00	1.3	28	NA	2	6563	es viejo, sin ramas, rajado. Corteza	2017	R	standing046
+2	2	11,15	D	7-1	NA	277	6.3	1.3	58	NA	2	212912	Sin corteza	2017	R	standing047
+2	2	11,15	G	5-1	298	302	8.9	1.3	23	NA	2	6753	sin ramas	2017	R	standing048
+2	2	11,15	I	3-1	483	NA	NA	1.3	NA	NA	NA	213052	caido	2017	R	standing049
+2	2	11,15	J	NA	221	212	2.1	1.3	160	NA	2	6528	es viejo era rebrote de 6528	2017	R	standing050
+2	2	11,15	K	7-1	NA	298	11.9	1.3	31	NA	2	213119	corteza	2017	R	standing051
+2	2	11,15	L	5-1	337	NA	NA	1.3	NA	NA	NA	6524	caido	2017	R	standing052
+2	2	11,15	O	6-1	458	442	2.4	1.3	28	NA	2	6532	Sin corteza	2017	R	standing053
+2	1	12,23	I	6-1	206	207	28.7	1.3	76	NA	1	209232	sin ramas. Con corteza	2017	R	standing054
+3	2	12,23	I	6-2	663	663	28.6	2.8	51	NA	1	9240	con ramas. Sin corteza. Escalera	2017	R	standing055
+2	1	12.23	L	7-1	NA	748	1.22	0.61	140	NA	2	204305	con corteza. Está muestra es parte de la gamba, el tronco principal se cayo.	2017	R	standing056
+2	1	12,23	N	NA	201	207	0.62	0.3	33	NA	2	no tag	es viejo. Sin corteza	2017	R	standing057
+2	2	13,16	I	3-1	353	NA	NA	1.3	NA	NA	NA	6399	Caido	2017	R	standing058
+2	2	13,16	I	7-1	NA	270	12.0	1.3	43	NA	1	NA	NA	2017	R	standing059
+2	6	14,11	E	9-1	NA	356	1.00	0.52	119	NA	2	NA	Fue encontrado. Estaba debajo de lianas y ramas	2017	R	standing060
+2	1	14,24	E	6-1	244	232	2.2	1.3	59	NA	2	6105	corteza. El tronco se quebró a la altura de la medida  pero no se a caido al suelo porque las lianas no lo dejan caer	2017	R	standing061
+2	1	14,24	E	7-1	NA	328	18.5	1.3	33	NA	2	195473	corteza	2017	R	standing062
+3	2	14,24	K	6-1	503	439	14	3.2	64	NA	2	6087	escalera. Sin ramas. Con corteza	2017	R	standing063
+2	1	14,24	N	5-1	408	372	3.5	1.3	26	NA	2	194349	tag corregido. Sin corteza. Esta rajado	2017	R	standing064
+2	6	15,07	G	6-1	620	603	8.1	1.3	60	NA	2	5960	Prioria. Corteza	2017	R	standing065
+2	6	15,07	K	2-1	268	237	0.89	0.49	NA	5	2	415259	sin corteza. Correccion es K 2-1 y no N2-1	2017	R	standing066
+2	6	16,05	L	6-1	254	295	1.5	0.52	173	NA	2	516063	Con cascara	2017	R	standing067
+2	6	16,05	L	6-2	209	NA	NA	1.3	NA	NA	NA	516059	Caido	2017	R	standing068
+2	6	16,05	O	5-1	850	563	2.00	1.3	NA	13	2	5637	sin ramas	2017	R	standing069
+2	2	16,12	B	NA	629	352	2.1	1.3	NA	5	2	5669	es viejo. No hay cascara en el area donde se uso el penetrometro. Está en O y no en B	2017	R	standing070
+2	2	16,12	C	2-1	850	688	1.27	0.7	173	NA	2	no tag	no hay cascara en el area donde se uso el penetrometro. En este censo se cayo casi todo el arbol. Perdió una parte del tronco de manarea vertical	2017	R	standing071
+2	6	17,01	I	0-1	849	802	0.50	0.27	101	NA	2	NA	Sin corteza	2017	R	standing072
+2	6	17,01	J	5-1	370	332	0.30	0.15	NA	2	2	180355	se quebro. Sin corteza	2017	R	standing073
+2	6	17,01	N	3-1	204	NA	NA	1.3	NA	NA	NA	175295	caido	2017	R	standing074
+2	6	17,01	N	7-1	NA	218	12.1	1.3	35	NA	1	NA	corteza	2017	R	standing075
+2	6	17,08	N	7-1	NA	246	4.6	1.3	20	NA	2	176354	corteza	2017	R	standing076
+2	3	18,10	J	9-1	NA	NA	NA	2.2999999999999998	NA	NA	NA	5523	Caido. No está en el suelo porque está sostenido por la rama de otro arbol	2017	R	standing077
+2	3	18,10	L	5-1	288	292	5.1	1.3	42	NA	2	no tag	Con corteza	2017	R	standing078
+2	3	18,10	N	2-1	583	512	5.2	1.8	NA	9	2	5329	ahora está sin corteza	2017	R	standing079
+2	1	18,23	C	3-1	456	446	2.3	1.3	NA	2	2	no tag	Ahora está sin corteza	2017	R	standing080
+2	1	18,23	O	2-1	574	578	7.5	1.3	30	NA	2	5421	sin ramas. Sin corteza	2017	R	standing081
+2	6	19,02	M	NA	223	247	1.8	0.54	81	NA	2	no tag	es viejo no tiene centro. Se quebro. Sin corteza	2017	R	standing082
+2	3	19,06	A	7-1	NA	581	20.8	1.3	51	NA	2	5235	NA	2017	R	standing083
+2	3	19,06	O	4	838	NA	NA	1.3	NA	NA	NA	no tag	Caido	2017	R	standing084
+2	3	19,08	K	6-1	312	308	2.37	13	20	NA	NA	5217	con. Corteza Tronco solo	2017	R	standing085
+2	2	19,12	J	2-1	376	NA	NA	0.57999999999999996	NA	NA	NA	no tag	Se descompuso	2017	R	standing086
+2	2	19,12	J	7-1	NA	226	2.5	1.3	154	NA	2	171827	NA	2017	R	standing087
+3	2	19,12	L	7-1	NA	612	8.6999999999999993	3.0	12	NA	2	5198	escalera. Tiene banda de metal está en el 3,4. Sin corteza	2017	R	standing088
+2	1	19,16	I	7-1	NA	360	10.7	1.3	61	NA	2	172319	corteza	2017	R	standing089
+2	1	19,16	K	3-1	288	NA	NA	1.3	NA	NA	2	167114	Caido	2017	R	standing090
+2	1	19,19	F	3-1	646	616	4.4	1.3	NA	4	2	172649	NA	2017	R	standing091
+2	1	19,19	N	6-1	480	505	4.7	1.3	21	NA	2	5154	con corteza	2017	R	standing092
+2	7	21,04	A	2-1	283	NA	NA	1.3	NA	NA	NA	155483	solo se encontró el clavo y algunos restos	2017	R	standing093
+2	7	21,04	H	6-1	209	243	1.4	0,55	44	NA	2	notag	sin corteza	2017	R	standing094
+2	7	21,08	B	4	278	NA	NA	1.3	NA	NA	NA	caido	corteza	2017	R	standing095
+2	7	21,08	F	5-1	261	259	7/06/2017p	1.3	67	NA	2	5002	sin ramas. Sin corteza	2017	R	standing096
+2	7	21,08	P	2-1	480	379	0.60	0.30	154	NA	2	4909	solo queda un pedazo de pie. Sin cascara	2017	R	standing097
+2	7	21,10	O	4-1	7.1	237	5.5	1.3	30	NA	2	156491	NA	2017	R	standing098
+3	2	21,15	I	NA	1273	1290	36.1	3.7	136	NA	1	5047	escalera. Sin corteza	2017	R	standing099
+2	13	21,17	K	5-1	707	NA	NA	1.3	NA	NA	NA	4859	Caido	2017	R	standing100
+2	13	22,19	J	7-1	NA	241	13.6	1.3	38	NA	2	4847	sin corteza	2017	R	standing101
+2	7	23,03	D	2-1	639	643	8.0	1.5	22	NA	2	4649	sin ramas. Sin corteza	2017	R	standing102
+2	7	23,03	K	9-1	322	317	4.7	1.3	27	NA	2	no tag	sin ramas. Con cascara en el area donde se uso el penetrometro	2017	R	standing103
+3	2	23,06	J	7-1	NA	776	32.8	3.0	38	NA	1	4673	Con corteza. Escalera	2017	R	standing104
+2	7	23,06	K	5-1	500	530	29.8	1.3	12	NA	1	4585	sin corteza	2017	R	standing105
+2	7	23,06	N	6-1	419	413	27.6	1.3	106	NA	1	4586	con ramas. Con corteza	2017	R	standing106
+2	7	23,06	O	7-1	NA	573	12.8	1.3	36	NA	2	4593	sin corteza	2017	R	standing107
+2	13	23,17	H	6-1	269	267	1.9	1.3	NA	4	2	no tag. Sin corteza. Es el mismo que I6-1 fallen	NA	2017	R	standing108
+2	13	23,17	O	3-1	386	424	5.5	1.3	47	NA	2	4519	sin corteza	2017	R	standing109
+2	13	23,23	P	2-1	693	723	2.1	1.3	48	NA	2	no tag	sin ramas. Sin corteza. Al lado del arbol 4473	2017	R	standing110
+2	13	23,23	P	0-1	392	236	0.75	0.52	143	NA	2	no tag	Sin corteza	2017	R	standing111
+2	7	24,09	E	6-1	225	238	2.5	1.3	41	NA	2	146393	con corteza	2017	R	standing112
+2	7	24,09	F	9-1	327	NA	NA	1.3	NA	NA	NA	no tag	caido	2017	R	standing113
+2	7	24,09	I	6-1	550	553	12.8	1.3	25	NA	2	146601	con corteza	2017	R	standing114
+2	7	24,09	O	3-1	491	472	1.9	1.3	109	NA	2	no tag	sin corteza	2017	R	standing115
+2	10	24,15	H	3-1	251	NA	NA	1.3	NA	NA	NA	4530	Caido	2017	R	standing116
+2	10	24,15	P	2-1	362	332	2.3	1.3	15	NA	2	4387	sin corteza	2017	R	standing117
+2	13	25,24	J	5-1	274	299	7.4	1.3	35	NA	2	144701	sin ramas. Sin corteza	2017	R	standing118
+2	9	26,08	K	5-1	307	337	10.5	1.3	51	NA	NA	4009	sin ramas. Corteza. sin ramas con corteza	2017	R	standing119
+2	9	26,08	K	9-2	NA	NA	NA	1.3	NA	NA	NA	4008	Caido	2017	R	standing120
+2	10	26,17	G	6-1	601	585	19.8	1.5	20	NA	2	4165	Tiene bandas de metal y plasticas	2017	R	standing121
+2	10	26,17	J	6-1	438	463	22.6	1.3	12	NA	2	4167	tiene dendrometrometros de metal y plastico. Corteza	2017	R	standing122
+2	14	26,21	B	5-1	284	301	NA	1.3	33	NA	2	133241	Se está rajando el tronco por El Centro por lo que el dbh es mayor. Con corteza	2017	R	standing123
+2	14	26,21	B	7-1	NA	285	13.0	1.3	17	NA	2	4077	Con corteza	2017	R	standing124
+2	14	26,21	O	5-1	203	NA	NA	1.3	NA	NA	NA	4082	sin ramas. Sin corteza	2017	R	standing125
+2	14	26,21	P	3-1	613	497	0.90	0.45	NA	7	2	NA	sin ramas. Corteza	2017	R	standing126
+2	14	26,21	P	3-2	209	197	NA	1.3	NA	NA	NA	4086	sin corteza	2017	R	standing127
+2	10	28,16	E	7-1	NA	263	8.8	1.3	27	NA	2	3864	Revisar censos anteriores porque aparece la muestra con un clavo anterior	2017	R	standing128
+2	10	28,16	G	5-1	299	NA	NA	1.3	NA	NA	NA	3859	Caido	2017	R	standing129
+2	10	28,16	J	6-1	272	NA	NA	0.75	NA	NA	NA	No tag	Caido	2017	R	standing130
+2	10	28,16	K	6-1	431	NA	NA	1.3	NA	NA	NA	3759	caido	2017	R	standing131
+2	9	29,06	A	2-1	NA	NA	NA	3	NA	NA	NA	NA	se cayo	2017	R	standing132
+2	9	29,06	K	3-1	1043	NA	NA	3.6	NA	NA	NA	3601	se cayo	2017	R	standing133
+2	9	29,06	M	5-1	453	462	5.4	1.3	81	NA	NA	3606	sin ramas, corteza. Se corrigió el número de tag que es 3606	2017	R	standing134
+2	9	29,06	O	5-1	353	NA	NA	1.3	NA	NA	NA	3616	Se cayo	2017	R	standing135
+2	14	30,23	C	6-1	263	298	3.9	1.3	37	NA	2	3497	con corteza. Se rajo y se está abriendo	2017	R	standing136
+2	15	31,16	B	3-1	225	213	2.0	1.3	NA	2	1	3189	sin ramas.sin corteza	2017	R	standing137
+2	14	31,21	L	2-1	246	251	4.0	1.3	31	NA	2	104126	sin ramas. sin corteza	2017	R	standing138
+2	20	32,07	F	3-1	223	208	1.5	0.75	81	NA	2	101440	se rompió y la altura es menor que la anterior. Sin corteza	2017	R	standing139
+3	2	32,07	H	6-1	794	842	15.2	2.9	35	NA	2	3248	escalera. Sin corteza	2017	R	standing140
+3	2	33,12	C	4-1	1241	847	4.4	3	NA	9	2	3036	sin corteza. Esta quebrado. Escalera. Perdió una parte del diametro	2017	R	standing141
+2	16	33,12	L	0-1	120	245	1.6	0.80	NA	NA	2	92461	sin ramas. Se está rompiendo. A la altura de 1.30 mide menos de 200mm se cambio altura de dbh a 0.80	2017	R	standing142
+2	14	33,21	O	5-1	693	702	9.7	1.3	120	NA	2	2805	sin ramas. con corteza	2017	R	standing143
+2	20	34,04	F	3-1	207	228	2.6	1.3	89	NA	2	90840	sin corteza	2017	R	standing144
+3	2	34,04	B	7-1	NA	1027	40.2	3.0	22	NA	0	2600	escalera. TACHVE	2017	R	standing145
+2	15	34,15	F	7,1	275	NA	10.6	1,3	29	NA	1	93153	con corteza ,solo tiene 1 rama pequeña	2017	R	standing146
+2	15	35,17	K	3-1	NA	NA	NA	1.3	NA	NA	NA	2464	Caido	2017	R	standing147
+2	20	36,04	P	3-1	311	303	4.6	1.3	61	NA	2	2272	corteza	2017	R	standing148
+2	20	36,10	K	2-1	231	NA	NA	0.56999999999999995	NA	NA	NA	2311	Se descompuso. Solo se encontraron algunos fragmentos	2017	R	standing149
+2	20	36,10	M	6-1	306	312	2.5	1.3	75	NA	2	536230	con corteza. Sin ramas	2017	R	standing150
+2	15	36,13	C	5-1	275	296	9.6	1.3	26	NA	2	82154	sin ramas ni corteza	2017	R	standing151
+2	15	36,13	C	5-2	240	248	8,6	1.3	40	NA	2	2504	sin ramas. Corteza.	2017	R	standing152
+2	15	36,13	F	9-1	261	268	5.54	2.2000000000000002	60	NA	NA	2506	sin ramas. Sin corteza	2017	R	standing153
+2	15	36,13	O	3-1	NA	NA	NA	1.3	NA	NA	NA	2328	Nada. Solo se encontró pequeños restos de donde estaba	2017	R	standing154
+2	14	37,17	P	0-1	322	313	1.8	1.3	192	NA	2	2143	Sin corteza. Se cambio el POM porque la altura del árbol es 1.9	2017	R	standing155
+3	2	37,17	I	6-1	1071	1143	9.0	2.8	81	NA	2	2371	Escalera. Con corteza. Se esta rajando por lo que mide mas	2017	R	standing156
+2	20	38,11	B	7-1	NA	333	10.0	1.3	26	NA	2	1980	sin corteza	2017	R	standing157
+2	20	39,07	A	3-1	220	207	8.2	1.3	132	NA	2	1880	sin corteza	2017	R	standing158
+2	20	39,07	A	6-1	698	633	0.78	0.52	NA	1	2	NA	sin corteza. Es Jacaranda	2017	R	standing159
+2	20	39,07	D	7-1	NA	397	25.4	1.3	13	NA	1	66089	sin corteza	2017	R	standing160
+2	20	39,07	G	5-1	344	380	16.4	1.3	39	NA	2	1958	sin ramas. Corteza.	2017	R	standing161
+3	2	39.07	H	7-1	NA	545	29.2	3.0	70	NA	1	1965	escalera. Con Corteza	2017	R	standing162
+3	2	39,07	I	7-1	NA	832	32.0	3.3	35	NA	0	66360	escalera. TACHVE. Con corteza	2017	R	standing163
+2	20	39,07	L	5-1	791	NA	NA	3.2	NA	NA	NA	1869	caido	2017	R	standing164
+2	14	39,15	C	2-1	312	366	1.27	0.62	NA	5	2	2007	sin ramas. Corteza. Una parte del tronco se cayo, solo queda un pedazo. Tiene hongos	2017	R	standing165
+2	24	40,21	C	3-1	266	262	10.6	1.3	24	NA	2	64001	con corteza	2017	R	standing166
+2	24	40,21	C	6-1	203	218	3.9	1.3	38	NA	2	56943	con corteza	2017	R	standing167
+2	22	42,12	C	3-1	275	258	12.2	1.3	15	NA	2	no tag	sin ramas	2017	R	standing168
+2	22	42,12	I	NA	248	NA	NA	1.3	NA	NA	NA	52461	caido	2017	R	standing169
+2	22	42,12	N	9-2	542	324	0.90	0.45	22	NA	2	no tag	sin ramas. El POM paso de 2.00 a 0.45	2017	R	standing170
+2	22	42,12	M	6-1	248	NA	NA	1.3	NA	NA	2	17606	caido	2017	R	standing171
+2	22	42,21	F	6-1	280	278	7.9	1.3	29	NA	2	1393	Sin corteza	2017	R	standing172
+2	24	42,21	O	6-1	237	220	7.5	1.3	61	NA	2	1328	con corteza	2017	R	standing173
+2	23	43,15	B	5-1	274	NA	NA	1.3	NA	NA	NA	1083	solo se encontró fragmentos en el suelo	2017	R	standing174
+2	23	43,15	H	0-2	218	230	2.8	1.3	15	NA	2	1284	con corteza	2017	R	standing175
+2	23	43,15	J	9-1	293	305	3.2	1.3	9	NA	2	no tag	sin corteza	2017	R	standing176
+2	22	44,07	B	2-1	NA	NA	NA	1.3	NA	NA	NA	35976	Nada	2017	R	standing177
+2	22	44,07	B	5-1	785	797	5.28	1.6	19	NA	NA	870	Con corteza. Se está rajando	2017	R	standing178
+3	2	44,23	D	2-2	406	NA	NA	1.3	NA	NA	NA	NA	Caido	2017	R	standing179
+3	2	44,23	M	3-1	NA	NA	NA	1.3	NA	NA	NA	39175	No se encontro	2017	R	standing180
+2	21	45,05	B	2-1	473	400	0.70	0.3	NA	1	2	14995	Sin corteza	2017	R	standing181
+2	21	45,05	K	6-1	312	335	4.1	1.3	20	NA	2	30985	si ramas. Corteza	2017	R	standing182
+2	22	46,07	NA	NA	NA	NA	NA	NA	NA	NA	NA	796	se cayo	2017	R	standing183
+3	2	46,21	D	3-1	NA	NA	NA	1.3	NA	NA	NA	34183	nada	2017	R	standing184
+2	21	47,05	B	6-1	618	395	1.1	0.61	69	NA	2	510	Con corteza. El tronco se rajo y perdió una parte	2017	R	standing185
+2	22	47,10	G	6-1	506	505	3.1	1.3	73	NA	NA	550	Con corteza	2017	R	standing186
+2	21	49,01	C	3-1	227	224	10.4	1.3	84	NA	2	45208	sin corteza	2017	R	standing187
+2	21	49,01	C	9-1	1167	1204	4.3	1.8	6	NA	2	NA	esta hueco. Solo Es la parted exterior lonque queda. Sin corteza. Foto.	2017	R	standing188
+2	21	49,01	E	3-1	449	457	5.0	1.3	79	NA	2	169	sin corteza	2017	R	standing189
+2	21	49,01	J	9-1	216	205	1.7	0.55000000000000004	22	NA	2	no tag	sin corteza	2017	R	standing190
+2	21	49,01	O	3-1	343	342	0.51	0.3	21	NA	2	849015	se quebro, el POM era de 1.3 ahora 0.3. Sin corteza	2017	R	standing191
+2	21	49,01	O	5-1	237	NA	NA	0.6	NA	NA	NA	749041	Caido	2017	R	standing192
+2	21	49,01	P	7-1	NA	332	17.0	1.3	39	NA	1	105	con corteza	2017	R	standing193
+2	23	49,17	J	5-1	338	NA	NA	1.3	NA	NA	NA	no tag	caido	2017	R	standing194
