@@ -1,0 +1,3 @@
+"file"	"year"	"uniqid"	"Field"	"OldValue"	"NewValue"	"Blank"	"Observer"	"Comment"	"temp"
+"CWD40_2024_standing.txt"	2024	"standing131"	"diameter_width.mm"	"210"	"231"	""	"LP"	"Switched measurements"	"2024_standing131"
+"CWD40_2024_standing.txt"	2024	"standing131"	"diameter_height.mm"	"231"	"210"	""	"LP"	"Switched measurements"	"2024_standing131"
