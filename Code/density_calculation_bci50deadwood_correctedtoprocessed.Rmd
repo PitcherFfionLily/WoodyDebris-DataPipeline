@@ -240,9 +240,9 @@ standing_data<-top_diameter(standing_data)
 #calculating volume of standing pieces
 # Standing pieces are treated differently based on number of branches remaining, explanation of branches variable:
 # NA means this variable was not recorded
-# 2 means there are no longer branches present
-# 1 means part of the canopy has been lost, some branches fallen
 # 0 means the majority of the canopy is still present, very few branches lost
+# 1 means part of the canopy has been lost, some branches fallen
+# 2 means there are no longer branches present
 
 # This formula calculates the volume of the standing tree, 
 VOLUMECALCULATION <- function(indata) {
@@ -265,18 +265,25 @@ VOLUMECALCULATION <- function(indata) {
 
 # This formula calculates the above ground biomass of the standing tree, 
 AGBCALCULATION<-function(indata) {
-  indata$AGB.kg.dry.mass<-
-    ifelse(indata$branches==2, #calculating agb of samples NO BRANCHES- density is multiplied by volume
-           indata$volume_m3*indata$pendensity.kgm3,
-           
-           ifelse(indata$branches==1,  #calculating agb of samples with SOME BRANCHES lost, using environment specific biomass function multiple by 0.975 as 87.5%  - (Chave 2014 and Gora 2019)
-       (exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 2.673 * log((indata$mean_diameter_at1.3_mm*0.01)) -
-              0.0299*(log((indata$mean_diameter_at1.3_mm*0.01))^2)))*0.875,
-       
-       ifelse(indata$branches==0|is.na(indata$branches), #calculating agb of samples with ALL BRANCHES using environment specific biomass function (Chave 2014 and Gora 2019)
-       exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 2.673 * log((indata$mean_diameter_at1.3_mm*0.01)) -
+  indata$AGB.kg.dry.mass <-
+        # branches == 0 means sample has ALL BRANCHES 
+        # calculate AGB using environment specific tree AGB allometry function 
+        # specifically equation 7 of Chave et al. 2014 doi: 10.1111/gcb.12629
+    ifelse(indata$branches==0|is.na(indata$branches), 
+       exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
+             2.673 * log((indata$mean_diameter_at1.3_mm*0.01)) -
              0.0299*(log((indata$mean_diameter_at1.3_mm*0.01))^2)),
 
+       # branches==0 means SOME BRANCHES lost, 
+       # same calculation as for all branches, except multiply by 0.875 to account for lost branches
+       # following Gora et al. 2019 
+    ifelse(indata$branches==1,  
+       (exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
+              2.673 * log((indata$mean_diameter_at1.3_mm*0.01)) -
+              0.0299*(log((indata$mean_diameter_at1.3_mm*0.01))^2))) * 0.875,
+    #calculating agb of samples NO BRANCHES - density is multiplied by volume
+    ifelse(indata$branches==2, 
+           indata$volume_m3*indata$pendensity.kgm3,
        NA)))
   return(indata)
   }
@@ -318,8 +325,8 @@ standing_data<-DECAYCALCULATION(standing_data, AGB.kg.dry.mass, k.mass.yr )
 assigning habitat class to data, subplot within the 50ha have been assigned habitat types
 ```{r}
 #loading and organizing habitat data
-habitat<-"Dat0_Raw/bci_q20habitat_classes"
-subplot<-"Dat0_Raw/subplot_codes.txt"
+habitat<-"Data0_Raw/bci_q20habitat_classes"
+subplot<-"Data0_Raw/subplot_codes.txt"
 
 
 habitat<-read.table(habitat,header=TRUE, sep="\t")
@@ -338,7 +345,7 @@ habitat_subplot<-habitat_subplot %>%
 ```
 
 ```{r}
-#assigning habitat class to data based on suplot code
+#assigning habitat class to data based on subplot code
 fallen_data<-merge(fallen_data, habitat_subplot)
 standing_data<-merge(standing_data, habitat_subplot)
 rm(habitat, habitat_subplot, subplot)

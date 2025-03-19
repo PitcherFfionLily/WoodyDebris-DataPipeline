@@ -1,13 +1,13 @@
 ---
-title: "Dead wood stores and fluxes for BCI 50ha dynamic plots 2017-2024"
-author: "Lily Pitcher"
+title: "Dead wood stocks and fluxes for Barro Colorado Island 50-ha forest dynamic plot, 2017-2024"
+author: "Lily Pitcher and Helene C. Muller-Landau"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
 
 ```{r setup, include=FALSE}
-knitr::opts_knit$set(root.dir = root.dir = here::here())
+knitr::opts_knit$set(root.dir = here::here())
                        #"/Users/lilyp/OneDrive - Smithsonian Institution/Documents/D-woody debris/FILES FOR CODE")
 ```
 
@@ -26,9 +26,21 @@ library(dplyr)
 library(lubridate)
 library(zoo)
 library(here)
+library(Rmisc)
+
 rm(list=ls())
 ```
 
+### Citation and License
+
+This report is part of the following data and code publication, which should be cited as follows:
+
+It is licensed under CC BY 4.0.
+
+
+### Contributions and Acknowledgments
+
+Lily Pitcher conducted data cleaning, performed the analyses and wrote this Rmarkdown report.  Helene C. Muller-Landau co-designed the study, supervised the field work,  supervised the analyses, and edited the report.  Pablo Ramos and Paulino Villareal collected the field data.  Markku Larjavaara co-designed the study.  This work builds on previous data cleaning and analyses by Evan Gora (see in Gora et al. 2019).  This study was funded by Smithsonian ForestGEO and the HSBC Climate Partnership. 
 
 
 ### Study site and sample design
@@ -469,7 +481,7 @@ kable(total_means, format = "html", row.names=FALSE, digits=2,
                 font_size = 15)%>%
                 pack_rows("Downed", 1, 1) %>%  # Group rows 1-8 as 'Downed'
                 pack_rows("Standing", 2, 2) %>%
-                add_header_above(c("Summary of Mean Volume of Coarse Woody Debris" = 5))
+                add_header_above(c("Coarse Woody Debris Summary Statistics" = 5))
 ```
 
 **Table 2**
@@ -492,7 +504,6 @@ combined_total_data<-rbind(subplot_fallen, subplot_standing)
 
 
 ```{r, echo=FALSE, results='hide', message=FALSE}
-library(Rmisc)
 #calculate the standard error
 summary_mean_sublot_mass<-summarySE(combined_total_data, measurevar = "mass.mg.ha", groupvars = c("year","Type"))
 #plot meaan and confidence intervals for each year
