@@ -35,7 +35,7 @@ BCI_2010_longtransectsCWD<-read.csv(LTDATA2010)
 
 
 start by creating the model from BCI_2020_longtransects that allows density prediction from penetrometer mm per hits.
-This model is done following the methods described in Gora et al 2019
+This model is done following the methods described in Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5 
 ```{r}
 attach(BCI_2010_longtransectsCWD)
 str(BCI_2010_longtransectsCWD)
@@ -186,25 +186,7 @@ standing_data<-AVERAGEDENSITY(standing_data)
 # Diameter corrections
 #. Apply taper correction to standing deadwood to correct for measurement where dbh was measured at a different point to 1.3m
 taper_function <- function(indata) {
-  # 1. calculating taper correction parameter (b) using the parameters from Table 3 of Cushman et al. 2014 Methods Ecology and Evolution 
-  # and including the correction factor for back-transforming from log - CF = exp((RSE^2)/2) where RSE = 0.685 in this case 
-  # POM assumed to be in meters and diameter in cm, hence conversion 
-  indata$b <- ifelse(!is.na(indata$POM), 
-                     exp((0.685^2)/2)*
-                       (exp(-2.0205 - 0.5053 * log(indata$diameter_one.mm/10) + 
-                              0.3748 * log(indata$POM))),
-                     NA)
-  #calculating new dbh correcting for point of measurement using model from Table 1, model 1 of of Cushman et al. 2014 Methods Ecology and Evolution
-  indata$mean_diameter_at1.3_mm <- ifelse(!is.na(indata$POM),
-                                      indata$diameter_one.mm * exp(indata$b * (indata$POM - 1.3)),
-                                      indata$diameter_one.mm)
-  return(indata)
-}
-
-# Diameter corrections
-#. Apply taper correction to standing deadwood to correct for measurement where dbh was measured at a different point to 1.3m
-taper_function2 <- function(indata) {
-  # 1. calculating taper correction parameter (b) using the parameters from Model 2 of Cushman et al. 2021 Biotropica - parameters in Table 2, model 2, and in Table S9 
+  # 1. calculating taper correction parameter (b) using the parameters from Model 2 of Cushman et al. 2021 Biotropica DOI:10.1111/btp.12994 - parameters in Table 2, model 2, and in Table S9 
   # Model 2 preferred because we lack WSG data for each piece.  
   # model assumes POM in meters and diameter in cm so note conversion from diameter in mm
   indata$b <- ifelse(!is.na(indata$POM), 
@@ -212,7 +194,7 @@ taper_function2 <- function(indata) {
                       -0.021 * log(indata$POM) + 
                        0.00057,  # random effect for BCI for model 2. 
                      NA)
- #calculating new dbh correcting for point of measurement using model from Table 1, model 1 of of Cushman et al. 2014 Methods Ecology and Evolution
+ #calculating new dbh correcting for point of measurement using model from Table 1, model 1 of of Cushman et al. 2014 Methods Ecology and Evolution DOI:10.1111/2041-210X.12187
   indata$mean_diameter_at1.3_mm <- ifelse(!is.na(indata$POM),
                                       indata$diameter_one.mm * exp(indata$b * (indata$POM - 1.3)),
                                       indata$diameter_one.mm)
@@ -229,7 +211,7 @@ top_diameter<-function(indata){
   return(indata)
 }
 
-standing_data<-taper_function2(standing_data)
+standing_data<-taper_function(standing_data)
 standing_data<-top_diameter(standing_data)
 
 ```
@@ -246,48 +228,52 @@ standing_data<-top_diameter(standing_data)
 
 # This formula calculates the volume of the standing tree, 
 VOLUMECALCULATION <- function(indata) {
-  indata$volume_m3<-
-    ifelse(indata$branches==2,  # NO BRANCHES, so approximated as a truncated cone 
+  indata$volume_m3 <-
+    # ALL BRANCHES PRESENT (branches == 0 ) approximated as a cylinder              
+           ifelse(indata$branches == 0 |  is.na(indata$branches), 
+                  pi * (((indata$mean_diameter_at1.3_mm / 1000) / 2) ^ 2) * indata$height,
+                  
+    # SOME BRANCHES missing approcimated as a cylinder then multiplying volume by 0.875 following Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5
+            ifelse(indata$branches == 1,
+                   (pi * (((indata$mean_diameter_at1.3_mm / 1000) / 2) ^ 2) * indata$height)*0.875,
+                      
+    
+    # NO BRANCHES approximated as a truncated cone 
+    ifelse(indata$branches == 2,  
            (1/3) * pi * indata$height * (
-             ((indata$Diameter.at.top.of.snag/1000) / 2) ^ 2 + 
-               ((indata$Diameter.at.top.of.snag/1000) / 2) * ((indata$mean_diameter_at1.3_mm/1000) / 2) + 
-               ((indata$mean_diameter_at1.3_mm/1000) / 2) ^ 2),
+             ((indata$Diameter.at.top.of.snag / 1000) / 2) ^ 2 + 
+             ((indata$Diameter.at.top.of.snag / 1000) / 2) * ((indata$mean_diameter_at1.3_mm / 1000) / 2) + 
+             ((indata$mean_diameter_at1.3_mm / 1000) / 2) ^ 2),
            
-           ifelse(indata$branches==1, # SOME BRANCHES, but some were lost, which is accounted for by multiplying volume of a cylinder by 0.875 - AS DONE IN (Chave 2014 and Gora 2019)
-                   (pi * (((indata$mean_diameter_at1.3_mm/1000) / 2) ^ 2) * indata$height)*0.875,
-                   
-           ifelse(indata$branches==0|is.na(indata$branches), # ALL BRANCHES PRESENT (none lost), approximated as a cylinder
-                  pi * (((indata$mean_diameter_at1.3_mm/1000) / 2) ^ 2) * indata$height,
-                   NA)))
-  indata$volume_m3<-indata$volume_m3
+    
+                  NA)))
+  
   return(indata)
 }
+
 
 # This formula calculates the above ground biomass of the standing tree, 
 AGBCALCULATION<-function(indata) {
   indata$AGB.kg.dry.mass <-
-        # branches == 0 means sample has ALL BRANCHES 
-        # calculate AGB using environment specific tree AGB allometry function 
-        # specifically equation 7 of Chave et al. 2014 doi: 10.1111/gcb.12629
-    ifelse(indata$branches==0|is.na(indata$branches), 
-       exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
-             2.673 * log((indata$mean_diameter_at1.3_mm*0.01)) -
-             0.0299*(log((indata$mean_diameter_at1.3_mm*0.01))^2)),
-
-       # branches==0 means SOME BRANCHES lost, 
-       # same calculation as for all branches, except multiply by 0.875 to account for lost branches
-       # following Gora et al. 2019 
-    ifelse(indata$branches==1,  
-       (exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
-              2.673 * log((indata$mean_diameter_at1.3_mm*0.01)) -
-              0.0299*(log((indata$mean_diameter_at1.3_mm*0.01))^2))) * 0.875,
-    #calculating agb of samples NO BRANCHES - density is multiplied by volume
-    ifelse(indata$branches==2, 
-           indata$volume_m3*indata$pendensity.kgm3,
-       NA)))
+        # For trees with ALL BRANCHES (branches == 0) calculate AGB using environment specific tree AGB allometry function 
+        # specifically equation 7 of Chave et al. 2014 Glob Change Biol DOI: 10.1111/gcb.12629
+    ifelse(indata$branches == 0 | is.na(indata$branches), 
+           exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
+                 2.673 * log((indata$mean_diameter_at1.3_mm * 0.01)) -
+                 0.0299 * (log((indata$mean_diameter_at1.3_mm * 0.01))^2)),
+           
+        #For samples with SOME BRANCHES (branches == 1) calculate AGB using the same environment specific tree AGB allometry function and then apply the 0.875 multiplier following Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5
+      ifelse(indata$branches == 1,
+             (exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
+                 2.673 * log((indata$mean_diameter_at1.3_mm * 0.01)) -
+                 0.0299 * (log((indata$mean_diameter_at1.3_mm * 0.01))^2))) * 0.875,
+             
+        # For samples with NO BRANCHES - AGB is calculated through multiplying density by volume
+           ifelse(indata$branches == 2, 
+                  indata$volume_m3 * indata$pendensity.kgm3,
+                  NA)))
   return(indata)
-  }
-
+}
 standing_data<-VOLUMECALCULATION(standing_data)
 standing_data<-AGBCALCULATION(standing_data)
 ```
@@ -364,9 +350,14 @@ write.csv(standing_data, file = "Data3_Processed/processed_CWD40_standing_17to24
 
 
 
+Chave, J., Réjou-Méchain, M., Búrquez, A., Chidumayo, E., Colgan, M.S., Delitti, W.B.C., Duque, A., Eid, T., Fearnside, P.M., Goodman, R.C., Henry, M.,       Martínez-Yrízar, A., Mugasha, W.A., Muller-Landau, H.C., Mencuccini, M., Nelson, B.W., Ngomanda, A., Nogueira, E.M., Ortiz-Malavassi, E., Pélissier, R., Ploton, P., Ryan, C.M., Saldarriaga, J.G. and Vieilledent, G. (2014), Improved allometric models to estimate the aboveground biomass of tropical trees. Glob Change Biol, 20: 3177-3190. https://doi.org/10.1111/gcb.12629
 
 
+Cushman, K.C., Muller-Landau, H.C., Condit, R.S. and Hubbell, S.P. (2014), Improving estimates of biomass change in buttressed trees using tree taper models. Methods Ecol Evol, 5: 573-582. https://doi.org/10.1111/2041-210X.12187
 
+Cushman, K. C., Bunyavejchewin, S., Cárdenas, D., Condit, R., Davies, S. J., Duque, Á., Hubbell, S. P., Kiratiprayoon, S., Lum, S. K. Y., & Muller-Landau, H. C. (2021). Variation in trunk taper of buttressed trees within and among five lowland tropical forests. Biotropica, 53, 1442–1453. https://doi.org/10.1111/btp.12994
+
+Gora, E.M., Kneale, R.C., Larjavaara, M. et al. Dead Wood Necromass in a Moist Tropical Forest: Stocks, Fluxes, and Spatiotemporal Variability. Ecosystems 22, 1189–1205 (2019). https://doi.org/10.1007/s10021-019-00341-5
 
 
 
