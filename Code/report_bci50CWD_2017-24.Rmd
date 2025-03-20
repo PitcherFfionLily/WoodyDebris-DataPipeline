@@ -58,7 +58,7 @@ Fine Woody Debris (FWD) dynamics:
  Plots are inventoried repeatedly every 12 months, to provide data on input and output as well as on stocks and temporal variation
  Further details of sampling design and protocols can be found here:
  
-#https://forestgeo.si.edu/protocols/woody-debris
+https://forestgeo.si.edu/protocols/woody-debris
 
 
 
@@ -117,7 +117,7 @@ standing_data<-read.csv(Standing_DATA,header=TRUE)
 ```
 
 
-#Fallen
+# Fallen
 
 ```{r, include=FALSE}
 #DOWNED CWD CALCULATIONS
@@ -223,7 +223,7 @@ rm(old_raw_fallen,new_raw_fallen, transect_fallen_old,transect_fallen_new, subpl
 
 
 
-#standing
+# Standing
 
 ```{r, include=FALSE}
   #STANDING
