@@ -91,9 +91,9 @@ CWD40_2022_fallen.txt,2022,fallen393,code_of_piece,22.1,22-1,,LP,"misstype, inco
 CWD40_2022_fallen.txt,2022,fallen394,code_of_piece,22.2,22-2,,LP,"misstype, incorrect/missing character"
 CWD40_2022_fallen.txt,2022,fallen347,inclination_prior,44379,2.7,,LP,"misstype, incorrect/missing character"
 CWD40_2022_fallen.txt,2022,fallen361,MC,L?,,,LP,misstype
-CWD40_2022_fallen.txt,2022,fallen281,observer,"E, C","E,C",,LP,Improve entry format consistancy
-CWD40_2022_fallen.txt,2022,fallen282,observer,"E, C","E,C",,LP,Improve entry format consistancy
-CWD40_2022_fallen.txt,2022,fallen283,observer,"E, C","E,C",,LP,Improve entry format consistancy
+CWD40_2022_fallen.txt,2022,fallen281,observer,"E, C",E,,LP,Improve entry format consistancy
+CWD40_2022_fallen.txt,2022,fallen282,observer,"E, C",E,,LP,Improve entry format consistancy
+CWD40_2022_fallen.txt,2022,fallen283,observer,"E, C",E,,LP,Improve entry format consistancy
 CWD40_2022_standing.txt,2022,standing144,subplot_code,23;23,"23,23",,LP,"misstype, incorrect/missing character"
 CWD40_2022_standing.txt,2022,standing224,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
 CWD40_2022_standing.txt,2022,standing228,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
