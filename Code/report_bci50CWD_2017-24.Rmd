@@ -375,11 +375,11 @@ kable(collection_summary, format = "html", row.names = FALSE,
       col.names = c("Year",
                     "Start Date",
                     "End Date",
-                    "Fallen Total pieces",
-                    "Fallen New pieces",
-                    "Standing Total pieces",
-                    "Standing New pieces",
-                    "People involved"),
+                    "Total Fallen Pieces",
+                    "New Fallen Pieces",
+                    "Total Standing Pieces",
+                    "New Standing Pieces",
+                    "Field Team"),
   escape = FALSE) %>%  
 kable_styling(bootstrap_options = c("striped", "hover", "bordered"),
                 full_width = F,
@@ -393,11 +393,15 @@ rm(collection_summary)
 **Table1**
 
 
-Summary of census effort for each yearcol including census period (start and end date), total number of pieces of wood measured each yearcol for Fallen and Standing (Total Pieces) and the number of new pieces of dead wood (New pieces). Initials represent the following people involved in the sample collection: R:Pablo Ramos, V:Paulino Villarreal and E is both working as a team.
+Summary of census effort for each year including census period (start and end date), total number of pieces of wood measured each year for Fallen and Standing (Total Pieces) and the number of new pieces of dead wood (New pieces). Initials represent the following people involved in the sample collection: R:Pablo Ramos, V:Paulino Villarreal and E is both working as a team.
 
 ### Calculations of CWD stores and fluxes
 
-This report calculates yearly stores and fluxes of standing and Fallen Coarse woody debris. The data has been formatted, cleaned and processed prior to loading loading into this report. Pre calculations have been made on individual sample pieces, code can be found in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** and explanations of all calculations done in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** as well as this report can be found in **calcexplanation_bci50deadwood_stocks&fluxes.Rmd**.
+This report calculates annual stocks and fluxes of standing and fallen coarse woody debris. The data were formatted, cleaned and processed prior to loading loading into this report using the code **clean0_bci50deadwood_rawtoformatted.RMD** and **clean1_bci50deadwood_formattedtocorrected.Rmd**. Calculations for individual sample pieceswere made using code in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** which also contains explanations of all calculations.  More information can be found in **calcexplanation_bci50deadwood_stocks&fluxes.Rmd**.  
+
+LILY: update the file name above.  
+Problem in table -input and total values are the same.
+
 
 
 ```{r, include=FALSE}
@@ -497,7 +501,7 @@ write.table(year_all, file = "Output/bci_CWD40_annual_estimation_17to24.txt", se
 
 
 
-### Total estimates for CWD stocks, fluxes and residence time for BCI 50ha plot
+### Total estimates for CWD stocks, fluxes and residence time for the BCI 50-ha plot
 
 ```{r, include=FALSE}
 # Compute mean annual total stock and input (volume and mass), and calculate residence time
@@ -547,7 +551,7 @@ kable(total_means, format = "html", row.names=FALSE, digits=2,
 
 **Table 2**
 
-Estimated mean stocks and fluxes of fallen and standing CWD averaged across the 40x40 dynamics plots then averaged across years (2009-2024). Estimated total stocks of deadwood (Mean total), estimated annual deadwood gain (input) for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated from mean stocks divided by the mean inputs.
+Estimated mean stocks and fluxes of fallen and standing CWD calculated by first averaging over the one hundred 40 x 40 m dynamics plots, then averaging over years (2017-2024). Estimated total stocks of deadwood (Mean total), and estimated annual deadwood input for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated as mean stocks divided by the mean inputs.
 
 
 ### Annual variation in woody debris stocks and fluxes
@@ -589,7 +593,7 @@ scale_colour_manual(values=c("#009E73", "#882255"))+
 **Figure 1** 
 
 
-Annual variation in mean total mass of fallen and standing coarse woody debris (CWD) per hectare, with 95% confidence intervals.
+Annual variation in mean total mass of fallen and standing coarse woody debris (CWD) per hectare, with 95% confidence intervals (CIs calculated as 1.96 times the standard error of the mean over the one hundred 40 x 40 m subplots).
 
 
 
@@ -617,7 +621,7 @@ scale_colour_manual(values=c("#009E73", "#882255"))+
 **Figure 2** 
 
 
-Annual variation in mean total volume of fallen and standing CWD per hectare, with 95% confidence intervals.
+Annual variation in mean total volume of fallen and standing CWD per hectare, with 95% confidence intervals (CIs calculated as 1.96 times the standard error of the mean over the one hundred 40 x 40 m subplots).
 
 
 
@@ -699,7 +703,7 @@ Distribution of log₂-transformed total estimated mass of standing coarse woody
 
 
 ```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
-# Plotting histogram of standing CWD input mass per subplot, coloured by year (excluding 2009)
+# Plotting histogram of standing CWD input mass per subplot, coloured by year 
 # X-axis is log₂-transformed mass
 ggplot(subplot_standing_new %>% filter(!yearcol=="2009"), aes(x = log(input.mass.Mgha , base = 2), group=yearcol, fill = as.factor(yearcol)))+
   geom_histogram(colour = "black", 
@@ -723,7 +727,7 @@ ggplot(subplot_standing_new %>% filter(!yearcol=="2009"), aes(x = log(input.mass
 **Figure 6**
 
 
-Distribution of log₂-transformed input mass of standing CWD per subplot (excluding 2017), coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.
+Distribution of log₂-transformed input mass of standing CWD per subplot (excluding 2017), coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.  
 
 
 
@@ -763,7 +767,7 @@ ggplot(subplot_fallen, aes (x=yearcol, y=mass.Mg.ha, colour = subplot_code))+
 geom_point()+
 geom_line()+
 facet_wrap("mass_group",scales = "free", ncol=3)+
-labs(title = "Mean Mass of Fallen CWD per Subplot Grouped by Maximum Total Mass Quantile", 
+labs(title = "Temporal trajectories of mass of fallen CWD in subplots", 
       x = "Year", 
       y = expression(paste("Mass (Mgha"^{-1},")"))) +  
 theme_bw() +
@@ -778,8 +782,7 @@ scale_colour_manual(values = sampled_colors)
 
 
 **Figure 7**
-
-Annual variation in estimated fallen CWD mass for each 40 × 40 m dynamic subplot, grouped by the subplot's maximum total mass quantile. Lines represent individual subplot trajectories over time.
+Interannual variation in estimated fallen CWD mass for each 40 × 40 m subplot, with subplots grouped by quantiles (specifically, deciles) of maximum total mass (for readability). Lines represent individual subplot trajectories over time. Note that the y axes differ for different groups of subplots.  
 
 
 
@@ -797,7 +800,7 @@ ggplot(subplot_standing, aes (x=yearcol, y=mass.Mg.ha, colour = subplot_code))+
 geom_point()+
 geom_line()+
 facet_wrap("mass_group",scales = "free", ncol=3)+
-labs(title = "Mean Mass of Standing CWD per Subplot Grouped by Maximum Total Mass Quantile", 
+labs(title = "Mass of Standing CWD per Subplot Grouped by Maximum Total Mass Quantile", 
       x = "Year", 
       y = expression(paste("Mass (Mgha"^{-1},")"))) +  
 theme_bw() +
