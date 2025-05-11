@@ -210,8 +210,8 @@ stem_count_fallen<-combined_fallen$stem_count
 subplot_fallen_old<-SUBPLOTCALCULATIONSFALLEN(old_raw_fallen) 
 subplot_fallen_new<-SUBPLOTCALCULATIONSFALLEN(new_raw_fallen)#
 
-subplot_fallen_old<-add_zeros(subplot_fallen, subplot,subplot_fallen_old)
-subplot_fallen_new<-add_zeros(subplot_fallen, subplot,subplot_fallen_new)
+subplot_fallen_old<-add_zeros(subplot_fallen_old, subplot,subplot_fallen)
+subplot_fallen_new<-add_zeros(subplot_fallen_new, subplot,subplot_fallen)
 
 
 # Compute annual means for old (remaining) and new (input) fallen CWD
@@ -279,8 +279,8 @@ stem_count_standing<-combined_standing$stem_count
 # Subplot-level calculations for standing old vs. new components
 subplot_standing_old<-SUBPLOTCALCULATIONSTANDING(old_raw_standing)
 subplot_standing_new<-SUBPLOTCALCULATIONSTANDING(new_raw_standing)
-subplot_standing_old<-add_zeros(subplot_standing, subplot,subplot_standing_old)
-subplot_standing_new<-add_zeros(subplot_standing, subplot,subplot_standing_new)
+subplot_standing_old<-add_zeros(subplot_standing_old, subplot,subplot_standing)
+subplot_standing_new<-add_zeros(subplot_standing_new, subplot,subplot_standing)
 
 # Annual averages of old and new standing components
 year_standing_old<-subplot_standing_old %>%
@@ -368,6 +368,10 @@ rm(collection_summary_fallen, collection_summary_standing, date_summary, stem_co
 ```
 
 
+**Table1**
+
+
+Summary of census effort for each year including census period (start and end date), total number of pieces of wood measured each year for Fallen and Standing (Total Pieces) and the number of new pieces of dead wood (New pieces). Initials represent the following people involved in the sample collection: R:Pablo Ramos, V:Paulino Villarreal and E is both working as a team.
 
 ```{r, echo=FALSE}
 # Display summary table of annual sampling efforts
@@ -390,12 +394,8 @@ rm(collection_summary)
 ```
 
 
-**Table1**
 
-
-Summary of census effort for each year including census period (start and end date), total number of pieces of wood measured each year for Fallen and Standing (Total Pieces) and the number of new pieces of dead wood (New pieces). Initials represent the following people involved in the sample collection: R:Pablo Ramos, V:Paulino Villarreal and E is both working as a team.
-
-### Calculations of CWD stores and fluxes
+### Calculations of CWD stocks and fluxes
 
 This report calculates annual stocks and fluxes of standing and fallen coarse woody debris. The data were formatted, cleaned and processed prior to loading loading into this report using the code **clean0_bci50deadwood_rawtoformatted.RMD** and **clean1_bci50deadwood_formattedtocorrected.Rmd**. Calculations for individual sample pieceswere made using code in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** which also contains explanations of all calculations.  More information can be found in **calcexplanation_bci50deadwood_stocks&fluxes.Rmd**.  
 
@@ -529,7 +529,9 @@ rm(year_vol_fallen, year_mass_fallen, year_vol_standing, year_mass_standing,year
 
 
 
+**Table 2**
 
+Estimated mean stocks and fluxes of fallen and standing CWD calculated by first averaging over the one hundred 40 x 40 m dynamics plots, then averaging over years (2017-2024). Estimated total stocks of deadwood (Mean total), and estimated annual deadwood input for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated as mean stocks divided by the mean inputs.
 
 ```{r, echo=FALSE}
 # Display mean summary statistics in a table
@@ -549,19 +551,13 @@ kable(total_means, format = "html", row.names=FALSE, digits=2,
                 add_header_above(c("Coarse Woody Debris Summary Statistics" = 5))
 ```
 
-**Table 2**
 
-Estimated mean stocks and fluxes of fallen and standing CWD calculated by first averaging over the one hundred 40 x 40 m dynamics plots, then averaging over years (2017-2024). Estimated total stocks of deadwood (Mean total), and estimated annual deadwood input for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated as mean stocks divided by the mean inputs.
 
 
 ### Annual variation in woody debris stocks and fluxes
 
 ```{r, include=FALSE}
 # Combine standing and fallen coarse woody debris data
-subplot_fallen<-subplot_fallen %>%
-  mutate(Type=paste("Fallen")) 
-subplot_standing<-subplot_standing %>%
-  mutate(Type=paste("Standing"))
 
 combined_total_data<-rbind(subplot_fallen, subplot_standing)
 ```
@@ -571,10 +567,10 @@ combined_total_data<-rbind(subplot_fallen, subplot_standing)
 ```{r, echo=FALSE, results='hide', message=FALSE}
 library(Rmisc)
 # Calculate mean and standard error of mass by year and type
-summary_mean_sublot_mass<-summarySE(combined_total_data, measurevar = "mass.Mg.ha", groupvars = c("yearcol","Type"))
+summary_mean_sublot_mass<-summarySE(combined_total_data, measurevar = "mass.Mg.ha", groupvars = c("yearcol","type"))
 
 # Plot mass over time with confidence intervals
-ggplot(summary_mean_sublot_mass, aes (x=factor(yearcol), y=mass.Mg.ha, fill=Type, colour = Type))+
+ggplot(summary_mean_sublot_mass, aes (x=factor(yearcol), y=mass.Mg.ha, fill=type, colour = type))+
 geom_errorbar(aes(ymin=(mass.Mg.ha-1.96*se), ymax=(mass.Mg.ha+1.96*se)), width=.1, position = position_dodge(width = 0.6))+
 geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0.6))+
   labs(title = "Mean (with 95% CI) Total Mass of Coarse Woody Debris by Year", 
@@ -583,7 +579,7 @@ geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0
   theme_bw() +  
   scale_fill_manual(values=c("#009E73", "#882255"))+
 scale_colour_manual(values=c("#009E73", "#882255"))+
-  scale_y_continuous(breaks = seq(0,20 , by = 2))+
+  scale_y_continuous(breaks = seq(0,20 , by = 2), limits = c(0, 18))+
   theme(
     axis.text.x = element_text()  
   )
@@ -600,10 +596,10 @@ Annual variation in mean total mass of fallen and standing coarse woody debris (
 
 ```{r, echo=FALSE, results='hide', message=FALSE}
 # Calculate mean and standard error of volume by year and type
-summary_mean_sublot_vol<-summarySE(combined_total_data, measurevar = "vol.m3.ha", groupvars = c("yearcol","Type"))
+summary_mean_sublot_vol<-summarySE(combined_total_data, measurevar = "vol.m3.ha", groupvars = c("yearcol","type"))
 
 # Plot volume over time with confidence intervals
-ggplot(summary_mean_sublot_vol, aes (x=factor(yearcol), y=vol.m3.ha, fill=Type, colour = Type))+
+ggplot(summary_mean_sublot_vol, aes (x=factor(yearcol), y=vol.m3.ha, fill=type, colour = type))+
 geom_errorbar(aes(ymin=(vol.m3.ha-1.96*se), ymax=(vol.m3.ha+1.96*se)), width=.1, position = position_dodge(width = 0.6))+
 geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0.6))+
   labs(title = "Mean (with 95% CI) Total Volume of Coarse Woody Debris by Year", 
@@ -622,6 +618,54 @@ scale_colour_manual(values=c("#009E73", "#882255"))+
 
 
 Annual variation in mean total volume of fallen and standing CWD per hectare, with 95% confidence intervals (CIs calculated as 1.96 times the standard error of the mean over the one hundred 40 x 40 m subplots).
+
+
+```{r,echo=FALSE, results='hide', message=FALSE}
+summary_mean_sublot_mass<-summarySE(combined_total_data, measurevar = "input.mass.Mgha", groupvars = c("yearcol","type"))
+
+# Plot mass over time with confidence intervals
+ggplot(summary_mean_sublot_mass%>% filter(!yearcol=="2017"), aes (x=factor(yearcol), y=input.mass.Mgha, fill=type, colour = type))+
+geom_errorbar(aes(ymin=(input.mass.Mgha-1.96*se), ymax=(input.mass.Mgha+1.96*se)), width=.1, position = position_dodge(width = 0.6))+
+geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0.6))+
+  labs(title = "Mean (with 95% CI) Total Mass of Coarse Woody Debris Inputs by Year", 
+       x = "Year", 
+       y = expression(paste("Mean Mass (Mgha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_fill_manual(values=c("#009E73", "#882255"))+
+scale_colour_manual(values=c("#009E73", "#882255"))+
+  scale_y_continuous(breaks = seq(0,20 , by = 2))+
+  theme(
+    axis.text.x = element_text()  
+  )
+```
+**Figure 3** 
+
+
+Annual variation in mean input mass of fallen and standing CWD per hectare, with 95% confidence intervals (CIs calculated as 1.96 times the standard error of the mean over the one hundred 40 x 40 m subplots).
+
+```{r,  echo=FALSE, results='hide', message=FALSE}
+summary_mean_sublot_vol<-summarySE(combined_total_data, measurevar = "input.vol.m3ha", groupvars = c("yearcol","type"))
+
+# Plot volume over time with confidence intervals
+ggplot(summary_mean_sublot_vol%>% filter(!yearcol=="2017"), aes (x=factor(yearcol), y=input.vol.m3ha, fill=type, colour = type))+
+geom_errorbar(aes(ymin=(input.vol.m3ha-1.96*se), ymax=(input.vol.m3ha+1.96*se)), width=.1, position = position_dodge(width = 0.6))+
+geom_point(size=3, shape=21, colour="black", position = position_dodge(width = 0.6))+
+  labs(title = "Mean (with 95% CI) Total Volume of Coarse Woody Debris Inputs by Year", 
+       x = "Year", 
+       y = expression(paste("Mean Volume (m"^{3},"ha"^{-1},")"))) +  
+  theme_bw() +  
+  scale_fill_manual(values=c("#009E73", "#882255"))+
+scale_colour_manual(values=c("#009E73", "#882255"))+
+ scale_y_continuous(breaks = seq(0, 80, by = 5))+
+  theme(
+    axis.text.x = element_text()  
+  )
+```
+**Figure 4** 
+
+
+Annual variation in mean input volume of fallen and standing CWD per hectare, with 95% confidence intervals (CIs calculated as 1.96 times the standard error of the mean over the one hundred 40 x 40 m subplots).
+
 
 
 
@@ -644,7 +688,7 @@ ggplot(subplot_fallen, aes(x = log(mass.Mg.ha , base = 2), group=yearcol, fill =
 ```
 
 
-**Figure 3**
+**Figure 5**
 
 
 Distribution of log₂-transformed total estimated mass of falle coarse woody debris (CWD) per subplot, coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.
@@ -669,7 +713,7 @@ ggplot(subplot_fallen_new %>% filter(!yearcol=="2017"),aes(x = log(input.mass.Mg
 
 
 
-**Figure 4**
+**Figure 6**
 
 Distribution of log₂-transformed input mass of fallen CWD per subplot (excluding 2017), coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.
 
@@ -693,7 +737,7 @@ ggplot(subplot_standing, aes(x = log(mass.Mg.ha , base = 2), group=yearcol, fill
 
 
 
-**Figure 5**
+**Figure 7**
 
 
 Distribution of log₂-transformed total estimated mass of standing coarse woody debris (CWD) per subplot, coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.
@@ -705,7 +749,7 @@ Distribution of log₂-transformed total estimated mass of standing coarse woody
 ```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
 # Plotting histogram of standing CWD input mass per subplot, coloured by year 
 # X-axis is log₂-transformed mass
-ggplot(subplot_standing_new %>% filter(!yearcol=="2009"), aes(x = log(input.mass.Mgha , base = 2), group=yearcol, fill = as.factor(yearcol)))+
+ggplot(subplot_standing_new %>% filter(!yearcol=="2017"), aes(x = log(input.mass.Mgha , base = 2), group=yearcol, fill = as.factor(yearcol)))+
   geom_histogram(colour = "black", 
                  bins = 40, position="stack")+
  # facet_wrap("yearcol")+
@@ -724,7 +768,7 @@ ggplot(subplot_standing_new %>% filter(!yearcol=="2009"), aes(x = log(input.mass
 
 
 
-**Figure 6**
+**Figure 8**
 
 
 Distribution of log₂-transformed input mass of standing CWD per subplot (excluding 2017), coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.  
@@ -781,7 +825,7 @@ scale_colour_manual(values = sampled_colors)
 
 
 
-**Figure 7**
+**Figure 9**
 Interannual variation in estimated fallen CWD mass for each 40 × 40 m subplot, with subplots grouped by quantiles (specifically, deciles) of maximum total mass (for readability). Lines represent individual subplot trajectories over time. Note that the y axes differ for different groups of subplots.  
 
 
@@ -800,7 +844,7 @@ ggplot(subplot_standing, aes (x=yearcol, y=mass.Mg.ha, colour = subplot_code))+
 geom_point()+
 geom_line()+
 facet_wrap("mass_group",scales = "free", ncol=3)+
-labs(title = "Mass of Standing CWD per Subplot Grouped by Maximum Total Mass Quantile", 
+labs(title = "Temporal trajectories of mass of standing CWD in subplotse", 
       x = "Year", 
       y = expression(paste("Mass (Mgha"^{-1},")"))) +  
 theme_bw() +
@@ -814,10 +858,9 @@ scale_colour_manual(values = sampled_colors)
 
 
 
-**Figure 8**
+**Figure 10**
 
-Annual variation in estimated standing CWD mass for each 40 × 40 m dynamic subplot, grouped by the subplot's maximum total mass quantile. Each subplot's trajectory is shown over time, coloured uniquely.
-
+Interannual variation in estimated standing CWD mass for each 40 × 40 m subplot, with subplots grouped by quantiles (specifically, deciles) of maximum total mass (for readability). Lines represent individual subplot trajectories over time. Note that the y axes differ for different groups of subplots.  
 
 
 ```{r, echo=FALSE}
@@ -895,7 +938,7 @@ ggplot(mean_mass_by_year, aes(x =yearcol, y = mean_mass, fill = branchfall)) +
 
 ```
 
-**Figure 9**
+**Figure 11**
 
 Mean total mass of fallen CWD (Mg ha⁻¹) per year, grouped by sample type (branch, trunk, unknown). Bars represent the stacked mean mass of each component, illustrating changes in the composition of fallen woody debris through time.
 
