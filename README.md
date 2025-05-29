@@ -21,21 +21,26 @@ File structure and details about data processing are given in the readme file.
 ### Code & Data files
 **clean0_bci50deadwood_rawtoformatted.rmd**
 
-The aim of this file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc.
+The aim of this file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc. and outputs individual .txt files for each census (Fallen CWD, Standing CWD and Standing FWD) for each year.
+
 Input files:
 - **Data0_Raw/**: This Folder contains the eight raw .xlx files for the woody debris census for each year (2017-2024). Each file contains multiple sheets including a seperate sheet for Fallen CWD, Standing CWD and Standing FWD. These raw files are inputed into the rmd file to be formatted
 - **Corrections/colnamechange**: This folder contains eight .txt files containing the origional names of column headings which can be found in the raw data and corresponding new column headings. These files are inputed into the rmd to be used to change the column headings of the raw data.
 
 Output:
-- **Data1_Formatted**
+- **Data1_Formatted**: This folder contains the formatted  files  in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
 
 **clean1_bci50deadwood_formattedtocorrected.rmd**
 
-Definition:
+The aim of this file is to apply corrections to the formatted .txt files and merge data accross multiple censuses by sample codes (code_of_piece) for each census type (Fallen CWD, Standing CWD and Standing FWD), generating three .csv files, one for fallen CWD, one for standing CWD and  one for standing FWD. Corrections include, fixing typos and moving data which had been inputted incorrectly to the correct field, aligning data types, removing duplicates, removing occurances where the sample was <200mm from coarse woddy debris censuses or had fully decomposed etc. Additional codes are assigned to pieces based on descriptive terms in the notes column. Further details of corrections applied can be found the inputted corrections file (see below)
+
 
 Input:
-- **Data1_Formatted**
-- 
+- **Data1_Formatted/** : As desribed above this folder contains the formatted  files in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
+- **Corrections/bciCDW40Corrections_All.csv**:
+- **Corrections/masscorrect_deadwood_bci50ha.csv**
+- **Corrections/newcodesadd_bci50ha.csv**
+- **Corrections/datatype_dyanmicWD.csv**
  Output:
 - **Data2_Corrected**
 
