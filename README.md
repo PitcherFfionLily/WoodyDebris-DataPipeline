@@ -36,17 +36,41 @@ The aim of this file is to apply corrections to the formatted .txt files and mer
 
 
 Input:
-- **Data1_Formatted/** : As desribed above this folder contains the formatted  files in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
-- **Corrections/bciCDW40Corrections_All.csv**:
-- **Corrections/masscorrect_deadwood_bci50ha.csv**
-- **Corrections/newcodesadd_bci50ha.csv**
-- **Corrections/datatype_dyanmicWD.csv**
+- **Data1_Formatted/** : As desribed above this folder contains the formatted  files in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual .csv file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
+- **Corrections/bciCDW40Corrections_All.csv**: Contains individual row by row corrections for data across years. This file is inputed into the rmd to be used to apply the corrections.
+  - *file* column specifies the formatted .txt file the correction is being applied to
+  - *year* column specifies the year of the error
+  - *uniqid* column identifies the uniqid givento each rowwithin that data file
+  - *Field* column specifies the column the error to be corrected occured
+  - *OldValue* the exisiting value that need to be changed
+  - *NewValue* the correct value to be inserted
+  - *Blank* specifies whether row needs to be removed entirely. blank=FALSE, Y=TRUE.
+  - *Observer* initials of person who identified the error and applied the change
+  - *Comment* details of the cause of the error, why it must be changed.
+- **Corrections/masscorrect_deadwood_bci50ha.csv**: Contains corrections to applied for indivudal columns across whole dataset for cases where certain errors appear multiple times across the datasets. This file is inputed into the rmd to be used to apply the corrections.
+  - *file* column specifies the formatted .txt file the correction is being applied to
+  - *colname* column specifies the column the error to be corrected occured
+  - *OldValue* the exisiting value that need to be changed
+  - *NewValue* the correct value to be inserted
+  - *notes* details of the cause of the error, why it must be changed.
+- **Corrections/newcodesadd_bci50ha.csv**:The file contains new descriptive codes for woodydebris samples translated from recurring descriptive notes in the raw data. This file is inputed into the rmd and adds new code columns to the input data. An astrix (*) is added for rows where the code is TRUE, as specified in the newcodesadd_bci50ha.csv file.
+  - EX
+  - DP
+  - PN
+  - AA
+  - SD
+  - CH
+  - CAIDO- For standing pieces- the sample has now fallen
+  - VIVO- the sample is actually alive
+  - BUTTRESS- for standing pieces, the roots are buttressed and the DBH is measured above 1.3m
+- **Corrections/datatype_dyanmicWD.csv**:This file re-assigns data types of columns in the data across years. This ensures data is treated correctly and consistent across years so data can be merged correctly. This file is inputed into the rmd and formats the data into the correct data type.
+  
  Output:
-- **Data2_Corrected**
+- **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. As described above these files are generated from the clean1_bci50deadwood_formattedtocorrected.rmd. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **datadictionary** which defines the column heading for each census.
 
 **density_calculation_bci50deadwood_correctedtoprocessed.rmd**
 
-Definition:
+
 
 Input:
 - **Data2_Corrected**
