@@ -19,7 +19,7 @@ File structure and details about data processing are given in the readme file.
 
 ## Files and Folders
 ### Code & Data files
-**clean0_bci50deadwood_rawtoformatted.rmd**
+1. **clean0_bci50deadwood_rawtoformatted.rmd**
 
 The aim of this file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc. and outputs individual .txt files for each census (Fallen CWD, Standing CWD and Standing FWD) for each year.
 
@@ -30,7 +30,7 @@ Input files:
 Output:
 - **Data1_Formatted**: This folder contains the formatted  files  in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
 
-**clean1_bci50deadwood_formattedtocorrected.rmd**
+2. **clean1_bci50deadwood_formattedtocorrected.rmd**
 
 The aim of this file is to apply corrections to the formatted .txt files and merge data accross multiple censuses by sample codes (code_of_piece) for each census type (Fallen CWD, Standing CWD and Standing FWD), generating three .csv files, one for fallen CWD, one for standing CWD and  one for standing FWD. Corrections include, fixing typos and moving data which had been inputted incorrectly to the correct field, aligning data types, removing duplicates, removing occurances where the sample was <200mm from coarse woddy debris censuses or had fully decomposed etc. Additional codes are assigned to pieces based on descriptive terms in the notes column. Further details of corrections applied can be found the inputted corrections file (see below)
 
@@ -54,12 +54,12 @@ Input:
   - *NewValue* the correct value to be inserted
   - *notes* details of the cause of the error, why it must be changed.
 - **Corrections/newcodesadd_bci50ha.csv**:The file contains new descriptive codes for woodydebris samples translated from recurring descriptive notes in the raw data. This file is inputed into the rmd and adds new code columns to the input data. An astrix (*) is added for rows where the code is TRUE, as specified in the newcodesadd_bci50ha.csv file.
-  - EX
-  - DP
-  - PN
-  - AA
-  - SD
-  - CH
+  - EX- The piece was not found
+  - DP- The piece diameter is below 200m or fully decomposed.
+  - PN- The piece was present but could not be measured that year. i.e it was covered by another piece
+  - AA- The piece has cracked and is opening
+  - SD- The piece is breaking into little pieces
+  - CH- The piece is hollow
   - CAIDO- For standing pieces- the sample has now fallen
   - VIVO- the sample is actually alive
   - BUTTRESS- for standing pieces, the roots are buttressed and the DBH is measured above 1.3m
@@ -68,17 +68,17 @@ Input:
  Output:
 - **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. As described above these files are generated from the clean1_bci50deadwood_formattedtocorrected.rmd. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **datadictionary** which defines the column heading for each census.
 
-**density_calculation_bci50deadwood_correctedtoprocessed.rmd**
+3. **density_calculation_bci50deadwood_correctedtoprocessed.rmd**
 
-
+The aim of this file is to carry out a series of calculations that allow for estimations of coarse woody debris volume and mass from the diamter measurements. A detailed explanation of all the calculations involved can be found in **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
 
 Input:
-- **Data2_Corrected**
-- t
+- **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. The two files for course woody debris only (both fallen and standing) are used for further calculation and analysis
+- **Dat0_Raw/LongT_CWD_2010.csv**: This folder contains data from a census in 2010 where samples were destructively sampled to measure and calculate dry and wet density and mass. This value is used in the rmd to model the relationship between actual density and predicted density from penetrometer measurements of samples in the field. This model allows density to be predicted for census data. See **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** for further details.
 Output:
-- **Data3_Processed**
+- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermadiate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes.
 
-**report_bci50CWD_2017-24.rmd**
+4. **report_bci50CWD_2017-24.rmd**
 Definition:
 
 Input:
