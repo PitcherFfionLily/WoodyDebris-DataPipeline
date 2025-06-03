@@ -19,7 +19,7 @@ File structure and details about data processing are given in the readme file.
 
 ## Files and Folders
 ### Code & Data files
-1. **clean0_bci50deadwood_rawtoformatted.rmd**
+### **clean0_bci50deadwood_rawtoformatted.rmd**
 
 The aim of this file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc. and outputs individual .txt files for each census (Fallen CWD, Standing CWD and Standing FWD) for each year.
 
@@ -30,7 +30,7 @@ Input files:
 Output:
 - **Data1_Formatted**: This folder contains the formatted  files  in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
 
-2. **clean1_bci50deadwood_formattedtocorrected.rmd**
+### **clean1_bci50deadwood_formattedtocorrected.rmd**
 
 The aim of this file is to apply corrections to the formatted .txt files and merge data accross multiple censuses by sample codes (code_of_piece) for each census type (Fallen CWD, Standing CWD and Standing FWD), generating three .csv files, one for fallen CWD, one for standing CWD and  one for standing FWD. Corrections include, fixing typos and moving data which had been inputted incorrectly to the correct field, aligning data types, removing duplicates, removing occurances where the sample was <200mm from coarse woddy debris censuses or had fully decomposed etc. Additional codes are assigned to pieces based on descriptive terms in the notes column. Further details of corrections applied can be found the inputted corrections file (see below)
 
@@ -68,7 +68,7 @@ Input:
  Output:
 - **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. As described above these files are generated from the clean1_bci50deadwood_formattedtocorrected.rmd. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **datadictionary** which defines the column heading for each census.
 
-3. **density_calculation_bci50deadwood_correctedtoprocessed.rmd**
+### **density_calculation_bci50deadwood_correctedtoprocessed.rmd**
 
 The aim of this file is to carry out a series of calculations that allow for estimations of coarse woody debris volume and mass from the diamter measurements. A detailed explanation of all the calculations involved can be found in **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
 
@@ -78,20 +78,34 @@ Input:
 Output:
 - **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermadiate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes.
 
-4. **report_bci50CWD_2017-24.rmd**
-Definition:
+### **report_bci50CWD_2017-24.rmd**
+
+This file generated a report, including figures and tables reporting average estimates of coarse standing and falling woody debris stocks and inputs per ha for each subplot and across the 50 ha plot, BCI for each year. Subplot averages and annual averages are also outputted as .txt files, see below.
 
 Input:
-- **Data3_Processed**
-- t
+- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume with the purpose of being used to be inputted directly into report file for calculations to scale up measurements.
+
 Output:
-- **report_bci50CWD_2017-24.html**
-- **bci_CWD40_annual_estimation_17to24.txt**
-- **bci_CWD40_subplot_estimation_17to24.txt**
+- **report_bci50CWD_2017-24.html**: The html report file generated from the rmd that prints figures and tables that report stimates of coarse standing and falling woody debris stocks and inputs per ha.
+- **bci_CWD40_annual_estimation_17to24.txt**: txt file of subplot level estimates for woody debris stocks and inputs
+    - subplot_code: coordinates for the centre point of the subplot
+    - yearcol: year
+    - mass.Mg.ha: Estimated mass of woody debris in Mg per ha
+    - vol.m3.ha: Estimated volume of woody debris in m3 per ha
+    - input.mass.Mgha: Estimated input mass of woody debris in Mg per ha
+    - input.vol.m3ha: Estimated input volume of woody debris in m3 per ha
+    - type: whether the estimate is for fallen or standing stocks
+- **bci_CWD40_subplot_estimation_17to24.txt**: txt file of whole plot (50 ha) level estimates for woody debris stocks and inputs
+    - yearcol: year
+    - mass.Mg.ha: Estimated mass of woody debris in Mg per ha
+    - vol.m3.ha: Estimated volume of woody debris in m3 per ha
+    - input.mass.Mgha: Estimated input mass of woody debris in Mg per ha
+    - input.vol.m3ha: Estimated input volume of woody debris in m3 per ha
+    - type: whether the estimate is for fallen or standing stocks
 
 ## Other
 
-**protocol**
+**CWD_Dynamics_Protocol.pdf** contains the census protocol followed in collecting the data 
 
-**equation explanation**
+**CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** contains a desription of the steps involved in calculating deadwood stocks and fluxes from the clean data
   
