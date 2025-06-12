@@ -24,7 +24,7 @@ File structure and details about data processing are given in the readme file.
 The aim of this file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc. and outputs individual .txt files for each census (Fallen CWD, Standing CWD and Standing FWD) for each year.
 
 Input files:
-- **Data0_Raw/**: This Folder contains the eight raw .xlx files for the woody debris census for each year (2017-2024). Each file contains multiple sheets including a seperate sheet for Fallen CWD, Standing CWD and Standing FWD. These raw files are inputed into the rmd file to be formatted
+- **Data0_Raw/**: This Folder contains the eight raw .xlx files for the woody debris census for each year (2017-2024). Each file contains multiple sheets including a seperate sheet for Fallen CWD, Standing CWD and Standing FWD. These raw files are inputed into the rmd file to be formatted individually, the code does not run automated for each file as column heading and structure vary for each file.
 - **Corrections/colnamechange**: This folder contains eight .txt files containing the origional names of column headings which can be found in the raw data and corresponding new column headings. These files are inputed into the rmd to be used to change the column headings of the raw data.
 
 Output:
