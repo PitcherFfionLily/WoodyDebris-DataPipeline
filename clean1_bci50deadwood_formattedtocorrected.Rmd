@@ -1,0 +1,529 @@
+---
+title: "Correcting BCI 50ha woody debris data"
+author: "Lily Pitcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = here::here())
+                       
+```
+
+
+```{r libraries}
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(readr)
+library(stringr)
+library(here)
+rm(list=ls())
+```
+
+
+
+
+```{r workingdirectory&filenames}
+#load in relevant raw files and txt with new column names
+
+file_names <- readLines("Data1_Formatted/CWD40_filenames.txt")
+# Create the full file paths using paste and the directory path
+FNINDATAFORMATTED <- paste("Data1_Formatted/", file_names, sep="")
+
+#file with mass corrections
+FNINSTANDARDIZE <- "Corrections/masscorrect_deadwood_bci50ha.csv"
+#file with line by line corrections
+FNINCORRECTIONS <-"Corrections/bciCDW40Corrections_All.csv"
+#file with new Code assignments
+NEWCODES<-"Corrections/newcodesadd_bci50ha.csv"
+#file with datatype of variables specified
+DATATYPE<-"Corrections/datatype_dyanmicWD.csv"
+
+
+
+FNBADFIELDCOROUT<-"tocheck_badfieldcorrections.txt"
+FNDUPCOROUT <- "tocheck_dupcorrections26.txt" # rows of corrections file that attempt to correct same field
+FNBADROWCOROUT <-"tocheck_badrowcorrections26.txt"
+
+```
+
+```{r}
+#read in files
+indatalist <- lapply(FNINDATAFORMATTED, function(filepath) {
+  if (file.exists(filepath)) {
+    read_tsv(filepath, show_col_types = FALSE)
+    } else {
+      NULL  
+      }
+  })
+names(indatalist) <- basename(FNINDATAFORMATTED)
+incorrect <- read.csv(FNINCORRECTIONS)
+newcodes<-read.csv(NEWCODES)
+masscorrections<-read.csv(FNINSTANDARDIZE, header = TRUE)
+datatype<-read.csv(DATATYPE, header = TRUE)
+```
+
+
+```{r}
+#transforms all blanks to NA for consistency
+transformToNA <- function(input) {
+  output <- lapply(input, function(df) {
+    df <- as.data.frame(lapply(df, function(col) {
+# Replace blanks and "-" with NA
+      col[col == "" | col == "-"] <- NA
+      return(col)
+      }))
+    return(df)
+  })
+  return(output)
+}
+
+indatalist <- transformToNA(indatalist)
+#ensure blanks in mass corrections file are also NA
+masscorrections[masscorrections == ""] <- NA
+```
+
+
+
+```{r ,implementmasscorrections}
+#1. Apply Mass corrections
+#this function applies corrections to whole columns within specified files based on specifications of the masscorrections file
+
+standardizedata <- function(indatalist, masscorrections) {
+  outdatalist <- indatalist
+#match file name to file name specified in masscorrections file
+  fixfilenames <- unique(masscorrections$file)
+  for (i in seq_along(fixfilenames)) {
+    thisfilename <- fixfilenames[i]
+    isfile <- names(indatalist) == thisfilename
+    if (sum(isfile) == 0) {
+      next
+      } else if (sum(isfile) > 1) {
+        next
+        } else {
+          whichdata <- which(isfile)
+          thisdata <- indatalist[[whichdata]]
+          ncols <- ncol(thisdata)
+# Filter masscorrections for the current file
+          thisfixdata <- masscorrections[masscorrections$file == thisfilename, ]
+          for (j in 1:nrow(thisfixdata)) {
+            whichcol <- which(names(thisdata) == thisfixdata$colname[j])
+            if (length(whichcol) == 0) {
+              next
+              } else if (length(whichcol) > 1) {
+                next
+                } else {
+                  if (is.na(thisfixdata$oldvalue[j])) {
+# Replace NA values in the column with newvalue- NA have to be treated differently
+                    thisdata[, whichcol][is.na(thisdata[, whichcol])] <- thisfixdata$newvalue[j]
+                    } else {
+# Replace old value values with newvalue
+                      thisdata[, whichcol][thisdata[, whichcol] == thisfixdata$oldvalue[j]] <- thisfixdata$newvalue[j] 
+                    } 
+                }
+            }
+          outdatalist[[whichdata]] <- thisdata
+        } 
+    }
+  names(outdatalist) <- names(indatalist)
+  return(outdatalist)
+  }
+indatalist <- standardizedata(indatalist, masscorrections)
+```
+
+
+
+
+```{r funccorrectbytable}
+#2. apply line by line corrections
+#this function applies corrections to specific cells within specified columns of specified files based on the all corrections
+correctbytable <- function(indata,incorrect) {
+  for (i in seq_along(indatalist)) {
+    # Get the current dataframe name (File) and its data
+    file_name <- names(indatalist)[i]
+    indata <- indatalist[[file_name]]
+    
+    # Subset the corrections for the current file
+    file_corrections <- incorrect[incorrect$file == file_name, ]
+    if (nrow(file_corrections) == 0) {
+      next 
+      # No corrections for this file, skip to the next one
+      }
+    file_corrections$temp <- paste(file_corrections$year,file_corrections$uniqid,sep="_")
+    
+    # separate edits that delete rows vs. make changes
+    todelete <- file_corrections[file_corrections$Blank == "y", ]
+    tochange <- file_corrections[file_corrections$Blank != "y", ]
+    outdata <- indata
+    
+    # Check if 'uniqid' exists in 'indata', otherwise raise an error
+    if (!("uniqid" %in% names(indata))) {
+      stop(paste("The 'uniqid' column is missing in the dataset for", file_name))
+      }
+    # Delete rows if there are any to delete
+    if (nrow(todelete) > 0) {
+      outdata <- subset(indata, !uniqid %in% todelete$uniqid) }
+    # make changes
+    if (nrow(tochange)>0) {
+      # check that all the fields to be corrected are in the dataset; 
+      # if any aren't, then print warning, output file with those problems, and remove from the tochange dataframe
+      fieldstochange <- unique(tochange$Field)
+      missing_fields <- setdiff(fieldstochange, names(outdata))
+      if (length(missing_fields) > 0) {
+        warning("Some fields in the corrections file are not present in the dataset.")
+        write.table(tochange[tochange$Field %in% missing_fields, ], 
+                    file = FNBADFIELDCOROUT, sep = "\t", row.names = FALSE)
+        tochange <- tochange[tochange$Field %in% names(outdata), ] }
+      # check that all the uniqid's in the corrections file are matched in the dataset
+      # if any aren't, then print warning, output file with those problems, and remove from the tochange dataframe
+      unmatched_uniqids <- setdiff(tochange$uniqid, outdata$uniqid)
+      if (length(unmatched_uniqids) > 0) {
+        warning("Some corrections refer to lines not present in the dataset.")
+        write.table(tochange[tochange$uniqid %in% unmatched_uniqids, ], 
+                    file = FNBADROWCOROUT, sep = "\t", row.names = FALSE)
+        tochange <- tochange[!tochange$uniqid %in% unmatched_uniqids, ] }
+      
+      # check for duplicated or potentially conflicting corrections (two corrections of same objectid, census, and field)
+      dupes <- duplicated(tochange[, c("year", "uniqid", "Field")])
+      if (any(dupes)) {
+        
+        dupes_data <- tochange[dupes, ]
+        write.table(dupes_data, FNDUPCOROUT, sep = "\t", row.names = FALSE)
+        tochange <- tochange[!dupes, ] }
+      # Apply the changes to the cells
+      for (j in seq_len(nrow(tochange))) {
+        matching_rows <- with(outdata, uniqid == tochange$uniqid[j])
+        if (any(matching_rows, na.rm = TRUE)) {
+          outdata[matching_rows, tochange$Field[j]] <- tochange$NewValue[j] }
+        }
+      }
+    # end of commands to implement edits from the file FNEDITS
+    indatalist[[file_name]] <- outdata
+    } 
+  return(indatalist)
+  
+} 
+indatalist <- correctbytable(indatalist,incorrect)
+```
+
+```{r funccorrectbytable}
+
+#3. New codes added that concisely describe state of woody debris data, summarizing based on notes column
+addcodes <- function(indata,newcodes) {
+  for (i in seq_along(indatalist)) {
+    # Get the current dataframe name (File) and its data
+    file_name <- names(indatalist)[i]
+    indata <- indatalist[[file_name]]
+    # Subset the corrections for the current file
+    file_codes<- newcodes[newcodes$file == file_name, ]
+    if (nrow(file_codes) == 0) {
+      next  
+      # No corrections for this file, skip to the next one
+      }
+    
+    outdata <- indata
+    # Check if 'uniqid' exists in 'indata', otherwise raise an error
+    if (!("uniqid" %in% names(indata))) {
+      stop(paste("The 'uniqid' column is missing in the dataset for", file_name)) }
+    #add new tag columns
+    file_code_columns <- names(file_codes)[6:ncol(file_codes)]
+    for (field in file_code_columns) {
+      if (!field %in% names(outdata)) {
+        outdata[[field]] <- "" 
+        # Initialize with empty strings
+        }
+      }
+    # check that all the uniqid's in the corrections file are matched in the dataset
+    unmatched_uniqids <- setdiff(file_codes$uniqid, outdata$uniqid)
+    if (length(unmatched_uniqids) > 0) {
+      warning("Some new codes refer to lines not present in the dataset.")
+      write.table(file_codes[file_codes$uniqid %in% unmatched_uniqids, ], 
+                  file = FNBADROWCOROUT, sep = "\t", row.names = FALSE)
+      file_codes <- file_codes[!file_codes$uniqid %in% unmatched_uniqids, ]}
+   
+     # Apply the changes
+    # Add an asterisk to the new columns where file_codes uniqid matches indata uniqid, only if an asterisk is present in file_codes
+    for (j in seq_len(nrow(file_codes))) {
+      matching_rows <- outdata$uniqid == file_codes$uniqid[j]
+      
+      for (field in file_code_columns) {
+        # Check if there is an asterisk in file_codes for this field and row, handling NA values
+        if (!is.na(file_codes[[field]][j]) && any(matching_rows, na.rm = TRUE)) {
+          outdata[matching_rows, field] <- file_codes[[field]][j] 
+         } 
+      }
+    }
+    indatalist[[file_name]] <- outdata } 
+  return(indatalist)
+  } 
+
+indatalist <- addcodes(indatalist,newcodes)
+indatalist <- transformToNA(indatalist)
+```
+
+
+
+
+
+```{r}
+DATATYPE <- function(indatalist, datatype) {
+  # go through each df in the list
+  for (i in seq_along(indatalist)) {
+    # Get the current dataframe name (File) and its data
+    file_name <- names(indatalist)[i]
+    indata <- indatalist[[file_name]]
+    # go through each row in the 'datatype' df
+    for (j in seq_len(nrow(datatype))) {
+      # Get the column name and desired data type from 'datatype'
+      column_name <- datatype$column[j]
+      desired_type <- datatype$data_type[j]
+      # Check if the column exists in the current dataframe
+      if (column_name %in% colnames(indata)) {
+        # Convert the column to the desired data type
+        if (desired_type == "character") {
+          indata[[column_name]] <- as.character(indata[[column_name]])
+          } else if (desired_type == "numeric") {
+            indata[[column_name]] <- as.numeric(indata[[column_name]])
+            } else if (desired_type == "integer") {
+              indata[[column_name]] <- as.integer(indata[[column_name]])
+              } else if (desired_type == "logical") {
+                indata[[column_name]] <- as.logical(indata[[column_name]])
+                } else {
+                  # If an unknown type is encountered print it
+                  message("Unknown type for column ", column_name, ": ", desired_type)}}}
+    # Update the modified dataframe back into the list
+    indatalist[[file_name]] <- indata}
+  return(indatalist)
+  }
+indatalist<-DATATYPE(indatalist, datatype)
+#Expect warning of NA introduced by coercion for character to numeric
+```
+
+
+#bind datasets
+```{r}
+
+# List of indices specifying the dataframes to bind (e.g., 1, 3, 5), bind into seperate data frames based on the census type
+fallen_bind <- c("CWD40_2017_fallen.txt","CWD40_2018_fallen.txt","CWD40_2019_fallen.txt","CWD40_2020_fallen.txt","CWD40_2021_fallen.txt", "CWD40_2022_fallen.txt", "CWD40_2023_fallen.txt","CWD40_2024_fallen.txt")
+
+standing_bind <- c("CWD40_2017_standing.txt","CWD40_2018_standing.txt","CWD40_2019_standing.txt","CWD40_2020_standing.txt","CWD40_2021_standing.txt","CWD40_2022_standing.txt","CWD40_2023_standing.txt","CWD40_2024_standing.txt")
+
+lessstanding_bind <- c("CWD40_2017_lessstanding.txt","CWD40_2018_lessstanding.txt","CWD40_2019_lessstanding.txt","CWD40_2020_lessstanding.txt","CWD40_2021_lessstanding.txt","CWD40_2022_lessstanding.txt","CWD40_2023_lessstanding.txt","CWD40_2024_lessstanding.txt")
+#binding all the data frames across years 
+fallen_all <- bind_rows(indatalist[fallen_bind])
+standing_all<- bind_rows(indatalist[standing_bind])
+lessstanding_all<-bind_rows(indatalist[lessstanding_bind])
+                       
+```
+
+
+```{r}
+#changing code of piece for consistency
+#group subplot_code transect sections letter and code of piece togehter so each sample has code as a unique identifier
+#blank because code of piece was not assigned in early censuses so avoid having NA pasted into the combined code
+lessstanding_all$code_of_piece[is.na(lessstanding_all$code_of_piece)] <- ""
+fallen_all<-fallen_all %>%
+  filter(!is.na(code_of_piece))
+standing_all<-standing_all %>%
+  filter(!is.na(code_of_piece))
+  
+CODEOFPIECE<-function(indata){
+  indata<-indata %>%
+    mutate(code_of_piece = str_replace_all(code_of_piece, "[,-]", ".")) %>%
+    mutate(code_of_piece=paste0(subplot_code,transect_section_letter,".",code_of_piece))
+  return(indata)
+}
+fallen_all<-CODEOFPIECE(fallen_all)
+standing_all<-CODEOFPIECE(standing_all)
+lessstanding_all<-CODEOFPIECE(lessstanding_all)
+```
+
+```{r}
+#function for code consistency being present or absent
+
+fallen_all<-fallen_all %>%
+  mutate(MC = ifelse(MC == "*" & is.na(MS), TRUE, MC),
+         MS = ifelse(MC == "TRUE" & is.na(MS), FALSE, MS)) %>%
+  mutate(MS = ifelse(MS == "*" & is.na(MC), TRUE, MS),
+         MC = ifelse(MS == "TRUE" & is.na(MC), FALSE, MC)) %>%
+  mutate(soil_contact = ifelse(suspended == "*" & is.na(suspended), TRUE, soil_contact),
+         suspended = ifelse(soil_contact == "TRUE" & is.na(suspended), FALSE, suspended)) %>%
+  mutate(suspended = ifelse(suspended == "*" & is.na(soil_contact), TRUE, suspended),
+         soil_contact = ifelse(suspended == "TRUE" & is.na(soil_contact), FALSE, soil_contact))
+
+
+fallen_all<-fallen_all %>%
+  mutate( RR=ifelse(RR == "*", TRUE, RR),
+        RT=ifelse(RT == "*", TRUE, RT),
+        TT=ifelse(TT == "*", TRUE, TT),
+        TS=ifelse(TS == "*", TRUE, TS),
+        TC=ifelse(TC == "*", TRUE, TC),
+        TV=ifelse(TV == "*", TRUE, TV))
+fallen_all<-fallen_all %>%
+  mutate( RR=ifelse(is.na(RR), FALSE, RR),
+        RT=ifelse(is.na(RT), FALSE, RT),
+        TT=ifelse(is.na(TT), FALSE, TT),
+        TS=ifelse(is.na(TS), FALSE, TS),
+        TC=ifelse(is.na(TC), FALSE, TC),
+        TV=ifelse(is.na(TV), FALSE, TV))
+
+
+standing_all<-standing_all %>%
+  mutate(MC = ifelse(MC == "*" & is.na(MS), TRUE, MC),
+         MS = ifelse(MC == "TRUE" & is.na(MS), FALSE, MS)) %>%
+  mutate(MS = ifelse(MS == "*" & is.na(MC), TRUE, MS),
+         MC = ifelse(MS == "TRUE" & is.na(MC), FALSE, MC)
+  )
+
+#code to combine added codes into one column
+combinecodecols <- function(deadwood,codecols=c("EX","DP","PN","AA","CH","VIVO","CAIDO", "BUTTRESS")) {
+  deadwood$coded_notes <- ""
+  for (i in 1:length(codecols)) {
+    icol <-names(deadwood)==codecols[i]
+    if (length(icol[icol])==1) {
+      thiscol <- deadwood[,icol]
+      thiscol[thiscol%in% c("","-","FALSE","F")] <- NA
+      thiscol[thiscol!=""&!is.na(thiscol)] <- "*"
+      deadwood$coded_notes<- ifelse(is.na(thiscol),deadwood$coded_notes,paste(codecols[i],";",deadwood$coded_notes,sep=""))
+      } else {
+        if (length(icol[icol])==0)
+          print(paste("Oops Error!  No column with name",codecols[i]))
+        if (length(icol[icol])>1)
+          print(paste("Oops Error!  More than one column with name",codecols[i]))
+      }
+    }
+  return(deadwood)
+  } 
+# end combinecodecols
+
+fallen_all<-combinecodecols(fallen_all, codecols=c("EX","DP","PN","AA","CH","VIVO","CAIDO", "BUTTRESS"))
+standing_all<-combinecodecols(standing_all, codecols=c("EX","DP","PN","AA","CH","VIVO","CAIDO", "BUTTRESS"))
+
+```
+
+
+
+```{r}
+#FILTERING
+#fallen
+#removing all values less than 200mm or NA that are not followed by a later measurement greater than 200mm, these values are decomposed and so no longer should be in the data
+fallen_all <- fallen_all %>% 
+  group_by(code_of_piece) %>%
+  arrange(year) %>%
+  filter(!is.na(code_of_piece))%>%
+  filter(!is.na(diameter_width.mm) |
+          is.na (diameter_width.mm) & { 
+            max_index_na <- which.max(
+              is.na(diameter_width.mm))
+            any(diameter_width.mm[max_index_na:n()] > 200, na.rm = TRUE)
+            }) 
+fallen_all<-fallen_all %>%
+  group_by(code_of_piece) %>%
+  arrange(year) %>%
+  filter(diameter_width.mm > 200 | is.na(diameter_width.mm))
+
+#standing
+#removing all values less than 200mm or NA that are not followed by a later measurement greater than 200mm, these values are decomposed and so no longer should be in the data
+standing_all <- standing_all %>%
+  group_by(code_of_piece) %>%
+  arrange(year) %>%
+  filter(!is.na(code_of_piece)) %>%
+  filter(!is.na(diameter_one.mm) |
+          is.na (diameter_one.mm) & 
+           {
+             max_index_na <- which.max(is.na(diameter_one.mm))
+             any(diameter_one.mm[max_index_na:n()] > 200, na.rm = TRUE)
+             } 
+         ) 
+standing_all<-standing_all %>%
+  group_by(code_of_piece) %>%
+  arrange(year) %>%
+  filter(diameter_one.mm > 200 | is.na(diameter_one.mm))
+standing_all <-standing_all %>%
+  filter(!is.na(height))
+  
+
+lessstanding_all<-lessstanding_all %>%
+  filter(!is.na(transect_section_letter)) %>%
+  group_by(code_of_piece) %>%
+  arrange(year)%>%
+  filter(
+    !is.na(diameter_one.mm) |
+    (is.na(diameter_one.mm) & 
+        {
+          max_index_na <- which.max(is.na(diameter_one.mm))
+          any(!is.na(diameter_one.mm[max_index_na:n()]), na.rm = TRUE)
+          }
+     )
+    )
+```
+
+
+
+
+
+```{r}
+#tag
+#convert all cases of missing tags to NA
+TAGCHECK <- function(indata) {
+  indata$tag <- ifelse(
+    indata$tag %in% 
+      c("no tag", "no tiene tag", "no se encontro", "No tag tenía banda es quaras", "debajo del arbol, no se puede leer","no tago", "No tag", "Pegado a 254678", "rama rama de tronco caido con corteza", "no tag. Sin corteza. Es el mismo que I6-1 fallen" ,"" ,"No tag esta en 0613 entre 24 y 34 mide más de 600 mm","No tag" ,"notag","movido","*","notag"),
+    NA,
+    indata$tag)
+  return(indata)
+}
+#if tag of specific piece is present one year then assign to all years
+TAGASSIGNMENTACROSSYEARS<-function(indata) {
+  indata<-indata %>%
+    group_by(code_of_piece) %>%
+    mutate(tag = ifelse(is.na(tag), first(na.omit(tag)), tag)) %>% 
+    # Fill NA tags with first non-NA 
+    ungroup()
+  return(indata)
+}
+
+#applying tag functions
+fallen_all<-TAGCHECK(fallen_all)
+fallen_all<-TAGASSIGNMENTACROSSYEARS(fallen_all)
+standing_all<-TAGCHECK(standing_all)
+standing_all<-TAGASSIGNMENTACROSSYEARS(standing_all)
+lessstanding_all<-TAGCHECK(lessstanding_all)
+lessstanding_all<-TAGASSIGNMENTACROSSYEARS(lessstanding_all)
+
+```
+
+
+
+
+
+```{r}
+#selecting the relevant columns needed, removing prior year columns or irrelevant field notes
+    #fallen
+fallen_all<-fallen_all %>%
+  select(month, day, year, subplot_code, transect_section_letter, code_of_piece, diameter_width.mm,  diameter_height.mm, penetration.200mm, penetration.200mm.1,  orientation_degrees,  inclination, branchfall, uniqid, tag, notes, observer, RT, RR, TT, TC, TS, TV, MC, MS, suspended, soil_contact, coded_notes)
+    #standing
+standing_all<-standing_all %>%
+  select(month,  day,  year,  subplot_code,  transect_section_letter,  code_of_piece,   diameter_one.mm, diameter_two.mm, height,  POM,  penetration.200mm, penetration.200mm.1, branches,  uniqid,  tag,  notes,  observer, MC,  MS,coded_notes)
+    #lessstanding
+lessstanding_all<-lessstanding_all %>%
+  select(month,  day,  year,  subplot_code,  transect_section_letter,  code_of_piece,   diameter_one.mm,   height,  POM,  branches,  uniqid,  tag,  notes,  observer)
+
+```
+
+
+
+
+```{r}
+#create txt files of the formatted data
+write.csv(fallen_all, file = "Data2_Corrected/corrected_CWD40_fallen_17to24.csv",  col.names = TRUE, row.names = FALSE)
+write.csv(standing_all, file = "Data2_Corrected/corrected_CWD40_standing_17to24.csv",  col.names = TRUE, row.names = FALSE)
+write.csv(lessstanding_all, file = "Data2_Corrected/corrected_FWD40_standing_17to24.csv",  col.names = TRUE, row.names = FALSE)
+```
+
+
+
+
+
+
