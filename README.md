@@ -76,7 +76,7 @@ Input:
 - **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. The two files for course woody debris only (both fallen and standing) are used for further calculation and analysis
 - **Dat0_Raw/LongT_CWD_2010.csv**: This folder contains data from a census in 2010 where samples were destructively sampled to measure and calculate dry and wet density and mass. This value is used in the rmd to model the relationship between actual density and predicted density from penetrometer measurements of samples in the field. This model allows density to be predicted for census data. See **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** for further details.
 Output:
-- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermadiate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes.
+- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermadiate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes. Definitions of new columns generated can be found in **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
 
 ### **report_bci50CWD_2017-24.rmd**
 
