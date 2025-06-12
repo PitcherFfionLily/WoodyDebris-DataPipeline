@@ -15,7 +15,7 @@ CWD40_2018_fallen.txt,2018,fallen192,code_of_piece,"9,1",9.1,,LP,"misstype, inco
 CWD40_2018_standing.txt,2018,standing002,subplot_code,121,"01,21",,LP,"misstype, incorrect/missing character"
 CWD40_2018_standing.txt,2018,standing003,subplot_code,121,"01,21",,LP,"misstype, incorrect/missing character"
 CWD40_2018_standing.txt,2018,standing004,subplot_code,124,"01,24",,LP,"misstype, incorrect/missing character"
-CWD40_2018_standing.txt,2018,standing007,subplot_code,02.16,"02,16",,LP,"misstype, incorrect/missing character"
+CWD40_2018_standing.txt,2018,standing007,subplot_code,2.16,"02,16",,LP,"misstype, incorrect/missing character"
 CWD40_2018_standing.txt,2018,standing009,subplot_code,216,"02,16",,LP,"misstype, incorrect/missing character"
 CWD40_2018_standing.txt,2018,standing014,subplot_code,309,"03,09",,LP,"misstype, incorrect/missing character"
 CWD40_2018_standing.txt,2018,standing041,subplot_code,7.1,"07,01",,LP,"misstype, incorrect/missing character"
@@ -74,7 +74,7 @@ CWD40_2021_fallen.txt,2021,fallen212,code_of_piece,"9,1",9-1,,LP,"misstype, inco
 CWD40_2021_fallen.txt,2021,fallen360,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
 CWD40_2021_fallen.txt,2021,fallen361,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
 CWD40_2021_fallen.txt,2021,fallen362,code_of_piece,20.1,20-1,,LP,"misstype, incorrect/missing character"
-CWD40_2021_fallen.txt,2021,fallen321,diameter_two.mm,44379,2.7,,LP,"misstype, incorrect/missing character"
+CWD40_2021_fallen.txt,2021,fallen321,inclination,44379,2.7,,LP,"misstype, incorrect/missing character"
 CWD40_2021_standing.txt,2021,standing197,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
 CWD40_2021_standing.txt,2021,standing199,code_of_piece,19.1,19-1,,LP,"misstype, incorrect/missing character"
 CWD40_2021_standing.txt,2021,standing198,code_of_piece,21.1,21-1,,LP,"misstype, incorrect/missing character"
@@ -161,13 +161,13 @@ CWD40_2024_lessstanding.txt,2024,lessstanding067,year,,2024,,LP,missing value
 CWD40_2024_lessstanding.txt,2024,lessstanding023,observer,v,V,,LP,capitalization
 CWD40_2018_fallen.txt,2018,fallen273,MS,*,-,,LP,from notes
 CWD40_2018_fallen.txt,2018,fallen273,MC,-,*,,LP,from notes
-CWD40_2018_standing.txt,2018,standing027,diameter_two.mm,,860,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing027,diameter_two.mm,,860,,LP,missing from correct column
 CWD40_2018_standing.txt,2018,standing056,transect_section_letter,K,J,,LP,from notes
-CWD40_2018_standing.txt,2018,standing106,diameter_two.mm,,868,,LP,missing from correct column 
-CWD40_2018_standing.txt,2018,standing136,diameter_two.mm,,945,,LP,missing from correct column 
-CWD40_2018_standing.txt,2018,standing148,diameter_two.mm,,1015,,LP,missing from correct column 
-CWD40_2018_standing.txt,2018,standing166,diameter_two.mm,,783,,LP,missing from correct column 
-CWD40_2018_standing.txt,2018,standing177,diameter_two.mm,,648,,LP,missing from correct column 
+CWD40_2018_standing.txt,2018,standing106,diameter_two.mm,,868,,LP,missing from correct column
+CWD40_2018_standing.txt,2018,standing136,diameter_two.mm,,945,,LP,missing from correct column
+CWD40_2018_standing.txt,2018,standing148,diameter_two.mm,,1015,,LP,missing from correct column
+CWD40_2018_standing.txt,2018,standing166,diameter_two.mm,,783,,LP,missing from correct column
+CWD40_2018_standing.txt,2018,standing177,diameter_two.mm,,648,,LP,missing from correct column
 CWD40_2018_lessstanding.txt,2018,lessstanding074,transect_section_letter,K,N,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen057,inclination,Hongos. Es TT y no RT.  140 grados,140,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen279,transect_section_letter,O,N,,LP,from notes
@@ -275,7 +275,7 @@ CWD40_2022_fallen.txt,2022,fallen183,diameter_width_prior,440,477,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen060,orientation_degrees,340,30,,LP,from notes
 CWD40_2020_fallen.txt,2020,fallen061,orientation_degrees,340,31,,LP,from notes
 CWD40_2021_fallen.txt,2021,fallen071,orientation_degrees,340,32,,LP,from notes
-CWD40_2019_fallen.txt,2019,fallen060,inclination,43586.0,1.5,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen060,inclination,43586,1.5,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen051,orientation_degrees,270,90,,LP,from notes
 CWD40_2020_fallen.txt,2020,fallen055,orientation_degrees,270,80,,LP,from notes
 CWD40_2021_fallen.txt,2021,fallen064,orientation_degrees,260,80,,LP,from notes
@@ -288,11 +288,11 @@ CWD40_2021_fallen.txt,2021,fallen290,transect_section_letter,O,N,,LP,from notes
 CWD40_2022_fallen.txt,2022,fallen313,transect_section_letter,O,N,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen194,transect_section_letter,J,F,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen170,orientation_degrees,300,210,,LP,from notes
-CWD40_2019_fallen.txt,2019,fallen170,inclination,43586.0,1.5,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen170,inclination,43586,1.5,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen069,orientation_degrees,300,210,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen029,orientation_degrees,270,345,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen028,orientation_degrees,270,343,,LP,from notes
-CWD40_2019_fallen.txt,2019,fallen057,inclination,140.0,,,LP,from notes
+CWD40_2019_fallen.txt,2019,fallen057,inclination,140,,,LP,from notes
 CWD40_2017_fallen.txt,2017,fallen281,MC,,*,,LP,from notes
 CWD40_2019_fallen.txt,2019,fallen288,MC,,*,,LP,from notes
 CWD40_2017_fallen.txt,2017,fallen281,MS,*,,,LP,from notes
@@ -308,7 +308,6 @@ CWD40_2022_standing.txt,2022,standing139,tag,147585,147565,,LP,from notes
 CWD40_2024_standing.txt,2024,standing082,tag,147585,147565,,LP,from notes
 CWD40_2021_standing.txt,2021,standing059,code_of_piece,21-1,21-2,,LP,from notes
 CWD40_2020_standing.txt,2020,standing072,transect_section_letter,J,K,,LP,from notes
-CWD40_2021_standing.txt,2021,standing086,transect_section_letter,J,K,,LP,from notes
 CWD40_2022_standing.txt,2022,standing095,transect_section_letter,J,K,,LP,from notes
 CWD40_2023_standing.txt,2023,standing077,transect_section_letter,J,K,,LP,from notes
 CWD40_2018_standing.txt,2018,standing102,tag,152436,152736,,LP,from notes
@@ -331,7 +330,6 @@ CWD40_2020_fallen.txt,2020,fallen003,code_of_piece,7.1,7-1,,LP,misstype
 CWD40_2022_fallen.txt,2022,fallen003,code_of_piece,7.1,7-1,,LP,misstype
 CWD40_2022_fallen.txt,2022,fallen004,code_of_piece,21.1,21-1,,LP,misstype
 CWD40_2023_fallen.txt,2023,fallen348,code_of_piece,22.2,22-2,,LP,misstype
-CWD40_2024_fallen.txt,2024,fallen302,year,2025,2024,,LP,misstype
 CWD40_2024_fallen.txt,2025,fallen302,code_of_piece,20.1,20-1,,LP,misstype
 CWD40_2017_fallen.txt,2017,fallen234,RT,tronco tronco sin corteza,,,LP,Improve entry format consistancy
 CWD40_2017_fallen.txt,2017,fallen235,RT,tronco tronco sin corteza,,,LP,Improve entry format consistancy
@@ -415,7 +413,7 @@ CWD40_2018_fallen.txt,2018,fallen107,diameter_width.mm,,406,,LP,piece was labell
 CWD40_2018_fallen.txt,2018,fallen108,diameter_width_prior,406,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2018_fallen.txt,2018,fallen110,diameter_width.mm,,441,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2018_fallen.txt,2018,fallen110,diameter_width_prior,441,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
-CWD40_2017_standing.txt,2017,standing023,POM,0 50,0.50,,LP,missing decimal
+CWD40_2017_standing.txt,2017,standing023,POM,0 50,0.5,,LP,missing decimal
 CWD40_2017_standing.txt,2017,standing030,diameter_one.mm,,563,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2017_standing.txt,2017,standing030,diameter_prior,563,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2017_standing.txt,2017,standing146,diameter_one.mm,,275,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
@@ -424,7 +422,7 @@ CWD40_2021_standing.txt,2021,standing022,diameter_one.mm,,353,,LP,piece was labe
 CWD40_2021_standing.txt,2021,standing022,diameter_prior,353,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2017_standing.txt,2017,standing030,diameter_one.mm,,563,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2017_standing.txt,2017,standing030,diameter_prior,563,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
-CWD40_2017_standing.txt,2017,standing041,height,69.00,0.69,,LP,decimal in wrong place
+CWD40_2017_standing.txt,2017,standing041,height,69,0.69,,LP,decimal in wrong place
 CWD40_2018_standing.txt,2018,standing046,diameter_one.mm,,322,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2018_standing.txt,2018,standing046,diameter_prior,322,,,LP,piece was labelled as first occurance but had no value in new diameter and did have it in prior- highly likely to be new diameter but into old
 CWD40_2020_standing.txt,2020,standing123,POM,1.5,3.5,,LP,fom notes
@@ -465,44 +463,44 @@ CWD40_2022_fallen.txt,2022,fallen297,code_of_piece,22-1,22-2,,LP,Incorrect code 
 CWD40_2023_fallen.txt,2023,fallen260,code_of_piece,22-1,22-2,,LP,Incorrect code of piece
 CWD40_2024_fallen.txt,2024,fallen227,code_of_piece,22-1,22-2,,LP,Incorrect code of piece
 CWD40_2023_fallen.txt,2023,fallen347,code_of_piece,22-2,22-1,,LP,Incorrect code of piece
-CWD40_2024_standing.txt,2024,standing131,diameter_width.mm,210,231,,LP,Switched measurements
-CWD40_2024_standing.txt,2024,standing131,diameter_height.mm,231,210,,LP,Switched measurements
-CWD40_2017_fallen.txt,2017,fallen137,code_of_piece,,9.1,,LP ,missing code
-CWD40_2017_fallen.txt,2017,fallen138,code_of_piece,,7.1,,LP ,missing code
-CWD40_2018_fallen.txt,2018,fallen134,code_of_piece,,7.1,,LP ,missing code
-CWD40_2017_fallen.txt,2017,fallen223,code_of_piece,,7.1,,LP ,missing code
-CWD40_2017_fallen.txt,2017,fallen246,code_of_piece,,6.1,,LP ,missing code
-CWD40_2018_fallen.txt,2018,fallen239,code_of_piece,,6.1,,LP ,missing code
-CWD40_2017_fallen.txt,2017,fallen275,code_of_piece,,9.3,,LP ,missing code
-CWD40_2018_fallen.txt,2018,fallen265,code_of_piece,,9.3,,LP ,missing code
-CWD40_2019_fallen.txt,2019,fallen280,code_of_piece,9-1,9.3,,LP ,missing code
-CWD40_2020_fallen.txt,2020,fallen266,code_of_piece,9-1,9.3,,LP ,missing code
-CWD40_2021_fallen.txt,2021,fallen291,code_of_piece,9-1,9.3,,LP ,missing code
-CWD40_2022_fallen.txt,2022,fallen314,code_of_piece,9-1,9.3,,LP ,missing code
-CWD40_2023_fallen.txt,2023,fallen272,code_of_piece,9-1,9.3,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing043,code_of_piece,,5.1,,LP ,missing code
-CWD40_2018_standing.txt,2018,standing048,code_of_piece,,5.1,,LP ,missing code
-CWD40_2019_standing.txt,2019,standing046,code_of_piece,,5.1,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing046,code_of_piece,,5.1,,LP ,missing code
-CWD40_2018_standing.txt,2018,standing052,code_of_piece,,5.1,,LP ,missing code
-CWD40_2019_standing.txt,2019,standing050,code_of_piece,,5.1,,LP ,missing code
-CWD40_2020_standing.txt,2020,standing050,code_of_piece,,5.1,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing050,code_of_piece,,4.1,,LP ,missing code
-CWD40_2018_standing.txt,2018,standing054,code_of_piece,,4.1,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing057,code_of_piece,,4.1,,LP ,missing code
-CWD40_2018_standing.txt,2018,standing060,code_of_piece,,4.1,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing065,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
-CWD40_2018_standing.txt,2018,standing069,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
-CWD40_2019_standing.txt,2019,standing067,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
-CWD40_2020_standing.txt,2020,standing066,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
-CWD40_2021_standing.txt,2021,standing079,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
-CWD40_2022_standing.txt,2022,standing085,code_of_piece,6-1,5.1,,LP ,Incorrect code of piece
-CWD40_2017_standing.txt,2017,standing070,code_of_piece,,5.1,,LP ,missing code
-CWD40_2018_standing.txt,2018,standing073,code_of_piece,,5.1,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing082,code_of_piece,,4.1,,LP ,missing code
-CWD40_2018_standing.txt,2018,standing083,code_of_piece,,4.1,,LP ,missing code
-CWD40_2017_standing.txt,2017,standing099,code_of_piece,7-1,6.1,,LP ,Incorrect code of piece
-CWD40_2017_standing.txt,2017,standing169,code_of_piece,,3.1,,LP ,missing code
+CWD40_2024_standing.txt,2024,standing131,diameter_one.mm,210,231,,LP,Switched measurements
+CWD40_2024_standing.txt,2024,standing131,diameter_two.mm,231,210,,LP,Switched measurements
+CWD40_2017_fallen.txt,2017,fallen137,code_of_piece,,9.1,,LP,missing code
+CWD40_2017_fallen.txt,2017,fallen138,code_of_piece,,7.1,,LP,missing code
+CWD40_2018_fallen.txt,2018,fallen134,code_of_piece,,7.1,,LP,missing code
+CWD40_2017_fallen.txt,2017,fallen223,code_of_piece,,7.1,,LP,missing code
+CWD40_2017_fallen.txt,2017,fallen246,code_of_piece,,6.1,,LP,missing code
+CWD40_2018_fallen.txt,2018,fallen239,code_of_piece,,6.1,,LP,missing code
+CWD40_2017_fallen.txt,2017,fallen275,code_of_piece,,9.3,,LP,missing code
+CWD40_2018_fallen.txt,2018,fallen265,code_of_piece,,9.3,,LP,missing code
+CWD40_2019_fallen.txt,2019,fallen280,code_of_piece,9-1,9.3,,LP,missing code
+CWD40_2020_fallen.txt,2020,fallen266,code_of_piece,9-1,9.3,,LP,missing code
+CWD40_2021_fallen.txt,2021,fallen291,code_of_piece,9-1,9.3,,LP,missing code
+CWD40_2022_fallen.txt,2022,fallen314,code_of_piece,9-1,9.3,,LP,missing code
+CWD40_2023_fallen.txt,2023,fallen272,code_of_piece,9-1,9.3,,LP,missing code
+CWD40_2017_standing.txt,2017,standing043,code_of_piece,,5.1,,LP,missing code
+CWD40_2018_standing.txt,2018,standing048,code_of_piece,,5.1,,LP,missing code
+CWD40_2019_standing.txt,2019,standing046,code_of_piece,,5.1,,LP,missing code
+CWD40_2017_standing.txt,2017,standing046,code_of_piece,,5.1,,LP,missing code
+CWD40_2018_standing.txt,2018,standing052,code_of_piece,,5.1,,LP,missing code
+CWD40_2019_standing.txt,2019,standing050,code_of_piece,,5.1,,LP,missing code
+CWD40_2020_standing.txt,2020,standing050,code_of_piece,,5.1,,LP,missing code
+CWD40_2017_standing.txt,2017,standing050,code_of_piece,,4.1,,LP,missing code
+CWD40_2018_standing.txt,2018,standing054,code_of_piece,,4.1,,LP,missing code
+CWD40_2017_standing.txt,2017,standing057,code_of_piece,,4.1,,LP,missing code
+CWD40_2018_standing.txt,2018,standing060,code_of_piece,,4.1,,LP,missing code
+CWD40_2017_standing.txt,2017,standing065,code_of_piece,6-1,5.1,,LP,Incorrect code of piece
+CWD40_2018_standing.txt,2018,standing069,code_of_piece,6-1,5.1,,LP,Incorrect code of piece
+CWD40_2019_standing.txt,2019,standing067,code_of_piece,6-1,5.1,,LP,Incorrect code of piece
+CWD40_2020_standing.txt,2020,standing066,code_of_piece,6-1,5.1,,LP,Incorrect code of piece
+CWD40_2021_standing.txt,2021,standing079,code_of_piece,6-1,5.1,,LP,Incorrect code of piece
+CWD40_2022_standing.txt,2022,standing085,code_of_piece,6-1,5.1,,LP,Incorrect code of piece
+CWD40_2017_standing.txt,2017,standing070,code_of_piece,,5.1,,LP,missing code
+CWD40_2018_standing.txt,2018,standing073,code_of_piece,,5.1,,LP,missing code
+CWD40_2017_standing.txt,2017,standing082,code_of_piece,,4.1,,LP,missing code
+CWD40_2018_standing.txt,2018,standing083,code_of_piece,,4.1,,LP,missing code
+CWD40_2017_standing.txt,2017,standing099,code_of_piece,7-1,6.1,,LP,Incorrect code of piece
+CWD40_2017_standing.txt,2017,standing169,code_of_piece,,3.1,,LP,missing code
 CWD40_2017_standing.txt,2017,standing054,branches,1,2,,LP,From notes
 CWD40_2017_standing.txt,2017,standing055,branches,1,2,,LP,From notes
 CWD40_2017_standing.txt,2017,standing119,branches,,2,,LP,From notes
@@ -514,21 +512,21 @@ CWD40_2018_standing.txt,2018,standing012,branches,,2,,LP,From notes
 CWD40_2018_standing.txt,2018,standing014,branches,,1,,LP,From notes
 CWD40_2018_standing.txt,2018,standing149,branches,1,2,,LP,From notes
 CWD40_2024_standing.txt,2024,standing059,height,220,10,,LP,decimal in wrong place
-CWD40_2023_standing.txt,2023,standing101,height,110.0,1.1,,LP,decimal in wrong place
-CWD40_2023_standing.txt,2023,standing128,height,100.00,1.0,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing101,height,110,1.1,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing128,height,100,1,,LP,decimal in wrong place
 CWD40_2024_standing.txt,2024,standing120,height,104,1.4,,LP,decimal in wrong place
-CWD40_2023_standing.txt,2023,standing180,height,116.0,1.16,,LP,decimal in wrong place
-CWD40_2024_standing.txt,2024,standing143,height,100.0,1.0,,LP,decimal in wrong place
-CWD40_2023_standing.txt,2023,standing181,height,100.0,1.0,,LP,decimal in wrong place
-CWD40_2024_standing.txt,2024,standing022,height,,9.40,,LP,"missing height, assigned previous one"
-CWD40_2024_standing.txt,2024,standing038,height,,3.90,,LP,"missing height, assigned previous one"
-CWD40_2020_standing.txt,2020,standing099,height,,7.00,,LP,"missing height, assigned previous one"
+CWD40_2023_standing.txt,2023,standing180,height,116,1.16,,LP,decimal in wrong place
+CWD40_2024_standing.txt,2024,standing143,height,100,1,,LP,decimal in wrong place
+CWD40_2023_standing.txt,2023,standing181,height,100,1,,LP,decimal in wrong place
+CWD40_2024_standing.txt,2024,standing022,height,,9.4,,LP,"missing height, assigned previous one"
+CWD40_2024_standing.txt,2024,standing038,height,,3.9,,LP,"missing height, assigned previous one"
+CWD40_2020_standing.txt,2020,standing099,height,,7,,LP,"missing height, assigned previous one"
 CWD40_2024_standing.txt,2024,standing088,height,,1.3,,LP,"missing height, assigned previous one"
-CWD40_2017_standing.txt,2017,standing123,height,,4.90,,LP,"missing height, assigned previous one"
-CWD40_2024_standing.txt,2024,standing103,height,,25.20,,LP,"missing height, assigned previous one"
-CWD40_2017_standing.txt,2017,standing152,height,,8.30,,LP,"missing height, assigned previous one"
+CWD40_2017_standing.txt,2017,standing123,height,,4.9,,LP,"missing height, assigned previous one"
+CWD40_2024_standing.txt,2024,standing103,height,,25.2,,LP,"missing height, assigned previous one"
+CWD40_2017_standing.txt,2017,standing152,height,,8.3,,LP,"missing height, assigned previous one"
 CWD40_2024_standing.txt,2024,standing127,height,,0.54,,LP,"missing height, assigned previous one"
-CWD40_2022_standing.txt,2022,standing056,height,,19.10,,LP,"missing height, assigned previous one"
+CWD40_2022_standing.txt,2022,standing056,height,,19.1,,LP,"missing height, assigned previous one"
 CWD40_2020_standing.txt,2020,standing076,,,,y,LP,decomposed
 CWD40_2021_standing.txt,2021,standing093,,,,y,LP,decomposed
 CWD40_2022_standing.txt,2022,standing106,,,,y,LP,decomposed
@@ -537,7 +535,6 @@ CWD40_2021_fallen.txt,2021,fallen050,,,,y,LP,decomposed
 CWD40_2022_fallen.txt,2022,fallen055,,,,y,LP,decomposed
 CWD40_2019_fallen.txt,2019,fallen071,,,,y,LP,decomposed
 CWD40_2020_fallen.txt,2020,fallen134,,,,y,LP,decomposed
-CWD40_2024_fallen.txt,2024,fallen192,,,,y,LP,decomposed
 CWD40_2023_fallen.txt,2023,fallen230,,,,y,LP,decomposed
 CWD40_2017_fallen.txt,2017,fallen221,code_of_piece,9-3,9.2,,LP,incorrect code of piece
 CWD40_2018_fallen.txt,2018,fallen218,code_of_piece,9-3,9.2,,LP,incorrect code of piece
@@ -548,21 +545,21 @@ CWD40_2022_fallen.txt,2022,fallen261,code_of_piece,9-3,9.2,,LP,incorrect code of
 CWD40_2023_fallen.txt,2023,fallen236,,,,y,LP,decomposed
 CWD40_2020_standing.txt,2020,standing006,height,,15.8,,LP,decomposed
 CWD40_2017_standing.txt,2017,standing175,diameter_one.mm,230,,,LP,decomposed
-CWD40_2023_lessstanding.txt,2023,lessstanding060,diameter_one.mm,,61.5,,LP,missing values 
-CWD40_2024_lessstanding.txt,2024,lessstanding060,height,,1.1,,LP,missing values 
-CWD40_2017_lessstanding.txt,2017,lessstanding075,diameter_one.mm,,24.07,,LP,missing values 
-CWD40_2023_lessstanding.txt,2023,lessstanding107,diameter_one.mm,,69,,LP,missing values 
-CWD40_2023_lessstanding.txt,2023,lessstanding107,height,,6.5,,LP,missing values 
+CWD40_2023_lessstanding.txt,2023,lessstanding060,diameter_one.mm,,61.5,,LP,missing values
+CWD40_2024_lessstanding.txt,2024,lessstanding060,height,,1.1,,LP,missing values
+CWD40_2017_lessstanding.txt,2017,lessstanding075,diameter_one.mm,,24.07,,LP,missing values
+CWD40_2023_lessstanding.txt,2023,lessstanding107,diameter_one.mm,,69,,LP,missing values
+CWD40_2023_lessstanding.txt,2023,lessstanding107,height,,6.5,,LP,missing values
 CWD40_2017_fallen.txt,2017,fallen086,MS,*,,,LP,Mutaully exclusive but both assigned TRUE
 CWD40_2019_fallen.txt,2019,fallen100,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
 CWD40_2019_fallen.txt,2019,fallen090,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
 CWD40_2022_fallen.txt,2022,fallen068,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
 CWD40_2024_fallen.txt,2024,fallen065,MC,*,,,LP,Mutaully exclusive but both assigned TRUE
 CWD40_2023_standing.txt,2023,standing134,diameter_one.mm,4210,1620,,LP,"Measured in buttress, using last census dbh"
-CWD40_2023_standing.txt,2023,standing134,POM,1.30,10.7,,LP,"Measured in buttress, using last census dbh"
-CWD40_2023_standing.txt,2023,standing179,POM,1.30,7.05,,LP,"Measured in buttress, using last census dbh"
+CWD40_2023_standing.txt,2023,standing134,POM,1.3,10.7,,LP,"Measured in buttress, using last census dbh"
+CWD40_2023_standing.txt,2023,standing179,POM,1.3,7.05,,LP,"Measured in buttress, using last census dbh"
 CWD40_2024_standing.txt,2024,standing101,diameter_one.mm,4270,1620,,LP,"Measured in buttress, using last census dbh"
 CWD40_2024_standing.txt,2024,standing140,diameter_one.mm,4000,1914.53,,LP,"Measured in buttress, using last census dbh"
-CWD40_2024_standing.txt,2024,standing101,POM,1.30,10.7,,LP,"Measured in buttress, using last census dbh"
-CWD40_2024_standing.txt,2024,standing140,POM,1.30,7.05,,LP,"Measured in buttress, using last census dbh"
+CWD40_2024_standing.txt,2024,standing101,POM,1.3,10.7,,LP,"Measured in buttress, using last census dbh"
+CWD40_2024_standing.txt,2024,standing140,POM,1.3,7.05,,LP,"Measured in buttress, using last census dbh"
 CWD40_2023_standing.txt,2023,standing179,diameter_one.mm,,1948,,LP,4070 fromnotes but measured in the buttress

@@ -1,0 +1,34 @@
+﻿column,data_type,units,definition,NA_meaning,years_measured,processed_CWD40_fallen_17to24.csv,processed_CWD40_standing_17to24.csv,FWD40_bci50_standing_09to24.csv
+month,integer,month,Month of data collection (1 to 12).,,All,TRUE,TRUE,TRUE
+day,integer,day,Day of the month of data collection (1 to 31).,,All,TRUE,TRUE,TRUE
+year,integer,years,Year of data collection (2009 to 2024).,,All,TRUE,TRUE,TRUE
+subplot_code,string,NA,"Code representing the  center coordinates (using local 20 m coordinate system) of the 40x40 m subplot within the BCI 50-ha plot; for example 24,10 would indicate a plot centered at coordinates 480,200 within the plot.",,All,TRUE,TRUE,TRUE
+transect_section_letter,character,NA,Letter representing the transect section within the subplot. A to P.,,All,TRUE,TRUE,TRUE
+code_of_piece ,string,NA,"A unique identifier composed of the subplot, the transect letter, and a unique two-digit combination assigned to each piece; for example  01,21G.9.1 means the piece is in the subplot with the centre coordinates 01,21 on transect G and is the first piece on this transect to appear in 2009 (9.1).",not measured/recorded,ALL,TRUE,TRUE,TRUE
+diameter_width.mm,numeric,milimiteres (mm),Diameter of the piece measured horizontally to the ground at the point where it intersects the transect (only for fallen woody debris).,not measured/recorded,ALL,TRUE,FALSE,FALSE
+diameter_height.mm,numeric,milimiteres (mm),Diameter of the piece measured perpendicular to the ground at the point where it intersects the transect (only for fallen woody debris).,not measured/recorded,2019-2024,TRUE,FALSE,FALSE
+penetration.200mm,integer,milimiteres (mm),"Penetration depth after 20 hits with the penetrometer, indicating how far the penetrometer has entered the piece  (Range 0 to 200).",not measured/recorded,2009-2020,TRUE,TRUE,FALSE
+penetration.200mm.1,integer,NA,Number of penetrometer hits required to achieve full 200 mm penetration of the piece. ,not measured/recorded,2009-2021,TRUE,TRUE,FALSE
+orientation_degrees,integer,degrees,"Orientation of the central axis of the piece relative to North, measured with a compass (only for fallen pieces).  For example, if the piece is oriented due east, this would take value 90. ",not measured/recorded,2019-2024,TRUE,FALSE,FALSE
+inclination,numeric,degrees,The inclination relative to horizontal of the central axis of the piece at the point where it intersects the transect (only for falled woody debris).,not measured/recorded,2019-2024,TRUE,FALSE,FALSE
+branchfall,integer,NA,"Code indicating the part of the tree that the piece of wood comes (only for fallen woody debris). 0 = branchfall, 1 = treefall, 2 = unknown.",not measured/recorded,ALL,TRUE,FALSE,FALSE
+uniqid,string,NA,ID assigned to each row in the data unique to each row for each year.,not measured/recorded,ALL,TRUE,TRUE,TRUE
+tag,string,NA,The tag number of the tree from which the woody debris originated.  Tag numbers are integers of up to 6 digits.  NA if the tag was not found or the corresponding tree could not be determined.,not measured/recorded,All,TRUE,TRUE,TRUE
+notes,string,NA,Additional notes made by the field team (in Spanish).,not measured/recorded,All,TRUE,TRUE,TRUE
+observer,string,NA,Names or initials of the person or persons collecting the data. ,not measured/recorded,ALL,TRUE,TRUE,TRUE
+RT,logical,NA,The piece is a branch that is connected to a part of a trunk.,not measured/recorded,2014-2024,TRUE,FALSE,FALSE
+RR,logical,NA,The piece is a branch that is not connected to part of a  trunk.,not measured/recorded,2014-2024,TRUE,FALSE,FALSE
+TT,logical,NA,The piece is a trunk or part of a trunk.,not measured/recorded,2014-2024,TRUE,FALSE,FALSE
+TC,logical,NA,The piece is from a fallen tree.,not measured/recorded,2014-2024,TRUE,FALSE,FALSE
+TS,logical,NA,The piece is associated with a standing dead tree.  ,not measured/recorded,2014-2024,TRUE,FALSE,FALSE
+TV,logical,NA,The piece is from a tree that is still alive and standing.,not measured/recorded,2014-2024,TRUE,FALSE,FALSE
+MC,logical,NA,Bark present in the area where the piece is measured. ,not measured/recorded,2014-2024,TRUE,TRUE,FALSE
+MS,logical,NA,Bark not present in the area where the piece is measured. ,not measured/recorded,2014-2024,TRUE,TRUE,FALSE
+suspended,logical,NA,The piece does not touch the ground at the point where it intersects the transect.,not measured/recorded,2019-2024,TRUE,FALSE,FALSE
+soil_contact,logical,NA,The piece touches the ground at the point where it intersects the transect. ,not measured/recorded,2019-2024,TRUE,FALSE,FALSE
+diameter_one.mm,numeric,milimiteres (mm),The diameter at breast height (standing woody debris only).,not measured/recorded,ALL,FALSE,TRUE,TRUE
+diameter_two.mm,numeric,milimiteres (mm),"The second  diameter at breast height, measured perpendicular to the first (standing woody debris only).",not measured/recorded,2018-2024,FALSE,TRUE,FALSE
+height,numeric,meters (m),Height of the standing piece (standing woody debris only).,not measured/recorded,ALL,FALSE,TRUE,TRUE
+POM,numeric,meters (m),Height at which the diameter was measured  (standing woody debris only).,not measured/recorded,ALL,FALSE,TRUE,TRUE
+branches,integer,NA,"Ordinal variable indicating the proportion of branches remaining: 0 is 90-100%, 1 is 10-90% , 2 is 0-10% of branches remaining.",not measured/recorded,ALL,FALSE,TRUE,TRUE
+coded_notes,character,NA,Codes representing condition of piece coded from notes.  VIVO=The piece is alive.  EX = The piece was not found. DP =The piece diameter is below 200m or fully decomposed. PN =The piece was present but could not be measured that year. i.e it was covered by another piece. AA =The piece has cracked and is opening. SD=The piece is breaking into little pieces. CH =The piece is hollow. CAIDO =The piece has fallen. BUTTRESS= The diameter of the standing piece was measured in the buttress and so diameter was taken from the DBH of last census for that tree. ,,ALL,TRUE,TRUE,FALSE

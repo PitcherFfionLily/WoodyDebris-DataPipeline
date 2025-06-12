@@ -1,2 +1,0 @@
-"file"	"code_of_piece"	"year"	"notes_new"	"uniqid"	"EX"	"DP"	"PN"	"AA"	"SD"	"CH"	"CAIDO"	"VIVO"	"bark_present"	"bark_absent"	"BUTTRESS"
-"CWD40_2024_fallen.txt"	"32,07O.19.1"	2024	"No encontrado, todo quedÃ³ bajo el Ceiba"	"fallen192"	""	""	"*"	""	""	""	""	""	NA	NA	""

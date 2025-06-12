@@ -1,2 +1,0 @@
-"file"	"year"	"uniqid"	"Field"	"OldValue"	"NewValue"	"Blank"	"Observer"	"Comment"	"temp"
-"CWD40_2024_fallen.txt"	2024	"fallen302"	"year"	"2025"	"2024"	""	"LP"	"misstype"	"2024_fallen302"
