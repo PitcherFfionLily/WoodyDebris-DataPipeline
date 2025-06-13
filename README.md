@@ -1,4 +1,4 @@
-# Data processing methods and code for deadwood dynamics census data, Barro Colorado Island, Panama” 
+# Data processing methods and code for deadwood dynamics census data, Barro Colorado Island, Panama.
 
 This repository contains example datasets and code for cleaning, processing, and analyzing woody debris data from BCI50ha, Panama. It provides a streamlined workflow for handling the raw data, including functions for preprocessing, calculations to estimate intennual woody debris stocks and fluxes and visualization. 
 
@@ -21,18 +21,18 @@ File structure and details about data processing are given in the readme file.
 ### Code & Data files
 ### **clean0_bci50deadwood_rawtoformatted.rmd**
 
-The aim of this file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc. and outputs individual .txt files for each census (Fallen CWD, Standing CWD and Standing FWD) for each year.
+The aim of this Rmarkdown file is to format raw .xlx data including; removing special characters, changing column heading to be consistent across years, fixing errors with values having been converted to dates, checking for duplicate entries etc. The code outputs individual .txt files for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. .xlx files for each year are read in individually.
 
 Input files:
-- **Data0_Raw/**: This Folder contains the eight raw .xlx files for the woody debris census for each year (2017-2024). Each file contains multiple sheets including a seperate sheet for Fallen CWD, Standing CWD and Standing FWD. These raw files are inputed into the rmd file to be formatted individually, the code does not run automated for each file as column heading and structure vary for each file.
-- **Corrections/colnamechange**: This folder contains eight .txt files containing the origional names of column headings which can be found in the raw data and corresponding new column headings. These files are inputed into the rmd to be used to change the column headings of the raw data.
+- **Data0_Raw/**: This Folder contains the eight raw .xlx files for the woody debris census for each year (2017-2024). Each file contains multiple sheets including a seperate sheet for Fallen CWD, Standing CWD and Standing FWD. These raw files are inputed into the rmd file to be formatted individually, the code does not run automated for each file as column heading and structure vary for each file. Within the cpde the raw file must be specified.
+- **Corrections/colnamechange**: This folder contains eight .txt files with the origional names of column headings in the raw data and corresponding new column headings. These files are inputed into the .rmd to be used to change the column headings of the raw data.
 
 Output:
 - **Data1_Formatted**: This folder contains the formatted  files  in the form of .txt generated from the clean0_bci50deadwood_rawtoformatted.rmd. There is an individual file for each census (Fallen CWD, Standing CWD and Standing FWD) for each year. 
 
 ### **clean1_bci50deadwood_formattedtocorrected.rmd**
 
-The aim of this file is to apply corrections to the formatted .txt files and merge data accross multiple censuses by sample codes (code_of_piece) for each census type (Fallen CWD, Standing CWD and Standing FWD), generating three .csv files, one for fallen CWD, one for standing CWD and  one for standing FWD. Corrections include, fixing typos and moving data which had been inputted incorrectly to the correct field, aligning data types, removing duplicates, removing occurances where the sample was <200mm from coarse woddy debris censuses or had fully decomposed etc. Additional codes are assigned to pieces based on descriptive terms in the notes column. Further details of corrections applied can be found the inputted corrections file (see below)
+The aim of this file is to apply corrections to the formatted .txt files and merge data accross multiple censuses by sample codes (code_of_piece) for each census type (Fallen CWD, Standing CWD and Standing FWD), generating three .csv files, one for fallen CWD, one for standing CWD and  one for standing FWD. Corrections include, fixing typos and moving data to the correct field, aligning data types, removing duplicates, removing occurances where the sample was <200mm from coarse woddy debris censuses or had fully decomposed etc. Additional codes are assigned to pieces based on descriptive terms in the notes column. Further details of corrections applied can be found the inputted corrections file (see below)
 
 
 Input:
@@ -40,7 +40,7 @@ Input:
 - **Corrections/bciCDW40Corrections_All.csv**: Contains individual row by row corrections for data across years. This file is inputed into the rmd to be used to apply the corrections.
   - *file* column specifies the formatted .txt file the correction is being applied to
   - *year* column specifies the year of the error
-  - *uniqid* column identifies the uniqid givento each rowwithin that data file
+  - *uniqid* column identifies the uniqid givento each row within that data file
   - *Field* column specifies the column the error to be corrected occured
   - *OldValue* the exisiting value that need to be changed
   - *NewValue* the correct value to be inserted
@@ -52,7 +52,7 @@ Input:
   - *colname* column specifies the column the error to be corrected occured
   - *OldValue* the exisiting value that need to be changed
   - *NewValue* the correct value to be inserted
-  - *notes* details of the cause of the error, why it must be changed.
+  - *notes* details of the cause of the error- why it must be changed.
 - **Corrections/newcodesadd_bci50ha.csv**:The file contains new descriptive codes for woodydebris samples translated from recurring descriptive notes in the raw data. This file is inputed into the rmd and adds new code columns to the input data. An astrix (*) is added for rows where the code is TRUE, as specified in the newcodesadd_bci50ha.csv file.
   - EX- The piece was not found
   - DP- The piece diameter is below 200m or fully decomposed.
@@ -60,7 +60,7 @@ Input:
   - AA- The piece has cracked and is opening
   - SD- The piece is breaking into little pieces
   - CH- The piece is hollow
-  - CAIDO- For standing pieces- the sample has now fallen
+  - CAIDO- For standing samples- the sample has now fallen
   - VIVO- the sample is actually alive
   - BUTTRESS- for standing pieces, the roots are buttressed and the DBH is measured above 1.3m
 - **Corrections/datatype_dyanmicWD.csv**:This file re-assigns data types of columns in the data across years. This ensures data is treated correctly and consistent across years so data can be merged correctly. This file is inputed into the rmd and formats the data into the correct data type.
@@ -76,18 +76,18 @@ Input:
 - **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. The two files for course woody debris only (both fallen and standing) are used for further calculation and analysis
 - **Dat0_Raw/LongT_CWD_2010.csv**: This folder contains data from a census in 2010 where samples were destructively sampled to measure and calculate dry and wet density and mass. This value is used in the rmd to model the relationship between actual density and predicted density from penetrometer measurements of samples in the field. This model allows density to be predicted for census data. See **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** for further details.
 Output:
-- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermadiate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes. Definitions of new columns generated can be found in **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
+- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermediate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes. Definitions of new columns generated in these data files can be found in the Appendix of **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
 
 ### **report_bci50CWD_2017-24.rmd**
 
-This file generated a report, including figures and tables reporting average estimates of coarse standing and falling woody debris stocks and inputs per ha for each subplot and across the 50 ha plot, BCI for each year. Subplot averages and annual averages are also outputted as .txt files, see below.
+This file generates a report, including figures and tables reporting average estimates of coarse standing and fallen woody debris stocks and inputs per ha for each subplot and across the 50 ha plot, BCI for each year. Subplot averages and annual averages are also outputted as .txt files, see below.
 
 Input:
-- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume with the purpose of being used to be inputted directly into report file for calculations to scale up measurements.
+- **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume with the purpose of being inputted directly into report file for calculations to scale up measurements.
 
 Output:
 - **report_bci50CWD_2017-24.html**: The html report file generated from the rmd that prints figures and tables that report stimates of coarse standing and falling woody debris stocks and inputs per ha.
-- **bci_CWD40_annual_estimation_17to24.txt**: txt file of subplot level estimates for woody debris stocks and inputs
+- **Output/bci_CWD40_annual_estimation_17to24.txt**: txt file of subplot level estimates for woody debris stocks and inputs
     - subplot_code: coordinates for the centre point of the subplot
     - yearcol: year
     - mass.Mg.ha: Estimated mass of woody debris in Mg per ha
@@ -95,7 +95,7 @@ Output:
     - input.mass.Mgha: Estimated input mass of woody debris in Mg per ha
     - input.vol.m3ha: Estimated input volume of woody debris in m3 per ha
     - type: whether the estimate is for fallen or standing stocks
-- **bci_CWD40_subplot_estimation_17to24.txt**: txt file of whole plot (50 ha) level estimates for woody debris stocks and inputs
+- **Output/bci_CWD40_subplot_estimation_17to24.txt**: txt file of whole plot (50 ha) level estimates for woody debris stocks and inputs
     - yearcol: year
     - mass.Mg.ha: Estimated mass of woody debris in Mg per ha
     - vol.m3.ha: Estimated volume of woody debris in m3 per ha
@@ -107,5 +107,5 @@ Output:
 
 **CWD_Dynamics_Protocol.pdf** contains the census protocol followed in collecting the data 
 
-**CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** contains a desription of the steps involved in calculating deadwood stocks and fluxes from the clean data
+**CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** contains a desription of the steps involved in calculating deadwood stocks and fluxes that is conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd** and **report_bci50CWD_2017-24.html** using the clean data in Data2_Corrected.
   
