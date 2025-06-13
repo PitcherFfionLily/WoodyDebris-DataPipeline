@@ -311,7 +311,7 @@ DECAYCALCULATION <- function(indata, variable, output) {
 ```{r}
   #decay
 fallen_data<-DECAYCALCULATION(fallen_data, diameter_width.mm, k.diameter.yr )
-fallen_data<-DECAYCALCULATION(fallen_data, pen_crossmass.kgm, k.csarea.yr ) 
+fallen_data<-DECAYCALCULATION(fallen_data, pen_crossmass.kgm, k.csmass.yr ) 
 standing_data<-DECAYCALCULATION(standing_data, volume_m3,k.volume.yr )
 standing_data<-DECAYCALCULATION(standing_data, AGB.kg.dry.mass, k.mass.yr )
 
