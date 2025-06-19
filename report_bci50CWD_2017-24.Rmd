@@ -452,7 +452,7 @@ rm(collection_summary)
 
 ### Calculations of CWD stocks and fluxes
 
-This report calculates annual stocks and fluxes of standing and fallen coarse woody debris. The data were formatted, cleaned and processed prior to loading loading into this report using the code **clean0_bci50deadwood_rawtoformatted.RMD** and **clean1_bci50deadwood_formattedtocorrected.Rmd**. Calculations for individual sample pieceswere made using code in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd** which also contains explanations of all calculations.  More information can be found in **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.  
+This report calculates annual stocks and fluxes of standing and fallen coarse woody debris. The data were formatted and cleaned prior to loading into this report using the code **clean0_bci50deadwood_rawtoformatted.RMD** and **clean1_bci50deadwood_formattedtocorrected.Rmd**. Calculations for individual sample pieces are conducted in **density_calculation_bci50deadwood_correctedtoprocessed.Rmd**. Explanations of all calculations and further information can be found in **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.  
 
 
 
@@ -472,7 +472,7 @@ year_standing<-merge(year_standing, year_standing_new, by="yearcol")
 
 
 ```{r, include=FALSE}
-#Creating .txt output files summarising CWD stocks and fluxes at subplot and whole-plot levels
+#Creating .txt output files summarizing CWD stocks and fluxes at subplot and whole-plot levels
 
 # Rename input columns for clarity
 RENAME<-function(indata){
@@ -557,7 +557,7 @@ rm(year_vol_fallen, year_mass_fallen, year_vol_standing, year_mass_standing,year
 
 **Table 2**
 
-Estimated mean stocks and fluxes of fallen and standing CWD calculated by first averaging over the one hundred 40 x 40 m dynamics plots, then averaging over years (2017-2024). Estimated total stocks of deadwood (Mean total), and estimated annual deadwood input for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated as mean stocks divided by the mean inputs.
+Estimated mean stocks and fluxes of fallen and standing CWD calculated by first averaging over the one hundred 40 x 40 m dynamics plots, then averaging over years (2017-2024). Estimated total stocks of deadwood (Mean Total), and estimated annual deadwood input (Mean Input) for both volume and mass per ha. Residence time represents the average residence time of dead wood in the plot which is calculated as mean stocks divided by the mean inputs.
 
 ```{r, echo=FALSE}
 # Display mean summary statistics in a table
@@ -664,6 +664,7 @@ scale_colour_manual(values=c("#009E73", "#882255"))+
     axis.text.x = element_text()  
   )
 ```
+
 **Figure 3** 
 
 
@@ -687,6 +688,7 @@ scale_colour_manual(values=c("#009E73", "#882255"))+
     axis.text.x = element_text()  
   )
 ```
+
 **Figure 4** 
 
 
@@ -717,7 +719,7 @@ ggplot(subplot_fallen, aes(x = log(mass.Mg.ha , base = 2), group=yearcol, fill =
 **Figure 5**
 
 
-Distribution of log₂-transformed total estimated mass of falle coarse woody debris (CWD) per subplot, coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.
+Distribution of log₂-transformed total estimated mass of fallen coarse woody debris (CWD) per subplot, coloured by year. The x-axis represents log₂-transformed mass (Mg ha⁻¹), and the y-axis shows the count of subplots within each bin.
 
 ```{r, echo=FALSE,results='hide', message=FALSE, warning=FALSE}
 # Plotting histogram of fallen CWD input mass per subplot, coloured by year (excluding 2017)
@@ -968,9 +970,6 @@ ggplot(mean_mass_by_year, aes(x =yearcol, y = mean_mass, fill = branchfall)) +
 **Figure 11**
 
 Mean total mass of fallen CWD (Mg ha⁻¹) per year, grouped by sample type (branch, trunk, unknown). Bars represent the stacked mean mass of each component, illustrating changes in the composition of fallen woody debris through time.
-
-rmarkdown::render("report_bci50CWD_2017-24.Rmd",
-output_file = "Output/report_bci50CWD_2017-24.html")
 
 
 
