@@ -1,13 +1,13 @@
 # Data processing methods and code for deadwood dynamics census data, Barro Colorado Island, Panama.
 
-This repository contains example datasets and code for cleaning, processing, and analyzing woody debris data from BCI50ha, Panama. It provides a streamlined workflow for handling the raw data, including functions for preprocessing, calculations to estimate intennual woody debris stocks and fluxes and visualization. 
+This repository contains example datasets and code for cleaning, processing, and analyzing woody debris data from the 50-ha plot on Barro Colorado Island, Panama. It provides a streamlined workflow for handling the raw data, including functions for preprocessing, calculations to estimate annual woody debris stocks and fluxes, and visualization. 
 
 ## Citation and License
 The code publication, which should be cited as follows:
 
 It is licensed under CC BY 4.0.
 
-The data used in this is part of the annual woody debris census data for a spatially stratified sample of the 50-ha plot on Barro Colorado Island, Panama. This census has been conducted annually since 2009 through 2024 (excluding 2011). The data included in this repository are solely for the purpose of demonstrating the workflow for handling annual woody debris census data. These datasets, covering the years 2017–2024, are not for analytical and publication. 
+The data used in this is part of the annual woody debris census data for a spatially stratified sample of the 50-ha plot on Barro Colorado Island, Panama. This census has been conducted annually from 2009 through 2025, with the exception of 2011. The data included in this repository are solely for the purpose of demonstrating the workflow for handling annual woody debris census data. These datasets, covering the years 2017–2024, are not for analysis and publication. 
 For complete datasets please refer to the following data publication:
 
 *Pablo Ramos, Paulino Villarreal, Lily F. Pitcher, and Helene C. Muller-Landau. 2025. Annual woody debris dynamics census data for the 50-ha plot on Barro Colorado Island, Panama. Smithsonian Research Data Repository. https://doi.org/10.60635/C3C884*
