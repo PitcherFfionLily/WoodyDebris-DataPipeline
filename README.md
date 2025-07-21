@@ -5,6 +5,8 @@ This repository contains example datasets and code for cleaning, processing, and
 ## Citation and License
 The code publication, which should be cited as follows:
 
+*Lily F. Pitcher, and Helene C. Muller-Landau. 2025. Data processing methods and code for deadwood dynamics census data, Barro Colorado Island, Panama , Zenodo*
+
 It is licensed under CC BY 4.0.
 
 The data used in this is part of the annual woody debris census data for a spatially stratified sample of the 50-ha plot on Barro Colorado Island, Panama. This census has been conducted annually from 2009 through 2025, with the exception of 2011. The data included in this repository are solely for the purpose of demonstrating the workflow for handling annual woody debris census data. These datasets, covering the years 2017–2024, are not for analysis and publication. 
