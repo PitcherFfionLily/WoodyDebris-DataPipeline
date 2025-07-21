@@ -42,7 +42,7 @@ Input:
   - *year* column specifies the year of the error.
   - *uniqid* column identifies the uniq ID given to each row within that data file.
   - *Field* column specifies the column the error to be corrected occured.
-  - *OldValue* the exisiting value that need to be changed.
+  - *OldValue* the exisiting value that needs to be changed.
   - *NewValue* the correct value to be inserted.
   - *Blank* specifies whether row needs to be removed entirely. blank=FALSE, Y=TRUE.
   - *Observer* initials of person who identified the error and applied the change.
@@ -50,12 +50,12 @@ Input:
 - **Corrections/masscorrect_deadwood_bci50ha.csv**: Contains corrections to applied for indivudal columns across whole dataset for cases where certain errors appear multiple times across the datasets. This file is inputed into the .rmd to be used to apply the corrections.
   - *file* column specifies the formatted .txt file the correction is being applied to.
   - *colname* column specifies the column the error to be corrected occured.
-  - *OldValue* the exisiting value that need to be changed.
+  - *OldValue* the exisiting value that needs to be changed.
   - *NewValue* the correct value to be inserted.
   - *notes* details of the cause of the error, why it must be changed.
-- **Corrections/newcodesadd_bci50ha.csv**:The file contains new descriptive codes for woodydebris samples translated from recurring descriptive notes in the raw data. This file is inputed into the .rmd and adds a new code columns to the input data named coded_notes. A letter based code is basted where it is TRUE, as specified in the newcodesadd_bci50ha.csv file.
+- **Corrections/newcodesadd_bci50ha.csv**:The file contains new descriptive codes for woodydebris samples translated from recurring descriptive notes in the raw data. This file is inputed into the .rmd and adds a new code columns to the input data named coded_notes. A letter based code is pasted where it is TRUE, as specified in the newcodesadd_bci50ha.csv file.
   - EX- The piece was not found
-  - DP- The piece diameter is below 200m or fully decomposed.
+  - DP- The piece diameter is below 200mm or fully decomposed.
   - PN- The piece was present but could not be measured that year. i.e it was covered by another piece
   - AA- The piece has cracked and is opening
   - SD- The piece is breaking into little pieces
@@ -63,10 +63,10 @@ Input:
   - CAIDO- For standing samples- the sample has now fallen
   - VIVO- the sample is actually alive
   - BUTTRESS- for standing pieces, the roots are buttressed and the DBH is measured above 1.3m
-- **Corrections/datatype_dyanmicWD.csv**: This file re-assigns data types of columns in the data across years. This ensures data is treated correctly and consistent across years so data can be merged correctly. This file is inputed into the .rmd and formats the data into the correct data type.
+- **Corrections/datatype_dyanmicWD.csv**: This file re-assigns data types of columns in the data across years. This ensures data is treated correctly and consistent across years so data can be merged. This file is inputed into the .rmd and formats the data into the correct data type.
   
  Output:
-- **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. As described above these files are generated from the clean1_bci50deadwood_formattedtocorrected.rmd. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **data_dictionary_woodydebrisBCI.csv** which defines the column heading for each census.
+- **Data2_Corrected**: This folder contains the formatted and cleaned data in the form of three .csv for the three census types across years. As described above these files are generated from the clean1_bci50deadwood_formattedtocorrected.rmd. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **data_dictionary_woodydebrisBCI.csv** which defines the column heading for each census.
 
 ### **density_calculation_bci50deadwood_correctedtoprocessed.rmd**
 
@@ -74,7 +74,7 @@ The aim of this file is to carry out a series of calculations that allow for est
 
 Input:
 - **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. The two files for CWD only (both fallen and standing) are used for further calculation and analysis
-- **Dat0_Raw/LongT_CWD_2010.csv**: This folder contains data from a census in 2010 where samples were destructively sampled to measure and calculate dry and wet density and mass. This value is used in the .rmd to model the relationship between sample density and  penetrometer measurements of samples in the field. This model allows density to be predicted for census data from pentrometer measurements. See **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** for further details.
+- **Dat0_Raw/LongT_CWD_2010.csv**: This folder contains data from a census in 2010 where samples were destructively sampled to measure and calculate dry and wet density and mass. This value is used in the .rmd to model the relationship between sample density and penetrometer measurements of samples in the field. This  allows density to be predicted for census data from pentrometer measurements. See **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** for further details.
 Output:
 - **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermediate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of internanual varaitions in stocks and fluxes. Definitions of new columns generated in these data files can be found in the Appendix of **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
 
@@ -92,15 +92,15 @@ Output:
     - yearcol: year.
     - mass.Mg.ha: Estimated mass of woody debris in Mg per ha.
     - vol.m3.ha: Estimated volume of woody debris in m3 per ha.
-    - input.mass.Mgha: Estimated input mass of woody debris in Mg per ha.
-    - input.vol.m3ha: Estimated input volume of woody debris in m3 per ha.
+    - input.mass.Mgha: Estimated annual input mass of woody debris in Mg per ha.
+    - input.vol.m3ha: Estimated annua; input volume of woody debris in m3 per ha.
     - type: whether the estimate is for fallen or standing stocks.
 - **Output/bci_CWD40_subplot_estimation_17to24.txt**: txt file of whole plot (50 ha) level estimates for woody debris stocks and inputs
     - yearcol: year.
     - mass.Mg.ha: Estimated mass of woody debris in Mg per ha.
     - vol.m3.ha: Estimated volume of woody debris in m3 per ha.
-    - input.mass.Mgha: Estimated input mass of woody debris in Mg per ha.
-    - input.vol.m3ha: Estimated input volume of woody debris in m3 per ha.
+    - input.mass.Mgha: Estimated annual input mass of woody debris in Mg per ha.
+    - input.vol.m3ha: Estimated annual input volume of woody debris in m3 per ha.
     - type: whether the estimate is for fallen or standing stocks.
 
 ## Other
