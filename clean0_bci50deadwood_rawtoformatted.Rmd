@@ -277,32 +277,6 @@ if (length(dupes[dupes==T])>0) {
 }
 ```
 
-#alternative merged function
-```{r}
-CHECKDUPLICATES<-function(indata, checkols, FNOUTDUPES) {
-#columns that if all match indicates a row is duplicated
-  dupes <- duplicated(indata[,checkcols])
-  if (length(dupes[dupes==T])>0) {
-    dupes2 <- duplicated(indata[,checkcols],fromLast =TRUE) 
-#check temp and check if there are duplicates, add copies to columns to remove in line by line corrections
-    temp <- indata[dupes|dupes2,] # get both copies of each duplicate
-    print(paste("Some rows are duplicates; check file",FNOUTDUPES))
-#write csv of dupes to check
-    write.csv(temp, FNOUTDUPES, row.names = FALSE)
-# Return duplicate rows to check
-    return(temp)
-    } else {
-      print("No duplicates found.")
-      return(NULL)
-    }
-  }
-
-checkcols <- c("year","tag","subplot_code","transect_section_letter","code_of_piece", "day","month","year")
-temp_fallen <- CHECKDUPLICATES(fallen, checkcols, FNOUTDUPES)
-temp_standing <- CHECKDUPLICATES(standing, checkcols, FNOUTDUPES)
-temp_lessstanding <- CHECKDUPLICATES(lessstanding, checkcols, FNOUTDUPES)
-```
-
 
 
 ```{r generatingformatteddata}
