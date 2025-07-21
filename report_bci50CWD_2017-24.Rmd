@@ -198,25 +198,25 @@ return(list(stem_count=stem_count, old_data=old_data, new_data=new_data))
 }
 
 flux_calculation <- function(indata) {
-  # Identify first year of measurements
+# Identify first year of measurements
   first_year <- min(indata$yearcol, na.rm = TRUE)
-  # Count total observations per year
+# Count total observations per year
   yearly_count <- indata %>%
     dplyr::group_by(yearcol) %>%
     dplyr::summarise(count_per_year = n(), .groups = "drop")
   
-  # Determine year of first appearance for each unique piece
+# Determine year of first appearance for each unique piece
   new_codes_by_year <- indata %>%
     arrange(yearcol) %>%
     dplyr::group_by(code_of_piece) %>%
     dplyr::mutate(first_appearance = min(yearcol)) %>%
     ungroup()
 
-  # Replace first_appearance == first_year with NA for new_data handling
+# Replace first_appearance == first_year with NA for new_data handling
   new_codes_by_year <- new_codes_by_year %>%
     dplyr::mutate(first_appearance = if_else(first_appearance == first_year, NA_integer_, first_appearance))
 
-  # Count new pieces by year (excluding first year)
+# Count new pieces by year (excluding first year)
   summary_new_codes <- new_codes_by_year %>%
     dplyr::group_by(yearcol) %>%
     dplyr::summarise(new_codes = sum(first_appearance == yearcol, na.rm = TRUE), .groups = "drop")
@@ -224,7 +224,7 @@ flux_calculation <- function(indata) {
   summary_new_codes <- yearly_count %>%
     dplyr::left_join(summary_new_codes, by = "yearcol")
 
-  # Separate new pieces and pieces already present for each year
+# Separate new pieces and pieces already present for each year
   old_data <- new_codes_by_year %>%
     dplyr::filter(is.na(first_appearance) | first_appearance < yearcol)
 
@@ -727,7 +727,6 @@ Distribution of log₂-transformed total estimated mass of fallen coarse woody d
 ggplot(subplot_fallen_new %>% filter(!yearcol=="2017"),aes(x = log(input.mass.Mgha , base = 2), group=yearcol, fill = as.factor(yearcol)))+
   geom_histogram(colour = "black", 
                  bins = 40, position="stack")+
- # facet_wrap("yearcol")+
   labs(title = "Distribution of estimated Input Mass of Fallen CWD", 
        fill="yearcol",
        y = "Count", 
@@ -751,7 +750,6 @@ Distribution of log₂-transformed input mass of fallen CWD per subplot (excludi
 ggplot(subplot_standing, aes(x = log(mass.Mg.ha , base = 2), group=yearcol, fill = as.factor(yearcol)))+
   geom_histogram(colour = "black", 
                  bins = 40, position="stack")+
- # facet_wrap("yearcol")+
   labs(title = "Distribution of estimated Standing CWD", 
        fill="yearcol",
        y = "Count", 
@@ -844,7 +842,6 @@ labs(title = "Temporal trajectories of mass of fallen CWD in subplots",
       y = expression(paste("Mass (Mgha"^{-1},")"))) +  
 theme_bw() +
 scale_x_continuous(breaks = seq(2017, 2024, by = 1))+
- # scale_y_continuous(breaks = seq( by = 2))+
 theme(axis.text.x = element_text(),
       legend.position = "none",)+
 scale_colour_manual(values = sampled_colors)
@@ -877,7 +874,6 @@ labs(title = "Temporal trajectories of mass of standing CWD in subplotse",
       y = expression(paste("Mass (Mgha"^{-1},")"))) +  
 theme_bw() +
 scale_x_continuous(breaks = seq(2017, 2024, by = 1))+
- # scale_y_continuous(breaks = seq( by = 2))+
 theme(axis.text.x = element_text(),
       legend.position = "none")+
 scale_colour_manual(values = sampled_colors)

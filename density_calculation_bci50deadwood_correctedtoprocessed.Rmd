@@ -197,15 +197,15 @@ standing_data<-RESIDENCETIME(standing_data)
 # Diameter corrections
 #. Apply taper correction to standing deadwood to correct for measurement where dbh was measured at a different point to 1.3m
 taper_function <- function(indata) {
-  # 1. calculating taper correction parameter (b) using the parameters from Model 2 of Cushman et al. 2021 Biotropica DOI:10.1111/btp.12994 - parameters in Table 2, model 2, and in Table S9 
-  # Model 2 preferred because we lack WSG data for each piece.  
-  # model assumes POM in meters and diameter in cm so note conversion from diameter in mm
+# 1. calculating taper correction parameter (b) using the parameters from Model 2 of Cushman et al. 2021 Biotropica DOI:10.1111/btp.12994 - parameters in Table 2, model 2, and in Table S9 
+# Model 2 preferred because we lack WSG data for each piece.  
+# model assumes POM in meters and diameter in cm so note conversion from diameter in mm
   indata$b <- ifelse(!is.na(indata$POM), 
                      0.156 - 0.023 * log(indata$diameter_one.mm/10) + 
                       -0.021 * log(indata$POM) + 
                        0.00057,  # random effect for BCI for model 2. 
                      NA)
- #calculating new dbh correcting for point of measurement using model from Table 1, model 1 of of Cushman et al. 2014 Methods Ecology and Evolution DOI:10.1111/2041-210X.12187
+# calculating new dbh correcting for point of measurement using model from Table 1, model 1 of of Cushman et al. 2014 Methods Ecology and Evolution DOI:10.1111/2041-210X.12187
   indata$mean_diameter_at1.3_mm <- ifelse(!is.na(indata$POM),
                                       indata$diameter_one.mm * exp(indata$b * (indata$POM - 1.3)),
                                       indata$diameter_one.mm)
@@ -240,16 +240,16 @@ standing_data<-top_diameter(standing_data)
 # This formula calculates the volume of the standing tree, 
 VOLUMECALCULATION <- function(indata) {
   indata$volume_m3 <-
-    # ALL BRANCHES PRESENT (branches == 0 ) approximated as a cylinder              
+# ALL BRANCHES PRESENT (branches == 0 ) approximated as a cylinder              
            ifelse(indata$branches == 0 |  is.na(indata$branches), 
                   pi * (((indata$mean_diameter_at1.3_mm / 1000) / 2) ^ 2) * indata$height,
                   
-    # SOME BRANCHES missing approcimated as a cylinder then multiplying volume by 0.875 following Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5
+# SOME BRANCHES missing approcimated as a cylinder then multiplying volume by 0.875 following Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5
             ifelse(indata$branches == 1,
                    (pi * (((indata$mean_diameter_at1.3_mm / 1000) / 2) ^ 2) * indata$height)*0.875,
                       
     
-    # NO BRANCHES approximated as a truncated cone 
+# NO BRANCHES approximated as a truncated cone 
     ifelse(indata$branches == 2,  
            (1/3) * pi * indata$height * (
              ((indata$Diameter.at.top.of.snag / 1000) / 2) ^ 2 + 
@@ -266,20 +266,20 @@ VOLUMECALCULATION <- function(indata) {
 # This formula calculates the above ground biomass of the standing tree, 
 AGBCALCULATION<-function(indata) {
   indata$AGB.kg.dry.mass <-
-        # For trees with ALL BRANCHES (branches == 0) calculate AGB using environment specific tree AGB allometry function 
-        # specifically equation 7 of Chave et al. 2014 Glob Change Biol DOI: 10.1111/gcb.12629
+# For trees with ALL BRANCHES (branches == 0) calculate AGB using environment specific tree AGB allometry function 
+# specifically equation 7 of Chave et al. 2014 Glob Change Biol DOI: 10.1111/gcb.12629
     ifelse(indata$branches == 0 | is.na(indata$branches), 
            exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
                  2.673 * log((indata$mean_diameter_at1.3_mm * 0.01)) -
                  0.0299 * (log((indata$mean_diameter_at1.3_mm * 0.01))^2)),
            
-        #For samples with SOME BRANCHES (branches == 1) calculate AGB using the same environment specific tree AGB allometry function and then apply the 0.875 multiplier following Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5
+# For samples with SOME BRANCHES (branches == 1) calculate AGB using the same environment specific tree AGB allometry function and then apply the 0.875 multiplier following Gora et al. 2019 Ecosystems DOI:10.1007/s10021-019-00341-5
       ifelse(indata$branches == 1,
              (exp(-1.803 - 0.976 * 0.0561 + 0.976 * log(indata$pendensity.kgm3) + 
                  2.673 * log((indata$mean_diameter_at1.3_mm * 0.01)) -
                  0.0299 * (log((indata$mean_diameter_at1.3_mm * 0.01))^2))) * 0.875,
              
-        # For samples with NO BRANCHES - AGB is calculated through multiplying density by volume
+# For samples with NO BRANCHES - AGB is calculated through multiplying density by volume
            ifelse(indata$branches == 2, 
                   indata$volume_m3 * indata$pendensity.kgm3,
                   NA)))

@@ -140,34 +140,34 @@ indatalist <- standardizedata(indatalist, masscorrections)
 #this function applies corrections to specific cells within specified columns of specified files based on the all corrections
 correctbytable <- function(indata,incorrect) {
   for (i in seq_along(indatalist)) {
-    # Get the current dataframe name (File) and its data
+# Get the current dataframe name (File) and its data
     file_name <- names(indatalist)[i]
     indata <- indatalist[[file_name]]
     
-    # Subset the corrections for the current file
+# Subset the corrections for the current file
     file_corrections <- incorrect[incorrect$file == file_name, ]
     if (nrow(file_corrections) == 0) {
       next 
-      # No corrections for this file, skip to the next one
+# No corrections for this file, skip to the next one
       }
     file_corrections$temp <- paste(file_corrections$year,file_corrections$uniqid,sep="_")
     
-    # separate edits that delete rows vs. make changes
+# separate edits that delete rows vs. make changes
     todelete <- file_corrections[file_corrections$Blank == "y", ]
     tochange <- file_corrections[file_corrections$Blank != "y", ]
     outdata <- indata
     
-    # Check if 'uniqid' exists in 'indata', otherwise raise an error
+# Check if 'uniqid' exists in 'indata', otherwise raise an error
     if (!("uniqid" %in% names(indata))) {
       stop(paste("The 'uniqid' column is missing in the dataset for", file_name))
       }
-    # Delete rows if there are any to delete
+# Delete rows if there are any to delete
     if (nrow(todelete) > 0) {
       outdata <- subset(indata, !uniqid %in% todelete$uniqid) }
-    # make changes
+# make changes
     if (nrow(tochange)>0) {
-      # check that all the fields to be corrected are in the dataset; 
-      # if any aren't, then print warning, output file with those problems, and remove from the tochange dataframe
+# check that all the fields to be corrected are in the dataset; 
+# if any aren't, then print warning, output file with those problems, and remove from the tochange dataframe
       fieldstochange <- unique(tochange$Field)
       missing_fields <- setdiff(fieldstochange, names(outdata))
       if (length(missing_fields) > 0) {
@@ -175,8 +175,8 @@ correctbytable <- function(indata,incorrect) {
         write.table(tochange[tochange$Field %in% missing_fields, ], 
                     file = FNBADFIELDCOROUT, sep = "\t", row.names = FALSE)
         tochange <- tochange[tochange$Field %in% names(outdata), ] }
-      # check that all the uniqid's in the corrections file are matched in the dataset
-      # if any aren't, then print warning, output file with those problems, and remove from the tochange dataframe
+# check that all the uniqid's in the corrections file are matched in the dataset
+# if any aren't, then print warning, output file with those problems, and remove from the tochange dataframe
       unmatched_uniqids <- setdiff(tochange$uniqid, outdata$uniqid)
       if (length(unmatched_uniqids) > 0) {
         warning("Some corrections refer to lines not present in the dataset.")
@@ -184,21 +184,21 @@ correctbytable <- function(indata,incorrect) {
                     file = FNBADROWCOROUT, sep = "\t", row.names = FALSE)
         tochange <- tochange[!tochange$uniqid %in% unmatched_uniqids, ] }
       
-      # check for duplicated or potentially conflicting corrections (two corrections of same objectid, census, and field)
+# check for duplicated or potentially conflicting corrections (two corrections of same objectid, census, and field)
       dupes <- duplicated(tochange[, c("year", "uniqid", "Field")])
       if (any(dupes)) {
         
         dupes_data <- tochange[dupes, ]
         write.table(dupes_data, FNDUPCOROUT, sep = "\t", row.names = FALSE)
         tochange <- tochange[!dupes, ] }
-      # Apply the changes to the cells
+# Apply the changes to the cells
       for (j in seq_len(nrow(tochange))) {
         matching_rows <- with(outdata, uniqid == tochange$uniqid[j])
         if (any(matching_rows, na.rm = TRUE)) {
           outdata[matching_rows, tochange$Field[j]] <- tochange$NewValue[j] }
         }
       }
-    # end of commands to implement edits from the file FNEDITS
+# end of commands to implement edits from the file FNEDITS
     indatalist[[file_name]] <- outdata
     } 
   return(indatalist)
@@ -212,29 +212,29 @@ indatalist <- correctbytable(indatalist,incorrect)
 #3. New codes added that concisely describe state of woody debris data, summarizing based on notes column
 addcodes <- function(indata,newcodes) {
   for (i in seq_along(indatalist)) {
-    # Get the current dataframe name (File) and its data
+# Get the current dataframe name (File) and its data
     file_name <- names(indatalist)[i]
     indata <- indatalist[[file_name]]
-    # Subset the corrections for the current file
+# Subset the corrections for the current file
     file_codes<- newcodes[newcodes$file == file_name, ]
     if (nrow(file_codes) == 0) {
       next  
-      # No corrections for this file, skip to the next one
+# No corrections for this file, skip to the next one
       }
     
     outdata <- indata
-    # Check if 'uniqid' exists in 'indata', otherwise raise an error
+# Check if 'uniqid' exists in 'indata', otherwise raise an error
     if (!("uniqid" %in% names(indata))) {
       stop(paste("The 'uniqid' column is missing in the dataset for", file_name)) }
-    #add new tag columns
+#add new tag columns
     file_code_columns <- names(file_codes)[6:ncol(file_codes)]
     for (field in file_code_columns) {
       if (!field %in% names(outdata)) {
         outdata[[field]] <- "" 
-        # Initialize with empty strings
+ # Initialize with empty strings
         }
       }
-    # check that all the uniqid's in the corrections file are matched in the dataset
+# check that all the uniqid's in the corrections file are matched in the dataset
     unmatched_uniqids <- setdiff(file_codes$uniqid, outdata$uniqid)
     if (length(unmatched_uniqids) > 0) {
       warning("Some new codes refer to lines not present in the dataset.")
@@ -242,13 +242,13 @@ addcodes <- function(indata,newcodes) {
                   file = FNBADROWCOROUT, sep = "\t", row.names = FALSE)
       file_codes <- file_codes[!file_codes$uniqid %in% unmatched_uniqids, ]}
    
-     # Apply the changes
-    # Add an asterisk to the new columns where file_codes uniqid matches indata uniqid, only if an asterisk is present in file_codes
+# Apply the changes
+# Add an asterisk to the new columns where file_codes uniqid matches indata uniqid, only if an asterisk is present in file_codes
     for (j in seq_len(nrow(file_codes))) {
       matching_rows <- outdata$uniqid == file_codes$uniqid[j]
       
       for (field in file_code_columns) {
-        # Check if there is an asterisk in file_codes for this field and row, handling NA values
+# Check if there is an asterisk in file_codes for this field and row, handling NA values
         if (!is.na(file_codes[[field]][j]) && any(matching_rows, na.rm = TRUE)) {
           outdata[matching_rows, field] <- file_codes[[field]][j] 
          } 
@@ -268,19 +268,19 @@ indatalist <- transformToNA(indatalist)
 
 ```{r}
 DATATYPE <- function(indatalist, datatype) {
-  # go through each df in the list
+# go through each df in the list
   for (i in seq_along(indatalist)) {
-    # Get the current dataframe name (File) and its data
+# Get the current dataframe name (File) and its data
     file_name <- names(indatalist)[i]
     indata <- indatalist[[file_name]]
-    # go through each row in the 'datatype' df
+# go through each row in the 'datatype' df
     for (j in seq_len(nrow(datatype))) {
-      # Get the column name and desired data type from 'datatype'
+# Get the column name and desired data type from 'datatype'
       column_name <- datatype$column[j]
       desired_type <- datatype$data_type[j]
-      # Check if the column exists in the current dataframe
+# Check if the column exists in the current dataframe
       if (column_name %in% colnames(indata)) {
-        # Convert the column to the desired data type
+# Convert the column to the desired data type
         if (desired_type == "character") {
           indata[[column_name]] <- as.character(indata[[column_name]])
           } else if (desired_type == "numeric") {
@@ -290,9 +290,9 @@ DATATYPE <- function(indatalist, datatype) {
               } else if (desired_type == "logical") {
                 indata[[column_name]] <- as.logical(indata[[column_name]])
                 } else {
-                  # If an unknown type is encountered print it
+# If an unknown type is encountered print it
                   message("Unknown type for column ", column_name, ": ", desired_type)}}}
-    # Update the modified dataframe back into the list
+# Update the modified dataframe back into the list
     indatalist[[file_name]] <- indata}
   return(indatalist)
   }
