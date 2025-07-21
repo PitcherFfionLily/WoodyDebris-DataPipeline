@@ -4,6 +4,7 @@ This repository contains example datasets and code for cleaning, processing, and
 
 ## Citation and License
 The code publication, which should be cited as follows:
+*Lily F. Pitcher, and Helene C. Muller-Landau. 2025. Data processing methods and code for deadwood dynamics census data, Barro Colorado Island, Panama , Zenodo*
 
 It is licensed under CC BY 4.0.
 
