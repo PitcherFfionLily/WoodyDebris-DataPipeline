@@ -65,7 +65,7 @@ datatype<-read.csv(DATATYPE, header = TRUE)
 ```
 
 
-```{r}
+```{r blanktoNA}
 #transforms all blanks to NA for consistency
 transformToNA <- function(input) {
   output <- lapply(input, function(df) {
@@ -86,7 +86,7 @@ masscorrections[masscorrections == ""] <- NA
 
 
 
-```{r ,implementmasscorrections}
+```{r implementmasscorrections}
 #1. Apply Mass corrections
 #this function applies corrections to whole columns within specified files based on specifications of the masscorrections file
 
@@ -135,7 +135,7 @@ indatalist <- standardizedata(indatalist, masscorrections)
 
 
 
-```{r funccorrectbytable}
+```{r implementlinebylinecorrections}
 #2. apply line by line corrections
 #this function applies corrections to specific cells within specified columns of specified files based on the all corrections
 correctbytable <- function(indata,incorrect) {
@@ -207,7 +207,7 @@ correctbytable <- function(indata,incorrect) {
 indatalist <- correctbytable(indatalist,incorrect)
 ```
 
-```{r funccorrectbytable}
+```{r codeassignment}
 
 #3. New codes added that concisely describe state of woody debris data, summarizing based on notes column
 addcodes <- function(indata,newcodes) {
@@ -266,7 +266,8 @@ indatalist <- transformToNA(indatalist)
 
 
 
-```{r}
+```{r fundatatype}
+#4. This function assigns the correct data type to each column
 DATATYPE <- function(indatalist, datatype) {
 # go through each df in the list
   for (i in seq_along(indatalist)) {
@@ -301,7 +302,7 @@ indatalist<-DATATYPE(indatalist, datatype)
 ```
 
 
-#bind datasets
+# Bind datasets
 ```{r}
 
 # List of indices specifying the dataframes to bind (e.g., 1, 3, 5), bind into seperate data frames based on the census type
@@ -340,7 +341,7 @@ lessstanding_all<-CODEOFPIECE(lessstanding_all)
 ```
 
 ```{r}
-#function for code consistency being present or absent
+
 
 fallen_all<-fallen_all %>%
   mutate(MC = ifelse(MC == "*" & is.na(MS), TRUE, MC),
