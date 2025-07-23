@@ -319,9 +319,9 @@ lessstanding_all<-bind_rows(indatalist[lessstanding_bind])
 ```
 
 
-```{r}
-#changing code of piece for consistency
-#group subplot_code transect sections letter and code of piece togehter so each sample has code as a unique identifier
+```{r formatting}
+#5. Merging code of piece 
+#group subplot_code transect sections letter and code of piece together so each sample has code as a unique identifier
 #blank because code of piece was not assigned in early censuses so avoid having NA pasted into the combined code
 lessstanding_all$code_of_piece[is.na(lessstanding_all$code_of_piece)] <- ""
 fallen_all<-fallen_all %>%
@@ -338,10 +338,8 @@ CODEOFPIECE<-function(indata){
 fallen_all<-CODEOFPIECE(fallen_all)
 standing_all<-CODEOFPIECE(standing_all)
 lessstanding_all<-CODEOFPIECE(lessstanding_all)
-```
 
-```{r}
-
+#6. correcting input type for logical data
 
 fallen_all<-fallen_all %>%
   mutate(MC = ifelse(MC == "*" & is.na(MS), TRUE, MC),
@@ -377,7 +375,7 @@ standing_all<-standing_all %>%
          MC = ifelse(MS == "TRUE" & is.na(MC), FALSE, MC)
   )
 
-#code to combine added codes into one column
+#7. combine new added codes into one column
 combinecodecols <- function(deadwood,codecols=c("EX","DP","PN","AA","CH","VIVO","CAIDO", "BUTTRESS")) {
   deadwood$coded_notes <- ""
   for (i in 1:length(codecols)) {
@@ -396,7 +394,7 @@ combinecodecols <- function(deadwood,codecols=c("EX","DP","PN","AA","CH","VIVO",
     }
   return(deadwood)
   } 
-# end combinecodecols
+
 
 fallen_all<-combinecodecols(fallen_all, codecols=c("EX","DP","PN","AA","CH","VIVO","CAIDO", "BUTTRESS"))
 standing_all<-combinecodecols(standing_all, codecols=c("EX","DP","PN","AA","CH","VIVO","CAIDO", "BUTTRESS"))
@@ -406,7 +404,7 @@ standing_all<-combinecodecols(standing_all, codecols=c("EX","DP","PN","AA","CH",
 
 
 ```{r}
-#FILTERING
+#8. Filtering rows
 #fallen
 #removing all values less than 200mm or NA that are not followed by a later measurement greater than 200mm, these values are decomposed and so no longer should be in the data
 fallen_all <- fallen_all %>% 
@@ -465,7 +463,7 @@ lessstanding_all<-lessstanding_all %>%
 
 
 ```{r}
-#tag
+# 9. Fixing Tag column
 #convert all cases of missing tags to NA
 TAGCHECK <- function(indata) {
   indata$tag <- ifelse(
@@ -500,7 +498,8 @@ lessstanding_all<-TAGASSIGNMENTACROSSYEARS(lessstanding_all)
 
 
 ```{r}
-#selecting the relevant columns needed, removing prior year columns or irrelevant field notes
+#10. Selecting columns
+# selecting the relevant columns needed, removing prior year columns or irrelevant field notes
     #fallen
 fallen_all<-fallen_all %>%
   select(month, day, year, subplot_code, transect_section_letter, code_of_piece, diameter_width.mm,  diameter_height.mm, penetration.200mm, penetration.200mm.1,  orientation_degrees,  inclination, branchfall, uniqid, tag, notes, observer, RT, RR, TT, TC, TS, TV, MC, MS, suspended, soil_contact, coded_notes)
