@@ -133,7 +133,7 @@ fix_mistaken_dates <- function(indata) {
 
 ```
 
-```{r}
+```{r fununiqueidnetifier}
 #3. Add a unique identifier to each row 
 ##Fallen
 GENERATE_UNIQID <- function(data, prefix = "item", pad = "") {
@@ -154,7 +154,7 @@ GENERATE_UNIQID <- function(data, prefix = "item", pad = "") {
 
 ```
 
-```{r funmergenotes}
+```{r funcolcombine}
 #4. combining multiple notes columns
 #some data has extra notes added in an additional column that is renamed to be notes2, this function pastes these extra notes into the original notes column (notes_new) and removes notes2column
 combine_notes <- function(indata, col_notes_new, col_notes2) {
@@ -196,7 +196,7 @@ lessstanding <- fixcolnamesbysheet(lessstanding,"lessstanding", FNCOLNAMECHANGES
 
 ```
 
-```{r }
+```{r}
 #3.unique id column
 fallen<-GENERATE_UNIQID(fallen, "fallen", "0")
 standing<-GENERATE_UNIQID(standing, "standing", "0")
@@ -211,8 +211,8 @@ standing<-combine_notes(standing, "notes_new", "notes2")
 ```
 
 
-```{r formatting}
-#FIXING SPECIFIC COLUMNS
+```{r}
+# FIXING SPECIFIC COLUMNS
 # 5. fixing dates for specific columns known to have values that have been converted to dates
 fallen[c("subplot_code", "code_of_piece")] <- lapply(fallen[c("subplot_code", "code_of_piece")], fix_mistaken_dates)
 standing[c("subplot_code",   "code_of_piece", "height_new", "POM")] <- lapply(standing[c("subplot_code", "code_of_piece",   "height_new", "POM")], fix_mistaken_dates)
@@ -239,7 +239,7 @@ lessstanding <- lessstanding %>%
 
 
 
-```{r}
+```{r duplicatecheck}
 #8. check for duplicates
 #Check how the rows are duplicated and identify which rows need to be deleted before adding them as files to delete in the corrections file (Blank=="y") to be removed later
 fallen <- fallen[order(fallen$uniqid),]
