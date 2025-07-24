@@ -68,7 +68,7 @@ Input:
 - **Corrections/datatype_dyanmicWD.csv**: This file re-assigns data types of columns in the data across years. This ensures data is treated correctly and consistent across years so data can be merged. This file is inputted into the .rmd and formats the data into the correct data type.
   
  Output:
-- **Data2_Corrected**: This folder contains the formatted and cleaned data in the form of three .csv for the three census types across years. As described above these files are generated from the clean1_bci50deadwood_formattedtocorrected.rmd. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **data_dictionary_woodydebrisBCI.csv** which defines the column heading for each census.
+- **Data2_Corrected**: This folder contains the formatted and cleaned data in the form of three .csv for the three census types across years. As described above these files are generated from the **clean1_bci50deadwood_formattedtocorrected.rmd**. This data can now be used for further calculation and analysis of interannual deadwood stocks and fluxes. Folder also contains **data_dictionary_woodydebrisBCI.csv** which defines the column heading for each census.
 
 ### **density_calculation_bci50deadwood_correctedtoprocessed.rmd**
 
@@ -77,6 +77,7 @@ The aim of this file is to carry out a series of calculations that allow for est
 Input:
 - **Data2_Corrected**: This folder contains the formatted and cleaned in the form of three .csv for the three census types across years. The two files for CWD only (both fallen and standing) are used for further calculation and analysis
 - **Data0_Raw/LongT_CWD_2010.csv**: This folder contains data from a census in 2010 where samples were destructively sampled to measure and calculate dry and wet density and mass. This value is used in the .rmd to model the relationship between sample density and penetrometer measurements of samples in the field. This allows density to be predicted for census data from penetrometer measurements. See **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf** for further details.
+
 Output:
 - **Data3_Processed**: This folder contains the processed data with the outputs for calculations to estimate coarse woody debris mass and volume conducted in **density_calculation_bci50deadwood_correctedtoprocessed.rmd**. This is intermediate data, the purpose of this data is to be fed directly into the **report_bci50CWD_2017-24.rmd** to generate a report of interannual variations in stocks and fluxes. Definitions of new columns generated in these data files can be found in the Appendix of **CalculationExplanation_for_deadwoodStocks&Fluxes.pdf**.
 
